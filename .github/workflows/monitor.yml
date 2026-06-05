@@ -1,0 +1,44 @@
+name: 00631L Monitor
+
+on:
+  schedule:
+    # 注意：cron 用 UTC。台股 09:00–13:30 = UTC 01:00–05:30。
+    # 每 30 分鐘、週一至週五。(GitHub Actions 排程可能延遲數分鐘~十幾分鐘)
+    - cron: "0,30 1-5 * * 1-5"
+  workflow_dispatch: {}   # 允許手動觸發（測試用）
+
+permissions:
+  contents: write          # 需要把 state.json / dashboard_data.json / archive 寫回 repo
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run monitor
+        env:
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT: ${{ secrets.TG_CHAT }}
+        run: python monitor.py
+
+      - name: Persist data
+        run: |
+          if [ -n "$(git status --porcelain state.json dashboard_data.json archive_quant_*.json)" ]; then
+            git config user.name "monitor-bot"
+            git config user.email "monitor-bot@users.noreply.github.com"
+            git pull --rebase --autostash || true
+            git add state.json dashboard_data.json archive_quant_*.json
+            git commit -m "update data $(date -u +%FT%TZ) [skip ci]"
+            git push
+          else
+            echo "無變更"
+          fi
