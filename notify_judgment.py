@@ -9,6 +9,7 @@ import json
 import urllib.request
 
 LOG = "judgment_log.json"
+PANEL_URL = "https://afreiv3.github.io/00631L_Tw/dashboard.html"
 TG_TOKEN = os.environ.get("TG_TOKEN", "")
 TG_CHAT = os.environ.get("TG_CHAT", "")
 
@@ -45,16 +46,14 @@ def main():
         return
     r = hist[-1]
     head = "☀️ [盤前 AI 分析]" if r.get("phase") == "pre-open" else "🌙 [盤後總結]"
-    score = r.get("ai_score")
-    score_str = f"｜AI環境分 {score}/40" if score is not None else ""
-    price = r.get("price")
-    price_str = f"｜現價 {price}" if price is not None else ""
-    lines = "\n".join("• " + x for x in r.get("lines", []))
-    news = r.get("news", [])
-    news_block = ("\n\n📰 新聞重點：\n" + "\n".join("· " + n for n in news)) if news else ""
-    text = (f"{head} {r.get('date','')} {r.get('time','')}{price_str}{score_str}\n\n"
-            f"{r.get('summary','')}\n\n{lines}{news_block}\n\n"
-            "⚠️ 盤面分析非投資建議；不輸出勝率%。")
+    zlabel = {"green": "🟢", "amber": "🟡", "red": "🔴"}.get(r.get("zone"), "")
+    score = r.get("score")
+    score_str = f"{zlabel} 環境分 {score}/100" if score is not None else ""
+    # 精簡：只放一句總結＋分數，完整七項與新聞看面板
+    text = (f"{head} {r.get('date','')} {r.get('time','')}\n"
+            f"{score_str}\n"
+            f"{r.get('summary','')}\n"
+            f"📊 完整分析與新聞 → {PANEL_URL}")
     send(text)
     print(f"已推播 {r.get('date')} {r.get('time')} phase={r.get('phase')}")
 

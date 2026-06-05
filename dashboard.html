@@ -77,6 +77,8 @@
   .err{color:var(--amber);font-size:12px}
   .arch-ctl{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
   .arch-ctl select{background:var(--panel-2);color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-family:"IBM Plex Mono",monospace}
+  .arch-ctl input[type=date]{background:var(--panel-2);color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-family:"IBM Plex Mono",monospace;color-scheme:dark}
+  .arch-sep{color:var(--muted);font-size:12px;width:100%}
   .arch-table{max-height:320px;overflow:auto;border:1px solid var(--line);border-radius:10px}
   .arch-table table{width:100%;border-collapse:collapse;font-size:12.5px}
   .arch-table th{position:sticky;top:0;background:var(--panel-2);color:var(--muted);text-align:left;padding:7px 10px;font-family:"IBM Plex Mono",monospace;font-weight:600}
@@ -129,7 +131,12 @@
     <h3>歷史紀錄（永久存檔）<span class="src-tag">archive</span></h3>
     <div class="arch-ctl">
       <select id="archYear"></select>
-      <button class="refresh" id="loadArch">載入該年度</button>
+      <button class="refresh" id="loadArch">載入整年</button>
+      <span class="arch-sep">— 或選日期區間 —</span>
+      <input type="date" id="archStart">
+      <span style="color:var(--muted)">到</span>
+      <input type="date" id="archEnd">
+      <button class="refresh" id="loadRange">載入區間</button>
       <span class="meta" id="archMeta">點擊載入；平時不下載，保持頁面快速</span>
     </div>
     <div id="archTableWrap"></div>
@@ -310,32 +317,63 @@ function initArchive(){
     const o=document.createElement("option"); o.value=y; o.textContent=y; sel.appendChild(o);
   }
   document.getElementById("loadArch").addEventListener("click", loadArchive);
+  document.getElementById("loadRange").addEventListener("click", loadRange);
+}
+
+// 把多筆紀錄畫成表格（依日期+時間新到舊）
+function renderRows(rows, metaText){
+  const meta = document.getElementById("archMeta");
+  const wrap = document.getElementById("archTableWrap");
+  meta.textContent = metaText;
+  if(!rows.length){ wrap.innerHTML = '<div class="f-note">此範圍尚無資料</div>'; return; }
+  rows.sort((a,b)=> (b.date+(b.time||"")).localeCompare(a.date+(a.time||"")));
+  let html = '<div class="arch-table"><table><thead><tr><th>日期</th><th>時間</th><th>現價</th><th>分數</th><th>區間</th></tr></thead><tbody>';
+  for(const x of rows){
+    const z=zoneInfo(x.zone||zoneFromScore(x.score));
+    html += `<tr><td>${x.date}</td><td>${x.time||""}</td><td>${x.price??"—"}</td><td>${x.score}</td><td style="color:${z.color}">${z.label}</td></tr>`;
+  }
+  html += "</tbody></table></div>";
+  wrap.innerHTML = html;
+}
+
+// 抓某年度存檔，回傳 history 陣列（讀不到回 null）
+async function fetchYear(year){
+  try{
+    const r = await fetch(archURL(year), {cache:"no-store"});
+    if(!r.ok) return null;
+    return (await r.json()).history || [];
+  }catch(e){ return null; }
 }
 
 async function loadArchive(){
   const year = document.getElementById("archYear").value;
   const meta = document.getElementById("archMeta");
-  const wrap = document.getElementById("archTableWrap");
   const configured = CONFIG.owner!=="YOUR_GITHUB_USERNAME";
   if(!configured){ meta.innerHTML = '<span class="err">請先填 CONFIG 的 owner / repo</span>'; return; }
-  meta.textContent = "載入中…"; wrap.innerHTML="";
-  try{
-    const r = await fetch(archURL(year), {cache:"no-store"});
-    if(!r.ok) throw new Error(r.status);
-    const data = await r.json();
-    const hist = (data.history||[]);
-    meta.textContent = `${year} 年，共 ${hist.length} 筆`;
-    if(!hist.length){ wrap.innerHTML = '<div class="f-note">該年度尚無資料</div>'; return; }
-    let html = '<div class="arch-table"><table><thead><tr><th>日期</th><th>時間</th><th>現價</th><th>分數</th><th>區間</th></tr></thead><tbody>';
-    for(let i=hist.length-1;i>=0;i--){
-      const x=hist[i]; const z=zoneInfo(x.zone||zoneFromScore(x.score));
-      html += `<tr><td>${x.date}</td><td>${x.time||""}</td><td>${x.price??"—"}</td><td>${x.score}</td><td style="color:${z.color}">${z.label}</td></tr>`;
-    }
-    html += "</tbody></table></div>";
-    wrap.innerHTML = html;
-  }catch(e){
-    meta.innerHTML = `<span class="err">讀不到 ${CONFIG.archivePrefix}_${year}.json（可能該年度尚未產生）</span>`;
+  meta.textContent = "載入中…"; document.getElementById("archTableWrap").innerHTML="";
+  const hist = await fetchYear(year);
+  if(hist===null){ meta.innerHTML = `<span class="err">讀不到 ${CONFIG.archivePrefix}_${year}.json（可能該年度尚未產生）</span>`; return; }
+  renderRows(hist.slice(), `${year} 年，共 ${hist.length} 筆`);
+}
+
+async function loadRange(){
+  const meta = document.getElementById("archMeta");
+  let s = document.getElementById("archStart").value;
+  let e = document.getElementById("archEnd").value;
+  const configured = CONFIG.owner!=="YOUR_GITHUB_USERNAME";
+  if(!configured){ meta.innerHTML = '<span class="err">請先填 CONFIG 的 owner / repo</span>'; return; }
+  if(!s || !e){ meta.innerHTML = '<span class="err">請選起訖日期</span>'; return; }
+  if(s > e){ const t=s; s=e; e=t; }   // 起訖反了就自動對調
+  meta.textContent = "載入中…"; document.getElementById("archTableWrap").innerHTML="";
+  const y1 = +s.slice(0,4), y2 = +e.slice(0,4);
+  let all = [], missing = [];
+  for(let y=y1; y<=y2; y++){
+    const h = await fetchYear(y);
+    if(h===null) missing.push(y); else all = all.concat(h);
   }
+  const rows = all.filter(x => x.date >= s && x.date <= e);
+  const miss = missing.length ? `（${missing.join("、")} 年無存檔）` : "";
+  renderRows(rows, `${s} ~ ${e}，共 ${rows.length} 筆${miss}`);
 }
 
 document.getElementById("refreshBtn").addEventListener("click", load);

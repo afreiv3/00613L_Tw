@@ -29,6 +29,7 @@ SYMBOL          = "00631L.TW"     # 標的
 ALERT_THRESHOLD = 70              # 進場區門檻（>=70 才發進場通知）
 STATE_FILE      = "state.json"    # 當日去重用
 AI_FACTORS_FILE = "ai_factors.json"  # 盤前 AI 判讀（看新聞）當天定案的三項因子
+PANEL_URL       = "https://afreiv3.github.io/00631L_Tw/dashboard.html"  # 推播附面板連結
 TG_TOKEN        = os.environ.get("TG_TOKEN", "")
 TG_CHAT         = os.environ.get("TG_CHAT", "")
 
@@ -356,15 +357,11 @@ def main():
     ai_sum = round(sum(ai_f[k]["pts"] for k in AI_KEYS))
 
     px_str = f"{px['current']:.2f}" if px else "—"
-    order = ["pattern", "sector", "entry", "volume", "vwap", "macro", "trend"]
-    line_notes = "\n".join(f"• {factors[k]['note']}" for k in order)
-
-    header = (f"<b>00631L 合併評分</b>  {today} {now_hm}\n"
-              f"現價 <b>{px_str}</b> ｜ <b>{total}/100</b>（量化{quant_sum}＋AI{ai_sum}）\n"
-              f"{zone(total)}\n")
+    # Telegram 只放精簡重點（分數＋一句環境＋面板連結）；完整七項與新聞看面板
+    brief = f"現價 <b>{px_str}</b>｜<b>{total}/100</b>（量化{quant_sum}＋AI{ai_sum}）｜{zone(total)}"
     if ai_meta.get("summary"):
-        header += f"\n🧠 {ai_meta['summary']}\n"
-    header += f"\n{line_notes}"
+        brief += f"\n🧠 {ai_meta['summary']}"
+    brief += f"\n📊 完整七項與新聞 → {PANEL_URL}"
 
     is_new_day = state.get("date") != today
     if is_new_day:
@@ -372,13 +369,11 @@ def main():
 
     # 開盤後第一次執行：推一份完整合併評分（不論分數）
     if not state.get("full_sent"):
-        send_telegram("📊 <b>[合併評分] 開盤後完整分數</b>\n" + header +
-                      "\n\n⚠️ 盤面分析非投資建議；不輸出勝率%。")
+        send_telegram(f"📊 <b>[合併評分] {today} {now_hm}</b>\n" + brief)
         state["full_sent"] = True
     # 進場通知：合併總分進入進場區，且當日尚未發過
     elif total >= ALERT_THRESHOLD and not state.get("alerted"):
-        send_telegram("⚡️ <b>[訊號] 達進場區門檻</b>\n" + header +
-                      "\n\n⚠️ 達標訊號，非投資建議；請自行確認盤面與風控。")
+        send_telegram(f"⚡️ <b>[訊號] 達進場區 {total}/100</b>  {today} {now_hm}\n" + brief)
         state["alerted"] = True
 
     save_state(state)
