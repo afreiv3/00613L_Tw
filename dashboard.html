@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>00631L 監控面板</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0e13; --panel:#11171f; --panel-2:#161e28; --line:#243140;
+    --txt:#e6edf3; --muted:#8b9bad;
+    --green:#2fd47a; --green-dim:#1c5a3a; --red:#ff5d5d; --red-dim:#5a1f1f;
+    --amber:#ffb84d; --amber-dim:#5a4416; --accent:#4aa3ff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(47,212,122,.06), transparent 60%),
+      radial-gradient(900px 500px at -10% 10%, rgba(74,163,255,.05), transparent 55%),
+      var(--bg);
+    color:var(--txt); font-family:"Noto Sans TC",sans-serif; line-height:1.55;
+    padding:18px 14px 60px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px;margin:0 auto}
+  header{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px;
+    display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+  .kicker{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.22em;color:var(--green);text-transform:uppercase}
+  h1{font-family:"Noto Serif TC",serif;font-weight:700;font-size:24px;line-height:1.2;margin:3px 0 2px}
+  .meta{font-size:12px;color:var(--muted)}
+  .meta .demo{color:var(--amber);border:1px solid var(--amber-dim);border-radius:6px;padding:1px 7px;margin-left:6px;font-size:11px}
+  .refresh{border:1px solid var(--line);background:var(--panel-2);color:var(--muted);
+    font-family:"IBM Plex Mono",monospace;font-size:12px;padding:7px 12px;border-radius:8px;cursor:pointer}
+  .refresh:hover{border-color:var(--muted)}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+  @media(max-width:620px){.grid2{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .card h3{font-size:12px;letter-spacing:.04em;color:var(--muted);font-weight:700;margin-bottom:10px;text-transform:uppercase;
+    font-family:"IBM Plex Mono",monospace}
+  .src-tag{font-size:10px;font-family:"IBM Plex Mono",monospace;padding:1px 6px;border-radius:5px;border:1px solid var(--line);margin-left:6px;color:var(--muted)}
+
+  .hero-row{display:flex;align-items:center;gap:16px}
+  .score-num{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:52px;line-height:1;letter-spacing:-.02em}
+  .score-num small{font-size:18px;color:var(--muted)}
+  .hero-right{flex:1}
+  .zone{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:16px;padding:4px 12px;border-radius:999px;width:fit-content}
+  .zone .dot{width:9px;height:9px;border-radius:50%}
+  .px{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--muted);margin-top:8px}
+  .px b{color:var(--txt);font-size:20px}
+  .ts{font-size:11px;color:var(--muted);font-family:"IBM Plex Mono",monospace;margin-top:6px}
+
+  .judge-sum{font-size:14px;line-height:1.6}
+  .judge-phase{font-size:11px;font-family:"IBM Plex Mono",monospace;color:var(--accent);margin-bottom:8px}
+  .judge-lines{margin-top:10px;display:flex;flex-direction:column;gap:5px}
+  .judge-lines div{font-size:12.5px;color:var(--muted);padding-left:14px;position:relative}
+  .judge-lines div::before{content:"–";position:absolute;left:0;color:var(--line)}
+
+  .spark{margin-bottom:14px}
+  .spark svg{width:100%;height:120px;display:block}
+
+  .factors{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px 16px 14px}
+  .factor{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+  .factor:last-child{border-bottom:none}
+  .f-dot{width:10px;height:10px;border-radius:3px;flex:none}
+  .f-body{flex:1;min-width:0}
+  .f-title{font-weight:700;font-size:14px}
+  .f-note{font-size:12px;color:var(--muted);margin-top:1px}
+  .f-pts{font-family:"IBM Plex Mono",monospace;font-size:14px;flex:none;width:54px;text-align:right}
+
+  .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin:14px 2px 0}
+  .legend span{display:inline-flex;align-items:center;gap:5px}
+  .legend i{width:9px;height:9px;border-radius:50%}
+  .foot{margin-top:22px;font-size:11.5px;color:#5d6b7a;line-height:1.6}
+  code{font-family:"IBM Plex Mono",monospace;background:var(--panel-2);padding:1px 5px;border-radius:4px;color:var(--accent)}
+  .err{color:var(--amber);font-size:12px}
+  .arch-ctl{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+  .arch-ctl select{background:var(--panel-2);color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-family:"IBM Plex Mono",monospace}
+  .arch-table{max-height:320px;overflow:auto;border:1px solid var(--line);border-radius:10px}
+  .arch-table table{width:100%;border-collapse:collapse;font-size:12.5px}
+  .arch-table th{position:sticky;top:0;background:var(--panel-2);color:var(--muted);text-align:left;padding:7px 10px;font-family:"IBM Plex Mono",monospace;font-weight:600}
+  .arch-table td{padding:6px 10px;border-top:1px solid var(--line);font-family:"IBM Plex Mono",monospace}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="kicker">// Live Panel · 00631L</div>
+      <h1>元大台灣50正2 監控面板</h1>
+      <div class="meta">資料更新：<span id="updated">—</span><span id="demoBadge"></span></div>
+    </div>
+    <button class="refresh" id="refreshBtn">↻ 重新整理</button>
+  </header>
+
+  <div class="grid2">
+    <div class="card">
+      <h3>量化分數 <span class="src-tag">script</span></h3>
+      <div class="hero-row">
+        <div class="score-num" id="qScore">—<small>/100</small></div>
+        <div class="hero-right">
+          <span class="zone" id="qZone"><span class="dot"></span><span id="qZoneLabel">—</span></span>
+          <div class="px">現價 <b id="qPrice">—</b></div>
+          <div class="ts" id="qTime">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>人腦判讀 <span class="src-tag">cowork</span></h3>
+      <div class="judge-phase" id="jPhase"></div>
+      <span class="zone" id="jZone" style="margin-bottom:8px"><span class="dot"></span><span id="jZoneLabel">—</span> · <span id="jScore">—</span>/100</span>
+      <div class="judge-sum" id="jSummary">尚無判讀資料</div>
+      <div class="judge-lines" id="jLines"></div>
+    </div>
+  </div>
+
+  <div class="card spark">
+    <h3>分數歷史（量化）</h3>
+    <div id="sparkWrap"><svg id="spark" viewBox="0 0 800 120" preserveAspectRatio="none"></svg></div>
+  </div>
+
+  <div class="factors" id="factors"></div>
+
+  <div class="card" id="archiveCard">
+    <h3>歷史紀錄（永久存檔）<span class="src-tag">archive</span></h3>
+    <div class="arch-ctl">
+      <select id="archYear"></select>
+      <button class="refresh" id="loadArch">載入該年度</button>
+      <span class="meta" id="archMeta">點擊載入；平時不下載，保持頁面快速</span>
+    </div>
+    <div id="archTableWrap"></div>
+  </div>
+
+  <div class="legend">
+    <span><i style="background:var(--green)"></i>≥70 進場區</span>
+    <span><i style="background:var(--amber)"></i>40–69 觀望</span>
+    <span><i style="background:var(--red)"></i>&lt;40 不進</span>
+  </div>
+
+  <div class="foot" id="foot"></div>
+</div>
+
+<script>
+// ====== 設定：填入你的 GitHub repo（需 public，或 log 檔 public）======
+const CONFIG = {
+  owner:  "afreiv3",
+  repo:   "00631L_Tw",
+  branch: "main",
+  quantFile:  "dashboard_data.json",   // monitor.py 產生
+  judgeFile:  "judgment_log.json",     // 雲端例程產生（可選）
+  archivePrefix: "archive_quant",      // 永久年度存檔前綴：archive_quant_2026.json
+  autoRefreshSec: 180                  // 每 3 分鐘自動更新；設 0 關閉
+};
+const rawURL = f => `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/${f}?t=${Date.now()}`;
+
+const FACTORS = {
+  pattern:"型態健康", sector:"最相關板塊偏強", entry:"進場點接近支撐",
+  volume:"量能型態合理", vwap:"站穩關鍵價", macro:"無系統性風險發酵", trend:"大盤趨勢結構完好"
+};
+const ORDER = ["pattern","sector","entry","volume","vwap","macro","trend"];
+
+// ====== 示範資料（讀不到真實資料時顯示，讓面板先有長相）======
+const SAMPLE = {
+  quant: { updated:"2026-06-05 11:00 (示範)", history:[
+    {date:"2026-06-03",time:"11:00",price:39.2,score:55,zone:"amber",factors:demoFactors(20,10,15,0,10,0,0)},
+    {date:"2026-06-04",time:"11:00",price:38.3,score:45,zone:"amber",factors:demoFactors(10,10,0,15,10,0,0)},
+    {date:"2026-06-05",time:"11:00",price:37.09,score:10,zone:"red",factors:{
+      pattern:{pts:0,max:20,note:"開高(+6%)走低、吐回過半漲幅"},
+      sector:{pts:0,max:20,note:"Nasdaq 背離、費半偏弱"},
+      entry:{pts:0,max:15,note:"跳空後半山腰追價"},
+      volume:{pts:0,max:15,note:"推估量約均量2.1倍 → 爆量"},
+      vwap:{pts:0,max:10,note:"現價在VWAP之下(-0.6%)"},
+      macro:{pts:0,max:10,note:"油價高、殖利率上行"},
+      trend:{pts:10,max:10,note:"加權仍在季線之上(+5%)"}
+    }}
+  ]},
+  judge: { updated:"2026-06-05 11:00 (示範)", history:[
+    {date:"2026-06-05",time:"11:00",phase:"intraday",score:10,zone:"red",
+     summary:"環境偏空。開高走低＋巨量，今日非確定性高的進場點；要等型態打底不破低、費半轉強再看。",
+     lines:["型態：✗ 開高走低、26分鐘吐掉一半漲幅","板塊：✗ Nasdaq 背離、半導體拉力弱","進場點：✗ 屬跳空後追高","量能：✗ 罕見爆量、疑換手","站穩關鍵價：½ 反彈中、未站穩VWAP","系統風險：✗ 美伊＋油價高","大盤結構：✓ 仍在高檔未破壞"]}
+  ]}
+};
+function demoFactors(p,s,e,v,w,m,t){return{
+  pattern:{pts:p,max:20,note:""},sector:{pts:s,max:20,note:""},entry:{pts:e,max:15,note:""},
+  volume:{pts:v,max:15,note:""},vwap:{pts:w,max:10,note:""},macro:{pts:m,max:10,note:""},trend:{pts:t,max:10,note:""}};}
+
+const zoneInfo = z => ({
+  green:{label:"進場區",color:"var(--green)"},
+  amber:{label:"觀望區",color:"var(--amber)"},
+  red:{label:"不進區",color:"var(--red)"}
+}[z] || {label:"—",color:"var(--muted)"});
+const zoneFromScore = s => s>=70?"green":(s>=40?"amber":"red");
+
+async function tryFetch(file){
+  try{ const r = await fetch(rawURL(file),{cache:"no-store"}); if(!r.ok) throw 0; return await r.json(); }
+  catch(e){ return null; }
+}
+
+function renderQuant(data, isDemo){
+  const h = (data.history||[]); const last = h[h.length-1];
+  if(!last){ return; }
+  document.getElementById("qScore").innerHTML = last.score + "<small>/100</small>";
+  const z = zoneInfo(last.zone || zoneFromScore(last.score));
+  const zt = document.getElementById("qZone");
+  zt.style.color = z.color; zt.querySelector(".dot").style.background = z.color;
+  document.getElementById("qZoneLabel").textContent = z.label;
+  document.getElementById("qPrice").textContent = last.price!=null ? last.price.toFixed(2) : "—";
+  document.getElementById("qTime").textContent = `${last.date} ${last.time}`;
+
+  // factors
+  const fx = document.getElementById("factors"); fx.innerHTML = "";
+  ORDER.forEach(k=>{
+    const f = last.factors?.[k]; if(!f) return;
+    const ratio = f.pts/f.max;
+    const col = ratio>=1?"var(--green)":(ratio>0?"var(--amber)":"var(--red)");
+    const row = document.createElement("div"); row.className="factor";
+    row.innerHTML = `<span class="f-dot" style="background:${col}"></span>
+      <div class="f-body"><div class="f-title">${FACTORS[k]}</div>
+      <div class="f-note">${f.note||"—"}</div></div>
+      <div class="f-pts" style="color:${col}">${f.pts}/${f.max}</div>`;
+    fx.appendChild(row);
+  });
+
+  // sparkline
+  drawSpark(h.map(x=>x.score));
+}
+
+function renderJudge(data){
+  const h = (data?.history||[]); const last = h[h.length-1];
+  if(!last) return;
+  document.getElementById("jPhase").textContent = last.phase==="pre-open"?"◷ 開盤前環境":"◉ 盤中判讀";
+  document.getElementById("jScore").textContent = last.score;
+  const z = zoneInfo(last.zone || zoneFromScore(last.score));
+  const zt = document.getElementById("jZone");
+  zt.style.color = z.color; zt.querySelector(".dot").style.background = z.color;
+  document.getElementById("jZoneLabel").textContent = z.label;
+  document.getElementById("jSummary").textContent = last.summary || "";
+  const lines = document.getElementById("jLines"); lines.innerHTML = "";
+  (last.lines||[]).forEach(t=>{ const d=document.createElement("div"); d.textContent=t; lines.appendChild(d); });
+}
+
+function drawSpark(scores){
+  const svg = document.getElementById("spark"); svg.innerHTML="";
+  if(!scores.length) return;
+  const W=800,H=120,pad=8;
+  const n=scores.length, max=100,min=0;
+  const x=i=> pad + i*(W-2*pad)/Math.max(1,n-1);
+  const y=v=> H-pad - (v-min)/(max-min)*(H-2*pad);
+  // zone bands
+  [["0","40","var(--red-dim)"],["40","70","var(--amber-dim)"],["70","100","var(--green-dim)"]].forEach(([a,b,c])=>{
+    const ya=y(+b), yb=y(+a);
+    svg.innerHTML += `<rect x="0" y="${ya}" width="${W}" height="${yb-ya}" fill="${c}" opacity="0.25"/>`;
+  });
+  const pts = scores.map((s,i)=>`${x(i)},${y(s)}`).join(" ");
+  svg.innerHTML += `<polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="2"/>`;
+  scores.forEach((s,i)=>{
+    const c = s>=70?"var(--green)":(s>=40?"var(--amber)":"var(--red)");
+    svg.innerHTML += `<circle cx="${x(i)}" cy="${y(s)}" r="3.5" fill="${c}"/>`;
+  });
+}
+
+async function load(){
+  const foot = document.getElementById("foot");
+  const configured = CONFIG.owner!=="YOUR_GITHUB_USERNAME";
+  let quant = configured ? await tryFetch(CONFIG.quantFile) : null;
+  let judge = configured ? await tryFetch(CONFIG.judgeFile) : null;
+  let isDemo = false;
+
+  if(!quant){ quant = SAMPLE.quant; judge = judge||SAMPLE.judge; isDemo = true; }
+
+  document.getElementById("updated").textContent = quant.updated || "—";
+  document.getElementById("demoBadge").innerHTML = isDemo ? '<span class="demo">示範資料</span>' : "";
+  renderQuant(quant, isDemo);
+  if(judge) renderJudge(judge);
+
+  foot.innerHTML = configured
+    ? (isDemo ? `<span class="err">⚠ 讀不到 <code>${CONFIG.quantFile}</code>（repo 可能尚未產生資料、或非 public）。目前顯示示範資料。</span>`
+              : "資料來自你的 GitHub repo。量化＝monitor.py 每30分；判讀＝雲端例程每日。")
+    : `請先在原始碼最上方 <code>CONFIG</code> 填入你的 <code>owner</code> 與 <code>repo</code>。目前顯示示範資料。`;
+}
+
+// ====== 歷史紀錄（永久存檔，點擊才載入；主頁平時只讀約1個月滾動檔，保持快速）======
+function archURL(year){ return `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/${CONFIG.archivePrefix}_${year}.json?t=${Date.now()}`; }
+
+function initArchive(){
+  const sel = document.getElementById("archYear");
+  if(!sel) return;
+  const thisYear = new Date().getFullYear();
+  sel.innerHTML = "";
+  for(let y=thisYear; y>=thisYear-3; y--){
+    const o=document.createElement("option"); o.value=y; o.textContent=y; sel.appendChild(o);
+  }
+  document.getElementById("loadArch").addEventListener("click", loadArchive);
+}
+
+async function loadArchive(){
+  const year = document.getElementById("archYear").value;
+  const meta = document.getElementById("archMeta");
+  const wrap = document.getElementById("archTableWrap");
+  const configured = CONFIG.owner!=="YOUR_GITHUB_USERNAME";
+  if(!configured){ meta.innerHTML = '<span class="err">請先填 CONFIG 的 owner / repo</span>'; return; }
+  meta.textContent = "載入中…"; wrap.innerHTML="";
+  try{
+    const r = await fetch(archURL(year), {cache:"no-store"});
+    if(!r.ok) throw new Error(r.status);
+    const data = await r.json();
+    const hist = (data.history||[]);
+    meta.textContent = `${year} 年，共 ${hist.length} 筆`;
+    if(!hist.length){ wrap.innerHTML = '<div class="f-note">該年度尚無資料</div>'; return; }
+    let html = '<div class="arch-table"><table><thead><tr><th>日期</th><th>時間</th><th>現價</th><th>分數</th><th>區間</th></tr></thead><tbody>';
+    for(let i=hist.length-1;i>=0;i--){
+      const x=hist[i]; const z=zoneInfo(x.zone||zoneFromScore(x.score));
+      html += `<tr><td>${x.date}</td><td>${x.time||""}</td><td>${x.price??"—"}</td><td>${x.score}</td><td style="color:${z.color}">${z.label}</td></tr>`;
+    }
+    html += "</tbody></table></div>";
+    wrap.innerHTML = html;
+  }catch(e){
+    meta.innerHTML = `<span class="err">讀不到 ${CONFIG.archivePrefix}_${year}.json（可能該年度尚未產生）</span>`;
+  }
+}
+
+document.getElementById("refreshBtn").addEventListener("click", load);
+initArchive();
+load();
+if(CONFIG.autoRefreshSec>0) setInterval(load, CONFIG.autoRefreshSec*1000);
+</script>
+</body>
+</html>

@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# 本機專用（不部署）
+temp/
+CLAUDE_CODE_TASK.md
