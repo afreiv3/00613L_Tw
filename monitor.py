@@ -28,8 +28,13 @@ import urllib.error
 SYMBOL          = "00631L.TW"     # 標的
 ALERT_THRESHOLD = 70              # 進場區門檻（>=70 才發進場通知）
 STATE_FILE      = "state.json"    # 當日去重用
+AI_FACTORS_FILE = "ai_factors.json"  # 盤前 AI 判讀（看新聞）當天定案的三項因子
 TG_TOKEN        = os.environ.get("TG_TOKEN", "")
 TG_CHAT         = os.environ.get("TG_CHAT", "")
+
+# 因子分兩組：盤中量化（隨價量變動）＋ 盤前 AI（看新聞，當天固定）
+QUANT_KEYS = ["pattern", "entry", "volume", "vwap"]   # 共 60 分，monitor.py 每 30 分算
+AI_KEYS    = ["sector", "macro", "trend"]             # 共 40 分，盤前 AI 寫進 ai_factors.json
 
 # 檢查表權重（與你的工具一致）
 W = {
@@ -156,7 +161,9 @@ def ma(symbol, n=60):
 
 
 # ----------------------------- 計分（代理規則） -----------------------------
-def score_all():
+def score_quant():
+    """只算『盤中量化』四項（型態/進場點/量能/VWAP），共 60 分。
+    板塊/系統風險/大盤結構三項改由盤前 AI 判讀（看新聞）寫進 ai_factors.json。"""
     notes = {}
     pts = {}
 
@@ -182,21 +189,6 @@ def score_all():
     else:
         pts["pattern"] = W["pattern"] / 2
         notes["pattern"] = "盤中資料缺，型態以中性計"
-
-    # 2) 最相關板塊偏強（算的是：隔夜費半 + Nasdaq）
-    sox = daily_change_pct("^SOX")
-    ndx = daily_change_pct("^IXIC")
-    if sox is not None and ndx is not None:
-        if sox >= 0.5 and ndx >= 0:
-            pts["sector"] = W["sector"]; tag = "有利"
-        elif sox < 0 and ndx < 0:
-            pts["sector"] = 0; tag = "不利"
-        else:
-            pts["sector"] = W["sector"] / 2; tag = "分歧"
-        notes["sector"] = f"費半{sox:+.2f}%、Nasdaq{ndx:+.2f}% → {tag}"
-    else:
-        pts["sector"] = W["sector"] / 2
-        notes["sector"] = "美股資料缺，以中性計"
 
     # 3) 進場點接近支撐（算的是：現價落在今日區間的哪一段）
     if px and px["high"] > px["low"]:
@@ -239,37 +231,7 @@ def score_all():
         pts["vwap"] = W["vwap"] / 2
         notes["vwap"] = "VWAP 資料缺，以中性計"
 
-    # 6) 無系統性風險發酵（算的是：隔夜油價 + 美債殖利率 急變）
-    wti = daily_change_pct("CL=F")
-    tnx = daily_change_pct("^TNX")
-    if wti is not None and tnx is not None:
-        if wti > 3 or tnx > 3:
-            pts["macro"] = 0; tag = "風險升溫"
-        elif abs(wti) < 1.5 and abs(tnx) < 1.5:
-            pts["macro"] = W["macro"]; tag = "平穩"
-        else:
-            pts["macro"] = W["macro"] / 2; tag = "略有波動"
-        notes["macro"] = f"油價{wti:+.1f}%、10Y殖利率{tnx:+.1f}% → {tag}"
-    else:
-        pts["macro"] = W["macro"] / 2
-        notes["macro"] = "油價/殖利率資料缺，以中性計"
-
-    # 7) 大盤結構完好（算的是：加權 vs 季線MA60）
-    ma60, twii = ma("^TWII", 60)
-    if ma60 and twii:
-        d = (twii / ma60 - 1) * 100
-        if d >= 0:
-            pts["trend"] = W["trend"]; notes["trend"] = f"加權在季線之上({d:+.1f}%) → 結構完好"
-        elif d > -1:
-            pts["trend"] = W["trend"] / 2; notes["trend"] = f"加權貼近季線({d:+.1f}%)"
-        else:
-            pts["trend"] = 0; notes["trend"] = f"加權跌破季線({d:+.1f}%) → 結構轉弱"
-    else:
-        pts["trend"] = W["trend"] / 2
-        notes["trend"] = "加權資料缺，以中性計"
-
-    total = round(sum(pts.values()))
-    return total, pts, notes, px
+    return pts, notes, px
 
 
 def zone(score):
@@ -325,6 +287,25 @@ def zone_code(s):
     return "green" if s >= 70 else ("amber" if s >= 40 else "red")
 
 
+def load_ai_factors(today):
+    """讀盤前 AI 當天定案的三項因子（板塊/系統風險/大盤結構）。
+    回傳 (factors_dict, meta_dict, ok)。讀不到或非今天 → 三項以中性(半分)頂著，不讓整套壞掉。"""
+    try:
+        with open(AI_FACTORS_FILE, "r", encoding="utf-8") as f:
+            d = json.load(f)
+        if d.get("date") == today and isinstance(d.get("factors"), dict) \
+           and all(k in d["factors"] for k in AI_KEYS):
+            meta = {"summary": d.get("summary", ""), "news": d.get("news", []),
+                    "generated_at": d.get("generated_at", ""), "stale": False}
+            return d["factors"], meta, True
+    except Exception:
+        pass
+    neutral = {k: {"pts": W[k] / 2, "max": W[k], "note": "盤前 AI 因子缺—以中性計"} for k in AI_KEYS}
+    meta = {"summary": "（今日盤前 AI 判讀尚未產生，板塊/系統風險/大盤結構暫以中性計）",
+            "news": [], "generated_at": "", "stale": True}
+    return neutral, meta, False
+
+
 def write_dashboard(record, path="dashboard_data.json", keep=240):
     """維護一份滾動歷史 JSON 給網頁面板讀。"""
     hist = []
@@ -362,28 +343,42 @@ def main():
     now_hm = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=8)).strftime("%H:%M")
     state = load_state()
 
-    total, pts, notes, px = score_all()
-    px_str = f"{px['current']:.2f}" if px else "—"
-    line_notes = "\n".join(f"• {notes[k]}" for k in
-                           ["pattern", "sector", "entry", "volume", "vwap", "macro", "trend"])
+    # 盤中量化 4 項（60）＋ 盤前 AI 定案 3 項（40）→ 合併總分
+    qpts, qnotes, px = score_quant()
+    ai_f, ai_meta, ai_ok = load_ai_factors(today)
+    factors = {}
+    for k in QUANT_KEYS:
+        factors[k] = {"pts": qpts[k], "max": W[k], "note": qnotes[k]}
+    for k in AI_KEYS:
+        factors[k] = ai_f[k]                       # 已是 {pts,max,note}
+    total = round(sum(f["pts"] for f in factors.values()))
+    quant_sum = round(sum(qpts.values()))
+    ai_sum = round(sum(ai_f[k]["pts"] for k in AI_KEYS))
 
-    header = (f"<b>00631L 進場監控</b>  {today} {now_hm}\n"
-              f"現價 <b>{px_str}</b> ｜ 分數 <b>{total}/100</b>\n"
-              f"{zone(total)}\n\n{line_notes}")
+    px_str = f"{px['current']:.2f}" if px else "—"
+    order = ["pattern", "sector", "entry", "volume", "vwap", "macro", "trend"]
+    line_notes = "\n".join(f"• {factors[k]['note']}" for k in order)
+
+    header = (f"<b>00631L 合併評分</b>  {today} {now_hm}\n"
+              f"現價 <b>{px_str}</b> ｜ <b>{total}/100</b>（量化{quant_sum}＋AI{ai_sum}）\n"
+              f"{zone(total)}\n")
+    if ai_meta.get("summary"):
+        header += f"\n🧠 {ai_meta['summary']}\n"
+    header += f"\n{line_notes}"
 
     is_new_day = state.get("date") != today
     if is_new_day:
-        state = {"date": today, "morning_sent": False, "alerted": False}
+        state = {"date": today, "full_sent": False, "alerted": False}
 
-    # 晨間簡報：當日第一次執行
-    if not state.get("morning_sent"):
-        send_telegram("☀️ <b>[量化] 晨間簡報</b>\n" + header)
-        state["morning_sent"] = True
-
-    # 進場通知：分數進入進場區，且當日尚未發過
-    if total >= ALERT_THRESHOLD and not state.get("alerted"):
-        send_telegram("⚡️ <b>[量化] 出現進場區訊號</b>\n" + header +
-                      "\n\n⚠️ 代理規則訊號，非投資建議；請自行確認盤面與風控。")
+    # 開盤後第一次執行：推一份完整合併評分（不論分數）
+    if not state.get("full_sent"):
+        send_telegram("📊 <b>[合併評分] 開盤後完整分數</b>\n" + header +
+                      "\n\n⚠️ 盤面分析非投資建議；不輸出勝率%。")
+        state["full_sent"] = True
+    # 進場通知：合併總分進入進場區，且當日尚未發過
+    elif total >= ALERT_THRESHOLD and not state.get("alerted"):
+        send_telegram("⚡️ <b>[訊號] 達進場區門檻</b>\n" + header +
+                      "\n\n⚠️ 達標訊號，非投資建議；請自行確認盤面與風控。")
         state["alerted"] = True
 
     save_state(state)
@@ -393,12 +388,14 @@ def main():
         "date": today, "time": now_hm,
         "price": round(px["current"], 2) if px else None,
         "score": total, "zone": zone_code(total),
-        "factors": {k: {"pts": pts[k], "max": W[k], "note": notes[k]} for k in W},
+        "quant_sum": quant_sum, "ai_sum": ai_sum, "ai_ok": ai_ok,
+        "factors": {k: factors[k] for k in W},
     }
     write_dashboard(rec)
     append_archive(rec)
 
-    print(f"{today} {now_hm} score={total} alerted={state.get('alerted')}")
+    print(f"{today} {now_hm} total={total} (quant={quant_sum}+ai={ai_sum}) "
+          f"ai_ok={ai_ok} full_sent={state.get('full_sent')} alerted={state.get('alerted')}")
 
 
 if __name__ == "__main__":

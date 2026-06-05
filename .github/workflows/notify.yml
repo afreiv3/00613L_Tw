@@ -1,0 +1,28 @@
+name: 00631L AI 判讀推播
+
+# 雲端 AI 代理（routine）把盤前/盤後判讀 push 進 judgment_log.json 後，
+# 由這支 workflow 讀最新一筆、用 repo 的 TG_TOKEN/TG_CHAT secret 發 Telegram。
+# token 永遠只待在 GitHub secrets，不外流給遠端代理。
+
+on:
+  push:
+    paths:
+      - "judgment_log.json"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: notify
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Send Telegram from latest judgment
+        env:
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT: ${{ secrets.TG_CHAT }}
+        run: python notify_judgment.py

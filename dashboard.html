@@ -96,23 +96,25 @@
 
   <div class="grid2">
     <div class="card">
-      <h3>量化分數 <span class="src-tag">script</span></h3>
+      <h3>合併總分 <span class="src-tag">量化60＋AI40</span></h3>
       <div class="hero-row">
         <div class="score-num" id="qScore">—<small>/100</small></div>
         <div class="hero-right">
           <span class="zone" id="qZone"><span class="dot"></span><span id="qZoneLabel">—</span></span>
           <div class="px">現價 <b id="qPrice">—</b></div>
           <div class="ts" id="qTime">—</div>
+          <div class="ts" id="qBreak"></div>
         </div>
       </div>
     </div>
 
     <div class="card">
-      <h3>人腦判讀 <span class="src-tag">cowork</span></h3>
+      <h3>盤前／盤後 AI 判讀 <span class="src-tag">AI · 新聞</span></h3>
       <div class="judge-phase" id="jPhase"></div>
-      <span class="zone" id="jZone" style="margin-bottom:8px"><span class="dot"></span><span id="jZoneLabel">—</span> · <span id="jScore">—</span>/100</span>
+      <span class="zone" id="jZone" style="margin-bottom:8px"><span class="dot"></span><span id="jZoneLabel">—</span> · 環境分 <span id="jScore">—</span>/100</span>
       <div class="judge-sum" id="jSummary">尚無判讀資料</div>
       <div class="judge-lines" id="jLines"></div>
+      <div class="judge-lines" id="jNews" style="margin-top:8px"></div>
     </div>
   </div>
 
@@ -208,6 +210,13 @@ function renderQuant(data, isDemo){
   document.getElementById("qZoneLabel").textContent = z.label;
   document.getElementById("qPrice").textContent = last.price!=null ? last.price.toFixed(2) : "—";
   document.getElementById("qTime").textContent = `${last.date} ${last.time}`;
+  const brk = document.getElementById("qBreak");
+  if(brk){
+    if(last.quant_sum!=null && last.ai_sum!=null){
+      brk.innerHTML = `量化 ${last.quant_sum} ＋ AI ${last.ai_sum}` +
+        (last.ai_ok===false ? ' <span style="color:var(--amber)">（AI 因子今日尚未產生，暫以中性計）</span>' : '');
+    } else { brk.textContent = ""; }
+  }
 
   // factors
   const fx = document.getElementById("factors"); fx.innerHTML = "";
@@ -230,7 +239,8 @@ function renderQuant(data, isDemo){
 function renderJudge(data){
   const h = (data?.history||[]); const last = h[h.length-1];
   if(!last) return;
-  document.getElementById("jPhase").textContent = last.phase==="pre-open"?"◷ 開盤前環境":"◉ 盤中判讀";
+  document.getElementById("jPhase").textContent =
+    last.phase==="pre-open" ? "◷ 盤前 AI 環境判讀" : (last.phase==="post-close" ? "🌙 盤後總結" : "◉ AI 判讀");
   document.getElementById("jScore").textContent = last.score;
   const z = zoneInfo(last.zone || zoneFromScore(last.score));
   const zt = document.getElementById("jZone");
@@ -239,6 +249,13 @@ function renderJudge(data){
   document.getElementById("jSummary").textContent = last.summary || "";
   const lines = document.getElementById("jLines"); lines.innerHTML = "";
   (last.lines||[]).forEach(t=>{ const d=document.createElement("div"); d.textContent=t; lines.appendChild(d); });
+  const news = document.getElementById("jNews"); news.innerHTML = "";
+  const ns = last.news||[];
+  if(ns.length){
+    const h=document.createElement("div"); h.textContent="📰 新聞重點"; h.style.color="var(--accent)"; h.style.paddingLeft="0";
+    news.appendChild(h);
+    ns.forEach(t=>{ const d=document.createElement("div"); d.textContent=t; news.appendChild(d); });
+  }
 }
 
 function drawSpark(scores){
@@ -277,7 +294,7 @@ async function load(){
 
   foot.innerHTML = configured
     ? (isDemo ? `<span class="err">⚠ 讀不到 <code>${CONFIG.quantFile}</code>（repo 可能尚未產生資料、或非 public）。目前顯示示範資料。</span>`
-              : "資料來自你的 GitHub repo。量化＝monitor.py 每30分；判讀＝雲端例程每日。")
+              : "合併總分＝盤中量化60（每30分更新）＋盤前AI判讀40（看新聞、當天定案）。AI判讀由雲端代理盤前08:40／盤後13:40產生。")
     : `請先在原始碼最上方 <code>CONFIG</code> 填入你的 <code>owner</code> 與 <code>repo</code>。目前顯示示範資料。`;
 }
 
