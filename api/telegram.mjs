@@ -68,7 +68,9 @@ export default async function handler(req, res) {
   const cmd = msg.text.trim().toLowerCase().split(/\s+/)[0].replace(/@.*$/, "");
   const isPublic = cmd === "/start" || cmd === "/help";
   if (!isPublic && CFG.ALLOWED_CHAT && chatId !== String(CFG.ALLOWED_CHAT)) {
-    await tg(chatId, "未授權的對話。輸入 /start 看我能做什麼。");
+    await tg(chatId,
+      "未授權的對話。\n你這個對話的 chat_id 是：" + chatId +
+      "\n把這串數字填到 Vercel 的環境變數 ALLOWED_CHAT（再 Redeploy）就能用了。");
     return res.status(200).send("ok");
   }
 
