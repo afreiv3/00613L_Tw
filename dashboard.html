@@ -83,6 +83,12 @@
   .arch-table table{width:100%;border-collapse:collapse;font-size:12.5px}
   .arch-table th{position:sticky;top:0;background:var(--panel-2);color:var(--muted);text-align:left;padding:7px 10px;font-family:"IBM Plex Mono",monospace;font-weight:600}
   .arch-table td{padding:6px 10px;border-top:1px solid var(--line);font-family:"IBM Plex Mono",monospace}
+
+  .paper-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:12px}
+  @media(max-width:520px){.paper-stats{grid-template-columns:repeat(2,1fr)}}
+  .pstat{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+  .pk{font-size:11px;color:var(--muted);font-family:"IBM Plex Mono",monospace;margin-bottom:3px}
+  .pv{font-family:"IBM Plex Mono",monospace;font-size:18px;font-weight:600}
 </style>
 </head>
 <body>
@@ -118,6 +124,20 @@
       <div class="judge-lines" id="jLines"></div>
       <div class="judge-lines" id="jNews" style="margin-top:8px"></div>
     </div>
+  </div>
+
+  <div class="card" id="paperCard">
+    <h3>模擬盤 <span class="src-tag">虛擬 100 萬</span></h3>
+    <div class="paper-stats">
+      <div class="pstat"><div class="pk">總資產</div><div class="pv" id="pEquity">—</div></div>
+      <div class="pstat"><div class="pk">總報酬</div><div class="pv" id="pReturn">—</div></div>
+      <div class="pstat"><div class="pk">現金</div><div class="pv" id="pCash">—</div></div>
+      <div class="pstat"><div class="pk">目前持倉</div><div class="pv" id="pPos">—</div></div>
+      <div class="pstat"><div class="pk">交易次數</div><div class="pv" id="pTrades">—</div></div>
+      <div class="pstat"><div class="pk">勝率</div><div class="pv" id="pWin">—</div></div>
+    </div>
+    <div id="paperTradesWrap"></div>
+    <div class="meta" style="margin-top:8px">規則：分數≥70 進場（依分數投30/50/70%）；停損-8%・停利+15%・分數&lt;50 出場。含手續費與證交稅。純模擬，非投資建議。</div>
   </div>
 
   <div class="card spark">
@@ -160,6 +180,7 @@ const CONFIG = {
   quantFile:  "dashboard_data.json",   // monitor.py 產生
   judgeFile:  "judgment_log.json",     // 雲端例程產生（可選）
   archivePrefix: "archive_quant",      // 永久年度存檔前綴：archive_quant_2026.json
+  paperTradesFile: "paper_trades.json",// 模擬盤交易紀錄
   autoRefreshSec: 180                  // 每 3 分鐘自動更新；設 0 關閉
 };
 const rawURL = f => `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/${f}?t=${Date.now()}`;
@@ -265,6 +286,36 @@ function renderJudge(data){
   }
 }
 
+function renderPaper(p){
+  const fmt = n => (n==null?"—":Number(n).toLocaleString());
+  if(!p){ return; }
+  document.getElementById("pEquity").textContent = fmt(p.equity);
+  const ret = document.getElementById("pReturn");
+  ret.textContent = (p.return_pct>=0?"+":"") + p.return_pct + "%";
+  ret.style.color = p.return_pct>0?"var(--green)":(p.return_pct<0?"var(--red)":"var(--muted)");
+  document.getElementById("pCash").textContent = fmt(p.cash);
+  const pos = p.position;
+  document.getElementById("pPos").textContent = pos ? `${pos.shares} 股 @ ${pos.entry_price}` : "空手";
+  document.getElementById("pTrades").textContent = p.trades ?? 0;
+  document.getElementById("pWin").textContent = p.trades ? p.win_rate + "%" : "—";
+}
+
+function renderPaperTrades(data){
+  const wrap = document.getElementById("paperTradesWrap");
+  const rows = (data?.history||[]).slice();
+  if(!rows.length){ wrap.innerHTML = '<div class="f-note">尚無模擬交易紀錄</div>'; return; }
+  rows.sort((a,b)=> (b.date+(b.time||"")).localeCompare(a.date+(a.time||"")));
+  let html = '<div class="arch-table"><table><thead><tr><th>日期</th><th>時間</th><th>動作</th><th>價</th><th>股數</th><th>分數</th><th>損益</th><th>說明</th></tr></thead><tbody>';
+  for(const x of rows){
+    const isBuy = x.action==="BUY";
+    const col = isBuy ? "var(--accent)" : (x.pnl>0?"var(--green)":(x.pnl<0?"var(--red)":"var(--muted)"));
+    const pnl = isBuy ? "—" : `${x.pnl>=0?"+":""}${Number(x.pnl).toLocaleString()}（${x.pnl_pct>=0?"+":""}${x.pnl_pct}%）`;
+    html += `<tr><td>${x.date}</td><td>${x.time||""}</td><td style="color:${col}">${isBuy?"買進":"賣出"}</td><td>${x.price}</td><td>${x.shares}</td><td>${x.score}</td><td style="color:${col}">${pnl}</td><td>${x.reason||""}</td></tr>`;
+  }
+  html += "</tbody></table></div>";
+  wrap.innerHTML = html;
+}
+
 function drawSpark(scores){
   const svg = document.getElementById("spark"); svg.innerHTML="";
   if(!scores.length) return;
@@ -298,6 +349,12 @@ async function load(){
   document.getElementById("demoBadge").innerHTML = isDemo ? '<span class="demo">示範資料</span>' : "";
   renderQuant(quant, isDemo);
   if(judge) renderJudge(judge);
+
+  // 模擬盤：績效摘要藏在最新一筆 quant 紀錄的 paper 欄；交易明細讀 paper_trades.json
+  const lastRec = (quant.history||[]).slice(-1)[0];
+  renderPaper(lastRec && lastRec.paper);
+  const paperTrades = (configured && !isDemo) ? await tryFetch(CONFIG.paperTradesFile) : null;
+  renderPaperTrades(paperTrades);
 
   foot.innerHTML = configured
     ? (isDemo ? `<span class="err">⚠ 讀不到 <code>${CONFIG.quantFile}</code>（repo 可能尚未產生資料、或非 public）。目前顯示示範資料。</span>`

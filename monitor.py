@@ -24,6 +24,8 @@ import random
 import urllib.request
 import urllib.error
 
+import paper_trade
+
 # ----------------------------- 設定 -----------------------------
 SYMBOL          = "00631L.TW"     # 標的
 ALERT_THRESHOLD = 70              # 進場區門檻（>=70 才發進場通知）
@@ -378,13 +380,31 @@ def main():
 
     save_state(state)
 
+    # 模擬盤（紙上交易）：用合併總分自動下單，純記錄、不碰真錢。買賣事件推 Telegram。
+    price_now = round(px["current"], 2) if px else None
+    paper_event, paper, trade = paper_trade.run(today, now_hm, total, price_now)
+    if paper_event == "BUY":
+        send_telegram(
+            f"🟢 <b>[模擬買進] {today} {now_hm}</b>\n"
+            f"價 <b>{price_now}</b>｜分數 {total}｜投入 {int(trade['amount']):,} 元\n"
+            f"總資產 {paper['equity']:,}｜報酬 {paper['return_pct']:+.2f}%\n"
+            f"📊 模擬績效 → {PANEL_URL}")
+    elif paper_event == "SELL":
+        send_telegram(
+            f"🔴 <b>[模擬賣出] {today} {now_hm}</b>\n"
+            f"價 <b>{price_now}</b>｜{trade['reason']}\n"
+            f"本筆損益 <b>{trade['pnl']:+,}</b>（{trade['pnl_pct']:+.2f}%）\n"
+            f"總資產 {paper['equity']:,}｜報酬 {paper['return_pct']:+.2f}%\n"
+            f"📊 模擬績效 → {PANEL_URL}")
+
     # 寫面板資料（滾動約1個月）＋ 永久年度存檔
     rec = {
         "date": today, "time": now_hm,
-        "price": round(px["current"], 2) if px else None,
+        "price": price_now,
         "score": total, "zone": zone_code(total),
         "quant_sum": quant_sum, "ai_sum": ai_sum, "ai_ok": ai_ok,
         "factors": {k: factors[k] for k in W},
+        "paper": paper,
     }
     write_dashboard(rec)
     append_archive(rec)
