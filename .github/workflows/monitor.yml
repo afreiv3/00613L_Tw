@@ -6,6 +6,8 @@ on:
     # 每 30 分鐘、週一至週五。(GitHub Actions 排程可能延遲數分鐘~十幾分鐘)
     - cron: "0,30 1-5 * * 1-5"
   workflow_dispatch: {}   # 允許手動觸發（測試用）
+  repository_dispatch:     # Telegram /refresh 經 Vercel 函式觸發重算
+    types: [manual_refresh]
 
 permissions:
   contents: write          # 需要把 state.json / dashboard_data.json / archive 寫回 repo

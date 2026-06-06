@@ -1,0 +1,39 @@
+name: 設定 Telegram Webhook
+
+# 一鍵把 Telegram 機器人的 webhook 指到 Vercel 函式。
+# 用 repo 既有的 TG_TOKEN secret，token 不外流。
+# 在 GitHub → Actions → 「設定 Telegram Webhook」→ Run workflow，
+# 把 Vercel 給的網址貼進 vercel_url 即可。
+
+on:
+  workflow_dispatch:
+    inputs:
+      vercel_url:
+        description: "Vercel 網址（例：https://00631l-tw.vercel.app，結尾不要加斜線）"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  set-webhook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: setWebhook
+        env:
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}   # 選填，沒設就空著
+          VERCEL_URL: ${{ inputs.vercel_url }}
+        run: |
+          HOOK="${VERCEL_URL%/}/api/telegram"
+          echo "將 webhook 設為：$HOOK"
+          curl -s "https://api.telegram.org/bot${TG_TOKEN}/setWebhook" \
+            --data-urlencode "url=${HOOK}" \
+            --data-urlencode "secret_token=${WEBHOOK_SECRET}" \
+            --data-urlencode 'allowed_updates=["message"]' | tee /tmp/resp.json
+          echo ""
+          echo "=== 目前 webhook 狀態 ==="
+          curl -s "https://api.telegram.org/bot${TG_TOKEN}/getWebhookInfo"
+          echo ""
+          grep -q '"ok":true' /tmp/resp.json
