@@ -64,15 +64,10 @@ export default async function handler(req, res) {
   if (!msg || !msg.text) return res.status(200).send("ok");
   const chatId = String(msg.chat.id);
 
-  // 查詢類指令限定只有你能用；/start、/help 一律放行（方便任何人了解這隻是什麼）
+  // 公開機器人：/start /help /score /judge 任何人都能用。
+  // 只有 /refresh（會觸發重算的管理動作）限擁有者（ALLOWED_CHAT），沒設則一律放行。
   const cmd = msg.text.trim().toLowerCase().split(/\s+/)[0].replace(/@.*$/, "");
-  const isPublic = cmd === "/start" || cmd === "/help";
-  if (!isPublic && CFG.ALLOWED_CHAT && chatId !== String(CFG.ALLOWED_CHAT)) {
-    await tg(chatId,
-      "未授權的對話。\n你這個對話的 chat_id 是：" + chatId +
-      "\n把這串數字填到 Vercel 的環境變數 ALLOWED_CHAT（再 Redeploy）就能用了。");
-    return res.status(200).send("ok");
-  }
+  const isOwner = !CFG.ALLOWED_CHAT || chatId === String(CFG.ALLOWED_CHAT);
 
   try {
     if (cmd === "/score" || cmd === "/s") {
@@ -80,11 +75,11 @@ export default async function handler(req, res) {
     } else if (cmd === "/judge" || cmd === "/j") {
       await tg(chatId, await fmtJudge());
     } else if (cmd === "/refresh" || cmd === "/r") {
-      await tg(chatId, await triggerRefresh());
+      await tg(chatId, isOwner ? await triggerRefresh() : "🔒 /refresh 僅限管理者使用。");
     } else if (cmd === "/start" || cmd === "/help") {
       await tg(chatId, GREETING);
     } else {
-      await tg(chatId, "不認得的指令。試 /start、/score、/judge、/refresh。");
+      await tg(chatId, "不認得的指令。試 /start、/score、/judge。");
     }
   } catch (e) {
     await tg(chatId, "查詢失敗：" + (e.message || e));
