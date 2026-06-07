@@ -124,16 +124,18 @@ def main():
     news = fetch_news()
     print(f"抓到 {len(news)} 則新聞")
 
+    err = ""
     if news and API_KEY:
         try:
             res = call_gemini("\n".join(news))
         except Exception as e:
-            print(f"[error] Gemini 判讀失敗: {e}", file=sys.stderr)
+            err = f"{type(e).__name__}: {e}"
+            print(f"[error] Gemini 判讀失敗: {err}", file=sys.stderr)
             res = {"sector": 10.0, "macro": 5.0, "trend": 5.0,
                    "summary": "（Gemini 判讀失敗，暫以中性計）"}
     else:
-        if not API_KEY:
-            print("[error] 缺 GEMINI_API_KEY", file=sys.stderr)
+        err = "缺 GEMINI_API_KEY" if not API_KEY else "未抓到新聞"
+        print(f"[error] {err}", file=sys.stderr)
         res = {"sector": 10.0, "macro": 5.0, "trend": 5.0,
                "summary": "（無新聞或無金鑰，暫以中性計）"}
 
@@ -147,6 +149,7 @@ def main():
         "summary": res.get("summary", ""),
         "news_zh": res.get("key_news", []),   # Gemini 翻成繁中的重點新聞
         "news": news[:10],                     # 原始英文 RSS（備查）
+        "debug_error": err,                    # 失敗時記下真正原因，方便排查
     }
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
