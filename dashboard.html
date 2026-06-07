@@ -209,6 +209,21 @@
       <div id="gPaperTradesWrap"></div>
       <div class="meta" style="margin-top:8px">規則：第一層量化≥35且大盤站季線才開窗；第二層 AI 情緒&lt;30 重倉80%／30–75 標倉50%／&gt;75 輕倉20%（反向）；移動止盈10%、連3日狂熱壓20%。純模擬，非投資建議。</div>
     </div>
+
+    <div class="card" id="gArchiveCard">
+      <h3>Gemini 歷史紀錄（永久存檔）<span class="src-tag">archive</span></h3>
+      <div class="arch-ctl">
+        <select id="gArchYear"></select>
+        <button class="refresh" id="gLoadArch">載入整年</button>
+        <span class="arch-sep">— 或選日期區間 —</span>
+        <input type="date" id="gArchStart">
+        <span style="color:var(--muted)">到</span>
+        <input type="date" id="gArchEnd">
+        <button class="refresh" id="gLoadRange">載入區間</button>
+        <span class="meta" id="gArchMeta">點擊載入；平時不下載，保持頁面快速</span>
+      </div>
+      <div id="gArchTableWrap"></div>
+    </div>
   </div><!-- /geminiView -->
 
   <div class="foot" id="foot"></div>
@@ -225,7 +240,9 @@ const CONFIG = {
   archivePrefix: "archive_quant",      // 永久年度存檔前綴：archive_quant_2026.json
   paperTradesFile: "paper_trades.json",// 模擬盤交易紀錄
   geminiFile: "dashboard_data_gemini.json",      // Gemini 策略面板資料
+  geminiAiFile: "ai_factors_gemini.json",        // Gemini 盤前新聞判讀（08:30 產生）
   geminiTradesFile: "paper_trades_gemini.json",  // Gemini 動態模擬盤交易
+  geminiArchivePrefix: "archive_gemini",         // Gemini 永久年度存檔前綴
   autoRefreshSec: 180                  // 每 3 分鐘自動更新；設 0 關閉
 };
 const rawURL = f => `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/${f}?t=${Date.now()}`;
@@ -362,8 +379,21 @@ function renderPaperTrades(data){
   wrap.innerHTML = html;
 }
 
-function renderGemini(data){
+function renderGemini(data, ai){
   const h=(data?.history||[]); const last=h[h.length-1];
+  // 盤前新聞判讀：優先用 ai_factors_gemini.json（08:30 就有），否則退回面板紀錄
+  const summary = (ai && ai.summary) || (last && last.summary) || "尚無判讀資料";
+  const news = (ai && ai.news) || (last && last.news) || [];
+  document.getElementById("gSummary").textContent = summary;
+  const newsEl=document.getElementById("gNews"); newsEl.innerHTML="";
+  if(ai && ai.factors){   // 盤前就先把情緒指數/分數顯示出來
+    const f=ai.factors;
+    const hd=document.createElement("div");
+    hd.textContent=`AI情緒指數 ${ai.ai_sentiment_index ?? "—"}/100（板塊${f.sector}/系統${f.macro}/結構${f.trend}）`;
+    hd.style.color="var(--accent)"; hd.style.paddingLeft="0";
+    newsEl.appendChild(hd);
+  }
+  news.forEach(t=>{const d=document.createElement("div");d.textContent=t;newsEl.appendChild(d);});
   if(!last) return;
   document.getElementById("gPrice").textContent = last.price!=null ? last.price : "—";
   document.getElementById("gTime").textContent = `${last.date} ${last.time}`;
@@ -375,9 +405,6 @@ function renderGemini(data){
   add(`第一層 量化主審 ${last.tier1??"—"}/60（${last.gate_open?"視窗開啟":"視窗關閉"}）`);
   add(`第二層 AI 情緒指數 ${last.ai_index??"—"}/100`);
   add(`目標水位 ${last.target!=null? Math.round(last.target*100)+"%":"—"}`);
-  document.getElementById("gSummary").textContent = last.summary || "尚無判讀資料";
-  const news=document.getElementById("gNews"); news.innerHTML="";
-  (last.news||[]).forEach(t=>{const d=document.createElement("div");d.textContent=t;news.appendChild(d);});
   const p=last.paper;
   if(p){
     document.getElementById("gpEquity").textContent = numfmt(p.equity);
@@ -458,7 +485,8 @@ async function load(){
 
   // Gemini 策略視圖
   const gem = (configured && !isDemo) ? await tryFetch(CONFIG.geminiFile) : null;
-  if(gem) renderGemini(gem);
+  const gemAi = (configured && !isDemo) ? await tryFetch(CONFIG.geminiAiFile) : null;
+  renderGemini(gem, gemAi);
   const gemTrades = (configured && !isDemo) ? await tryFetch(CONFIG.geminiTradesFile) : null;
   renderGeminiTrades(gemTrades);
 
@@ -539,11 +567,65 @@ async function loadRange(){
   renderRows(rows, `${s} ~ ${e}，共 ${rows.length} 筆${miss}`);
 }
 
+// ====== Gemini 歷史紀錄（archive_gemini，日期區間查詢）======
+function gArchURL(year){ return `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/${CONFIG.geminiArchivePrefix}_${year}.json?t=${Date.now()}`; }
+
+function initGemArchive(){
+  const sel=document.getElementById("gArchYear"); if(!sel) return;
+  const ty=new Date().getFullYear(); sel.innerHTML="";
+  for(let y=ty;y>=ty-3;y--){ const o=document.createElement("option"); o.value=y; o.textContent=y; sel.appendChild(o); }
+  document.getElementById("gLoadArch").addEventListener("click", gLoadArchive);
+  document.getElementById("gLoadRange").addEventListener("click", gLoadRange);
+}
+
+function renderGemRows(rows, metaText){
+  const meta=document.getElementById("gArchMeta"), wrap=document.getElementById("gArchTableWrap");
+  meta.textContent=metaText;
+  if(!rows.length){ wrap.innerHTML='<div class="f-note">此範圍尚無資料</div>'; return; }
+  rows.sort((a,b)=> (b.date+(b.time||"")).localeCompare(a.date+(a.time||"")));
+  let html='<div class="arch-table"><table><thead><tr><th>日期</th><th>時間</th><th>現價</th><th>量化</th><th>AI指數</th><th>目標</th><th>總資產</th><th>報酬</th></tr></thead><tbody>';
+  for(const x of rows){
+    const p=x.paper||{};
+    const tgt=x.target!=null? Math.round(x.target*100)+"%":"—";
+    const ret=p.return_pct!=null? (p.return_pct>=0?"+":"")+p.return_pct+"%":"—";
+    const rc=p.return_pct>0?"var(--green)":(p.return_pct<0?"var(--red)":"var(--muted)");
+    html+=`<tr><td>${x.date}</td><td>${x.time||""}</td><td>${x.price??"—"}</td><td>${x.tier1??"—"}/60</td><td>${x.ai_index??"—"}</td><td>${tgt}</td><td>${numfmt(p.equity)}</td><td style="color:${rc}">${ret}</td></tr>`;
+  }
+  html+="</tbody></table></div>"; wrap.innerHTML=html;
+}
+
+async function fetchGemYear(year){
+  try{ const r=await fetch(gArchURL(year),{cache:"no-store"}); if(!r.ok) return null; return (await r.json()).history||[]; }
+  catch(e){ return null; }
+}
+
+async function gLoadArchive(){
+  const year=document.getElementById("gArchYear").value, meta=document.getElementById("gArchMeta");
+  meta.textContent="載入中…"; document.getElementById("gArchTableWrap").innerHTML="";
+  const h=await fetchGemYear(year);
+  if(h===null){ meta.innerHTML=`<span class="err">讀不到 ${CONFIG.geminiArchivePrefix}_${year}.json（可能尚未產生）</span>`; return; }
+  renderGemRows(h.slice(), `${year} 年，共 ${h.length} 筆`);
+}
+
+async function gLoadRange(){
+  const meta=document.getElementById("gArchMeta");
+  let s=document.getElementById("gArchStart").value, e=document.getElementById("gArchEnd").value;
+  if(!s||!e){ meta.innerHTML='<span class="err">請選起訖日期</span>'; return; }
+  if(s>e){ const t=s; s=e; e=t; }
+  meta.textContent="載入中…"; document.getElementById("gArchTableWrap").innerHTML="";
+  const y1=+s.slice(0,4), y2=+e.slice(0,4); let all=[], missing=[];
+  for(let y=y1;y<=y2;y++){ const h=await fetchGemYear(y); if(h===null) missing.push(y); else all=all.concat(h); }
+  const rows=all.filter(x=> x.date>=s && x.date<=e);
+  const miss=missing.length?`（${missing.join("、")} 年無存檔）`:"";
+  renderGemRows(rows, `${s} ~ ${e}，共 ${rows.length} 筆${miss}`);
+}
+
 document.getElementById("refreshBtn").addEventListener("click", load);
 document.getElementById("tabClaude").addEventListener("click", ()=>switchView("claude"));
 document.getElementById("tabGemini").addEventListener("click", ()=>switchView("gemini"));
 switchView(localStorage.getItem("strat") || "claude");
 initArchive();
+initGemArchive();
 load();
 if(CONFIG.autoRefreshSec>0) setInterval(load, CONFIG.autoRefreshSec*1000);
 </script>
