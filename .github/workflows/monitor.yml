@@ -34,11 +34,11 @@ jobs:
 
       - name: Persist data
         run: |
-          if [ -n "$(git status --porcelain state.json dashboard_data.json archive_quant_*.json paper_state.json paper_trades.json)" ]; then
+          if [ -n "$(git status --porcelain state.json dashboard_data.json archive_quant_*.json paper_state.json paper_trades.json dashboard_data_gemini.json archive_gemini_*.json paper_state_gemini.json paper_trades_gemini.json)" ]; then
             git config user.name "monitor-bot"
             git config user.email "monitor-bot@users.noreply.github.com"
             git pull --rebase --autostash || true
-            git add state.json dashboard_data.json archive_quant_*.json paper_state.json paper_trades.json
+            git add state.json dashboard_data.json archive_quant_*.json paper_state.json paper_trades.json dashboard_data_gemini.json archive_gemini_*.json paper_state_gemini.json paper_trades_gemini.json
             git commit -m "update data $(date -u +%FT%TZ) [skip ci]"
             git push
           else

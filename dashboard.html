@@ -89,6 +89,11 @@
   .pstat{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
   .pk{font-size:11px;color:var(--muted);font-family:"IBM Plex Mono",monospace;margin-bottom:3px}
   .pv{font-family:"IBM Plex Mono",monospace;font-size:18px;font-weight:600}
+
+  .stratbar{display:flex;gap:8px;margin-bottom:14px}
+  .stbtn{flex:1;border:1px solid var(--line);background:var(--panel-2);color:var(--muted);
+    font-family:"IBM Plex Mono",monospace;font-size:13px;padding:9px;border-radius:10px;cursor:pointer}
+  .stbtn.active{border-color:var(--accent);color:var(--txt);background:var(--panel)}
 </style>
 </head>
 <body>
@@ -102,6 +107,12 @@
     <button class="refresh" id="refreshBtn">↻ 重新整理</button>
   </header>
 
+  <div class="stratbar">
+    <button class="stbtn active" id="tabClaude">🟦 Claude 策略</button>
+    <button class="stbtn" id="tabGemini">🟩 Gemini 策略</button>
+  </div>
+
+  <div id="claudeView">
   <div class="grid2">
     <div class="card">
       <h3>合併總分 <span class="src-tag">量化60＋AI40</span></h3>
@@ -167,6 +178,38 @@
     <span><i style="background:var(--amber)"></i>40–69 觀望</span>
     <span><i style="background:var(--red)"></i>&lt;40 不進</span>
   </div>
+  </div><!-- /claudeView -->
+
+  <div id="geminiView" style="display:none">
+    <div class="grid2">
+      <div class="card">
+        <h3>雙層閘門狀態 <span class="src-tag">Gemini</span></h3>
+        <span class="zone" id="gZone" style="margin-bottom:8px"><span class="dot"></span><span id="gZoneLabel">—</span></span>
+        <div class="px">現價 <b id="gPrice">—</b></div>
+        <div class="ts" id="gTime">—</div>
+        <div class="judge-lines" id="gTiers" style="margin-top:10px"></div>
+      </div>
+      <div class="card">
+        <h3>盤前 Gemini 新聞判讀 <span class="src-tag">RSS · Gemini</span></h3>
+        <div class="judge-sum" id="gSummary">尚無判讀資料</div>
+        <div class="judge-lines" id="gNews" style="margin-top:8px"></div>
+      </div>
+    </div>
+
+    <div class="card" id="gPaperCard">
+      <h3>動態模擬盤 <span class="src-tag">虛擬 100 萬</span></h3>
+      <div class="paper-stats">
+        <div class="pstat"><div class="pk">總資產</div><div class="pv" id="gpEquity">—</div></div>
+        <div class="pstat"><div class="pk">總報酬</div><div class="pv" id="gpReturn">—</div></div>
+        <div class="pstat"><div class="pk">目前水位</div><div class="pv" id="gpPos">—</div></div>
+        <div class="pstat"><div class="pk">現金</div><div class="pv" id="gpCash">—</div></div>
+        <div class="pstat"><div class="pk">再平衡次數</div><div class="pv" id="gpTrades">—</div></div>
+        <div class="pstat"><div class="pk">連續狂熱</div><div class="pv" id="gpFrenzy">—</div></div>
+      </div>
+      <div id="gPaperTradesWrap"></div>
+      <div class="meta" style="margin-top:8px">規則：第一層量化≥35且大盤站季線才開窗；第二層 AI 情緒&lt;30 重倉80%／30–75 標倉50%／&gt;75 輕倉20%（反向）；移動止盈10%、連3日狂熱壓20%。純模擬，非投資建議。</div>
+    </div>
+  </div><!-- /geminiView -->
 
   <div class="foot" id="foot"></div>
 </div>
@@ -181,6 +224,8 @@ const CONFIG = {
   judgeFile:  "judgment_log.json",     // 雲端例程產生（可選）
   archivePrefix: "archive_quant",      // 永久年度存檔前綴：archive_quant_2026.json
   paperTradesFile: "paper_trades.json",// 模擬盤交易紀錄
+  geminiFile: "dashboard_data_gemini.json",      // Gemini 策略面板資料
+  geminiTradesFile: "paper_trades_gemini.json",  // Gemini 動態模擬盤交易
   autoRefreshSec: 180                  // 每 3 分鐘自動更新；設 0 關閉
 };
 const rawURL = f => `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/${f}?t=${Date.now()}`;
@@ -222,6 +267,7 @@ const zoneInfo = z => ({
   red:{label:"不進區",color:"var(--red)"}
 }[z] || {label:"—",color:"var(--muted)"});
 const zoneFromScore = s => s>=70?"green":(s>=40?"amber":"red");
+const numfmt = n => (n==null?"—":Number(n).toLocaleString());
 
 async function tryFetch(file){
   try{ const r = await fetch(rawURL(file),{cache:"no-store"}); if(!r.ok) throw 0; return await r.json(); }
@@ -316,6 +362,60 @@ function renderPaperTrades(data){
   wrap.innerHTML = html;
 }
 
+function renderGemini(data){
+  const h=(data?.history||[]); const last=h[h.length-1];
+  if(!last) return;
+  document.getElementById("gPrice").textContent = last.price!=null ? last.price : "—";
+  document.getElementById("gTime").textContent = `${last.date} ${last.time}`;
+  const z=zoneInfo(last.zone);
+  const zt=document.getElementById("gZone"); zt.style.color=z.color; zt.querySelector(".dot").style.background=z.color;
+  document.getElementById("gZoneLabel").textContent = last.zone_label || z.label;
+  const tiers=document.getElementById("gTiers"); tiers.innerHTML="";
+  const add=t=>{const d=document.createElement("div");d.textContent=t;tiers.appendChild(d);};
+  add(`第一層 量化主審 ${last.tier1??"—"}/60（${last.gate_open?"視窗開啟":"視窗關閉"}）`);
+  add(`第二層 AI 情緒指數 ${last.ai_index??"—"}/100`);
+  add(`目標水位 ${last.target!=null? Math.round(last.target*100)+"%":"—"}`);
+  document.getElementById("gSummary").textContent = last.summary || "尚無判讀資料";
+  const news=document.getElementById("gNews"); news.innerHTML="";
+  (last.news||[]).forEach(t=>{const d=document.createElement("div");d.textContent=t;news.appendChild(d);});
+  const p=last.paper;
+  if(p){
+    document.getElementById("gpEquity").textContent = numfmt(p.equity);
+    const ret=document.getElementById("gpReturn");
+    ret.textContent=(p.return_pct>=0?"+":"")+p.return_pct+"%";
+    ret.style.color=p.return_pct>0?"var(--green)":(p.return_pct<0?"var(--red)":"var(--muted)");
+    document.getElementById("gpPos").textContent = (p.position_pct??0)+"%";
+    document.getElementById("gpCash").textContent = numfmt(p.cash);
+    document.getElementById("gpTrades").textContent = p.trades??0;
+    document.getElementById("gpFrenzy").textContent = (p.frenzy_days??0)+" 天";
+  }
+}
+
+function renderGeminiTrades(data){
+  const wrap=document.getElementById("gPaperTradesWrap");
+  const rows=(data?.history||[]).slice();
+  if(!rows.length){ wrap.innerHTML='<div class="f-note">尚無模擬交易紀錄</div>'; return; }
+  rows.sort((a,b)=> (b.date+(b.time||"")).localeCompare(a.date+(a.time||"")));
+  let html='<div class="arch-table"><table><thead><tr><th>日期</th><th>時間</th><th>動作</th><th>價</th><th>股數</th><th>目標水位</th><th>說明</th></tr></thead><tbody>';
+  for(const x of rows){
+    const isBuy=x.action==="BUY";
+    const col=isBuy?"var(--accent)":"var(--amber)";
+    html+=`<tr><td>${x.date}</td><td>${x.time||""}</td><td style="color:${col}">${isBuy?"買進":"賣出"}</td><td>${x.price}</td><td>${x.shares}</td><td>${x.target_pct}%</td><td>${x.reason||""}</td></tr>`;
+  }
+  html+="</tbody></table></div>"; wrap.innerHTML=html;
+}
+
+function switchView(which){
+  const c=document.getElementById("claudeView"), g=document.getElementById("geminiView");
+  const tc=document.getElementById("tabClaude"), tg=document.getElementById("tabGemini");
+  const gemini = which==="gemini";
+  c.style.display = gemini?"none":"block";
+  g.style.display = gemini?"block":"none";
+  tc.classList.toggle("active",!gemini);
+  tg.classList.toggle("active",gemini);
+  try{ localStorage.setItem("strat", which); }catch(e){}
+}
+
 function drawSpark(scores){
   const svg = document.getElementById("spark"); svg.innerHTML="";
   if(!scores.length) return;
@@ -355,6 +455,12 @@ async function load(){
   renderPaper(lastRec && lastRec.paper);
   const paperTrades = (configured && !isDemo) ? await tryFetch(CONFIG.paperTradesFile) : null;
   renderPaperTrades(paperTrades);
+
+  // Gemini 策略視圖
+  const gem = (configured && !isDemo) ? await tryFetch(CONFIG.geminiFile) : null;
+  if(gem) renderGemini(gem);
+  const gemTrades = (configured && !isDemo) ? await tryFetch(CONFIG.geminiTradesFile) : null;
+  renderGeminiTrades(gemTrades);
 
   foot.innerHTML = configured
     ? (isDemo ? `<span class="err">⚠ 讀不到 <code>${CONFIG.quantFile}</code>（repo 可能尚未產生資料、或非 public）。目前顯示示範資料。</span>`
@@ -434,6 +540,9 @@ async function loadRange(){
 }
 
 document.getElementById("refreshBtn").addEventListener("click", load);
+document.getElementById("tabClaude").addEventListener("click", ()=>switchView("claude"));
+document.getElementById("tabGemini").addEventListener("click", ()=>switchView("gemini"));
+switchView(localStorage.getItem("strat") || "claude");
 initArchive();
 load();
 if(CONFIG.autoRefreshSec>0) setInterval(load, CONFIG.autoRefreshSec*1000);

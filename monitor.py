@@ -25,6 +25,7 @@ import urllib.request
 import urllib.error
 
 import paper_trade
+import gemini_strategy
 
 # ----------------------------- 設定 -----------------------------
 SYMBOL          = "00631L.TW"     # 標的
@@ -367,7 +368,7 @@ def main():
 
     is_new_day = state.get("date") != today
     if is_new_day:
-        state = {"date": today, "full_sent": False, "alerted": False}
+        state = {"date": today, "full_sent": False, "alerted": False, "g_full_sent": False}
 
     # 開盤後第一次執行：推一份完整合併評分（不論分數）
     if not state.get("full_sent"):
@@ -396,6 +397,45 @@ def main():
             f"本筆損益 <b>{trade['pnl']:+,}</b>（{trade['pnl_pct']:+.2f}%）\n"
             f"總資產 {paper['equity']:,}｜報酬 {paper['return_pct']:+.2f}%\n"
             f"📊 模擬績效 → {PANEL_URL}")
+
+    # ===== Gemini 雙層閘門策略（與 Claude 並行；共用上面的量化數據 qpts）=====
+    twii_ma60, twii_close = ma("^TWII", 60)
+    market_ok = (twii_close >= twii_ma60) if (twii_ma60 and twii_close) else None
+    g_ai, g_meta, g_ok = gemini_strategy.load_ai_factors(today)
+    g_ev = gemini_strategy.evaluate(qpts, market_ok, g_ai)
+    g_events, g_paper = gemini_strategy.run(today, now_hm, g_ev, price_now)
+
+    # 當日第一次：推 Gemini 策略現況
+    if not state.get("g_full_sent"):
+        g_brief = (f"🤖 <b>[Gemini策略] {today} {now_hm}</b>\n"
+                   f"量化主審 {g_ev['tier1']}/60｜AI情緒 {g_ev['ai_index']}/100｜"
+                   f"目標水位 {int(g_ev['target']*100)}%\n{g_ev['zone_label']}")
+        if g_meta.get("summary"):
+            g_brief += f"\n🧠 {g_meta['summary']}"
+        g_brief += f"\n📊 詳情 → {PANEL_URL}"
+        send_telegram(g_brief)
+        state["g_full_sent"] = True
+        save_state(state)
+
+    # Gemini 模擬盤的再平衡／止盈事件推播
+    for tr in g_events:
+        act = "🟢 買進" if tr["action"] == "BUY" else "🔴 賣出"
+        send_telegram(
+            f"{act} <b>[Gemini模擬] {today} {now_hm}</b>\n"
+            f"價 <b>{tr['price']}</b>｜{tr['reason']}\n"
+            f"目標水位 {tr['target_pct']}%｜總資產 {g_paper['equity']:,}"
+            f"（{g_paper['return_pct']:+.2f}%）\n📊 → {PANEL_URL}")
+
+    g_rec = {
+        "date": today, "time": now_hm, "price": price_now,
+        "tier1": g_ev["tier1"], "ai_index": g_ev["ai_index"], "target": g_ev["target"],
+        "zone": g_ev["zone"], "zone_label": g_ev["zone_label"],
+        "gate_open": g_ev["gate_open"], "market_ok": g_ev["market_ok"],
+        "ai_ok": g_ok, "summary": g_meta.get("summary", ""), "news": g_meta.get("news", []),
+        "paper": g_paper,
+    }
+    write_dashboard(g_rec, path="dashboard_data_gemini.json")
+    append_archive(g_rec, prefix="archive_gemini")
 
     # 寫面板資料（滾動約1個月）＋ 永久年度存檔
     rec = {

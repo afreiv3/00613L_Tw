@@ -41,7 +41,9 @@ const GREETING =
   "📊 盤中 — 每 30 分量化評分，總分達 70 才主動通知買點\n" +
   "🌙 盤後 — 當日總結\n\n" +
   "你也可以隨時問我：\n" +
-  "/score 最新分數＋七項因子\n" +
+  "/C Claude 策略現況（總分70制）\n" +
+  "/G Gemini 策略現況（雙層閘門）\n" +
+  "/score 量化七項因子明細\n" +
   "/judge 最新 AI 判讀摘要\n" +
   "/refresh 立刻重算一次\n" +
   "/help 指令說明\n\n" +
@@ -70,7 +72,11 @@ export default async function handler(req, res) {
   const isOwner = !CFG.ALLOWED_CHAT || chatId === String(CFG.ALLOWED_CHAT);
 
   try {
-    if (cmd === "/score" || cmd === "/s") {
+    if (cmd === "/c") {
+      await tg(chatId, await fmtClaude());
+    } else if (cmd === "/g") {
+      await tg(chatId, await fmtGemini());
+    } else if (cmd === "/score" || cmd === "/s") {
       await tg(chatId, await fmtQuant());
     } else if (cmd === "/judge" || cmd === "/j") {
       await tg(chatId, await fmtJudge());
@@ -79,7 +85,7 @@ export default async function handler(req, res) {
     } else if (cmd === "/start" || cmd === "/help") {
       await tg(chatId, GREETING);
     } else {
-      await tg(chatId, "不認得的指令。試 /start、/score、/judge。");
+      await tg(chatId, "不認得的指令。試 /start、/C、/G、/score、/judge。");
     }
   } catch (e) {
     await tg(chatId, "查詢失敗：" + (e.message || e));
@@ -101,6 +107,46 @@ async function getJSON(file) {
   const r = await fetch(rawURL(file), { headers: { "Cache-Control": "no-cache" } });
   if (!r.ok) throw new Error(`讀不到 ${file} (${r.status})`);
   return r.json();
+}
+
+const nf = (n) => (n == null ? "—" : Number(n).toLocaleString());
+
+async function fmtClaude() {
+  const d = await getJSON("dashboard_data.json");
+  const last = (d.history || []).slice(-1)[0];
+  if (!last) return "尚無 Claude 策略資料。";
+  const p = last.paper;
+  let s = `🟦 [Claude 策略] ${last.date} ${last.time}\n` +
+          `現價 ${last.price ?? "—"}｜總分 ${last.score}/100｜${ZONE[last.zone] || ""}\n` +
+          `（量化${last.quant_sum ?? "—"}＋AI${last.ai_sum ?? "—"}；門檻70 進場、停損8%/停利15%）`;
+  if (p) {
+    s += `\n\n💰 模擬盤（虛擬100萬）\n` +
+         `總資產 ${nf(p.equity)}｜報酬 ${p.return_pct >= 0 ? "+" : ""}${p.return_pct}%\n` +
+         `持倉 ${p.holding ? (p.position.shares + " 股 @ " + p.position.entry_price) : "空手"}｜` +
+         `交易 ${p.trades} 次｜勝率 ${p.trades ? p.win_rate + "%" : "—"}`;
+  }
+  return s + `\n📊 → ${PANEL_URL}\n⚠️ 非投資建議。`;
+}
+
+async function fmtGemini() {
+  let d;
+  try { d = await getJSON("dashboard_data_gemini.json"); }
+  catch { return "尚無 Gemini 策略資料（尚未產生）。"; }
+  const last = (d.history || []).slice(-1)[0];
+  if (!last) return "尚無 Gemini 策略資料。";
+  const p = last.paper;
+  let s = `🟩 [Gemini 策略] ${last.date} ${last.time}\n` +
+          `現價 ${last.price ?? "—"}\n` +
+          `第一層 量化主審 ${last.tier1 ?? "—"}/60（${last.gate_open ? "視窗開啟" : "視窗關閉"}）\n` +
+          `第二層 AI情緒指數 ${last.ai_index ?? "—"}/100\n` +
+          `→ 目標水位 ${last.target != null ? Math.round(last.target * 100) + "%" : "—"}｜${last.zone_label || ""}`;
+  if (last.summary) s += `\n🧠 ${last.summary}`;
+  if (p) {
+    s += `\n\n💰 動態模擬盤（虛擬100萬）\n` +
+         `總資產 ${nf(p.equity)}｜報酬 ${p.return_pct >= 0 ? "+" : ""}${p.return_pct}%\n` +
+         `目前水位 ${p.position_pct}%｜再平衡 ${p.trades} 次`;
+  }
+  return s + `\n📊 → ${PANEL_URL}\n⚠️ 非投資建議。`;
 }
 
 async function fmtQuant() {

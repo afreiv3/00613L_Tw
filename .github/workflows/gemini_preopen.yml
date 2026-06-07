@@ -1,0 +1,51 @@
+name: Gemini 盤前 AI 判讀
+
+# 盤前用 RSS 抓國際財經新聞 → Gemini API 打分 → 寫 ai_factors_gemini.json，
+# 再用 GitHub secret 的 TG_TOKEN 推播一則盤前判讀。金鑰只待在 GitHub secrets。
+
+on:
+  schedule:
+    # cron 用 UTC。台北 08:30 = UTC 00:30，週一至週五。
+    - cron: "30 0 * * 1-5"
+  workflow_dispatch: {}   # 允許手動觸發（測試用）
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gemini-preopen
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gemini 盤前判讀
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python gemini_preopen.py
+
+      - name: 推播盤前判讀到 Telegram
+        env:
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT: ${{ secrets.TG_CHAT }}
+        run: python notify_gemini_preopen.py
+
+      - name: Persist ai_factors_gemini.json
+        run: |
+          if [ -n "$(git status --porcelain ai_factors_gemini.json)" ]; then
+            git config user.name "gemini-bot"
+            git config user.email "gemini-bot@users.noreply.github.com"
+            git pull --rebase --autostash || true
+            git add ai_factors_gemini.json
+            git commit -m "gemini pre-open $(date -u +%FT%TZ) [skip ci]"
+            git push
+          else
+            echo "無變更"
+          fi
