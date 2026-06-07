@@ -16,6 +16,7 @@ import re
 import json
 import datetime as dt
 import urllib.request
+import urllib.error
 import xml.etree.ElementTree as ET
 
 OUT_FILE = "ai_factors_gemini.json"
@@ -64,18 +65,19 @@ def fetch_news():
 def call_gemini(news_text):
     url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
            f"{MODEL}:generateContent?key={API_KEY}")
+    # 注意：Gemini REST 用駝峰命名、schema 型別需大寫（OBJECT/NUMBER/STRING）。
     body = {
         "contents": [{"parts": [{"text": PROMPT.format(news=news_text)}]}],
         "generationConfig": {
             "temperature": 0.4,
-            "response_mime_type": "application/json",
-            "response_schema": {
-                "type": "object",
+            "responseMimeType": "application/json",
+            "responseSchema": {
+                "type": "OBJECT",
                 "properties": {
-                    "sector": {"type": "number"},
-                    "macro": {"type": "number"},
-                    "trend": {"type": "number"},
-                    "summary": {"type": "string"},
+                    "sector": {"type": "NUMBER"},
+                    "macro": {"type": "NUMBER"},
+                    "trend": {"type": "NUMBER"},
+                    "summary": {"type": "STRING"},
                 },
                 "required": ["sector", "macro", "trend", "summary"],
             },
@@ -84,9 +86,15 @@ def call_gemini(news_text):
     data = json.dumps(body).encode("utf-8")
     req = urllib.request.Request(url, data=data,
                                  headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        resp = json.loads(r.read().decode("utf-8"))
-    text = resp["candidates"][0]["content"]["parts"][0]["text"]
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            resp = json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode("utf-8", "ignore")
+        raise RuntimeError(f"HTTP {e.code}: {detail[:600]}")
+    text = resp["candidates"][0]["content"]["parts"][0]["text"].strip()
+    if text.startswith("```"):            # 萬一仍包了 markdown 圍欄
+        text = re.sub(r"^```[a-zA-Z]*", "", text).strip().rstrip("`").strip()
     return json.loads(text)
 
 
