@@ -1,33 +1,26 @@
 {
   "date": "2026-06-07",
-  "generated_at": "2026-06-07 11:22",
+  "generated_at": "2026-06-07 12:11",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 2.0,
+    "sector": 10.0,
     "macro": 5.0,
-    "trend": 3.0
+    "trend": 5.0
   },
-  "ai_sentiment_index": 25.0,
-  "summary": "全球科技股遭遇拋售，特別是半導體產業，加上地緣政治緊張，預示台灣市場今日可能面臨壓力。",
-  "news_zh": [
-    "華爾街「恐懼指標」回升，晶片股漲勢終結。",
-    "半導體產業壓力顯現，兩年期美債殖利率未見反彈。",
-    "就業報告引發科技股拋售，那斯達克指數下跌4%。",
-    "美國股市在兩小時內蒸發逾1兆美元，晶片股暴跌。",
-    "法國及其盟友考慮對以色列施壓。",
-    "地緣政治衝突與科技股波動成為今日交易焦點。"
-  ],
+  "ai_sentiment_index": 50.0,
+  "summary": "（Gemini 判讀失敗，暫以中性計）",
+  "news_zh": [],
   "news": [
-    "[Reuters] Alaska Air says demand, fares could support second-half cash flow despite fuel shock - Reuters - Alaska Air says demand, fares could support second-half cash flow despite fuel shock&nbsp;&nbsp;Reuters",
-    "[Reuters] Trading Day: War clouds and tech wobbles By Reuters - Investing.com - Trading Day: War clouds and tech wobbles By Reuters&nbsp;&nbsp;Investing.com",
     "[Reuters] France, allies eye national measures to pressure Israel over West Bank, diplomats say - Reuters - France, allies eye national measures to pressure Israel over West Bank, diplomats say&nbsp;&nbsp;Reuters",
-    "[Reuters] Demand, fares may support H2 cash flow despite fuel shock: Alaska Air - Business Standard - Demand, fares may support H2 cash flow despite fuel shock: Alaska Air&nbsp;&nbsp;Business Standard",
+    "[Reuters] US eyes Iranian assets for Gulf allies’ reconstruction, source says By Reuters - Investing.com - US eyes Iranian assets for Gulf allies’ reconstruction, source says By Reuters&nbsp;&nbsp;Investing.com",
+    "[Reuters] Alaska Air says demand, fares could support second-half cash flow despite fuel shock - Reuters - Alaska Air says demand, fares could support second-half cash flow despite fuel shock&nbsp;&nbsp;Reuters",
     "[Reuters] ‘Gained non-competitive advantages’: Rosneft chief says US energy companies were biggest winners from Hor - The Times of India - ‘Gained non-competitive advantages’: Rosneft chief says US energy companies were biggest winners from Hor&nbsp;&nbsp;The Times of India",
-    "[Reuters] U.S. explores deploying Iranian assets to support gulf allies - Reuters - Investing.com - U.S. explores deploying Iranian assets to support gulf allies - Reuters&nbsp;&nbsp;Investing.com",
+    "[Reuters] Trading Day: War clouds and tech wobbles By Reuters - Investing.com - Trading Day: War clouds and tech wobbles By Reuters&nbsp;&nbsp;Investing.com",
     "[Reuters] Musk's SpaceX IPO jolts life back into European retail investing - Reuters - Musk's SpaceX IPO jolts life back into European retail investing&nbsp;&nbsp;Reuters",
-    "[Reuters] HZO Surges 5% As Board Greenlights Sale Amid Private Equity Bids - Stocktwits - HZO Surges 5% As Board Greenlights Sale Amid Private Equity Bids&nbsp;&nbsp;Stocktwits",
+    "[Reuters] Bajaj Housing raises INR 20 billion through May 2029 bond reissue - Prop News Time - Bajaj Housing raises INR 20 billion through May 2029 bond reissue&nbsp;&nbsp;Prop News Time",
+    "[Reuters] Exclusive: Cargill in talks to sell metals unit to Macquarie, sources say - MSN - Exclusive: Cargill in talks to sell metals unit to Macquarie, sources say&nbsp;&nbsp;MSN",
     "[Semis] Wall Street's 'fear gauge' punches back as the 'crash up' in chip stocks finally reverses - CNBC - Wall Street's 'fear gauge' punches back as the 'crash up' in chip stocks finally reverses&nbsp;&nbsp;CNBC",
     "[Semis] Here's How SpaceX's IPO Will Affect S&P 500 and Nasdaq-100 Investors - Yahoo Finance - Here's How SpaceX's IPO Will Affect S&P 500 and Nasdaq-100 Investors&nbsp;&nbsp;Yahoo Finance"
   ],
-  "debug_error": ""
+  "debug_error": "RuntimeError: HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
 }
