@@ -94,7 +94,8 @@ export default async function handler(req, res) {
         } else if (r === null) {
           await tg(chatId, "⚠️ 訂閱功能尚未啟用：伺服器讀不到 GH_PAT（請確認 Vercel 已設 GH_PAT 並 Redeploy）。");
         } else {
-          await tg(chatId, "⚠️ 訂閱寫入失敗：GH_PAT 的權限或 repo 設定可能有誤（需該 repo 的 Contents 讀寫權）。");
+          await tg(chatId, "⚠️ 訂閱失敗 → " + String(r).replace(/^ERR:/, "") +
+            "\n（403＝權限不足、404＝沒選到此 repo）");
         }
       }
     } else if (cmd === "/stop" || cmd === "/unsubscribe") {
@@ -219,7 +220,7 @@ async function ghGetSubs() {
   const url = `https://api.github.com/repos/${CFG.GH_OWNER}/${CFG.GH_REPO}/contents/${SUBS_FILE}?ref=${CFG.GH_BRANCH}&t=${Date.now()}`;
   const r = await fetch(url, { headers: ghHeaders() });
   if (r.status === 404) return { ids: [], sha: null };
-  if (!r.ok) throw new Error(`讀 subscribers 失敗 ${r.status}`);
+  if (!r.ok) { let d = ""; try { d = (await r.text()).slice(0, 120); } catch {} throw new Error(`GET ${r.status} ${d}`); }
   const j = await r.json();
   const obj = JSON.parse(Buffer.from(j.content, "base64").toString("utf-8"));
   return { ids: (obj.chat_ids || []).map(String), sha: j.sha };
@@ -234,9 +235,11 @@ async function ghPutSubs(ids, sha, note) {
   };
   if (sha) body.sha = sha;
   const r = await fetch(url, { method: "PUT", headers: ghHeaders(), body: JSON.stringify(body) });
-  return r.ok;
+  if (r.ok) return { ok: true };
+  let detail = ""; try { detail = (await r.text()).slice(0, 160); } catch {}
+  return { ok: false, status: r.status, detail };
 }
-// add=true 訂閱、false 退訂。回傳 added/removed/already/absent/error/null(無PAT)
+// add=true 訂閱、false 退訂。回傳 added/removed/already/absent/null(無PAT)/"ERR:..."
 async function subscribe(chatId, add) {
   if (!CFG.GH_PAT) return null;
   const id = String(chatId);
@@ -247,13 +250,14 @@ async function subscribe(chatId, add) {
       if (add && has) return "already";
       if (!add && !has) return "absent";
       const next = add ? [...ids, id] : ids.filter((x) => x !== id);
-      if (await ghPutSubs(next, sha, add ? `+${id}` : `-${id}`)) return add ? "added" : "removed";
+      const put = await ghPutSubs(next, sha, add ? `+${id}` : `-${id}`);
+      if (put.ok) return add ? "added" : "removed";
+      if (put.status !== 409) return `ERR:寫入 HTTP ${put.status} ${put.detail}`;
       // 409 競態 → 重抓 sha 再試一次
     }
-    return "error";
+    return "ERR:重試後仍 409 衝突";
   } catch (e) {
-    console.error("subscribe error", e);
-    return "error";
+    return "ERR:" + (e.message || e);
   }
 }
 
