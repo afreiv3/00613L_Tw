@@ -26,6 +26,7 @@ import urllib.error
 
 import paper_trade
 import gemini_strategy
+import subscribers
 
 # ----------------------------- 設定 -----------------------------
 SYMBOL          = "00631L.TW"     # 標的
@@ -248,8 +249,8 @@ def zone(score):
 
 # ----------------------------- Telegram -----------------------------
 def _chat_ids():
-    """TG_CHAT 可填多個，用逗號/空白/分號分隔；可放個人 id、群組 id 或頻道 @name / -100…。"""
-    return [c.strip() for c in re.split(r"[,\s;]+", TG_CHAT or "") if c.strip()]
+    """收件人 = TG_CHAT（你本人）＋ subscribers.json（自動訂閱者）。"""
+    return subscribers.all_chat_ids(TG_CHAT)
 
 
 def send_telegram(text):

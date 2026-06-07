@@ -46,6 +46,7 @@ const GREETING =
   "/score 量化七項因子明細\n" +
   "/judge 最新 AI 判讀摘要\n" +
   "/refresh 立刻重算一次\n" +
+  "/stop 取消自動推播\n" +
   "/help 指令說明\n\n" +
   "📈 完整面板 → " + PANEL_URL + "\n\n" +
   "⚠️ 代理規則訊號，非投資建議。";
@@ -84,6 +85,17 @@ export default async function handler(req, res) {
       await tg(chatId, isOwner ? await triggerRefresh() : "🔒 /refresh 僅限管理者使用。");
     } else if (cmd === "/start" || cmd === "/help") {
       await tg(chatId, GREETING);
+      if (cmd === "/start") {
+        const r = await subscribe(chatId, true);
+        if (r === "added") {
+          await tg(chatId, "✅ 已開啟自動推播！盤前分析與買賣通知會自動傳給你。輸入 /stop 可隨時取消。");
+        }
+      }
+    } else if (cmd === "/stop" || cmd === "/unsubscribe") {
+      const r = await subscribe(chatId, false);
+      await tg(chatId, r === "removed"
+        ? "🔕 已取消訂閱，不再收到自動推播。隨時可再 /start 開啟。"
+        : "你目前沒有在訂閱名單中。");
     } else {
       await tg(chatId, "不認得的指令。試 /start、/C、/G、/score、/judge。");
     }
@@ -185,6 +197,58 @@ async function triggerRefresh() {
     body: JSON.stringify({ event_type: "manual_refresh" }),
   });
   return r.ok ? "🔄 已觸發重算，約 1 分鐘後用 /score 查最新。" : `觸發失敗 (${r.status})`;
+}
+
+// ===== 自動訂閱：把訂閱者 chat_id 存進 repo 的 subscribers.json（需 GH_PAT）=====
+const SUBS_FILE = "subscribers.json";
+function ghHeaders() {
+  return {
+    "Authorization": `Bearer ${CFG.GH_PAT}`,
+    "Accept": "application/vnd.github+json",
+    "User-Agent": "tg-vercel-bot",
+    "Content-Type": "application/json",
+  };
+}
+async function ghGetSubs() {
+  const url = `https://api.github.com/repos/${CFG.GH_OWNER}/${CFG.GH_REPO}/contents/${SUBS_FILE}?ref=${CFG.GH_BRANCH}&t=${Date.now()}`;
+  const r = await fetch(url, { headers: ghHeaders() });
+  if (r.status === 404) return { ids: [], sha: null };
+  if (!r.ok) throw new Error(`讀 subscribers 失敗 ${r.status}`);
+  const j = await r.json();
+  const obj = JSON.parse(Buffer.from(j.content, "base64").toString("utf-8"));
+  return { ids: (obj.chat_ids || []).map(String), sha: j.sha };
+}
+async function ghPutSubs(ids, sha, note) {
+  const url = `https://api.github.com/repos/${CFG.GH_OWNER}/${CFG.GH_REPO}/contents/${SUBS_FILE}`;
+  const content = JSON.stringify({ chat_ids: ids, updated: new Date().toISOString() }, null, 2);
+  const body = {
+    message: `subs ${note} [skip ci]`,
+    content: Buffer.from(content, "utf-8").toString("base64"),
+    branch: CFG.GH_BRANCH,
+  };
+  if (sha) body.sha = sha;
+  const r = await fetch(url, { method: "PUT", headers: ghHeaders(), body: JSON.stringify(body) });
+  return r.ok;
+}
+// add=true 訂閱、false 退訂。回傳 added/removed/already/absent/error/null(無PAT)
+async function subscribe(chatId, add) {
+  if (!CFG.GH_PAT) return null;
+  const id = String(chatId);
+  try {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const { ids, sha } = await ghGetSubs();
+      const has = ids.includes(id);
+      if (add && has) return "already";
+      if (!add && !has) return "absent";
+      const next = add ? [...ids, id] : ids.filter((x) => x !== id);
+      if (await ghPutSubs(next, sha, add ? `+${id}` : `-${id}`)) return add ? "added" : "removed";
+      // 409 競態 → 重抓 sha 再試一次
+    }
+    return "error";
+  } catch (e) {
+    console.error("subscribe error", e);
+    return "error";
+  }
 }
 
 async function tg(chatId, text) {

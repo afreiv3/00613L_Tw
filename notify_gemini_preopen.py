@@ -8,6 +8,8 @@ import sys
 import json
 import urllib.request
 
+import subscribers
+
 F = "ai_factors_gemini.json"
 PANEL_URL = "https://afreiv3.github.io/00631L_Tw/dashboard.html"
 TG_TOKEN = os.environ.get("TG_TOKEN", "")
@@ -15,7 +17,7 @@ TG_CHAT = os.environ.get("TG_CHAT", "")
 
 
 def chat_ids():
-    return [c.strip() for c in re.split(r"[,\s;]+", TG_CHAT or "") if c.strip()]
+    return subscribers.all_chat_ids(TG_CHAT)
 
 
 def send(text):
