@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-07",
+  "generated_at": "2026-06-07 10:09",
+  "model": "gemini-2.5-flash",
+  "factors": {
+    "sector": 10.0,
+    "macro": 5.0,
+    "trend": 5.0
+  },
+  "ai_sentiment_index": 50.0,
+  "summary": "（Gemini 判讀失敗，暫以中性計）",
+  "news": [
+    "[Reuters] Alaska Air says demand, fares could support second-half cash flow despite fuel shock - Reuters - Alaska Air says demand, fares could support second-half cash flow despite fuel shock&nbsp;&nbsp;Reuters",
+    "[Reuters] U.S. explores deploying Iranian assets to support gulf allies - Reuters - Investing.com - U.S. explores deploying Iranian assets to support gulf allies - Reuters&nbsp;&nbsp;Investing.com",
+    "[Reuters] France, allies eye national measures to pressure Israel over West Bank, diplomats say - Reuters - France, allies eye national measures to pressure Israel over West Bank, diplomats say&nbsp;&nbsp;Reuters",
+    "[Reuters] Demand, fares may support H2 cash flow despite fuel shock: Alaska Air - Business Standard - Demand, fares may support H2 cash flow despite fuel shock: Alaska Air&nbsp;&nbsp;Business Standard",
+    "[Reuters] ‘Gained non-competitive advantages’: Rosneft chief says US energy companies were biggest winners from Hor - The Times of India - ‘Gained non-competitive advantages’: Rosneft chief says US energy companies were biggest winners from Hor&nbsp;&nbsp;The Times of India",
+    "[Reuters] Essential Properties Realty Trust prices USD 400 million senior notes due 2036 - Prop News Time - Essential Properties Realty Trust prices USD 400 million senior notes due 2036&nbsp;&nbsp;Prop News Time",
+    "[Reuters] US budget carrier Breeze Airways sets sights on 2027 IPO - Reuters - US budget carrier Breeze Airways sets sights on 2027 IPO&nbsp;&nbsp;Reuters",
+    "[Reuters] HZO Surges 5% As Board Greenlights Sale Amid Private Equity Bids - Stocktwits - HZO Surges 5% As Board Greenlights Sale Amid Private Equity Bids&nbsp;&nbsp;Stocktwits",
+    "[Semis] Wall Street's 'fear gauge' punches back as the 'crash up' in chip stocks finally reverses - CNBC - Wall Street's 'fear gauge' punches back as the 'crash up' in chip stocks finally reverses&nbsp;&nbsp;CNBC",
+    "[Semis] Here's How SpaceX's IPO Will Affect S&P 500 and Nasdaq-100 Investors - Yahoo Finance - Here's How SpaceX's IPO Will Affect S&P 500 and Nasdaq-100 Investors&nbsp;&nbsp;Yahoo Finance"
+  ]
+}
