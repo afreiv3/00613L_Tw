@@ -383,7 +383,9 @@ function renderGemini(data, ai){
   const h=(data?.history||[]); const last=h[h.length-1];
   // 盤前新聞判讀：優先用 ai_factors_gemini.json（08:30 就有），否則退回面板紀錄
   const summary = (ai && ai.summary) || (last && last.summary) || "尚無判讀資料";
-  const news = (ai && ai.news) || (last && last.news) || [];
+  // 優先顯示 Gemini 翻好的繁中新聞，沒有才退回原始英文
+  const news = (ai && ((ai.news_zh && ai.news_zh.length) ? ai.news_zh : ai.news))
+               || (last && last.news) || [];
   document.getElementById("gSummary").textContent = summary;
   const newsEl=document.getElementById("gNews"); newsEl.innerHTML="";
   if(ai && ai.factors){   // 盤前就先把情緒指數/分數顯示出來

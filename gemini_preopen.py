@@ -41,7 +41,9 @@ Scoring guidelines:
 - sector (0-20): strength of highly correlated sectors — Philadelphia Semiconductor (SOX) and Nasdaq overnight performance. High = strong bullish tech momentum; low = bearish tech sell-off.
 - macro (0-10): systemic risk factors — crude oil, US Treasury yields, geopolitics, rate-hike odds. High = calm/stable; low = rising global risk.
 - trend (0-10): structural health of the broad market (holding above key moving averages). High = intact uptrend; low = broken structure.
-Also give a concise one-sentence summary in Traditional Chinese (zh-TW).
+Also give:
+- summary: a concise one-sentence summary in Traditional Chinese (zh-TW).
+- key_news: the 4-6 most market-relevant headlines, each REWRITTEN as a short Traditional Chinese (zh-TW) bullet (translate into natural Chinese, do not copy the English).
 Respond using ONLY the provided JSON schema."""
 
 
@@ -78,8 +80,9 @@ def call_gemini(news_text):
                     "macro": {"type": "NUMBER"},
                     "trend": {"type": "NUMBER"},
                     "summary": {"type": "STRING"},
+                    "key_news": {"type": "ARRAY", "items": {"type": "STRING"}},
                 },
-                "required": ["sector", "macro", "trend", "summary"],
+                "required": ["sector", "macro", "trend", "summary", "key_news"],
             },
         },
     }
@@ -133,7 +136,9 @@ def main():
     out = {
         "date": today, "generated_at": f"{today} {now_hm}", "model": MODEL,
         "factors": factors, "ai_sentiment_index": ai_index,
-        "summary": res.get("summary", ""), "news": news[:10],
+        "summary": res.get("summary", ""),
+        "news_zh": res.get("key_news", []),   # Gemini 翻成繁中的重點新聞
+        "news": news[:10],                     # 原始英文 RSS（備查）
     }
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
