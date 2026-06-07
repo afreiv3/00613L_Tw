@@ -14,6 +14,7 @@ import os
 import sys
 import re
 import json
+import time
 import datetime as dt
 import urllib.request
 import urllib.error
@@ -64,49 +65,71 @@ def fetch_news():
     return items
 
 
-def call_gemini(news_text):
+RETRY_CODES = {429, 500, 503}   # 過載/暫時性錯誤 → 重試
+
+
+def _gemini_once(model, news_text):
     url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
-           f"{MODEL}:generateContent?key={API_KEY}")
+           f"{model}:generateContent?key={API_KEY}")
     # 注意：Gemini REST 用駝峰命名、schema 型別需大寫（OBJECT/NUMBER/STRING）。
-    body = {
-        "contents": [{"parts": [{"text": PROMPT.format(news=news_text)}]}],
-        "generationConfig": {
-            "temperature": 0.4,
-            "maxOutputTokens": 2048,
-            "thinkingConfig": {"thinkingBudget": 0},  # 關掉思考，避免吃光輸出額度
-            "responseMimeType": "application/json",
-            "responseSchema": {
-                "type": "OBJECT",
-                "properties": {
-                    "sector": {"type": "NUMBER"},
-                    "macro": {"type": "NUMBER"},
-                    "trend": {"type": "NUMBER"},
-                    "summary": {"type": "STRING"},
-                    "key_news": {"type": "ARRAY", "items": {"type": "STRING"}},
-                },
-                "required": ["sector", "macro", "trend", "summary", "key_news"],
+    gen = {
+        "temperature": 0.4,
+        "maxOutputTokens": 2048,
+        "responseMimeType": "application/json",
+        "responseSchema": {
+            "type": "OBJECT",
+            "properties": {
+                "sector": {"type": "NUMBER"},
+                "macro": {"type": "NUMBER"},
+                "trend": {"type": "NUMBER"},
+                "summary": {"type": "STRING"},
+                "key_news": {"type": "ARRAY", "items": {"type": "STRING"}},
             },
+            "required": ["sector", "macro", "trend", "summary", "key_news"],
         },
     }
+    if "2.5" in model:   # 只有 2.5 系列支援 thinkingConfig；關掉思考避免吃光輸出額度
+        gen["thinkingConfig"] = {"thinkingBudget": 0}
+    body = {"contents": [{"parts": [{"text": PROMPT.format(news=news_text)}]}],
+            "generationConfig": gen}
     data = json.dumps(body).encode("utf-8")
     req = urllib.request.Request(url, data=data,
                                  headers={"Content-Type": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=60) as r:
-            resp = json.loads(r.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        detail = e.read().decode("utf-8", "ignore")
-        raise RuntimeError(f"HTTP {e.code}: {detail[:600]}")
+    with urllib.request.urlopen(req, timeout=60) as r:
+        resp = json.loads(r.read().decode("utf-8"))
     cands = resp.get("candidates", [])
     if not cands:
-        raise RuntimeError(f"回傳無 candidates: {json.dumps(resp)[:400]}")
+        raise RuntimeError(f"無 candidates: {json.dumps(resp)[:300]}")
     parts = cands[0].get("content", {}).get("parts", [])
     if not parts:
-        raise RuntimeError(f"回傳無內容（finishReason={cands[0].get('finishReason')}）")
+        raise RuntimeError(f"無內容（finishReason={cands[0].get('finishReason')}）")
     text = parts[0].get("text", "").strip()
     if text.startswith("```"):            # 萬一仍包了 markdown 圍欄
         text = re.sub(r"^```[a-zA-Z]*", "", text).strip().rstrip("`").strip()
     return json.loads(text)
+
+
+def call_gemini(news_text):
+    """主模型 + 備援模型；遇 429/500/503 過載自動重試（避免一時尖峰就失敗）。"""
+    models = [MODEL] + (["gemini-2.0-flash"] if MODEL != "gemini-2.0-flash" else [])
+    last = ""
+    for model in models:
+        for attempt in range(3):
+            try:
+                return _gemini_once(model, news_text)
+            except urllib.error.HTTPError as e:
+                detail = e.read().decode("utf-8", "ignore")
+                last = f"HTTP {e.code} @{model}: {detail[:200]}"
+                print(f"[warn] {last}", file=sys.stderr)
+                if e.code in RETRY_CODES:
+                    time.sleep(2 * (attempt + 1))
+                    continue
+                break   # 非過載錯誤（如 400/403）→ 換下一個模型
+            except Exception as e:
+                last = f"{type(e).__name__} @{model}: {e}"
+                print(f"[warn] {last}", file=sys.stderr)
+                time.sleep(2 * (attempt + 1))
+    raise RuntimeError(f"重試後仍失敗：{last}")
 
 
 def _clamp(v, lo, hi):
