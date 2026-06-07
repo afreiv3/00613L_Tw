@@ -1,23 +1,23 @@
 {
   "date": "2026-06-07",
-  "generated_at": "2026-06-07 10:14",
+  "generated_at": "2026-06-07 10:39",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 10.0,
-    "macro": 5.0,
-    "trend": 5.0
+    "sector": 2.0,
+    "macro": 3.0,
+    "trend": 2.0
   },
-  "ai_sentiment_index": 50.0,
-  "summary": "（Gemini 判讀失敗，暫以中性計）",
+  "ai_sentiment_index": 17.5,
+  "summary": "美國科技與半導體板塊遭遇重挫，那斯達克指數大跌，加上地緣政治風險升溫，預計今日台灣盤前環境偏空。",
   "news": [
     "[Reuters] Alaska Air says demand, fares could support second-half cash flow despite fuel shock - Reuters - Alaska Air says demand, fares could support second-half cash flow despite fuel shock&nbsp;&nbsp;Reuters",
-    "[Reuters] Trading Day: War clouds and tech wobbles By Reuters - Investing.com - Trading Day: War clouds and tech wobbles By Reuters&nbsp;&nbsp;Investing.com",
+    "[Reuters] US eyes Iranian assets for Gulf allies’ reconstruction, source says By Reuters - Investing.com - US eyes Iranian assets for Gulf allies’ reconstruction, source says By Reuters&nbsp;&nbsp;Investing.com",
     "[Reuters] France, allies eye national measures to pressure Israel over West Bank, diplomats say - Reuters - France, allies eye national measures to pressure Israel over West Bank, diplomats say&nbsp;&nbsp;Reuters",
-    "[Reuters] Demand, fares may support H2 cash flow despite fuel shock: Alaska Air - Business Standard - Demand, fares may support H2 cash flow despite fuel shock: Alaska Air&nbsp;&nbsp;Business Standard",
     "[Reuters] ‘Gained non-competitive advantages’: Rosneft chief says US energy companies were biggest winners from Hor - The Times of India - ‘Gained non-competitive advantages’: Rosneft chief says US energy companies were biggest winners from Hor&nbsp;&nbsp;The Times of India",
-    "[Reuters] Essential Properties Realty Trust prices USD 400 million senior notes due 2036 - Prop News Time - Essential Properties Realty Trust prices USD 400 million senior notes due 2036&nbsp;&nbsp;Prop News Time",
+    "[Reuters] Trading Day: War clouds and tech wobbles By Reuters - Investing.com - Trading Day: War clouds and tech wobbles By Reuters&nbsp;&nbsp;Investing.com",
+    "[Reuters] Musk's SpaceX IPO jolts life back into European retail investing - Reuters - Musk's SpaceX IPO jolts life back into European retail investing&nbsp;&nbsp;Reuters",
+    "[Reuters] Bajaj Housing raises INR 20 billion through May 2029 bond reissue - Prop News Time - Bajaj Housing raises INR 20 billion through May 2029 bond reissue&nbsp;&nbsp;Prop News Time",
     "[Reuters] U.S. explores deploying Iranian assets to support gulf allies - Reuters - Investing.com - U.S. explores deploying Iranian assets to support gulf allies - Reuters&nbsp;&nbsp;Investing.com",
-    "[Reuters] US budget carrier Breeze Airways sets sights on 2027 IPO - Reuters - US budget carrier Breeze Airways sets sights on 2027 IPO&nbsp;&nbsp;Reuters",
     "[Semis] Wall Street's 'fear gauge' punches back as the 'crash up' in chip stocks finally reverses - CNBC - Wall Street's 'fear gauge' punches back as the 'crash up' in chip stocks finally reverses&nbsp;&nbsp;CNBC",
     "[Semis] Here's How SpaceX's IPO Will Affect S&P 500 and Nasdaq-100 Investors - Yahoo Finance - Here's How SpaceX's IPO Will Affect S&P 500 and Nasdaq-100 Investors&nbsp;&nbsp;Yahoo Finance"
   ]
