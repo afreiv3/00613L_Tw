@@ -1,24 +1,31 @@
 {
   "date": "2026-06-07",
-  "generated_at": "2026-06-07 11:15",
+  "generated_at": "2026-06-07 11:19",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 10.0,
+    "sector": 3.0,
     "macro": 5.0,
-    "trend": 5.0
+    "trend": 6.0
   },
-  "ai_sentiment_index": 50.0,
-  "summary": "（Gemini 判讀失敗，暫以中性計）",
-  "news_zh": [],
+  "ai_sentiment_index": 35.0,
+  "summary": "費城半導體指數和那斯達克指數隔夜表現疲軟，加上地緣政治緊張，預示台灣股市今日開盤可能面臨壓力。",
+  "news_zh": [
+    "華爾街「恐懼指標」回升，晶片股漲勢逆轉。",
+    "半導體產業面臨壓力，兩年期美國公債殖利率未能上漲。",
+    "那斯達克指數下跌，因博通和CrowdStrike財報不佳。",
+    "美國股市兩小時內蒸發逾1兆美元，晶片股暴跌。",
+    "那斯達克指數因就業報告引發科技股拋售而下跌4%。",
+    "美中關係緊張，貿易戰陰影籠罩科技股。"
+  ],
   "news": [
     "[Reuters] Alaska Air says demand, fares could support second-half cash flow despite fuel shock - Reuters - Alaska Air says demand, fares could support second-half cash flow despite fuel shock&nbsp;&nbsp;Reuters",
-    "[Reuters] Trading Day: War clouds and tech wobbles By Reuters - Investing.com - Trading Day: War clouds and tech wobbles By Reuters&nbsp;&nbsp;Investing.com",
-    "[Reuters] France, allies eye national measures to pressure Israel over West Bank, diplomats say - Reuters - France, allies eye national measures to pressure Israel over West Bank, diplomats say&nbsp;&nbsp;Reuters",
     "[Reuters] US eyes Iranian assets for Gulf allies’ reconstruction, source says By Reuters - Investing.com - US eyes Iranian assets for Gulf allies’ reconstruction, source says By Reuters&nbsp;&nbsp;Investing.com",
+    "[Reuters] France, allies eye national measures to pressure Israel over West Bank, diplomats say - Reuters - France, allies eye national measures to pressure Israel over West Bank, diplomats say&nbsp;&nbsp;Reuters",
     "[Reuters] ‘Gained non-competitive advantages’: Rosneft chief says US energy companies were biggest winners from Hor - The Times of India - ‘Gained non-competitive advantages’: Rosneft chief says US energy companies were biggest winners from Hor&nbsp;&nbsp;The Times of India",
+    "[Reuters] Trading Day: War clouds and tech wobbles By Reuters - Investing.com - Trading Day: War clouds and tech wobbles By Reuters&nbsp;&nbsp;Investing.com",
     "[Reuters] Musk's SpaceX IPO jolts life back into European retail investing - Reuters - Musk's SpaceX IPO jolts life back into European retail investing&nbsp;&nbsp;Reuters",
+    "[Reuters] Bajaj Housing raises INR 20 billion through May 2029 bond reissue - Prop News Time - Bajaj Housing raises INR 20 billion through May 2029 bond reissue&nbsp;&nbsp;Prop News Time",
     "[Reuters] U.S. explores deploying Iranian assets to support gulf allies - Reuters - Investing.com - U.S. explores deploying Iranian assets to support gulf allies - Reuters&nbsp;&nbsp;Investing.com",
-    "[Reuters] Air New Zealand plans for elevated fuel costs into 2027 - Reuters - Air New Zealand plans for elevated fuel costs into 2027&nbsp;&nbsp;Reuters",
     "[Semis] Wall Street's 'fear gauge' punches back as the 'crash up' in chip stocks finally reverses - CNBC - Wall Street's 'fear gauge' punches back as the 'crash up' in chip stocks finally reverses&nbsp;&nbsp;CNBC",
     "[Semis] Here's How SpaceX's IPO Will Affect S&P 500 and Nasdaq-100 Investors - Yahoo Finance - Here's How SpaceX's IPO Will Affect S&P 500 and Nasdaq-100 Investors&nbsp;&nbsp;Yahoo Finance"
   ]
