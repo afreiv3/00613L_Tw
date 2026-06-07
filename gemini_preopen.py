@@ -72,6 +72,8 @@ def call_gemini(news_text):
         "contents": [{"parts": [{"text": PROMPT.format(news=news_text)}]}],
         "generationConfig": {
             "temperature": 0.4,
+            "maxOutputTokens": 2048,
+            "thinkingConfig": {"thinkingBudget": 0},  # 關掉思考，避免吃光輸出額度
             "responseMimeType": "application/json",
             "responseSchema": {
                 "type": "OBJECT",
@@ -95,7 +97,13 @@ def call_gemini(news_text):
     except urllib.error.HTTPError as e:
         detail = e.read().decode("utf-8", "ignore")
         raise RuntimeError(f"HTTP {e.code}: {detail[:600]}")
-    text = resp["candidates"][0]["content"]["parts"][0]["text"].strip()
+    cands = resp.get("candidates", [])
+    if not cands:
+        raise RuntimeError(f"回傳無 candidates: {json.dumps(resp)[:400]}")
+    parts = cands[0].get("content", {}).get("parts", [])
+    if not parts:
+        raise RuntimeError(f"回傳無內容（finishReason={cands[0].get('finishReason')}）")
+    text = parts[0].get("text", "").strip()
     if text.startswith("```"):            # 萬一仍包了 markdown 圍欄
         text = re.sub(r"^```[a-zA-Z]*", "", text).strip().rstrip("`").strip()
     return json.loads(text)
