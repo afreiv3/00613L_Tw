@@ -89,6 +89,12 @@ export default async function handler(req, res) {
         const r = await subscribe(chatId, true);
         if (r === "added") {
           await tg(chatId, "✅ 已開啟自動推播！盤前分析與買賣通知會自動傳給你。輸入 /stop 可隨時取消。");
+        } else if (r === "already") {
+          await tg(chatId, "（你已在訂閱名單中，會持續收到推播）");
+        } else if (r === null) {
+          await tg(chatId, "⚠️ 訂閱功能尚未啟用：伺服器讀不到 GH_PAT（請確認 Vercel 已設 GH_PAT 並 Redeploy）。");
+        } else {
+          await tg(chatId, "⚠️ 訂閱寫入失敗：GH_PAT 的權限或 repo 設定可能有誤（需該 repo 的 Contents 讀寫權）。");
         }
       }
     } else if (cmd === "/stop" || cmd === "/unsubscribe") {
