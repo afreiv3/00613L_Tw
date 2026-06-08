@@ -404,9 +404,12 @@ function renderGemini(data, ai){
   document.getElementById("gZoneLabel").textContent = last.zone_label || z.label;
   const tiers=document.getElementById("gTiers"); tiers.innerHTML="";
   const add=t=>{const d=document.createElement("div");d.textContent=t;tiers.appendChild(d);};
-  add(`第一層 量化主審 ${last.tier1??"—"}/60（${last.gate_open?"視窗開啟":"視窗關閉"}）`);
+  const mk = last.market_ok===true ? "站上季線 ✅" : (last.market_ok===false ? "跌破季線 ❌（否決）" : "資料不足");
+  add(`第一層 量化主審 → ${last.gate_open?"視窗開啟":"視窗關閉"}`);
+  add(`• 盤中量化動能 ${last.tier1??"—"}/60（需 ≥35）`);
+  add(`• 大盤趨勢（60MA）${mk}`);
   add(`第二層 AI 情緒指數 ${last.ai_index??"—"}/100`);
-  add(`目標水位 ${last.target!=null? Math.round(last.target*100)+"%":"—"}`);
+  add(`→ 目標水位 ${last.target!=null? Math.round(last.target*100)+"%":"—"}`);
   const p=last.paper;
   if(p){
     document.getElementById("gpEquity").textContent = numfmt(p.equity);

@@ -154,9 +154,12 @@ async function fmtGemini() {
   const last = (d.history || []).slice(-1)[0];
   if (!last) return "尚無 Gemini 策略資料。";
   const p = last.paper;
+  const mk = last.market_ok === true ? "站上季線✅" : (last.market_ok === false ? "跌破季線❌" : "資料不足");
   let s = `🟩 [Gemini 策略] ${last.date} ${last.time}\n` +
           `現價 ${last.price ?? "—"}\n` +
-          `第一層 量化主審 ${last.tier1 ?? "—"}/60（${last.gate_open ? "視窗開啟" : "視窗關閉"}）\n` +
+          `第一層 量化主審 → ${last.gate_open ? "視窗開啟" : "視窗關閉"}\n` +
+          `• 盤中量化 ${last.tier1 ?? "—"}/60（需≥35）\n` +
+          `• 大盤趨勢 ${mk}\n` +
           `第二層 AI情緒指數 ${last.ai_index ?? "—"}/100\n` +
           `→ 目標水位 ${last.target != null ? Math.round(last.target * 100) + "%" : "—"}｜${last.zone_label || ""}`;
   if (last.summary) s += `\n🧠 ${last.summary}`;
