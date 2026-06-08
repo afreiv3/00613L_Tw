@@ -1,0 +1,48 @@
+{
+  "updated": "2026-06-08 09:33 (Taipei)",
+  "history": [
+    {
+      "date": "2026-06-08",
+      "time": "09:33",
+      "price": 33.87,
+      "tier1": 32,
+      "ai_index": 20.0,
+      "target": 0.0,
+      "zone": "red",
+      "zone_label": "🔴 不進/清倉（量化主審未過）",
+      "gate_open": false,
+      "market_ok": true,
+      "ai_ok": true,
+      "summary": "聯準會升息預期升溫、科技股普遍下跌以及地緣政治緊張，導致市場情緒悲觀。",
+      "news": [
+        "[Reuters] Dollar climbs to two-month peak as Fed hike bets ramp up - Reuters - Dollar climbs to two-month peak as Fed hike bets ramp up&nbsp;&nbsp;Reuters",
+        "[Reuters] South Korean stock volatility increases concerns about leveraged investing - Nikkei Asia - South Korean stock volatility increases concerns about leveraged investing&nbsp;&nbsp;Nikkei Asia",
+        "[Reuters] Asia markets tumble as tech rout deepens - Reuters - Asia markets tumble as tech rout deepens&nbsp;&nbsp;Reuters",
+        "[Reuters] Trading Day: War clouds and tech wobbles By Reuters - Investing.com - Trading Day: War clouds and tech wobbles By Reuters&nbsp;&nbsp;Investing.com",
+        "[Reuters] CPI | SpaceX Lands Multi-Year Google Cloud Deal - PYMNTS.com - CPI | SpaceX Lands Multi-Year Google Cloud Deal&nbsp;&nbsp;PYMNTS.com",
+        "[Reuters] Airbus Alerts Customers to A320neo Delivery Delays for 2027-2028 - Global Banking & Finance Review - Airbus Alerts Customers to A320neo Delivery Delays for 2027-2028&nbsp;&nbsp;Global Banking & Finance Review",
+        "[Reuters] Mainland Chinese savers flock to Hong Kong as regulators tighten capital controls - Reuters - Mainland Chinese savers flock to Hong Kong as regulators tighten capital controls&nbsp;&nbsp;Reuters",
+        "[Reuters] RPT-ROI-Whisper it, but the US jobs market may have turned a corner: McGeever - Metrobank Wealth Insights - RPT-ROI-Whisper it, but the US jobs market may have turned a corner: McGeever&nbsp;&nbsp;Metrobank Wealth Insights",
+        "[Semis] Markets face triple threat of Iran war reigniting, AI bubble popping, and Fed rates rising - Fortune - Markets face triple threat of Iran war reigniting, AI bubble popping, and Fed rates rising&nbsp;&nbsp;Fortune",
+        "[Semis] VIEW Tech stocks dive as Fed bets rattle AI rally - Reuters - VIEW Tech stocks dive as Fed bets rattle AI rally&nbsp;&nbsp;Reuters"
+      ],
+      "paper": {
+        "cash": 1000000,
+        "shares": 0.0,
+        "equity": 1000000,
+        "market_value": 0,
+        "position_pct": 0.0,
+        "return_pct": 0.0,
+        "trades": 0,
+        "max_asset": 1000000,
+        "frenzy_days": 0,
+        "tier1": 32,
+        "ai_index": 20.0,
+        "target": 0.0,
+        "zone": "red",
+        "zone_label": "🔴 不進/清倉（量化主審未過）",
+        "gate_open": false
+      }
+    }
+  ]
+}
