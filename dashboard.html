@@ -68,6 +68,13 @@
   .f-title{font-weight:700;font-size:14px}
   .f-note{font-size:12px;color:var(--muted);margin-top:1px}
   .f-pts{font-family:"IBM Plex Mono",monospace;font-size:14px;flex:none;width:54px;text-align:right}
+  .f-kind{font-size:10px;font-family:"IBM Plex Mono",monospace;padding:0 5px;border-radius:4px;margin-left:7px;vertical-align:middle;white-space:nowrap}
+  .f-kind.q{color:var(--accent);border:1px solid var(--accent)}
+  .f-kind.a{color:var(--amber);border:1px solid var(--amber)}
+  .f-how{font-size:11px;color:#6b7a8a;margin-top:2px}
+  .f-legend{display:flex;gap:14px;font-size:11px;color:var(--muted);padding:6px 0 4px}
+  .f-legend b{font-weight:600}
+  .f-legend .q{color:var(--accent)} .f-legend .a{color:var(--amber)}
 
   .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin:14px 2px 0}
   .legend span{display:inline-flex;align-items:center;gap:5px}
@@ -251,7 +258,18 @@ const FACTORS = {
   pattern:"型態健康", sector:"最相關板塊偏強", entry:"進場點接近支撐",
   volume:"量能型態合理", vwap:"站穩關鍵價", macro:"無系統性風險發酵", trend:"大盤趨勢結構完好"
 };
-const ORDER = ["pattern","sector","entry","volume","vwap","macro","trend"];
+// 每項：kind=量化(盤中即時算)/AI(盤前看新聞)，how=依據什麼數據評斷
+const FMETA = {
+  pattern:{kind:"量化", how:"開盤跳空幅度＋是否開高走低吐回過半漲幅"},
+  entry:  {kind:"量化", how:"現價落在今日高低區間的位置（近低＝接近支撐）"},
+  volume: {kind:"量化", how:"今日推估量 vs 近20日均量（抓爆量/出貨）"},
+  vwap:   {kind:"量化", how:"現價相對成交量加權均價（VWAP）的位置"},
+  sector: {kind:"AI",   how:"費半SOX、Nasdaq 隔夜表現（AI 讀新聞判定）"},
+  macro:  {kind:"AI",   how:"油價、美債殖利率、地緣、升息預期（AI 讀新聞）"},
+  trend:  {kind:"AI",   how:"加權指數相對季線等大盤結構（AI 讀新聞）"},
+};
+// 量化 4 項排前面、AI 3 項排後面，方便對照
+const ORDER = ["pattern","entry","volume","vwap","sector","macro","trend"];
 
 // ====== 示範資料（讀不到真實資料時顯示，讓面板先有長相）======
 const SAMPLE = {
@@ -311,14 +329,22 @@ function renderQuant(data, isDemo){
 
   // factors
   const fx = document.getElementById("factors"); fx.innerHTML = "";
+  const lg = document.createElement("div"); lg.className="f-legend";
+  lg.innerHTML = `<span><b class="q">量化</b> 盤中每30分即時算（共60分）</span><span><b class="a">AI</b> 盤前看新聞定案（共40分）</span>`;
+  fx.appendChild(lg);
   ORDER.forEach(k=>{
     const f = last.factors?.[k]; if(!f) return;
     const ratio = f.pts/f.max;
     const col = ratio>=1?"var(--green)":(ratio>0?"var(--amber)":"var(--red)");
+    const m = FMETA[k] || {kind:"",how:""};
+    const kc = m.kind==="量化" ? "q" : "a";
     const row = document.createElement("div"); row.className="factor";
     row.innerHTML = `<span class="f-dot" style="background:${col}"></span>
-      <div class="f-body"><div class="f-title">${FACTORS[k]}</div>
-      <div class="f-note">${f.note||"—"}</div></div>
+      <div class="f-body">
+        <div class="f-title">${FACTORS[k]}<span class="f-kind ${kc}">${m.kind}</span></div>
+        <div class="f-how">依據：${m.how}</div>
+        <div class="f-note">目前：${f.note||"—"}</div>
+      </div>
       <div class="f-pts" style="color:${col}">${f.pts}/${f.max}</div>`;
     fx.appendChild(row);
   });
