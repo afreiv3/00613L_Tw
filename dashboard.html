@@ -199,6 +199,7 @@
       <div class="card">
         <h3>盤前 Gemini 新聞判讀 <span class="src-tag">RSS · Gemini</span></h3>
         <div class="judge-sum" id="gSummary">尚無判讀資料</div>
+        <div class="judge-lines" id="gFactors"></div>
         <div class="judge-lines" id="gNews" style="margin-top:8px"></div>
       </div>
     </div>
@@ -413,15 +414,25 @@ function renderGemini(data, ai){
   const news = (ai && ((ai.news_zh && ai.news_zh.length) ? ai.news_zh : ai.news))
                || (last && last.news) || [];
   document.getElementById("gSummary").textContent = summary;
-  const newsEl=document.getElementById("gNews"); newsEl.innerHTML="";
-  if(ai && ai.factors){   // 盤前就先把情緒指數/分數顯示出來
+  // 三因子分項（板塊20＋系統10＋結構10＝AI情緒40）
+  const fac=document.getElementById("gFactors"); fac.innerHTML="";
+  if(ai && ai.factors){
     const f=ai.factors;
     const hd=document.createElement("div");
-    hd.textContent=`AI情緒指數 ${ai.ai_sentiment_index ?? "—"}/100（板塊${f.sector}/系統${f.macro}/結構${f.trend}）`;
-    hd.style.color="var(--accent)"; hd.style.paddingLeft="0";
-    newsEl.appendChild(hd);
+    hd.textContent=`AI 情緒指數 ${ai.ai_sentiment_index ?? "—"}/100`;
+    hd.style.color="var(--accent)"; hd.style.paddingLeft="0"; fac.appendChild(hd);
+    const addF=t=>{const d=document.createElement("div");d.textContent=t;fac.appendChild(d);};
+    addF(`板塊強弱（費半SOX／Nasdaq）：${f.sector}/20`);
+    addF(`系統風險（油價／殖利率／地緣／升息）：${f.macro}/10`);
+    addF(`大盤結構（加權 vs 季線）：${f.trend}/10`);
   }
-  news.forEach(t=>{const d=document.createElement("div");d.textContent=t;newsEl.appendChild(d);});
+  // 新聞重點條列
+  const newsEl=document.getElementById("gNews"); newsEl.innerHTML="";
+  if(news.length){
+    const h=document.createElement("div"); h.textContent="📰 今日重點新聞";
+    h.style.color="var(--accent)"; h.style.paddingLeft="0"; newsEl.appendChild(h);
+    news.forEach(t=>{const d=document.createElement("div");d.textContent=t;newsEl.appendChild(d);});
+  }
   if(!last) return;
   document.getElementById("gPrice").textContent = last.price!=null ? last.price : "—";
   document.getElementById("gTime").textContent = `${last.date} ${last.time}`;
