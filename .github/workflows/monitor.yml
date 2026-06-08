@@ -34,13 +34,19 @@ jobs:
 
       - name: Persist data
         run: |
-          if [ -n "$(git status --porcelain state.json dashboard_data.json archive_quant_*.json paper_state.json paper_trades.json dashboard_data_gemini.json archive_gemini_*.json paper_state_gemini.json paper_trades_gemini.json)" ]; then
-            git config user.name "monitor-bot"
-            git config user.email "monitor-bot@users.noreply.github.com"
-            git pull --rebase --autostash || true
-            git add state.json dashboard_data.json archive_quant_*.json paper_state.json paper_trades.json dashboard_data_gemini.json archive_gemini_*.json paper_state_gemini.json paper_trades_gemini.json
+          git config user.name "monitor-bot"
+          git config user.email "monitor-bot@users.noreply.github.com"
+          git pull --rebase --autostash || true
+          # 只加「存在的」資料檔（沒成交時 paper_trades*.json 可能尚未產生）
+          for f in state.json dashboard_data.json dashboard_data_gemini.json \
+                   paper_state.json paper_trades.json \
+                   paper_state_gemini.json paper_trades_gemini.json \
+                   archive_quant_*.json archive_gemini_*.json; do
+            [ -e "$f" ] && git add "$f" || true
+          done
+          if git diff --cached --quiet; then
+            echo "無變更"
+          else
             git commit -m "update data $(date -u +%FT%TZ) [skip ci]"
             git push
-          else
-            echo "無變更"
           fi
