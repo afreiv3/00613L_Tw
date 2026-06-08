@@ -622,7 +622,12 @@ async function gLoadRange(){
   renderGemRows(rows, `${s} ~ ${e}，共 ${rows.length} 筆${miss}`);
 }
 
-document.getElementById("refreshBtn").addEventListener("click", load);
+const _rb = document.getElementById("refreshBtn");
+_rb.addEventListener("click", async ()=>{
+  _rb.disabled = true; _rb.textContent = "↻ 更新中…";
+  try { await load(); } catch(e){ /* 略 */ }
+  finally { _rb.disabled = false; _rb.textContent = "↻ 重新整理"; }
+});
 document.getElementById("tabClaude").addEventListener("click", ()=>switchView("claude"));
 document.getElementById("tabGemini").addEventListener("click", ()=>switchView("gemini"));
 switchView(localStorage.getItem("strat") || "claude");
