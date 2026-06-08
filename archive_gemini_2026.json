@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 1,
+  "count": 2,
   "history": [
     {
       "date": "2026-06-08",
@@ -39,6 +39,49 @@
         "frenzy_days": 0,
         "tier1": 32,
         "ai_index": 20.0,
+        "target": 0.0,
+        "zone": "red",
+        "zone_label": "🔴 不進/清倉（量化主審未過）",
+        "gate_open": false
+      }
+    },
+    {
+      "date": "2026-06-08",
+      "time": "13:49",
+      "price": 33.96,
+      "tier1": 30,
+      "ai_index": 27.5,
+      "target": 0.0,
+      "zone": "red",
+      "zone_label": "🔴 不進/清倉（量化主審未過）",
+      "gate_open": false,
+      "market_ok": true,
+      "ai_ok": true,
+      "summary": "AI晶片巨頭影響亞洲股市、科技股下跌以及聯準會升息預期，對台灣市場構成壓力。",
+      "news": [
+        "[Reuters] How a few AI chip giants warped Asia's stock picking game - Reuters - How a few AI chip giants warped Asia's stock picking game&nbsp;&nbsp;Reuters",
+        "[Reuters] South Korean stock volatility increases concerns about leveraged investing - Nikkei Asia - South Korean stock volatility increases concerns about leveraged investing&nbsp;&nbsp;Nikkei Asia",
+        "[Reuters] Tumbling tech darlings slam brakes on AI rally - Reuters - Tumbling tech darlings slam brakes on AI rally&nbsp;&nbsp;Reuters",
+        "[Reuters] Peru’s Fujimori leading presidential runoff election, early results show By Reuters - Investing.com - Peru’s Fujimori leading presidential runoff election, early results show By Reuters&nbsp;&nbsp;Investing.com",
+        "[Reuters] Can Robinhood Stock Surge Again in 2026? - TradingKey - Can Robinhood Stock Surge Again in 2026?&nbsp;&nbsp;TradingKey",
+        "[Reuters] Dollar hits two-month peak as Fed hike bets ramp up - Reuters - Dollar hits two-month peak as Fed hike bets ramp up&nbsp;&nbsp;Reuters",
+        "[Reuters] Mainland Chinese savers flock to Hong Kong as regulators tighten capital controls - Reuters - Mainland Chinese savers flock to Hong Kong as regulators tighten capital controls&nbsp;&nbsp;Reuters",
+        "[Reuters] Breakingviews - Japan’s shareholder meetings run on bunk clockwork - Reuters - Breakingviews - Japan’s shareholder meetings run on bunk clockwork&nbsp;&nbsp;Reuters",
+        "[Semis] The Korean Stock Market Just Crashed Sunday Night. Will the Nasdaq Follow Tomorrow? - Yahoo Finance - The Korean Stock Market Just Crashed Sunday Night. Will the Nasdaq Follow Tomorrow?&nbsp;&nbsp;Yahoo Finance",
+        "[Semis] Markets face triple threat of Iran war reigniting, AI bubble popping, and Fed rates rising - Fortune - Markets face triple threat of Iran war reigniting, AI bubble popping, and Fed rates rising&nbsp;&nbsp;Fortune"
+      ],
+      "paper": {
+        "cash": 1000000,
+        "shares": 0.0,
+        "equity": 1000000,
+        "market_value": 0,
+        "position_pct": 0.0,
+        "return_pct": 0.0,
+        "trades": 0,
+        "max_asset": 1000000,
+        "frenzy_days": 0,
+        "tier1": 30,
+        "ai_index": 27.5,
         "target": 0.0,
         "zone": "red",
         "zone_label": "🔴 不進/清倉（量化主審未過）",
