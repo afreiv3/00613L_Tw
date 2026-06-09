@@ -5,8 +5,9 @@ name: Gemini 盤前 AI 判讀
 
 on:
   schedule:
-    # cron 用 UTC。台北 08:30 = UTC 00:30，週一至週五。
-    - cron: "30 0 * * 1-5"
+    # cron 用 UTC。台北 08:23 = UTC 00:23（避開壅塞的半點），週一至週五。
+    # 盤前只需跑一次；若這次被 GitHub 丟棄，盤中 monitor 會以中性頂著，隔日恢復。
+    - cron: "23 0 * * 1-5"
   workflow_dispatch: {}   # 允許手動觸發（測試用）
 
 permissions:
