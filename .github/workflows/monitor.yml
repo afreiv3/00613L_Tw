@@ -3,8 +3,9 @@ name: 00631L Monitor
 on:
   schedule:
     # 注意：cron 用 UTC。台股 09:00–13:30 = UTC 01:00–05:30。
-    # 每 30 分鐘、週一至週五。(GitHub Actions 排程可能延遲數分鐘~十幾分鐘)
-    - cron: "0,30 1-5 * * 1-5"
+    # 刻意避開壅塞的整點/半點(:00/:30)，改用 :08/:23/:38/:53 每15分一次，
+    # 增加冗餘——GitHub 排程常在尖峰被延遲或丟棄，多打幾次提高命中率。
+    - cron: "8,23,38,53 1-5 * * 1-5"
   workflow_dispatch: {}   # 允許手動觸發（測試用）
   repository_dispatch:     # Telegram /refresh 經 Vercel 函式觸發重算
     types: [manual_refresh]
