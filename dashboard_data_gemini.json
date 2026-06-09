@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-09 09:45 (Taipei)",
+  "updated": "2026-06-09 13:55 (Taipei)",
   "history": [
     {
       "date": "2026-06-08",
@@ -117,6 +117,38 @@
         "zone": "red",
         "zone_label": "🔴 不進/清倉（量化主審未過）",
         "gate_open": false
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "time": "13:55",
+      "price": 35.44,
+      "tier1": 45,
+      "ai_index": 50.0,
+      "target": 0.5,
+      "zone": "amber",
+      "zone_label": "🟡 理性持倉（情緒健康）",
+      "gate_open": true,
+      "market_ok": true,
+      "ai_ok": false,
+      "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
+      "news": [],
+      "paper": {
+        "cash": 500000,
+        "shares": 14088.3,
+        "equity": 999289,
+        "market_value": 499289,
+        "position_pct": 50.0,
+        "return_pct": -0.07,
+        "trades": 1,
+        "max_asset": 1000000,
+        "frenzy_days": 0,
+        "tier1": 45,
+        "ai_index": 50.0,
+        "target": 0.5,
+        "zone": "amber",
+        "zone_label": "🟡 理性持倉（情緒健康）",
+        "gate_open": true
       }
     }
   ]

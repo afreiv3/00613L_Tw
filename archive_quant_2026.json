@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 4,
+  "count": 5,
   "history": [
     {
       "date": "2026-06-05",
@@ -217,6 +217,73 @@
         "return_pct": 0.0,
         "holding": false,
         "position": null,
+        "trades": 0,
+        "wins": 0,
+        "win_rate": 0,
+        "realized_pnl": 0
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "time": "13:55",
+      "price": 35.44,
+      "score": 70,
+      "zone": "green",
+      "quant_sum": 45,
+      "ai_sum": 25,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 20,
+          "max": 20,
+          "note": "現價守在開盤之上(開+2.1%) → 有利"
+        },
+        "sector": {
+          "pts": 14,
+          "max": 20,
+          "note": "費半(SOX)+5.6%(6/8美盤)、TSM ADR$426.8帶動今日台積電領漲，半導體板塊全面反彈；但屬超跌後承接，仍未收復6/5-6/8跌幅，未完全確認趨勢翻正"
+        },
+        "entry": {
+          "pts": 0,
+          "max": 15,
+          "note": "現價在區間上緣(92%) → 屬追高"
+        },
+        "volume": {
+          "pts": 15,
+          "max": 15,
+          "note": "推估量約均量0.9倍 → 正常"
+        },
+        "vwap": {
+          "pts": 10,
+          "max": 10,
+          "note": "現價在VWAP之上(+1.59%) → 有利"
+        },
+        "macro": {
+          "pts": 5,
+          "max": 10,
+          "note": "伊朗停火後WTI回至~$91，地緣風險降溫；Fed年底升息機率仍~70%、10Y殖利率4.57%，明日CPI(6/10)為下一個關鍵風險催化劑，以中性偏謹慎計"
+        },
+        "trend": {
+          "pts": 6,
+          "max": 10,
+          "note": "TWII反彈至估44,459，站回月線下緣估算(~44,000)，短線結構略修復；但仍在6/3高點(46,459)之下約2,000點，整體結構屬修復中、非多頭再啟"
+        }
+      },
+      "paper": {
+        "cash": 699573,
+        "equity": 999573,
+        "market_value": 300000,
+        "return_pct": -0.04,
+        "holding": true,
+        "position": {
+          "shares": 8465,
+          "entry_price": 35.44,
+          "entry_date": "2026-06-09",
+          "entry_time": "13:55",
+          "cost": 300427.1,
+          "entry_score": 70,
+          "frac": 0.3
+        },
         "trades": 0,
         "wins": 0,
         "win_rate": 0,
