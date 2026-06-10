@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 6,
+  "count": 7,
   "history": [
     {
       "date": "2026-06-05",
@@ -324,6 +324,65 @@
           "pts": 0,
           "max": 10,
           "note": "現價在VWAP之下(-1.03%) → 弱勢"
+        },
+        "macro": {
+          "pts": 0,
+          "max": 10,
+          "note": "Trump揚言恢復伊朗軍事打擊+今晚CPI預期升至4.2%+10Y殖利率4.57%，三重風險同時升溫，系統性風險明確存在"
+        },
+        "trend": {
+          "pts": 5,
+          "max": 10,
+          "note": "TWII昨估收44,459在季線估算42,000-43,000上方（Yahoo 403無法取得精確值），SOX-6.87%衝擊下今日恐貼近季線，判定為貼近季線"
+        }
+      },
+      "paper": {
+        "cash": 988712,
+        "equity": 988712,
+        "market_value": 0,
+        "return_pct": -1.13,
+        "holding": false,
+        "position": null,
+        "trades": 1,
+        "wins": 0,
+        "win_rate": 0.0,
+        "realized_pnl": -11288
+      }
+    },
+    {
+      "date": "2026-06-10",
+      "time": "11:20",
+      "price": 34.16,
+      "score": 38,
+      "zone": "red",
+      "quant_sum": 32,
+      "ai_sum": 5,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "開-2.5%、小幅回落，型態中性"
+        },
+        "sector": {
+          "pts": 0,
+          "max": 20,
+          "note": "隔夜SOX-6.87%至12,019.86（Trump伊朗打擊言論觸發盤中急跌），NVDA-3%、TSM ADR~$430，半導體板塊明確轉弱"
+        },
+        "entry": {
+          "pts": 15,
+          "max": 15,
+          "note": "現價近今日低點(區間10%) → 接近支撐"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "推估量約均量1.4倍 → 偏離"
+        },
+        "vwap": {
+          "pts": 0,
+          "max": 10,
+          "note": "現價在VWAP之下(-1.25%) → 弱勢"
         },
         "macro": {
           "pts": 0,
