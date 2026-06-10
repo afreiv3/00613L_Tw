@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-10 13:44 (Taipei)",
+  "updated": "2026-06-10 17:33 (Taipei)",
   "history": [
     {
       "date": "2026-06-08",
@@ -247,6 +247,49 @@
         "market_value": 489908,
         "position_pct": 50.0,
         "return_pct": -1.95,
+        "trades": 3,
+        "max_asset": 1000000,
+        "frenzy_days": 0,
+        "tier1": 40,
+        "ai_index": 30.0,
+        "target": 0.5,
+        "zone": "amber",
+        "zone_label": "🟡 理性持倉（情緒健康）",
+        "gate_open": true
+      }
+    },
+    {
+      "date": "2026-06-10",
+      "time": "17:33",
+      "price": 33.43,
+      "tier1": 40,
+      "ai_index": 30.0,
+      "target": 0.5,
+      "zone": "amber",
+      "zone_label": "🟡 理性持倉（情緒健康）",
+      "gate_open": true,
+      "market_ok": true,
+      "ai_ok": true,
+      "summary": "美國科技股因晶片股拋售而大幅下跌，加上美國對伊朗發動襲擊，導致市場情緒承壓，台灣股市預計將面臨下行壓力。",
+      "news": [
+        "[Reuters] SpaceX IPO demand is approaching four times oversubscribed, source says - Reuters - SpaceX IPO demand is approaching four times oversubscribed, source says&nbsp;&nbsp;Reuters",
+        "[Reuters] Japan's largest banks to jointly issue stablecoins by March 2027 - Reuters - Japan's largest banks to jointly issue stablecoins by March 2027&nbsp;&nbsp;Reuters",
+        "[Reuters] London Stock Exchange seeks to challenge trading data overhaul - Reuters - London Stock Exchange seeks to challenge trading data overhaul&nbsp;&nbsp;Reuters",
+        "[Reuters] Morning Bid: Buy the chip - Reuters - Morning Bid: Buy the chip&nbsp;&nbsp;Reuters",
+        "[Reuters] Financial Markets Morning Commentary - StoneX - Financial Markets Morning Commentary&nbsp;&nbsp;StoneX",
+        "[Reuters] Bank of America could exceed 15% market revenue growth in Q2 - Reuters - Bank of America could exceed 15% market revenue growth in Q2&nbsp;&nbsp;Reuters",
+        "[Reuters] Parsing the Trumps’ crypto profits, investors’ losses - Reuters - Parsing the Trumps’ crypto profits, investors’ losses&nbsp;&nbsp;Reuters",
+        "[Reuters] US Fed to release 2026 bank stress test results on June 24 - Reuters - US Fed to release 2026 bank stress test results on June 24&nbsp;&nbsp;Reuters",
+        "[Semis] S&P 500, Nasdaq fall as tech selling resumes, Trump vows to respond to downed US helicopter - Reuters - S&P 500, Nasdaq fall as tech selling resumes, Trump vows to respond to downed US helicopter&nbsp;&nbsp;Reuters",
+        "[Semis] Nasdaq sinks 3% as tech sell-off reignites - Financial Times - Nasdaq sinks 3% as tech sell-off reignites&nbsp;&nbsp;Financial Times"
+      ],
+      "paper": {
+        "cash": 490606,
+        "shares": 14650.4,
+        "equity": 980368,
+        "market_value": 489762,
+        "position_pct": 50.0,
+        "return_pct": -1.96,
         "trades": 3,
         "max_asset": 1000000,
         "frenzy_days": 0,
