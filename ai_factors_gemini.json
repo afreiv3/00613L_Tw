@@ -1,33 +1,31 @@
 {
-  "date": "2026-06-08",
-  "generated_at": "2026-06-08 13:09",
+  "date": "2026-06-10",
+  "generated_at": "2026-06-10 12:51",
   "model": "gemini-2.5-flash",
   "factors": {
     "sector": 3.0,
     "macro": 4.0,
-    "trend": 4.0
+    "trend": 5.0
   },
-  "ai_sentiment_index": 27.5,
-  "summary": "AI晶片巨頭影響亞洲股市、科技股下跌以及聯準會升息預期，對台灣市場構成壓力。",
+  "ai_sentiment_index": 30.0,
+  "summary": "美國科技股因晶片股拋售而大幅下跌，加上美國對伊朗發動襲擊，導致市場情緒承壓，台灣股市預計將面臨下行壓力。",
   "news_zh": [
-    "數家AI晶片巨頭扭曲了亞洲股市的選股遊戲。",
-    "南韓股市波動加劇，引發對槓桿投資的擔憂。",
-    "科技寵兒暴跌，為AI漲勢踩下煞車。",
-    "美元觸及兩個月高點，因聯準會升息預期升溫。",
-    "半導體股獲利了結加劇，因強勁的就業數據凸顯聯準會的鷹派立場。",
-    "美國半導體衝擊引發黑色星期一恐慌。"
+    "那斯達克指數因科技股拋售而重挫3%。",
+    "人工智慧相關股票的拋售潮再次出現，導致市場劇烈波動。",
+    "美國對伊朗發動襲擊後，美國股指期貨下跌。",
+    "晶片製造商拖累那斯達克指數下跌。"
   ],
   "news": [
-    "[Reuters] How a few AI chip giants warped Asia's stock picking game - Reuters - How a few AI chip giants warped Asia's stock picking game&nbsp;&nbsp;Reuters",
-    "[Reuters] South Korean stock volatility increases concerns about leveraged investing - Nikkei Asia - South Korean stock volatility increases concerns about leveraged investing&nbsp;&nbsp;Nikkei Asia",
-    "[Reuters] Tumbling tech darlings slam brakes on AI rally - Reuters - Tumbling tech darlings slam brakes on AI rally&nbsp;&nbsp;Reuters",
-    "[Reuters] Peru’s Fujimori leading presidential runoff election, early results show By Reuters - Investing.com - Peru’s Fujimori leading presidential runoff election, early results show By Reuters&nbsp;&nbsp;Investing.com",
-    "[Reuters] Can Robinhood Stock Surge Again in 2026? - TradingKey - Can Robinhood Stock Surge Again in 2026?&nbsp;&nbsp;TradingKey",
-    "[Reuters] Dollar hits two-month peak as Fed hike bets ramp up - Reuters - Dollar hits two-month peak as Fed hike bets ramp up&nbsp;&nbsp;Reuters",
-    "[Reuters] Mainland Chinese savers flock to Hong Kong as regulators tighten capital controls - Reuters - Mainland Chinese savers flock to Hong Kong as regulators tighten capital controls&nbsp;&nbsp;Reuters",
-    "[Reuters] Breakingviews - Japan’s shareholder meetings run on bunk clockwork - Reuters - Breakingviews - Japan’s shareholder meetings run on bunk clockwork&nbsp;&nbsp;Reuters",
-    "[Semis] The Korean Stock Market Just Crashed Sunday Night. Will the Nasdaq Follow Tomorrow? - Yahoo Finance - The Korean Stock Market Just Crashed Sunday Night. Will the Nasdaq Follow Tomorrow?&nbsp;&nbsp;Yahoo Finance",
-    "[Semis] Markets face triple threat of Iran war reigniting, AI bubble popping, and Fed rates rising - Fortune - Markets face triple threat of Iran war reigniting, AI bubble popping, and Fed rates rising&nbsp;&nbsp;Fortune"
+    "[Reuters] SpaceX IPO demand is approaching four times oversubscribed, source says - Reuters - SpaceX IPO demand is approaching four times oversubscribed, source says&nbsp;&nbsp;Reuters",
+    "[Reuters] Japan's largest banks to jointly issue stablecoins by March 2027 - Reuters - Japan's largest banks to jointly issue stablecoins by March 2027&nbsp;&nbsp;Reuters",
+    "[Reuters] London Stock Exchange seeks to challenge trading data overhaul - Reuters - London Stock Exchange seeks to challenge trading data overhaul&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: Buy the chip - Reuters - Morning Bid: Buy the chip&nbsp;&nbsp;Reuters",
+    "[Reuters] Financial Markets Morning Commentary - StoneX - Financial Markets Morning Commentary&nbsp;&nbsp;StoneX",
+    "[Reuters] Bank of America could exceed 15% market revenue growth in Q2 - Reuters - Bank of America could exceed 15% market revenue growth in Q2&nbsp;&nbsp;Reuters",
+    "[Reuters] Parsing the Trumps’ crypto profits, investors’ losses - Reuters - Parsing the Trumps’ crypto profits, investors’ losses&nbsp;&nbsp;Reuters",
+    "[Reuters] US Fed to release 2026 bank stress test results on June 24 - Reuters - US Fed to release 2026 bank stress test results on June 24&nbsp;&nbsp;Reuters",
+    "[Semis] S&P 500, Nasdaq fall as tech selling resumes, Trump vows to respond to downed US helicopter - Reuters - S&P 500, Nasdaq fall as tech selling resumes, Trump vows to respond to downed US helicopter&nbsp;&nbsp;Reuters",
+    "[Semis] Nasdaq sinks 3% as tech sell-off reignites - Financial Times - Nasdaq sinks 3% as tech sell-off reignites&nbsp;&nbsp;Financial Times"
   ],
   "debug_error": ""
 }
