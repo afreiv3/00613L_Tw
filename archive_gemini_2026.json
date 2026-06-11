@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 8,
+  "count": 9,
   "history": [
     {
       "date": "2026-06-08",
@@ -299,6 +299,49 @@
         "target": 0.5,
         "zone": "amber",
         "zone_label": "🟡 理性持倉（情緒健康）",
+        "gate_open": true
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "time": "14:02",
+      "price": 33.23,
+      "tier1": 35,
+      "ai_index": 27.5,
+      "target": 0.8,
+      "zone": "green",
+      "zone_label": "🟢 逆向加碼（極度恐慌）",
+      "gate_open": true,
+      "market_ok": true,
+      "ai_ok": true,
+      "summary": "全球市場因科技股下跌、聯準會升息預期及地緣政治緊張而面臨壓力，新興市場資金外流，對台灣股市構成負面影響。",
+      "news": [
+        "[Reuters] Target investors reject proposal for independent board chair, sources say - Reuters - Target investors reject proposal for independent board chair, sources say&nbsp;&nbsp;Reuters",
+        "[Reuters] US Justice Department subpoenas major banks over alleged 'debanking,' source says - Reuters - US Justice Department subpoenas major banks over alleged 'debanking,' source says&nbsp;&nbsp;Reuters",
+        "[Reuters] South Korea's SK Hynix eyes US listing as soon as August, sources say - Reuters - South Korea's SK Hynix eyes US listing as soon as August, sources say&nbsp;&nbsp;Reuters",
+        "[Reuters] Stocks weigh as foreign investors pull $27 bln out of emerging market portfolios in May - Reuters - Stocks weigh as foreign investors pull $27 bln out of emerging market portfolios in May&nbsp;&nbsp;Reuters",
+        "[Reuters] Wall Street indexes fall more than 1%, hit by tech, Iran war worries - Reuters - Wall Street indexes fall more than 1%, hit by tech, Iran war worries&nbsp;&nbsp;Reuters",
+        "[Reuters] Indonesia swallows 'bitter pill' to stem market rout as policy tide turns - Reuters - Indonesia swallows 'bitter pill' to stem market rout as policy tide turns&nbsp;&nbsp;Reuters",
+        "[Reuters] Morning Bid: The chips are blue - Reuters - Morning Bid: The chips are blue&nbsp;&nbsp;Reuters",
+        "[Reuters] Stock market coming to terms with idea of Fed rate hike, expert says - Reuters - Stock market coming to terms with idea of Fed rate hike, expert says&nbsp;&nbsp;Reuters",
+        "[Semis] Stock Market Today: Nasdaq Drops 2%, Dow Falls 950 Points As Chips Slide; Robinhood Pops - Investor's Business Daily - Stock Market Today: Nasdaq Drops 2%, Dow Falls 950 Points As Chips Slide; Robinhood Pops&nbsp;&nbsp;Investor's Business Daily",
+        "[Semis] Conexeu Sciences Inc. Rings the Nasdaq Stock Market Closing Bell - Nasdaq - Conexeu Sciences Inc. Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
+      ],
+      "paper": {
+        "cash": 195488,
+        "shares": 23518.8,
+        "equity": 977018,
+        "market_value": 781531,
+        "position_pct": 80.0,
+        "return_pct": -2.3,
+        "trades": 4,
+        "max_asset": 1000000,
+        "frenzy_days": 0,
+        "tier1": 35,
+        "ai_index": 27.5,
+        "target": 0.8,
+        "zone": "green",
+        "zone_label": "🟢 逆向加碼（極度恐慌）",
         "gate_open": true
       }
     }
