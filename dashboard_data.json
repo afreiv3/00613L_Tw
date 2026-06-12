@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-11 14:02 (Taipei)",
+  "updated": "2026-06-12 09:52 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -569,6 +569,65 @@
           "pts": 4,
           "max": 10,
           "note": "TAIEX盤中在除息調整後基準（~42,091）上方維持+1.31%，開43,172後回拉至42,658附近仍守支撐；月線（~44,500）已失守，季線（~42,000-43,000）暫守，整體結構仍屬調整"
+        }
+      },
+      "paper": {
+        "cash": 988712,
+        "equity": 988712,
+        "market_value": 0,
+        "return_pct": -1.13,
+        "holding": false,
+        "position": null,
+        "trades": 1,
+        "wins": 0,
+        "win_rate": 0.0,
+        "realized_pnl": -11288
+      }
+    },
+    {
+      "date": "2026-06-12",
+      "time": "09:52",
+      "price": 34.78,
+      "score": 45,
+      "zone": "amber",
+      "quant_sum": 25,
+      "ai_sum": 20,
+      "ai_ok": false,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "開+6.8%、小幅回落，型態中性"
+        },
+        "sector": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤前 AI 因子缺—以中性計"
+        },
+        "entry": {
+          "pts": 15,
+          "max": 15,
+          "note": "現價近今日低點(區間17%) → 接近支撐"
+        },
+        "volume": {
+          "pts": 0,
+          "max": 15,
+          "note": "推估量約均量2.7倍 → 爆量(疑換手/出貨)"
+        },
+        "vwap": {
+          "pts": 0,
+          "max": 10,
+          "note": "現價在VWAP之下(-1.10%) → 弱勢"
+        },
+        "macro": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "盤前 AI 因子缺—以中性計"
+        },
+        "trend": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "盤前 AI 因子缺—以中性計"
         }
       },
       "paper": {
