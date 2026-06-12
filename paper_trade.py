@@ -13,6 +13,8 @@
 import json
 import datetime as dt  # noqa: F401  (保留給未來擴充)
 
+import trade_window
+
 STATE_FILE = "paper_state.json"
 TRADES_FILE = "paper_trades.json"
 
@@ -97,6 +99,11 @@ def run(today, now_hm, total, price):
     trade = None
     pos = s.get("position")
 
+    # 波段規則：只在盤中、且今天還沒交易過，才允許下單（收盤後只更新畫面）
+    if not trade_window.can_trade(s, today, now_hm):
+        save_state(s)
+        return None, _summary(s, price), None
+
     if pos:
         # ---- 持有中：檢查出場 ----
         chg = price / pos["entry_price"] - 1
@@ -144,6 +151,8 @@ def run(today, now_hm, total, price):
                          "reason": f"總分{total}≥{BUY_THRESHOLD}，投入{int(frac*100)}%"}
                 _append_trade(trade)
 
+    if event:                       # 今天動作過 → 鎖住，當日不再交易
+        s["last_trade_date"] = today
     save_state(s)
     return event, _summary(s, price), trade
 

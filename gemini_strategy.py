@@ -18,6 +18,8 @@
 import json
 import datetime as dt
 
+import trade_window
+
 AI_FILE = "ai_factors_gemini.json"
 STATE_FILE = "paper_state_gemini.json"
 TRADES_FILE = "paper_trades_gemini.json"
@@ -131,6 +133,11 @@ def run(today, now_hm, ev, price):
     if total > s.get("max_asset", total):
         s["max_asset"] = total
 
+    # 波段規則：只在盤中、且今天還沒交易過，才允許下單（收盤後只更新分數/畫面）
+    if not trade_window.can_trade(s, today, now_hm):
+        save_state(s)
+        return events, _summary(s, price, ev)
+
     # 風控 A：移動止盈（自高點回撤達門檻 → 全清）
     if s["shares"] > 0 and total / s["max_asset"] <= (1 - TRAILING_DD):
         sold = s["shares"]
@@ -143,6 +150,7 @@ def run(today, now_hm, ev, price):
                "reason": f"移動止盈（自高點回撤≥{int(TRAILING_DD*100)}%）"}
         _append(rec)
         events.append(rec)
+        s["last_trade_date"] = today
         save_state(s)
         return events, _summary(s, price, ev)
 
@@ -176,6 +184,7 @@ def run(today, now_hm, ev, price):
                    "shares": round(sh, 1), "target_pct": int(target * 100), "reason": reason}
             _append(rec)
             events.append(rec)
+            s["last_trade_date"] = today   # 今天動作過 → 鎖住，當日不再交易
 
     save_state(s)
     return events, _summary(s, price, ev)
