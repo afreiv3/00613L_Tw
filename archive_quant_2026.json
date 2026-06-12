@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 21,
+  "count": 22,
   "history": [
     {
       "date": "2026-06-05",
@@ -1209,6 +1209,65 @@
           "pts": 0,
           "max": 10,
           "note": "現價在VWAP之下(-0.45%) → 弱勢"
+        },
+        "macro": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "盤前 AI 因子缺—以中性計"
+        },
+        "trend": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "盤前 AI 因子缺—以中性計"
+        }
+      },
+      "paper": {
+        "cash": 988712,
+        "equity": 988712,
+        "market_value": 0,
+        "return_pct": -1.13,
+        "holding": false,
+        "position": null,
+        "trades": 1,
+        "wins": 0,
+        "win_rate": 0.0,
+        "realized_pnl": -11288
+      }
+    },
+    {
+      "date": "2026-06-12",
+      "time": "12:30",
+      "price": 34.9,
+      "score": 60,
+      "zone": "amber",
+      "quant_sum": 40,
+      "ai_sum": 20,
+      "ai_ok": false,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "開+6.8%、小幅回落，型態中性"
+        },
+        "sector": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤前 AI 因子缺—以中性計"
+        },
+        "entry": {
+          "pts": 15,
+          "max": 15,
+          "note": "現價近今日低點(區間27%) → 接近支撐"
+        },
+        "volume": {
+          "pts": 15,
+          "max": 15,
+          "note": "推估量約均量1.0倍 → 正常"
+        },
+        "vwap": {
+          "pts": 0,
+          "max": 10,
+          "note": "現價在VWAP之下(-0.39%) → 弱勢"
         },
         "macro": {
           "pts": 5.0,
