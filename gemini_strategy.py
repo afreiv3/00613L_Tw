@@ -49,23 +49,31 @@ def load_ai_factors(today):
     return neutral, meta, False
 
 
-def evaluate(quant_pts, market_ok, ai_factors):
-    """quant_pts: {pattern,entry,volume,vwap}；market_ok: 大盤是否站上季線(None=未知，不否決)。"""
+def evaluate(quant_pts, market_ok, ai_factors, asset_trend_ok=None):
+    """進出場分離設計：
+      進場(空手)：量化≥35 + 大盤站季線 + 00631L 站上20MA（買在趨勢＋好價位）。
+      出場(持有)：不再因量化<35 就賣；只在『趨勢轉壞』才出場——大盤跌破季線、
+                  或 00631L 跌破20MA、或移動止盈(回撤10%)。趨勢沒壞就續抱。
+      market_ok / asset_trend_ok：None=資料未知(不否決，避免誤殺)。
+    最終目標水位在 run() 依『是否持有』決定，這裡只算情緒水位與進場/趨勢旗標。"""
     tier1 = sum(quant_pts.get(k, 0) for k in ("pattern", "entry", "volume", "vwap"))
     ai_total = ai_factors.get("sector", 10) + ai_factors.get("macro", 5) + ai_factors.get("trend", 5)
     ai_index = round(ai_total / 40 * 100, 1)
-    gate_open = (tier1 >= TIER1_GATE) and (market_ok is not False)  # None 視為不否決
-    if not gate_open:
-        target, label, zcode = 0.0, "🔴 不進/清倉（量化主審未過）", "red"
-    elif ai_index < 30:
-        target, label, zcode = 0.8, "🟢 逆向加碼（極度恐慌）", "green"
+
+    # 情緒決定「在場內時」的目標水位（反向）
+    if ai_index < 30:
+        sent_target, slabel, szone = 0.8, "🟢 逆向加碼（極度恐慌）", "green"
     elif ai_index <= 75:
-        target, label, zcode = 0.5, "🟡 理性持倉（情緒健康）", "amber"
+        sent_target, slabel, szone = 0.5, "🟡 理性持倉（情緒健康）", "amber"
     else:
-        target, label, zcode = 0.2, "🟠 輕倉防守（極度狂熱）", "amber"
-    return {"tier1": round(tier1), "ai_index": ai_index, "target": target,
-            "zone_label": label, "zone": zcode, "gate_open": gate_open,
-            "market_ok": market_ok}
+        sent_target, slabel, szone = 0.2, "🟠 輕倉防守（極度狂熱）", "amber"
+
+    trend_ok = (market_ok is not False) and (asset_trend_ok is not False)  # 趨勢是否完好
+    entry_ok = (tier1 >= TIER1_GATE) and trend_ok                          # 進場要好價位＋趨勢
+    return {"tier1": round(tier1), "ai_index": ai_index,
+            "sent_target": sent_target, "sent_label": slabel, "sent_zone": szone,
+            "trend_ok": trend_ok, "entry_ok": entry_ok,
+            "market_ok": market_ok, "asset_trend_ok": asset_trend_ok}
 
 
 def load_state():
@@ -133,6 +141,22 @@ def run(today, now_hm, ev, price):
     if total > s.get("max_asset", total):
         s["max_asset"] = total
 
+    # 決定有效目標水位：持有看趨勢(壞了才清)、空手看進場條件(好價位＋趨勢才買)
+    holding = s["shares"] > 0
+    if holding:
+        if not ev["trend_ok"]:
+            target, zlabel, zone = 0.0, "🔴 趨勢轉弱→清倉（跌破均線/季線）", "red"
+        else:
+            target, zlabel, zone = ev["sent_target"], ev["sent_label"], ev["sent_zone"]
+    else:
+        if ev["entry_ok"]:
+            target, zlabel, zone = ev["sent_target"], ev["sent_label"], ev["sent_zone"]
+        else:
+            target, zlabel, zone = 0.0, "⚪ 觀望（等好買點＋趨勢）", "red"
+    # 把最終決策寫回 ev 供面板/推播顯示
+    ev = dict(ev)
+    ev["target"], ev["zone_label"], ev["zone"], ev["gate_open"] = target, zlabel, zone, target > 0
+
     # 波段規則：只在盤中、且今天還沒交易過，才允許下單（收盤後只更新分數/畫面）
     if not trade_window.can_trade(s, today, now_hm):
         save_state(s)
@@ -155,7 +179,6 @@ def run(today, now_hm, ev, price):
         return events, _summary(s, price, ev)
 
     # 風控 B：連續狂熱 → 目標壓回 20%
-    target = ev["target"]
     if s.get("frenzy_days", 0) >= FRENZY_DAYS and target > 0.2:
         target = 0.2
 

@@ -402,15 +402,20 @@ def main():
     # ===== Gemini 雙層閘門策略（與 Claude 並行；共用上面的量化數據 qpts）=====
     twii_ma60, twii_close = ma("^TWII", 60)
     market_ok = (twii_close >= twii_ma60) if (twii_ma60 and twii_close) else None
+    # 00631L 自身 20MA 當趨勢依據（出場看趨勢用）
+    self_ma20, _self_close = ma(SYMBOL, 20)
+    asset_trend_ok = (price_now >= self_ma20) if (self_ma20 and price_now) else None
     g_ai, g_meta, g_ok = gemini_strategy.load_ai_factors(today)
-    g_ev = gemini_strategy.evaluate(qpts, market_ok, g_ai)
+    g_ev = gemini_strategy.evaluate(qpts, market_ok, g_ai, asset_trend_ok)
     g_events, g_paper = gemini_strategy.run(today, now_hm, g_ev, price_now)
+    # run() 已把最終決策(目標/區間/開窗)放進 g_paper
 
     # 當日第一次：推 Gemini 策略現況
     if not state.get("g_full_sent"):
+        g_tgt = g_paper.get("target") or 0
         g_brief = (f"🤖 <b>[Gemini策略] {today} {now_hm}</b>\n"
-                   f"量化主審 {g_ev['tier1']}/60｜AI情緒 {g_ev['ai_index']}/100｜"
-                   f"目標水位 {int(g_ev['target']*100)}%\n{g_ev['zone_label']}")
+                   f"量化主審 {g_paper['tier1']}/60｜AI情緒 {g_paper['ai_index']}/100｜"
+                   f"目標水位 {int(g_tgt*100)}%\n{g_paper.get('zone_label','')}")
         if g_meta.get("summary"):
             g_brief += f"\n🧠 {g_meta['summary']}"
         g_brief += f"\n📊 詳情 → {PANEL_URL}"
@@ -429,9 +434,10 @@ def main():
 
     g_rec = {
         "date": today, "time": now_hm, "price": price_now,
-        "tier1": g_ev["tier1"], "ai_index": g_ev["ai_index"], "target": g_ev["target"],
-        "zone": g_ev["zone"], "zone_label": g_ev["zone_label"],
-        "gate_open": g_ev["gate_open"], "market_ok": g_ev["market_ok"],
+        "tier1": g_paper["tier1"], "ai_index": g_paper["ai_index"], "target": g_paper.get("target"),
+        "zone": g_paper.get("zone"), "zone_label": g_paper.get("zone_label"),
+        "gate_open": g_paper.get("gate_open"), "market_ok": market_ok,
+        "asset_trend_ok": asset_trend_ok,
         "ai_ok": g_ok, "summary": g_meta.get("summary", ""), "news": g_meta.get("news", []),
         "paper": g_paper,
     }

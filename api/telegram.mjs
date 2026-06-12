@@ -154,14 +154,14 @@ async function fmtGemini() {
   const last = (d.history || []).slice(-1)[0];
   if (!last) return "尚無 Gemini 策略資料。";
   const p = last.paper;
-  const mk = last.market_ok === true ? "站上季線✅" : (last.market_ok === false ? "跌破季線❌" : "資料不足");
+  const mk = last.market_ok === true ? "站季線✅" : (last.market_ok === false ? "破季線❌" : "—");
+  const at = last.asset_trend_ok === true ? "站20MA✅" : (last.asset_trend_ok === false ? "破20MA❌" : "—");
   let s = `🟩 [Gemini 策略] ${last.date} ${last.time}\n` +
           `現價 ${last.price ?? "—"}\n` +
-          `第一層 量化主審 → ${last.gate_open ? "視窗開啟" : "視窗關閉"}\n` +
-          `• 盤中量化 ${last.tier1 ?? "—"}/60（需≥35）\n` +
-          `• 大盤趨勢 ${mk}\n` +
-          `第二層 AI情緒指數 ${last.ai_index ?? "—"}/100\n` +
-          `→ 目標水位 ${last.target != null ? Math.round(last.target * 100) + "%" : "—"}｜${last.zone_label || ""}`;
+          `進場：量化 ${last.tier1 ?? "—"}/60（需≥35）＋趨勢\n` +
+          `出場(趨勢)：大盤${mk}｜00631L ${at}\n` +
+          `AI情緒 ${last.ai_index ?? "—"}/100 → 目標水位 ${last.target != null ? Math.round(last.target * 100) + "%" : "—"}\n` +
+          `${last.zone_label || ""}`;
   if (last.summary) s += `\n🧠 ${last.summary}`;
   if (p) {
     s += `\n\n💰 動態模擬盤（虛擬100萬）\n` +
