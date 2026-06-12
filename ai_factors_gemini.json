@@ -1,32 +1,33 @@
 {
   "date": "2026-06-12",
-  "generated_at": "2026-06-12 09:52",
+  "generated_at": "2026-06-12 13:06",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 17.0,
-    "macro": 6.0,
-    "trend": 7.0
+    "sector": 18.0,
+    "macro": 7.0,
+    "trend": 8.0
   },
-  "ai_sentiment_index": 75.0,
-  "summary": "全球股市受美國市場提振，但世界銀行下調增長預期及央行升息壓力帶來不確定性。",
+  "ai_sentiment_index": 82.5,
+  "summary": "在SpaceX首次公開募股和科技股上漲的推動下，全球市場情緒樂觀，儘管世界銀行下調了增長預期。",
   "news_zh": [
-    "道瓊指數飆升900點，市場情緒樂觀。",
-    "世界銀行將全球經濟增長預期下調至2.5%，並警告若戰爭影響擴大可能降至1.3%。",
-    "四個已開發市場的中央銀行正在升息。",
-    "歐洲央行官員考慮在首次升息後於七月暫停升息。",
-    "投資者將本週聯準會會議視為重要事件。"
+    "SpaceX首次公開募股在納斯達克上市，華爾街對此寄予厚望。",
+    "道瓊指數飆升900點，科技股和太空相關股票表現強勁。",
+    "兩家AI巨頭出現買入信號，預示科技股可能持續上漲。",
+    "世界銀行將全球增長預期下調至2.5%，並警告若戰爭影響擴大可能降至1.3%。",
+    "歐洲央行官員暗示首次升息後可能在七月暫停升息。",
+    "Forbright在納斯達克首次亮相，估值約9億美元。"
   ],
   "news": [
-    "[Reuters] What the US can learn from Europe on prediction markets—and vice versa - Atlantic Council - What the US can learn from Europe on prediction markets—and vice versa&nbsp;&nbsp;Atlantic Council",
     "[Reuters] John Delaney's Forbright valued at roughly $900 million in Nasdaq debut - Reuters - John Delaney's Forbright valued at roughly $900 million in Nasdaq debut&nbsp;&nbsp;Reuters",
-    "[Reuters] Exclusive: Exxon's head of global trading is retiring, sources say - Reuters - Exclusive: Exxon's head of global trading is retiring, sources say&nbsp;&nbsp;Reuters",
     "[Reuters] Financial Markets Morning Commentary - StoneX - Financial Markets Morning Commentary&nbsp;&nbsp;StoneX",
-    "[Reuters] Four developed market central banks are now hiking rates - Reuters - Four developed market central banks are now hiking rates&nbsp;&nbsp;Reuters",
+    "[Reuters] Exclusive: Exxon's head of global trading is retiring, sources say - Reuters - Exclusive: Exxon's head of global trading is retiring, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] ECB governors eye July pause after first hike, sources says - Reuters - ECB governors eye July pause after first hike, sources says&nbsp;&nbsp;Reuters",
+    "[Reuters] What the US can learn from Europe on prediction markets—and vice versa - Atlantic Council - What the US can learn from Europe on prediction markets—and vice versa&nbsp;&nbsp;Atlantic Council",
     "[Reuters] World Bank cuts global growth outlook to 2.5%, warns of drop to 1.3% if war fallout spreads to markets - Reuters - World Bank cuts global growth outlook to 2.5%, warns of drop to 1.3% if war fallout spreads to markets&nbsp;&nbsp;Reuters",
     "[Reuters] Wall Street buckles up for SpaceX liftoff, hoping for a glitch-free ride - Reuters - Wall Street buckles up for SpaceX liftoff, hoping for a glitch-free ride&nbsp;&nbsp;Reuters",
-    "[Reuters] ECB governors eye July pause after first hike, sources says - Reuters - ECB governors eye July pause after first hike, sources says&nbsp;&nbsp;Reuters",
+    "[Reuters] Europe moves, now over to the Fed - Reuters - Europe moves, now over to the Fed&nbsp;&nbsp;Reuters",
     "[Semis] Stock Market Today: Dow Soars 900 Points As Trump Axes Attack Plans; Caterpillar, Space Names Rally - Investor's Business Daily - Stock Market Today: Dow Soars 900 Points As Trump Axes Attack Plans; Caterpillar, Space Names Rally&nbsp;&nbsp;Investor's Business Daily",
-    "[Semis] Parabilis Medicines Rings the Nasdaq Stock Market Closing Bell - Nasdaq - Parabilis Medicines Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
+    "[Semis] Live coverage: SpaceX to launch a Starlink mission from Cape Canaveral as it begins publicly trading its stock on the Nasdaq for the first time - Spaceflight Now - Live coverage: SpaceX to launch a Starlink mission from Cape Canaveral as it begins publicly trading its stock on the Nasdaq for the first time&nbsp;&nbsp;Space"
   ],
   "debug_error": ""
 }
