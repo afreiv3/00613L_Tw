@@ -1,33 +1,33 @@
 {
-  "date": "2026-06-12",
-  "generated_at": "2026-06-12 13:06",
+  "date": "2026-06-15",
+  "generated_at": "2026-06-15 13:30",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 18.0,
-    "macro": 7.0,
+    "sector": 17.0,
+    "macro": 8.0,
     "trend": 8.0
   },
   "ai_sentiment_index": 82.5,
-  "summary": "在SpaceX首次公開募股和科技股上漲的推動下，全球市場情緒樂觀，儘管世界銀行下調了增長預期。",
+  "summary": "亞洲股市因美國與伊朗達成協議而上漲，科技股受AI熱潮推動表現強勁，但聯準會新領導層和潛在的升息風險仍是市場關注焦點。",
   "news_zh": [
-    "SpaceX首次公開募股在納斯達克上市，華爾街對此寄予厚望。",
-    "道瓊指數飆升900點，科技股和太空相關股票表現強勁。",
-    "兩家AI巨頭出現買入信號，預示科技股可能持續上漲。",
-    "世界銀行將全球增長預期下調至2.5%，並警告若戰爭影響擴大可能降至1.3%。",
-    "歐洲央行官員暗示首次升息後可能在七月暫停升息。",
-    "Forbright在納斯達克首次亮相，估值約9億美元。"
+    "亞洲對沖基金受AI熱潮帶動實現三位數增長。",
+    "亞洲股市因美國與伊朗達成停戰協議而大幅上漲。",
+    "新任聯準會主席為美國股市帶來不確定性。",
+    "那斯達克100指數納入Nebius Group，顯示AI基礎設施需求旺盛。",
+    "前聯準會主席鮑威爾發出兩項緊急警告，暗示股市可能下跌。",
+    "市場焦點從SpaceX轉向伊朗協議與聯準會動向。"
   ],
   "news": [
-    "[Reuters] John Delaney's Forbright valued at roughly $900 million in Nasdaq debut - Reuters - John Delaney's Forbright valued at roughly $900 million in Nasdaq debut&nbsp;&nbsp;Reuters",
-    "[Reuters] Financial Markets Morning Commentary - StoneX - Financial Markets Morning Commentary&nbsp;&nbsp;StoneX",
-    "[Reuters] Exclusive: Exxon's head of global trading is retiring, sources say - Reuters - Exclusive: Exxon's head of global trading is retiring, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] ECB governors eye July pause after first hike, sources says - Reuters - ECB governors eye July pause after first hike, sources says&nbsp;&nbsp;Reuters",
-    "[Reuters] What the US can learn from Europe on prediction markets—and vice versa - Atlantic Council - What the US can learn from Europe on prediction markets—and vice versa&nbsp;&nbsp;Atlantic Council",
-    "[Reuters] World Bank cuts global growth outlook to 2.5%, warns of drop to 1.3% if war fallout spreads to markets - Reuters - World Bank cuts global growth outlook to 2.5%, warns of drop to 1.3% if war fallout spreads to markets&nbsp;&nbsp;Reuters",
-    "[Reuters] Wall Street buckles up for SpaceX liftoff, hoping for a glitch-free ride - Reuters - Wall Street buckles up for SpaceX liftoff, hoping for a glitch-free ride&nbsp;&nbsp;Reuters",
-    "[Reuters] Europe moves, now over to the Fed - Reuters - Europe moves, now over to the Fed&nbsp;&nbsp;Reuters",
-    "[Semis] Stock Market Today: Dow Soars 900 Points As Trump Axes Attack Plans; Caterpillar, Space Names Rally - Investor's Business Daily - Stock Market Today: Dow Soars 900 Points As Trump Axes Attack Plans; Caterpillar, Space Names Rally&nbsp;&nbsp;Investor's Business Daily",
-    "[Semis] Live coverage: SpaceX to launch a Starlink mission from Cape Canaveral as it begins publicly trading its stock on the Nasdaq for the first time - Spaceflight Now - Live coverage: SpaceX to launch a Starlink mission from Cape Canaveral as it begins publicly trading its stock on the Nasdaq for the first time&nbsp;&nbsp;Space"
+    "[Reuters] Asia hedge funds notch triple-digit gains in AI-led rally - Reuters - Asia hedge funds notch triple-digit gains in AI-led rally&nbsp;&nbsp;Reuters",
+    "[Reuters] Breakingviews - Digital payments could increase central bank bloat - Reuters - Breakingviews - Digital payments could increase central bank bloat&nbsp;&nbsp;Reuters",
+    "[Reuters] Newly led Fed poses wildcard for rockier US indexes By Reuters - Investing.com - Newly led Fed poses wildcard for rockier US indexes By Reuters&nbsp;&nbsp;Investing.com",
+    "[Reuters] Shares surge, oil slides in Asia on Gulf deal - Reuters - Shares surge, oil slides in Asia on Gulf deal&nbsp;&nbsp;Reuters",
+    "[Reuters] Can Robinhood Stock Surge Again in 2026? - TradingKey - Can Robinhood Stock Surge Again in 2026?&nbsp;&nbsp;TradingKey",
+    "[Reuters] PBOC is expected to set the USD/CNY reference rate at 6.7544 – Reuters estimate - investingLive - PBOC is expected to set the USD/CNY reference rate at 6.7544 – Reuters estimate&nbsp;&nbsp;investingLive",
+    "[Reuters] Zimbabwe moves to regulate crypto sector, requiring firms to register with central bank: Reuters - The Block - Zimbabwe moves to regulate crypto sector, requiring firms to register with central bank: Reuters&nbsp;&nbsp;The Block",
+    "[Reuters] Shares jump in Asia on news of US-Iran deal to halt war - The Business Times - Shares jump in Asia on news of US-Iran deal to halt war&nbsp;&nbsp;The Business Times",
+    "[Semis] Stock Market Moves On From SpaceX to Focus on Iran Deal, Fed - Bloomberg.com - Stock Market Moves On From SpaceX to Focus on Iran Deal, Fed&nbsp;&nbsp;Bloomberg.com",
+    "[Semis] What to Expect in Markets This Week: Kevin Warsh Leads His First Fed Meeting - Investopedia - What to Expect in Markets This Week: Kevin Warsh Leads His First Fed Meeting&nbsp;&nbsp;Investopedia"
   ],
   "debug_error": ""
 }
