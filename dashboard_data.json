@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15 11:45 (Taipei)",
+  "updated": "2026-06-15 12:00 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -2303,6 +2303,73 @@
         "equity": 988209,
         "market_value": 296512,
         "return_pct": -1.18,
+        "holding": true,
+        "position": {
+          "shares": 8016,
+          "entry_price": 37.0,
+          "entry_date": "2026-06-15",
+          "entry_time": "11:15",
+          "cost": 297014.64,
+          "entry_score": 73,
+          "frac": 0.3
+        },
+        "trades": 1,
+        "wins": 0,
+        "win_rate": 0.0,
+        "realized_pnl": -11288
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "time": "12:00",
+      "price": 36.97,
+      "score": 73,
+      "zone": "green",
+      "quant_sum": 45,
+      "ai_sum": 28,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 20,
+          "max": 20,
+          "note": "現價守在開盤之上(開+5.6%) → 有利"
+        },
+        "sector": {
+          "pts": 14,
+          "max": 20,
+          "note": "費半SOX從6/5 AVGO -13%觸發的 -10%急跌後持續修復，Nasdaq週五+0.31%、NVDA $205.19（+0.16%），TSM ADR $423.93穩健、台積電5月營收+30%支撐；板塊整體偏多但SOX仍未全面收復失地，非全面確認"
+        },
+        "entry": {
+          "pts": 0,
+          "max": 15,
+          "note": "現價在區間上緣(74%) → 屬追高"
+        },
+        "volume": {
+          "pts": 15,
+          "max": 15,
+          "note": "推估量約均量1.2倍 → 正常"
+        },
+        "vwap": {
+          "pts": 10,
+          "max": 10,
+          "note": "現價在VWAP之上(+0.17%) → 有利"
+        },
+        "macro": {
+          "pts": 7,
+          "max": 10,
+          "note": "美伊停火協議完成（霍爾木茲重開）為最大正面催化劑，WTI降至$84.88消退通膨壓力；惟5月PPI月增+1.1%大超預期（+0.7%）、10Y殖利率4.4-4.5%高位、FOMC 6/16-17本週開會，通膨+利率不確定性仍存，整體宏觀略波動偏正"
+        },
+        "trend": {
+          "pts": 7,
+          "max": 10,
+          "note": "TAIEX 6/12估收44,200，站於60日季線（~42,000-43,500）之上，短線修復結構完好；惟月線（~44,500-45,000）仍構成近端阻力，加權未突破前屬修復而非新多，稍扣分"
+        }
+      },
+      "paper": {
+        "cash": 691697,
+        "equity": 988049,
+        "market_value": 296352,
+        "return_pct": -1.2,
         "holding": true,
         "position": {
           "shares": 8016,
