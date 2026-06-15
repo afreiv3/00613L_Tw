@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15 13:15 (Taipei)",
+  "updated": "2026-06-15 13:30 (Taipei)",
   "history": [
     {
       "date": "2026-06-08",
@@ -1668,6 +1668,50 @@
         "target": 0.5,
         "zone": "amber",
         "zone_label": "🟡 理性持倉（情緒健康）",
+        "gate_open": true
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "time": "13:30",
+      "price": 37.02,
+      "tier1": 45,
+      "ai_index": 82.5,
+      "target": 0.2,
+      "zone": "amber",
+      "zone_label": "🟠 輕倉防守（極度狂熱）",
+      "gate_open": true,
+      "market_ok": true,
+      "asset_trend_ok": true,
+      "ai_ok": true,
+      "summary": "亞洲股市因美國與伊朗達成協議而上漲，科技股受AI熱潮推動表現強勁，但聯準會新領導層和潛在的升息風險仍是市場關注焦點。",
+      "news": [
+        "[Reuters] Asia hedge funds notch triple-digit gains in AI-led rally - Reuters - Asia hedge funds notch triple-digit gains in AI-led rally&nbsp;&nbsp;Reuters",
+        "[Reuters] Breakingviews - Digital payments could increase central bank bloat - Reuters - Breakingviews - Digital payments could increase central bank bloat&nbsp;&nbsp;Reuters",
+        "[Reuters] Newly led Fed poses wildcard for rockier US indexes By Reuters - Investing.com - Newly led Fed poses wildcard for rockier US indexes By Reuters&nbsp;&nbsp;Investing.com",
+        "[Reuters] Shares surge, oil slides in Asia on Gulf deal - Reuters - Shares surge, oil slides in Asia on Gulf deal&nbsp;&nbsp;Reuters",
+        "[Reuters] Can Robinhood Stock Surge Again in 2026? - TradingKey - Can Robinhood Stock Surge Again in 2026?&nbsp;&nbsp;TradingKey",
+        "[Reuters] PBOC is expected to set the USD/CNY reference rate at 6.7544 – Reuters estimate - investingLive - PBOC is expected to set the USD/CNY reference rate at 6.7544 – Reuters estimate&nbsp;&nbsp;investingLive",
+        "[Reuters] Zimbabwe moves to regulate crypto sector, requiring firms to register with central bank: Reuters - The Block - Zimbabwe moves to regulate crypto sector, requiring firms to register with central bank: Reuters&nbsp;&nbsp;The Block",
+        "[Reuters] Shares jump in Asia on news of US-Iran deal to halt war - The Business Times - Shares jump in Asia on news of US-Iran deal to halt war&nbsp;&nbsp;The Business Times",
+        "[Semis] Stock Market Moves On From SpaceX to Focus on Iran Deal, Fed - Bloomberg.com - Stock Market Moves On From SpaceX to Focus on Iran Deal, Fed&nbsp;&nbsp;Bloomberg.com",
+        "[Semis] What to Expect in Markets This Week: Kevin Warsh Leads His First Fed Meeting - Investopedia - What to Expect in Markets This Week: Kevin Warsh Leads His First Fed Meeting&nbsp;&nbsp;Investopedia"
+      ],
+      "paper": {
+        "cash": 505744,
+        "shares": 13697.4,
+        "equity": 1012824,
+        "market_value": 507079,
+        "position_pct": 50.1,
+        "return_pct": 1.28,
+        "trades": 6,
+        "max_asset": 1013472,
+        "frenzy_days": 0,
+        "tier1": 45,
+        "ai_index": 82.5,
+        "target": 0.2,
+        "zone": "amber",
+        "zone_label": "🟠 輕倉防守（極度狂熱）",
         "gate_open": true
       }
     }
