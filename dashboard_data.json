@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16 09:00 (Taipei)",
+  "updated": "2026-06-16 09:15 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -2858,6 +2858,73 @@
     {
       "date": "2026-06-16",
       "time": "09:00",
+      "price": null,
+      "score": 65,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 35,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 18,
+          "max": 20,
+          "note": "隔夜SOX +4.81%至14,014.79、Nasdaq +3.1%、TSM ADR $429.76，半導體板塊全面強勁；韓國Kospi今早再漲2.02%延續強勢，僅因NVDA具體漲幅數字未能精確確認而稍扣分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 8,
+          "max": 10,
+          "note": "美伊停火兌現（霍爾木茲重開）+Brent跌至$83-86+10Y殖利率4.42%（5月最低），通膨與地緣風險大幅消退；FOMC今日第一天（96%按兵不動），決策明日（6/17），不確定性屬低度"
+        },
+        "trend": {
+          "pts": 9,
+          "max": 10,
+          "note": "TAIEX 6/15收45,438大陽棒突破月線（~44,500-45,000），季線（~42,000-44,000）支撐穩固，結構升格「重啟攻多」；前高46,459距今約1,000點尚未突破，稍扣分"
+        }
+      },
+      "paper": {
+        "cash": 691697,
+        "equity": 691697,
+        "market_value": 0,
+        "return_pct": -30.83,
+        "holding": true,
+        "position": {
+          "shares": 8016,
+          "entry_price": 37.0,
+          "entry_date": "2026-06-15",
+          "entry_time": "11:15",
+          "cost": 297014.64,
+          "entry_score": 73,
+          "frac": 0.3
+        },
+        "trades": 1,
+        "wins": 0,
+        "win_rate": 0.0,
+        "realized_pnl": -11288
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "time": "09:15",
       "price": null,
       "score": 65,
       "zone": "amber",
