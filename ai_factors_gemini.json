@@ -1,6 +1,6 @@
 {
-  "date": "2026-06-15",
-  "generated_at": "2026-06-15 13:30",
+  "date": "2026-06-16",
+  "generated_at": "2026-06-16 13:36",
   "model": "gemini-2.5-flash",
   "factors": {
     "sector": 17.0,
@@ -8,26 +8,26 @@
     "trend": 8.0
   },
   "ai_sentiment_index": 82.5,
-  "summary": "亞洲股市因美國與伊朗達成協議而上漲，科技股受AI熱潮推動表現強勁，但聯準會新領導層和潛在的升息風險仍是市場關注焦點。",
+  "summary": "在美國與伊朗達成協議、油價下跌以及科技股表現強勁的帶動下，全球市場情緒樂觀，儘管日本央行升息帶來一些不確定性。",
   "news_zh": [
-    "亞洲對沖基金受AI熱潮帶動實現三位數增長。",
-    "亞洲股市因美國與伊朗達成停戰協議而大幅上漲。",
-    "新任聯準會主席為美國股市帶來不確定性。",
-    "那斯達克100指數納入Nebius Group，顯示AI基礎設施需求旺盛。",
-    "前聯準會主席鮑威爾發出兩項緊急警告，暗示股市可能下跌。",
-    "市場焦點從SpaceX轉向伊朗協議與聯準會動向。"
+    "華爾街因美伊協議和油價下跌而上漲，道瓊指數創下歷史新高。",
+    "輝達（Nvidia）五年來首次發行公司債，籌集250億美元。",
+    "日本央行升息，亞洲市場對伊朗協議的樂觀情緒有所降溫。",
+    "投資者在市場動盪後對私募市場的選擇更加謹慎。",
+    "道瓊期貨因川普和伊朗協議而飆升，輝達、美光和Sandisk等科技股表現強勁。",
+    "S&P 500、那斯達克和道瓊期貨在SpaceX和美伊協議推動的反彈後回落，聯準會會議即將召開。"
   ],
   "news": [
-    "[Reuters] Asia hedge funds notch triple-digit gains in AI-led rally - Reuters - Asia hedge funds notch triple-digit gains in AI-led rally&nbsp;&nbsp;Reuters",
-    "[Reuters] Breakingviews - Digital payments could increase central bank bloat - Reuters - Breakingviews - Digital payments could increase central bank bloat&nbsp;&nbsp;Reuters",
-    "[Reuters] Newly led Fed poses wildcard for rockier US indexes By Reuters - Investing.com - Newly led Fed poses wildcard for rockier US indexes By Reuters&nbsp;&nbsp;Investing.com",
-    "[Reuters] Shares surge, oil slides in Asia on Gulf deal - Reuters - Shares surge, oil slides in Asia on Gulf deal&nbsp;&nbsp;Reuters",
-    "[Reuters] Can Robinhood Stock Surge Again in 2026? - TradingKey - Can Robinhood Stock Surge Again in 2026?&nbsp;&nbsp;TradingKey",
-    "[Reuters] PBOC is expected to set the USD/CNY reference rate at 6.7544 – Reuters estimate - investingLive - PBOC is expected to set the USD/CNY reference rate at 6.7544 – Reuters estimate&nbsp;&nbsp;investingLive",
-    "[Reuters] Zimbabwe moves to regulate crypto sector, requiring firms to register with central bank: Reuters - The Block - Zimbabwe moves to regulate crypto sector, requiring firms to register with central bank: Reuters&nbsp;&nbsp;The Block",
-    "[Reuters] Shares jump in Asia on news of US-Iran deal to halt war - The Business Times - Shares jump in Asia on news of US-Iran deal to halt war&nbsp;&nbsp;The Business Times",
-    "[Semis] Stock Market Moves On From SpaceX to Focus on Iran Deal, Fed - Bloomberg.com - Stock Market Moves On From SpaceX to Focus on Iran Deal, Fed&nbsp;&nbsp;Bloomberg.com",
-    "[Semis] What to Expect in Markets This Week: Kevin Warsh Leads His First Fed Meeting - Investopedia - What to Expect in Markets This Week: Kevin Warsh Leads His First Fed Meeting&nbsp;&nbsp;Investopedia"
+    "[Reuters] Asia markets temper Iran deal optimism, BOJ hikes rates - Reuters - Asia markets temper Iran deal optimism, BOJ hikes rates&nbsp;&nbsp;Reuters",
+    "[Reuters] JPMorgan mulls Chase expansion into Europe's largest markets, FT reports - Reuters - JPMorgan mulls Chase expansion into Europe's largest markets, FT reports&nbsp;&nbsp;Reuters",
+    "[Reuters] Nvidia to raise $25 billion in first corporate bond sale in five years - Reuters - Nvidia to raise $25 billion in first corporate bond sale in five years&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: Japan turns it up to... 1 - Reuters - Morning Bid: Japan turns it up to... 1&nbsp;&nbsp;Reuters",
+    "[Reuters] Investors choosier about private markets after turbulence, say pension fund advisers - Reuters - Investors choosier about private markets after turbulence, say pension fund advisers&nbsp;&nbsp;Reuters",
+    "[Reuters] Wall Street rallies, Dow ends with record on US-Iran deal, oil price slide - Reuters - Wall Street rallies, Dow ends with record on US-Iran deal, oil price slide&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: 'Let the oil flow' - Reuters - Morning Bid: 'Let the oil flow'&nbsp;&nbsp;Reuters",
+    "[Reuters] Exclusive: Ukraine aims to align banks, insurers with EU rules by 2028, central banker says - Reuters - Exclusive: Ukraine aims to align banks, insurers with EU rules by 2028, central banker says&nbsp;&nbsp;Reuters",
+    "[Semis] LinkedIn Rings the Nasdaq Stock Market Closing Bell - Nasdaq - LinkedIn Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq",
+    "[Semis] June 16 May be a Big Day for the Stock Market and Set the Stage for What Happens Next. - The Motley Fool - June 16 May be a Big Day for the Stock Market and Set the Stage for What Happens Next.&nbsp;&nbsp;The Motley Fool"
   ],
   "debug_error": ""
 }
