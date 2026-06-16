@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16 10:30 (Taipei)",
+  "updated": "2026-06-16 10:45 (Taipei)",
   "history": [
     {
       "date": "2026-06-08",
@@ -1983,6 +1983,39 @@
         "max_asset": 1015015,
         "frenzy_days": 0,
         "tier1": 42,
+        "ai_index": 50.0,
+        "target": 0.5,
+        "zone": "amber",
+        "zone_label": "🟡 理性持倉（情緒健康）",
+        "gate_open": true
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "time": "10:45",
+      "price": 36.99,
+      "tier1": 45,
+      "ai_index": 50.0,
+      "target": 0.5,
+      "zone": "amber",
+      "zone_label": "🟡 理性持倉（情緒健康）",
+      "gate_open": true,
+      "market_ok": true,
+      "asset_trend_ok": true,
+      "ai_ok": false,
+      "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
+      "news": [],
+      "paper": {
+        "cash": 505744,
+        "shares": 13697.4,
+        "equity": 1012413,
+        "market_value": 506668,
+        "position_pct": 50.0,
+        "return_pct": 1.24,
+        "trades": 6,
+        "max_asset": 1015015,
+        "frenzy_days": 0,
+        "tier1": 45,
         "ai_index": 50.0,
         "target": 0.5,
         "zone": "amber",
