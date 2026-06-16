@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16 13:30 (Taipei)",
+  "updated": "2026-06-16 14:40 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -4112,6 +4112,73 @@
         "equity": 989972,
         "market_value": 298275,
         "return_pct": -1.0,
+        "holding": true,
+        "position": {
+          "shares": 8016,
+          "entry_price": 37.0,
+          "entry_date": "2026-06-15",
+          "entry_time": "11:15",
+          "cost": 297014.64,
+          "entry_score": 73,
+          "frac": 0.3
+        },
+        "trades": 1,
+        "wins": 0,
+        "win_rate": 0.0,
+        "realized_pnl": -11288
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "time": "14:40",
+      "price": 37.31,
+      "score": 68,
+      "zone": "amber",
+      "quant_sum": 35,
+      "ai_sum": 33,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "開+1.4%、小幅回落，型態中性"
+        },
+        "sector": {
+          "pts": 16,
+          "max": 20,
+          "note": "隔夜SOX +4.81%至14,015奠定正面底色，台積電盤中翻黑後回穩、被動元件六檔漲停；但TWII僅+0.75%、台積電日內波動顯示動能保留，未完全兌現隔夜利多，稍扣分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "現價在區間中段(65%)"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "推估量約均量0.7倍 → 偏離"
+        },
+        "vwap": {
+          "pts": 10,
+          "max": 10,
+          "note": "現價在VWAP之上(+0.49%) → 有利"
+        },
+        "macro": {
+          "pts": 8,
+          "max": 10,
+          "note": "WTI跌破$80+10Y殖利率4.42%（5月最低），美伊停火完成使地緣通膨風險大幅消退；FOMC決策明日揭曉（新主席Warsh首次完整聲明），不確定性屬低度但非零，輕度扣分"
+        },
+        "trend": {
+          "pts": 9,
+          "max": 10,
+          "note": "TWII約收45,737創近期新高，站穩月線（~44,500-45,000）及季線（~43,000-44,000）之上，「攻多格局」延續；距前高46,459尚差~722點尚未突破，稍扣分"
+        }
+      },
+      "paper": {
+        "cash": 691697,
+        "equity": 990774,
+        "market_value": 299077,
+        "return_pct": -0.92,
         "holding": true,
         "position": {
           "shares": 8016,

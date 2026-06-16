@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 65,
+  "count": 66,
   "history": [
     {
       "date": "2026-06-08",
@@ -2384,6 +2384,50 @@
         "target": 0.5,
         "zone": "amber",
         "zone_label": "🟡 理性持倉（情緒健康）",
+        "gate_open": true
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "time": "14:40",
+      "price": 37.31,
+      "tier1": 35,
+      "ai_index": 82.5,
+      "target": 0.2,
+      "zone": "amber",
+      "zone_label": "🟠 輕倉防守（極度狂熱）",
+      "gate_open": true,
+      "market_ok": true,
+      "asset_trend_ok": true,
+      "ai_ok": true,
+      "summary": "在美國與伊朗達成協議、油價下跌以及科技股表現強勁的帶動下，全球市場情緒樂觀，儘管日本央行升息帶來一些不確定性。",
+      "news": [
+        "[Reuters] Asia markets temper Iran deal optimism, BOJ hikes rates - Reuters - Asia markets temper Iran deal optimism, BOJ hikes rates&nbsp;&nbsp;Reuters",
+        "[Reuters] JPMorgan mulls Chase expansion into Europe's largest markets, FT reports - Reuters - JPMorgan mulls Chase expansion into Europe's largest markets, FT reports&nbsp;&nbsp;Reuters",
+        "[Reuters] Nvidia to raise $25 billion in first corporate bond sale in five years - Reuters - Nvidia to raise $25 billion in first corporate bond sale in five years&nbsp;&nbsp;Reuters",
+        "[Reuters] Morning Bid: Japan turns it up to... 1 - Reuters - Morning Bid: Japan turns it up to... 1&nbsp;&nbsp;Reuters",
+        "[Reuters] Investors choosier about private markets after turbulence, say pension fund advisers - Reuters - Investors choosier about private markets after turbulence, say pension fund advisers&nbsp;&nbsp;Reuters",
+        "[Reuters] Wall Street rallies, Dow ends with record on US-Iran deal, oil price slide - Reuters - Wall Street rallies, Dow ends with record on US-Iran deal, oil price slide&nbsp;&nbsp;Reuters",
+        "[Reuters] Morning Bid: 'Let the oil flow' - Reuters - Morning Bid: 'Let the oil flow'&nbsp;&nbsp;Reuters",
+        "[Reuters] Exclusive: Ukraine aims to align banks, insurers with EU rules by 2028, central banker says - Reuters - Exclusive: Ukraine aims to align banks, insurers with EU rules by 2028, central banker says&nbsp;&nbsp;Reuters",
+        "[Semis] LinkedIn Rings the Nasdaq Stock Market Closing Bell - Nasdaq - LinkedIn Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq",
+        "[Semis] June 16 May be a Big Day for the Stock Market and Set the Stage for What Happens Next. - The Motley Fool - June 16 May be a Big Day for the Stock Market and Set the Stage for What Happens Next.&nbsp;&nbsp;The Motley Fool"
+      ],
+      "paper": {
+        "cash": 505744,
+        "shares": 13697.4,
+        "equity": 1016796,
+        "market_value": 511052,
+        "position_pct": 50.3,
+        "return_pct": 1.68,
+        "trades": 6,
+        "max_asset": 1016796,
+        "frenzy_days": 0,
+        "tier1": 35,
+        "ai_index": 82.5,
+        "target": 0.2,
+        "zone": "amber",
+        "zone_label": "🟠 輕倉防守（極度狂熱）",
         "gate_open": true
       }
     }
