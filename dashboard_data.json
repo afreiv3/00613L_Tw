@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16 11:00 (Taipei)",
+  "updated": "2026-06-16 11:15 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -3442,6 +3442,73 @@
         "equity": 989812,
         "market_value": 298115,
         "return_pct": -1.02,
+        "holding": true,
+        "position": {
+          "shares": 8016,
+          "entry_price": 37.0,
+          "entry_date": "2026-06-15",
+          "entry_time": "11:15",
+          "cost": 297014.64,
+          "entry_score": 73,
+          "frac": 0.3
+        },
+        "trades": 1,
+        "wins": 0,
+        "win_rate": 0.0,
+        "realized_pnl": -11288
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "time": "11:15",
+      "price": 37.04,
+      "score": 80,
+      "zone": "green",
+      "quant_sum": 45,
+      "ai_sum": 35,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "開+1.4%、小幅回落，型態中性"
+        },
+        "sector": {
+          "pts": 18,
+          "max": 20,
+          "note": "隔夜SOX +4.81%至14,014.79、Nasdaq +3.1%、TSM ADR $429.76，半導體板塊全面強勁；韓國Kospi今早再漲2.02%延續強勢，僅因NVDA具體漲幅數字未能精確確認而稍扣分"
+        },
+        "entry": {
+          "pts": 15,
+          "max": 15,
+          "note": "現價近今日低點(區間32%) → 接近支撐"
+        },
+        "volume": {
+          "pts": 15,
+          "max": 15,
+          "note": "推估量約均量1.0倍 → 正常"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "現價貼近VWAP(-0.07%)"
+        },
+        "macro": {
+          "pts": 8,
+          "max": 10,
+          "note": "美伊停火兌現（霍爾木茲重開）+Brent跌至$83-86+10Y殖利率4.42%（5月最低），通膨與地緣風險大幅消退；FOMC今日第一天（96%按兵不動），決策明日（6/17），不確定性屬低度"
+        },
+        "trend": {
+          "pts": 9,
+          "max": 10,
+          "note": "TAIEX 6/15收45,438大陽棒突破月線（~44,500-45,000），季線（~42,000-44,000）支撐穩固，結構升格「重啟攻多」；前高46,459距今約1,000點尚未突破，稍扣分"
+        }
+      },
+      "paper": {
+        "cash": 691697,
+        "equity": 988610,
+        "market_value": 296913,
+        "return_pct": -1.14,
         "holding": true,
         "position": {
           "shares": 8016,
