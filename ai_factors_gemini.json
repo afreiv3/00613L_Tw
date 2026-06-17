@@ -1,33 +1,33 @@
 {
-  "date": "2026-06-16",
-  "generated_at": "2026-06-16 13:36",
+  "date": "2026-06-17",
+  "generated_at": "2026-06-17 13:18",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 17.0,
-    "macro": 8.0,
-    "trend": 8.0
+    "sector": 12.0,
+    "macro": 6.0,
+    "trend": 7.0
   },
-  "ai_sentiment_index": 82.5,
-  "summary": "在美國與伊朗達成協議、油價下跌以及科技股表現強勁的帶動下，全球市場情緒樂觀，儘管日本央行升息帶來一些不確定性。",
+  "ai_sentiment_index": 62.5,
+  "summary": "美國股市在聯準會決議前表現分歧，科技股下跌，但道瓊指數創下新高，油價因伊朗供應前景下滑，市場關注聯準會主席的發言。",
   "news_zh": [
-    "華爾街因美伊協議和油價下跌而上漲，道瓊指數創下歷史新高。",
-    "輝達（Nvidia）五年來首次發行公司債，籌集250億美元。",
-    "日本央行升息，亞洲市場對伊朗協議的樂觀情緒有所降溫。",
-    "投資者在市場動盪後對私募市場的選擇更加謹慎。",
-    "道瓊期貨因川普和伊朗協議而飆升，輝達、美光和Sandisk等科技股表現強勁。",
-    "S&P 500、那斯達克和道瓊期貨在SpaceX和美伊協議推動的反彈後回落，聯準會會議即將召開。"
+    "油價因伊朗供應前景而下跌，市場等待聯準會主席的發言。",
+    "獨家報導：伊朗協議包含3000億美元資金，其中一半以上已承諾。",
+    "在聯準會主席的職位上，Warsh 終於有機會在聯準會資產負債表上留下印記。",
+    "那斯達克和標準普爾500指數下滑，而道瓊指數創下收盤新高。",
+    "亞洲股市在聯準會決議前可能下滑，油價趨穩。",
+    "今日股市：輝達、博通和美光科技領跌那斯達克。"
   ],
   "news": [
-    "[Reuters] Asia markets temper Iran deal optimism, BOJ hikes rates - Reuters - Asia markets temper Iran deal optimism, BOJ hikes rates&nbsp;&nbsp;Reuters",
-    "[Reuters] JPMorgan mulls Chase expansion into Europe's largest markets, FT reports - Reuters - JPMorgan mulls Chase expansion into Europe's largest markets, FT reports&nbsp;&nbsp;Reuters",
-    "[Reuters] Nvidia to raise $25 billion in first corporate bond sale in five years - Reuters - Nvidia to raise $25 billion in first corporate bond sale in five years&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: Japan turns it up to... 1 - Reuters - Morning Bid: Japan turns it up to... 1&nbsp;&nbsp;Reuters",
-    "[Reuters] Investors choosier about private markets after turbulence, say pension fund advisers - Reuters - Investors choosier about private markets after turbulence, say pension fund advisers&nbsp;&nbsp;Reuters",
-    "[Reuters] Wall Street rallies, Dow ends with record on US-Iran deal, oil price slide - Reuters - Wall Street rallies, Dow ends with record on US-Iran deal, oil price slide&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: 'Let the oil flow' - Reuters - Morning Bid: 'Let the oil flow'&nbsp;&nbsp;Reuters",
-    "[Reuters] Exclusive: Ukraine aims to align banks, insurers with EU rules by 2028, central banker says - Reuters - Exclusive: Ukraine aims to align banks, insurers with EU rules by 2028, central banker says&nbsp;&nbsp;Reuters",
-    "[Semis] LinkedIn Rings the Nasdaq Stock Market Closing Bell - Nasdaq - LinkedIn Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq",
-    "[Semis] June 16 May be a Big Day for the Stock Market and Set the Stage for What Happens Next. - The Motley Fool - June 16 May be a Big Day for the Stock Market and Set the Stage for What Happens Next.&nbsp;&nbsp;The Motley Fool"
+    "[Reuters] Oil slides on Iran supply prospects as traders wait on Warsh - Reuters - Oil slides on Iran supply prospects as traders wait on Warsh&nbsp;&nbsp;Reuters",
+    "[Reuters] Exclusive: Iran deal includes $300 billion fund, more than half of which already committed, source says - Reuters - Exclusive: Iran deal includes $300 billion fund, more than half of which already committed, source says&nbsp;&nbsp;Reuters",
+    "[Reuters] As chair, Warsh finally has a chance to put stamp on Fed balance sheet - Reuters - As chair, Warsh finally has a chance to put stamp on Fed balance sheet&nbsp;&nbsp;Reuters",
+    "[Reuters] Exclusive: Binance set to lose permission to operate in EU, sources say - Reuters - Exclusive: Binance set to lose permission to operate in EU, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] SpaceX vaults past Amazon's market value as options listing fuels surge - Reuters - SpaceX vaults past Amazon's market value as options listing fuels surge&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: Central banks take the stage - Reuters - Morning Bid: Central banks take the stage&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: All eyes on how Warsh walks the line - Reuters - Morning Bid: All eyes on how Warsh walks the line&nbsp;&nbsp;Reuters",
+    "[Reuters] Nearly half of investors plan to boost EM private credit - Gemcorp survey - Reuters - Nearly half of investors plan to boost EM private credit - Gemcorp survey&nbsp;&nbsp;Reuters",
+    "[Semis] Nasdaq and S&P 500 slip while Dow hits record close - Reuters - Nasdaq and S&P 500 slip while Dow hits record close&nbsp;&nbsp;Reuters",
+    "[Semis] Dow Futures Rise Before Fed; Four Stocks In Buy Zones - Investor's Business Daily - Dow Futures Rise Before Fed; Four Stocks In Buy Zones&nbsp;&nbsp;Investor's Business Daily"
   ],
   "debug_error": ""
 }
