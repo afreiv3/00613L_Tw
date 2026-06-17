@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 85,
+  "count": 86,
   "history": [
     {
       "date": "2026-06-08",
@@ -3060,6 +3060,50 @@
         "return_pct": 1.65,
         "trades": 6,
         "max_asset": 1016796,
+        "frenzy_days": 0,
+        "tier1": 38,
+        "ai_index": 62.5,
+        "target": 0.5,
+        "zone": "amber",
+        "zone_label": "🟡 理性持倉（情緒健康）",
+        "gate_open": true
+      }
+    },
+    {
+      "date": "2026-06-17",
+      "time": "14:23",
+      "price": 37.51,
+      "tier1": 38,
+      "ai_index": 62.5,
+      "target": 0.5,
+      "zone": "amber",
+      "zone_label": "🟡 理性持倉（情緒健康）",
+      "gate_open": true,
+      "market_ok": true,
+      "asset_trend_ok": true,
+      "ai_ok": true,
+      "summary": "美國股市在聯準會決議前表現分歧，科技股下跌，但道瓊指數創下新高，油價因伊朗供應前景下滑，市場關注聯準會主席的發言。",
+      "news": [
+        "[Reuters] Oil slides on Iran supply prospects as traders wait on Warsh - Reuters - Oil slides on Iran supply prospects as traders wait on Warsh&nbsp;&nbsp;Reuters",
+        "[Reuters] Exclusive: Iran deal includes $300 billion fund, more than half of which already committed, source says - Reuters - Exclusive: Iran deal includes $300 billion fund, more than half of which already committed, source says&nbsp;&nbsp;Reuters",
+        "[Reuters] As chair, Warsh finally has a chance to put stamp on Fed balance sheet - Reuters - As chair, Warsh finally has a chance to put stamp on Fed balance sheet&nbsp;&nbsp;Reuters",
+        "[Reuters] Exclusive: Binance set to lose permission to operate in EU, sources say - Reuters - Exclusive: Binance set to lose permission to operate in EU, sources say&nbsp;&nbsp;Reuters",
+        "[Reuters] SpaceX vaults past Amazon's market value as options listing fuels surge - Reuters - SpaceX vaults past Amazon's market value as options listing fuels surge&nbsp;&nbsp;Reuters",
+        "[Reuters] Morning Bid: Central banks take the stage - Reuters - Morning Bid: Central banks take the stage&nbsp;&nbsp;Reuters",
+        "[Reuters] Morning Bid: All eyes on how Warsh walks the line - Reuters - Morning Bid: All eyes on how Warsh walks the line&nbsp;&nbsp;Reuters",
+        "[Reuters] Nearly half of investors plan to boost EM private credit - Gemcorp survey - Reuters - Nearly half of investors plan to boost EM private credit - Gemcorp survey&nbsp;&nbsp;Reuters",
+        "[Semis] Nasdaq and S&P 500 slip while Dow hits record close - Reuters - Nasdaq and S&P 500 slip while Dow hits record close&nbsp;&nbsp;Reuters",
+        "[Semis] Dow Futures Rise Before Fed; Four Stocks In Buy Zones - Investor's Business Daily - Dow Futures Rise Before Fed; Four Stocks In Buy Zones&nbsp;&nbsp;Investor's Business Daily"
+      ],
+      "paper": {
+        "cash": 505744,
+        "shares": 13697.4,
+        "equity": 1019535,
+        "market_value": 513791,
+        "position_pct": 50.4,
+        "return_pct": 1.95,
+        "trades": 6,
+        "max_asset": 1019535,
         "frenzy_days": 0,
         "tier1": 38,
         "ai_index": 62.5,
