@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 74,
+  "count": 75,
   "history": [
     {
       "date": "2026-06-05",
@@ -4649,6 +4649,73 @@
         "equity": 987087,
         "market_value": 295390,
         "return_pct": -1.29,
+        "holding": true,
+        "position": {
+          "shares": 8016,
+          "entry_price": 37.0,
+          "entry_date": "2026-06-15",
+          "entry_time": "11:15",
+          "cost": 297014.64,
+          "entry_score": 73,
+          "frac": 0.3
+        },
+        "trades": 1,
+        "wins": 0,
+        "win_rate": 0.0,
+        "realized_pnl": -11288
+      }
+    },
+    {
+      "date": "2026-06-17",
+      "time": "10:45",
+      "price": 36.89,
+      "score": 60,
+      "zone": "amber",
+      "quant_sum": 45,
+      "ai_sum": 15,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 20,
+          "max": 20,
+          "note": "現價守在開盤之上(開-2.2%) → 有利"
+        },
+        "sector": {
+          "pts": 3,
+          "max": 20,
+          "note": "隔夜半導體類股明顯轉弱：SOX收13,614.86（-3.44%）、Nasdaq收26,376.34（-1.15%）、台積電ADR收428.18美元（-2.99%），屬獲利了結延續6月初Broadcom財報失望引發的修正，雖道瓊創高但非半導體權值助力有限，板塊明顯轉弱"
+        },
+        "entry": {
+          "pts": 0,
+          "max": 15,
+          "note": "現價在區間上緣(90%) → 屬追高"
+        },
+        "volume": {
+          "pts": 15,
+          "max": 15,
+          "note": "推估量約均量0.7倍 → 正常"
+        },
+        "vwap": {
+          "pts": 10,
+          "max": 10,
+          "note": "現價在VWAP之上(+0.37%) → 有利"
+        },
+        "macro": {
+          "pts": 3,
+          "max": 10,
+          "note": "WTI連4跌逾4%至$78下方降溫能源通膨，惟通膨數據據報升至3年高點4.2%、台北6/18凌晨FOMC決議（新主席Warsh首場記者會）尚未公布、美伊停火後仍傳飛彈警報穩定性存疑，多重不確定性交織，風險略升溫"
+        },
+        "trend": {
+          "pts": 9,
+          "max": 10,
+          "note": "TWII 6/16收45,809.19點（+0.91%）再創波段新高，站穩季線之上多頭結構完好；惟外資期貨空單近7萬口高水位、加上6/17台指期結算日可能放大短線震盪，稍扣分"
+        }
+      },
+      "paper": {
+        "cash": 691697,
+        "equity": 987407,
+        "market_value": 295710,
+        "return_pct": -1.26,
         "holding": true,
         "position": {
           "shares": 8016,
