@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 67,
+  "count": 68,
   "history": [
     {
       "date": "2026-06-08",
@@ -2434,6 +2434,39 @@
     {
       "date": "2026-06-17",
       "time": "09:00",
+      "price": null,
+      "tier1": 30,
+      "ai_index": 50.0,
+      "target": null,
+      "zone": null,
+      "zone_label": null,
+      "gate_open": null,
+      "market_ok": true,
+      "asset_trend_ok": null,
+      "ai_ok": false,
+      "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
+      "news": [],
+      "paper": {
+        "cash": 505744,
+        "shares": 13697.4,
+        "equity": 505744,
+        "market_value": 0,
+        "position_pct": 0.0,
+        "return_pct": -49.43,
+        "trades": 6,
+        "max_asset": 1016796,
+        "frenzy_days": 0,
+        "tier1": 30,
+        "ai_index": 50.0,
+        "target": null,
+        "zone": null,
+        "zone_label": null,
+        "gate_open": null
+      }
+    },
+    {
+      "date": "2026-06-17",
+      "time": "09:15",
       "price": null,
       "tier1": 30,
       "ai_index": 50.0,
