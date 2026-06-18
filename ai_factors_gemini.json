@@ -1,33 +1,32 @@
 {
-  "date": "2026-06-17",
-  "generated_at": "2026-06-17 13:18",
+  "date": "2026-06-18",
+  "generated_at": "2026-06-18 13:05",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 12.0,
-    "macro": 6.0,
-    "trend": 7.0
+    "sector": 5.0,
+    "macro": 4.0,
+    "trend": 4.0
   },
-  "ai_sentiment_index": 62.5,
-  "summary": "美國股市在聯準會決議前表現分歧，科技股下跌，但道瓊指數創下新高，油價因伊朗供應前景下滑，市場關注聯準會主席的發言。",
+  "ai_sentiment_index": 32.5,
+  "summary": "美國聯準會升息預期導致美股下跌，儘管川普簽署伊朗協議，但整體市場仍受聯準會鷹派言論影響。",
   "news_zh": [
-    "油價因伊朗供應前景而下跌，市場等待聯準會主席的發言。",
-    "獨家報導：伊朗協議包含3000億美元資金，其中一半以上已承諾。",
-    "在聯準會主席的職位上，Warsh 終於有機會在聯準會資產負債表上留下印記。",
-    "那斯達克和標準普爾500指數下滑，而道瓊指數創下收盤新高。",
-    "亞洲股市在聯準會決議前可能下滑，油價趨穩。",
-    "今日股市：輝達、博通和美光科技領跌那斯達克。"
+    "日本誓言隨時干預日圓，市場嚴陣以待。",
+    "美國聯準會暗示可能升息，華爾街股市下跌。",
+    "聯準會主席Warsh上任首日標普500指數表現為1994年以來最差。",
+    "中國推動人民幣國際化，並警惕金融風險。",
+    "香港的財富中心地位面臨更嚴峻的未來。"
   ],
   "news": [
-    "[Reuters] Oil slides on Iran supply prospects as traders wait on Warsh - Reuters - Oil slides on Iran supply prospects as traders wait on Warsh&nbsp;&nbsp;Reuters",
-    "[Reuters] Exclusive: Iran deal includes $300 billion fund, more than half of which already committed, source says - Reuters - Exclusive: Iran deal includes $300 billion fund, more than half of which already committed, source says&nbsp;&nbsp;Reuters",
-    "[Reuters] As chair, Warsh finally has a chance to put stamp on Fed balance sheet - Reuters - As chair, Warsh finally has a chance to put stamp on Fed balance sheet&nbsp;&nbsp;Reuters",
-    "[Reuters] Exclusive: Binance set to lose permission to operate in EU, sources say - Reuters - Exclusive: Binance set to lose permission to operate in EU, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] SpaceX vaults past Amazon's market value as options listing fuels surge - Reuters - SpaceX vaults past Amazon's market value as options listing fuels surge&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: Central banks take the stage - Reuters - Morning Bid: Central banks take the stage&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: All eyes on how Warsh walks the line - Reuters - Morning Bid: All eyes on how Warsh walks the line&nbsp;&nbsp;Reuters",
-    "[Reuters] Nearly half of investors plan to boost EM private credit - Gemcorp survey - Reuters - Nearly half of investors plan to boost EM private credit - Gemcorp survey&nbsp;&nbsp;Reuters",
-    "[Semis] Nasdaq and S&P 500 slip while Dow hits record close - Reuters - Nasdaq and S&P 500 slip while Dow hits record close&nbsp;&nbsp;Reuters",
-    "[Semis] Dow Futures Rise Before Fed; Four Stocks In Buy Zones - Investor's Business Daily - Dow Futures Rise Before Fed; Four Stocks In Buy Zones&nbsp;&nbsp;Investor's Business Daily"
+    "[Reuters] Breakingviews - Hong Kong’s wealth hub faces a leaner future - Reuters - Breakingviews - Hong Kong’s wealth hub faces a leaner future&nbsp;&nbsp;Reuters",
+    "[Reuters] Japan vows to act 'any time' on yen as markets brace for intervention - Reuters - Japan vows to act 'any time' on yen as markets brace for intervention&nbsp;&nbsp;Reuters",
+    "[Reuters] Trump ties Iran deal to market swings, warns war risked 'catastrophe' - Reuters - Trump ties Iran deal to market swings, warns war risked 'catastrophe'&nbsp;&nbsp;Reuters",
+    "[Reuters] China makes new push to take yuan global, vows vigilance against financial risks - Reuters - China makes new push to take yuan global, vows vigilance against financial risks&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: Welcome to the Warsh era - Reuters - Morning Bid: Welcome to the Warsh era&nbsp;&nbsp;Reuters",
+    "[Reuters] As IMF visits Senegal, more investors view default as inevitable - Reuters - As IMF visits Senegal, more investors view default as inevitable&nbsp;&nbsp;Reuters",
+    "[Reuters] US SEC poised to allow stock token trading in potential market shakeup - Reuters - US SEC poised to allow stock token trading in potential market shakeup&nbsp;&nbsp;Reuters",
+    "[Reuters] Fed's Warsh flags new tasks forces to study Fed operations - Reuters - Fed's Warsh flags new tasks forces to study Fed operations&nbsp;&nbsp;Reuters",
+    "[Semis] Futures Rise After Fed Hits Market; These AI Stocks Flash Buy Signals - Investor's Business Daily - Futures Rise After Fed Hits Market; These AI Stocks Flash Buy Signals&nbsp;&nbsp;Investor's Business Daily",
+    "[Semis] US stock futures surge after Trump signs Iran deal; Markets digest hawkish Fed - Investing.com - US stock futures surge after Trump signs Iran deal; Markets digest hawkish Fed&nbsp;&nbsp;Investing.com"
   ],
   "debug_error": ""
 }
