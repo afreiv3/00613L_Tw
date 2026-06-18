@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 103,
+  "count": 104,
   "history": [
     {
       "date": "2026-06-08",
@@ -3668,6 +3668,50 @@
         "frenzy_days": 0,
         "tier1": 40,
         "ai_index": 50.0,
+        "target": 0.5,
+        "zone": "amber",
+        "zone_label": "🟡 理性持倉（情緒健康）",
+        "gate_open": true
+      }
+    },
+    {
+      "date": "2026-06-18",
+      "time": "13:15",
+      "price": 38.04,
+      "tier1": 48,
+      "ai_index": 32.5,
+      "target": 0.5,
+      "zone": "amber",
+      "zone_label": "🟡 理性持倉（情緒健康）",
+      "gate_open": true,
+      "market_ok": true,
+      "asset_trend_ok": true,
+      "ai_ok": true,
+      "summary": "美國聯準會升息預期導致美股下跌，儘管川普簽署伊朗協議，但整體市場仍受聯準會鷹派言論影響。",
+      "news": [
+        "[Reuters] Breakingviews - Hong Kong’s wealth hub faces a leaner future - Reuters - Breakingviews - Hong Kong’s wealth hub faces a leaner future&nbsp;&nbsp;Reuters",
+        "[Reuters] Japan vows to act 'any time' on yen as markets brace for intervention - Reuters - Japan vows to act 'any time' on yen as markets brace for intervention&nbsp;&nbsp;Reuters",
+        "[Reuters] Trump ties Iran deal to market swings, warns war risked 'catastrophe' - Reuters - Trump ties Iran deal to market swings, warns war risked 'catastrophe'&nbsp;&nbsp;Reuters",
+        "[Reuters] China makes new push to take yuan global, vows vigilance against financial risks - Reuters - China makes new push to take yuan global, vows vigilance against financial risks&nbsp;&nbsp;Reuters",
+        "[Reuters] Morning Bid: Welcome to the Warsh era - Reuters - Morning Bid: Welcome to the Warsh era&nbsp;&nbsp;Reuters",
+        "[Reuters] As IMF visits Senegal, more investors view default as inevitable - Reuters - As IMF visits Senegal, more investors view default as inevitable&nbsp;&nbsp;Reuters",
+        "[Reuters] US SEC poised to allow stock token trading in potential market shakeup - Reuters - US SEC poised to allow stock token trading in potential market shakeup&nbsp;&nbsp;Reuters",
+        "[Reuters] Fed's Warsh flags new tasks forces to study Fed operations - Reuters - Fed's Warsh flags new tasks forces to study Fed operations&nbsp;&nbsp;Reuters",
+        "[Semis] Futures Rise After Fed Hits Market; These AI Stocks Flash Buy Signals - Investor's Business Daily - Futures Rise After Fed Hits Market; These AI Stocks Flash Buy Signals&nbsp;&nbsp;Investor's Business Daily",
+        "[Semis] US stock futures surge after Trump signs Iran deal; Markets digest hawkish Fed - Investing.com - US stock futures surge after Trump signs Iran deal; Markets digest hawkish Fed&nbsp;&nbsp;Investing.com"
+      ],
+      "paper": {
+        "cash": 505744,
+        "shares": 13697.4,
+        "equity": 1026795,
+        "market_value": 521051,
+        "position_pct": 50.7,
+        "return_pct": 2.68,
+        "trades": 6,
+        "max_asset": 1030082,
+        "frenzy_days": 0,
+        "tier1": 48,
+        "ai_index": 32.5,
         "target": 0.5,
         "zone": "amber",
         "zone_label": "🟡 理性持倉（情緒健康）",
