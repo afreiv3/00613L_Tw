@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 102,
+  "count": 103,
   "history": [
     {
       "date": "2026-06-08",
@@ -3630,6 +3630,39 @@
         "market_value": 518722,
         "position_pct": 50.6,
         "return_pct": 2.45,
+        "trades": 6,
+        "max_asset": 1030082,
+        "frenzy_days": 0,
+        "tier1": 40,
+        "ai_index": 50.0,
+        "target": 0.5,
+        "zone": "amber",
+        "zone_label": "🟡 理性持倉（情緒健康）",
+        "gate_open": true
+      }
+    },
+    {
+      "date": "2026-06-18",
+      "time": "13:00",
+      "price": 37.92,
+      "tier1": 40,
+      "ai_index": 50.0,
+      "target": 0.5,
+      "zone": "amber",
+      "zone_label": "🟡 理性持倉（情緒健康）",
+      "gate_open": true,
+      "market_ok": true,
+      "asset_trend_ok": true,
+      "ai_ok": false,
+      "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
+      "news": [],
+      "paper": {
+        "cash": 505744,
+        "shares": 13697.4,
+        "equity": 1025151,
+        "market_value": 519407,
+        "position_pct": 50.7,
+        "return_pct": 2.52,
         "trades": 6,
         "max_asset": 1030082,
         "frenzy_days": 0,
