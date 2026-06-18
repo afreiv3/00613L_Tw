@@ -311,15 +311,24 @@ def load_ai_factors(today):
     return neutral, meta, False
 
 
+def _upsert_by_date(hist, record):
+    """一天一筆：同一天就更新最新狀態(覆蓋)，不同天才新增。波段操作看日線即可，避免每15分一列。"""
+    if hist and hist[-1].get("date") == record.get("date"):
+        hist[-1] = record
+    else:
+        hist.append(record)
+    return hist
+
+
 def write_dashboard(record, path="dashboard_data.json", keep=240):
-    """維護一份滾動歷史 JSON 給網頁面板讀。"""
+    """維護一份滾動歷史 JSON 給網頁面板讀（一天一筆）。"""
     hist = []
     try:
         with open(path, "r", encoding="utf-8") as f:
             hist = json.load(f).get("history", [])
     except Exception:
         pass
-    hist.append(record)
+    _upsert_by_date(hist, record)
     hist = hist[-keep:]
     with open(path, "w", encoding="utf-8") as f:
         json.dump({"updated": f"{record['date']} {record['time']} (Taipei)",
@@ -327,7 +336,7 @@ def write_dashboard(record, path="dashboard_data.json", keep=240):
 
 
 def append_archive(record, prefix="archive_quant"):
-    """永久紀錄：按年切檔、不截斷。面板平時不抓它，只有點『載入歷史』才讀，頁面保持快速。"""
+    """永久紀錄：按年切檔、一天一筆（同日更新）。面板平時不抓它，只有點『載入歷史』才讀。"""
     year = record["date"][:4]
     path = f"{prefix}_{year}.json"
     hist = []
@@ -336,7 +345,7 @@ def append_archive(record, prefix="archive_quant"):
             hist = json.load(f).get("history", [])
     except Exception:
         pass
-    hist.append(record)
+    _upsert_by_date(hist, record)
     with open(path, "w", encoding="utf-8") as f:
         json.dump({"year": year, "count": len(hist), "history": hist},
                   f, ensure_ascii=False, indent=2)

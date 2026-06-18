@@ -74,6 +74,10 @@ def _summary(s, price):
     ret_pct = (equity / start - 1) * 100 if start else 0
     trades = s.get("trades", 0)
     win_rate = (s.get("wins", 0) / trades * 100) if trades else 0
+    # 目前持股的未實現損益（市值 − 成本）
+    cost = pos["cost"] if pos else 0
+    unreal = (mkt - cost) if pos else 0
+    unreal_pct = (unreal / cost * 100) if cost > 0 else 0
     return {
         "cash": round(s["cash"]),
         "equity": round(equity),
@@ -81,6 +85,10 @@ def _summary(s, price):
         "return_pct": round(ret_pct, 2),
         "holding": bool(pos),
         "position": pos,
+        "shares": round(pos["shares"], 1) if pos else 0,
+        "avg_cost": pos["entry_price"] if pos else None,
+        "unrealized": round(unreal),
+        "unrealized_pct": round(unreal_pct, 2),
         "trades": trades,
         "wins": s.get("wins", 0),
         "win_rate": round(win_rate, 1),

@@ -81,7 +81,7 @@ def load_state():
         with open(STATE_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
     except Exception:
-        return {"cash": float(START_CAPITAL), "shares": 0.0,
+        return {"cash": float(START_CAPITAL), "shares": 0.0, "cost_basis": 0.0,
                 "start_capital": float(START_CAPITAL),
                 "max_asset": float(START_CAPITAL), "frenzy_days": 0,
                 "last_date": "", "trades": 0}
@@ -112,8 +112,14 @@ def _summary(s, price, ev):
     mkt = shares * price if price else 0
     equity = s["cash"] + mkt
     start = s.get("start_capital", START_CAPITAL)
+    cost = s.get("cost_basis", 0.0)                       # 目前持股的總成本
+    avg_cost = (cost / shares) if shares > 0 else None    # 平均成本
+    unreal = (mkt - cost) if shares > 0 else 0            # 未實現損益
+    unreal_pct = (unreal / cost * 100) if cost > 0 else 0
     return {
         "cash": round(s["cash"]), "shares": round(shares, 1),
+        "avg_cost": round(avg_cost, 2) if avg_cost else None,
+        "unrealized": round(unreal), "unrealized_pct": round(unreal_pct, 2),
         "equity": round(equity), "market_value": round(mkt),
         "position_pct": round(mkt / equity * 100, 1) if equity else 0,
         "return_pct": round((equity / start - 1) * 100, 2) if start else 0,
@@ -167,6 +173,7 @@ def run(today, now_hm, ev, price):
         sold = s["shares"]
         s["cash"] += sold * price * (1 - FEE_RATE - TAX_RATE)
         s["shares"] = 0.0
+        s["cost_basis"] = 0.0
         s["max_asset"] = s["cash"]
         s["trades"] = s.get("trades", 0) + 1
         rec = {"date": today, "time": now_hm, "action": "SELL", "price": round(price, 2),
@@ -192,14 +199,18 @@ def run(today, now_hm, ev, price):
             if sh > 0:
                 s["shares"] += sh
                 s["cash"] -= sh * price * (1 + FEE_RATE)
+                s["cost_basis"] = s.get("cost_basis", 0.0) + sh * price * (1 + FEE_RATE)
                 action, reason = "BUY", f"再平衡至 {int(target*100)}%（{ev['zone_label']}）"
             else:
                 sh = 0
         else:                                          # 減碼
             sh = min((-diff) / price, s["shares"])
             if sh > 0:
+                old_sh = s["shares"]
                 s["cash"] += sh * price * (1 - FEE_RATE - TAX_RATE)
                 s["shares"] -= sh
+                # 成本按比例減少（保留剩餘持股的平均成本）
+                s["cost_basis"] = s.get("cost_basis", 0.0) * (s["shares"] / old_sh) if old_sh else 0.0
                 action, reason = "SELL", f"再平衡至 {int(target*100)}%（{ev['zone_label']}）"
         if sh > 0:
             s["trades"] = s.get("trades", 0) + 1

@@ -150,9 +150,9 @@
       <div class="pstat"><div class="pk">總資產</div><div class="pv" id="pEquity">—</div></div>
       <div class="pstat"><div class="pk">總報酬</div><div class="pv" id="pReturn">—</div></div>
       <div class="pstat"><div class="pk">現金</div><div class="pv" id="pCash">—</div></div>
-      <div class="pstat"><div class="pk">目前持倉</div><div class="pv" id="pPos">—</div></div>
-      <div class="pstat"><div class="pk">交易次數</div><div class="pv" id="pTrades">—</div></div>
-      <div class="pstat"><div class="pk">勝率</div><div class="pv" id="pWin">—</div></div>
+      <div class="pstat"><div class="pk">持有股數</div><div class="pv" id="pShares">—</div></div>
+      <div class="pstat"><div class="pk">預估收益</div><div class="pv" id="pUnreal">—</div></div>
+      <div class="pstat"><div class="pk">勝率／交易</div><div class="pv" id="pWin">—</div></div>
     </div>
     <div id="paperTradesWrap"></div>
     <div class="meta" style="margin-top:8px">規則：分數≥70 進場（依分數投30/50/70%）；停損-8%・停利+15%・分數&lt;50 出場。<b>波段操作：一天最多一次交易、僅盤中(09:00–13:30)成交。</b>含手續費與證交稅。純模擬，非投資建議。</div>
@@ -209,10 +209,10 @@
       <div class="paper-stats">
         <div class="pstat"><div class="pk">總資產</div><div class="pv" id="gpEquity">—</div></div>
         <div class="pstat"><div class="pk">總報酬</div><div class="pv" id="gpReturn">—</div></div>
-        <div class="pstat"><div class="pk">目前水位</div><div class="pv" id="gpPos">—</div></div>
         <div class="pstat"><div class="pk">現金</div><div class="pv" id="gpCash">—</div></div>
-        <div class="pstat"><div class="pk">再平衡次數</div><div class="pv" id="gpTrades">—</div></div>
-        <div class="pstat"><div class="pk">連續狂熱</div><div class="pv" id="gpFrenzy">—</div></div>
+        <div class="pstat"><div class="pk">持有股數</div><div class="pv" id="gpShares">—</div></div>
+        <div class="pstat"><div class="pk">預估收益</div><div class="pv" id="gpUnreal">—</div></div>
+        <div class="pstat"><div class="pk">目前水位</div><div class="pv" id="gpPos">—</div></div>
       </div>
       <div id="gPaperTradesWrap"></div>
       <div class="meta" style="margin-top:8px">規則：<b>進場</b>＝量化≥35＋大盤站季線＋00631L站20MA（買在好價位＋趨勢）；<b>出場</b>＝只在趨勢轉壞才賣（大盤跌破季線／00631L跌破20MA／移動止盈回撤10%），不再因量化&lt;35 就賣，讓獲利奔跑。第二層 AI 情緒&lt;30 重倉80%／30–75 標倉50%／&gt;75 輕倉20%（反向）控水位；連3日狂熱壓20%。<b>波段操作：一天最多一次交易、僅盤中(09:00–13:30)成交。</b>純模擬，非投資建議。</div>
@@ -376,6 +376,13 @@ function renderJudge(data){
   }
 }
 
+function setUnreal(id, p){
+  const el = document.getElementById(id);
+  if(!p.holding){ el.textContent = "—"; el.style.color="var(--muted)"; return; }
+  const v = p.unrealized||0, pct = p.unrealized_pct||0;
+  el.textContent = `${v>=0?"+":""}${Number(v).toLocaleString()}（${pct>=0?"+":""}${pct}%）`;
+  el.style.color = v>0?"var(--green)":(v<0?"var(--red)":"var(--muted)");
+}
 function renderPaper(p){
   const fmt = n => (n==null?"—":Number(n).toLocaleString());
   if(!p){ return; }
@@ -385,9 +392,9 @@ function renderPaper(p){
   ret.style.color = p.return_pct>0?"var(--green)":(p.return_pct<0?"var(--red)":"var(--muted)");
   document.getElementById("pCash").textContent = fmt(p.cash);
   const pos = p.position;
-  document.getElementById("pPos").textContent = pos ? `${pos.shares} 股 @ ${pos.entry_price}` : "空手";
-  document.getElementById("pTrades").textContent = p.trades ?? 0;
-  document.getElementById("pWin").textContent = p.trades ? p.win_rate + "%" : "—";
+  document.getElementById("pShares").textContent = pos ? `${pos.shares} 股 @ ${pos.entry_price}` : "空手";
+  setUnreal("pUnreal", p);
+  document.getElementById("pWin").textContent = p.trades ? `${p.win_rate}%／${p.trades}次` : "—";
 }
 
 function renderPaperTrades(data){
@@ -456,10 +463,11 @@ function renderGemini(data, ai){
     const ret=document.getElementById("gpReturn");
     ret.textContent=(p.return_pct>=0?"+":"")+p.return_pct+"%";
     ret.style.color=p.return_pct>0?"var(--green)":(p.return_pct<0?"var(--red)":"var(--muted)");
-    document.getElementById("gpPos").textContent = (p.position_pct??0)+"%";
     document.getElementById("gpCash").textContent = numfmt(p.cash);
-    document.getElementById("gpTrades").textContent = p.trades??0;
-    document.getElementById("gpFrenzy").textContent = (p.frenzy_days??0)+" 天";
+    const holding = (p.shares||0) > 0;
+    document.getElementById("gpShares").textContent = holding ? `${p.shares} 股 @ ${p.avg_cost??"—"}` : "空手";
+    setUnreal("gpUnreal", {holding, unrealized:p.unrealized, unrealized_pct:p.unrealized_pct});
+    document.getElementById("gpPos").textContent = (p.position_pct??0)+"%";
   }
 }
 
