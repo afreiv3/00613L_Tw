@@ -131,9 +131,15 @@ def intraday(symbol):
         elapsed_min = (ts[-1] - ts[0]) / 60 + 5
         frac = max(0.05, min(1.0, elapsed_min / 270))
 
+        # 最新一根 K 的台北日期：休市日 Yahoo 會回傳前一交易日的資料，
+        # 用它和「今天」比對即可判斷今天是否真的開盤（見 main() 休市防呆）。
+        last_date = (dt.datetime.fromtimestamp(ts[-1], dt.timezone.utc)
+                     + dt.timedelta(hours=8)).strftime("%Y-%m-%d")
+
         return {
             "open": first_open, "current": cur, "high": day_high, "low": day_low,
             "prev_close": prev_close, "vwap": vwap, "frac": frac, "cum_vol": cum_vol,
+            "date": last_date,
         }
     except Exception as e:
         print(f"[warn] 解析 {symbol} 盤中失敗: {e}", file=sys.stderr)
@@ -359,6 +365,15 @@ def main():
 
     # 盤中量化 4 項（60）＋ 盤前 AI 定案 3 項（40）→ 合併總分
     qpts, qnotes, px = score_quant()
+
+    # 休市防呆：台股國定假日（如端午節）落在週一~週五時，GitHub/cron 仍會照常觸發，
+    # 而 Yahoo 在非交易日會回傳「前一交易日」的價量。若盤中資料日期 ≠ 今天，
+    # 代表今天根本沒開盤 → 不下單、不寫盤面數據、不推播，避免產生幽靈交易。
+    # （盤前新聞評估由 gemini_preopen.py 另外產生，不受此影響，仍可照常找新聞。）
+    if px and px.get("date") and px["date"] != today:
+        print(f"{today} {now_hm} 休市（最新盤中資料為 {px['date']}）→ 跳過下單與面板寫入")
+        return
+
     ai_f, ai_meta, ai_ok = load_ai_factors(today)
     factors = {}
     for k in QUANT_KEYS:
