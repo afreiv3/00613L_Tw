@@ -1,32 +1,32 @@
 {
-  "date": "2026-06-18",
-  "generated_at": "2026-06-18 13:05",
+  "date": "2026-06-19",
+  "generated_at": "2026-06-19 13:27",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 5.0,
-    "macro": 4.0,
-    "trend": 4.0
+    "sector": 18.0,
+    "macro": 7.0,
+    "trend": 8.0
   },
-  "ai_sentiment_index": 32.5,
-  "summary": "美國聯準會升息預期導致美股下跌，儘管川普簽署伊朗協議，但整體市場仍受聯準會鷹派言論影響。",
+  "ai_sentiment_index": 82.5,
+  "summary": "在晶片股和伊朗樂觀情緒的推動下，華爾街指數上漲，費城半導體指數創歷史新高，預示台灣股市今日開盤前環境樂觀。",
   "news_zh": [
-    "日本誓言隨時干預日圓，市場嚴陣以待。",
-    "美國聯準會暗示可能升息，華爾街股市下跌。",
-    "聯準會主席Warsh上任首日標普500指數表現為1994年以來最差。",
-    "中國推動人民幣國際化，並警惕金融風險。",
-    "香港的財富中心地位面臨更嚴峻的未來。"
+    "晶片股和伊朗樂觀情緒提振華爾街指數。",
+    "費城半導體指數創歷史新高，市場情緒聚焦半導體和AI相關股票。",
+    "日韓股市創下新紀錄，美元受聯準會提振。",
+    "日圓逼近40年低點，市場關注干預。",
+    "MSCI在新興市場評估前，對印尼透明度提出新的擔憂。"
   ],
   "news": [
-    "[Reuters] Breakingviews - Hong Kong’s wealth hub faces a leaner future - Reuters - Breakingviews - Hong Kong’s wealth hub faces a leaner future&nbsp;&nbsp;Reuters",
-    "[Reuters] Japan vows to act 'any time' on yen as markets brace for intervention - Reuters - Japan vows to act 'any time' on yen as markets brace for intervention&nbsp;&nbsp;Reuters",
-    "[Reuters] Trump ties Iran deal to market swings, warns war risked 'catastrophe' - Reuters - Trump ties Iran deal to market swings, warns war risked 'catastrophe'&nbsp;&nbsp;Reuters",
-    "[Reuters] China makes new push to take yuan global, vows vigilance against financial risks - Reuters - China makes new push to take yuan global, vows vigilance against financial risks&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: Welcome to the Warsh era - Reuters - Morning Bid: Welcome to the Warsh era&nbsp;&nbsp;Reuters",
-    "[Reuters] As IMF visits Senegal, more investors view default as inevitable - Reuters - As IMF visits Senegal, more investors view default as inevitable&nbsp;&nbsp;Reuters",
-    "[Reuters] US SEC poised to allow stock token trading in potential market shakeup - Reuters - US SEC poised to allow stock token trading in potential market shakeup&nbsp;&nbsp;Reuters",
-    "[Reuters] Fed's Warsh flags new tasks forces to study Fed operations - Reuters - Fed's Warsh flags new tasks forces to study Fed operations&nbsp;&nbsp;Reuters",
-    "[Semis] Futures Rise After Fed Hits Market; These AI Stocks Flash Buy Signals - Investor's Business Daily - Futures Rise After Fed Hits Market; These AI Stocks Flash Buy Signals&nbsp;&nbsp;Investor's Business Daily",
-    "[Semis] US stock futures surge after Trump signs Iran deal; Markets digest hawkish Fed - Investing.com - US stock futures surge after Trump signs Iran deal; Markets digest hawkish Fed&nbsp;&nbsp;Investing.com"
+    "[Reuters] Wall St indexes advance with boost from chips, Iran optimism - Reuters - Wall St indexes advance with boost from chips, Iran optimism&nbsp;&nbsp;Reuters",
+    "[Reuters] Yen at brink of 40-year low puts markets on intervention watch - Reuters - Yen at brink of 40-year low puts markets on intervention watch&nbsp;&nbsp;Reuters",
+    "[Reuters] MSCI raises new Indonesia transparency concerns ahead of emerging markets verdict - Reuters - MSCI raises new Indonesia transparency concerns ahead of emerging markets verdict&nbsp;&nbsp;Reuters",
+    "[Reuters] NEWSLETTER: Does less talk at the Fed mean more noise for markets? - Reuters - NEWSLETTER: Does less talk at the Fed mean more noise for markets?&nbsp;&nbsp;Reuters",
+    "[Reuters] EU leaders to clash over bloc's next 7-year budget, seek new revenue sources - Reuters - EU leaders to clash over bloc's next 7-year budget, seek new revenue sources&nbsp;&nbsp;Reuters",
+    "[Reuters] Indonesia's Prabowo taps Danantara to drive agenda, testing fund's capacity - Reuters - Indonesia's Prabowo taps Danantara to drive agenda, testing fund's capacity&nbsp;&nbsp;Reuters",
+    "[Reuters] India's largest-ever IPOs ahead of NSE, Reliance Jio offering - Reuters - India's largest-ever IPOs ahead of NSE, Reliance Jio offering&nbsp;&nbsp;Reuters",
+    "[Reuters] Stocks set records in Japan, South Korea; dollar gets Fed boost - Reuters - Stocks set records in Japan, South Korea; dollar gets Fed boost&nbsp;&nbsp;Reuters",
+    "[Semis] Is the stock market open on Juneteenth? Here's the holiday trading schedule in 2026. - Yahoo Finance - Is the stock market open on Juneteenth? Here's the holiday trading schedule in 2026.&nbsp;&nbsp;Yahoo Finance",
+    "[Semis] Is the Stock Market Open Today? Here Are the Trading Hours for Juneteenth. - Barron's - Is the Stock Market Open Today? Here Are the Trading Hours for Juneteenth.&nbsp;&nbsp;Barron's"
   ],
   "debug_error": ""
 }
