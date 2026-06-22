@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18 14:05 (Taipei)",
+  "updated": "2026-06-22 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -6733,6 +6733,69 @@
         "return_pct": -0.26,
         "holding": false,
         "position": null,
+        "trades": 2,
+        "wins": 1,
+        "win_rate": 50.0,
+        "realized_pnl": -2594
+      }
+    },
+    {
+      "date": "2026-06-22",
+      "time": "09:00",
+      "price": null,
+      "score": 50,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 20,
+      "ai_ok": false,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤前 AI 因子缺—以中性計"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "盤前 AI 因子缺—以中性計"
+        },
+        "trend": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "盤前 AI 因子缺—以中性計"
+        }
+      },
+      "paper": {
+        "cash": 997406,
+        "equity": 997406,
+        "market_value": 0,
+        "return_pct": -0.26,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
         "trades": 2,
         "wins": 1,
         "win_rate": 50.0,
