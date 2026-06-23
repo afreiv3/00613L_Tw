@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23 11:00 (Taipei)",
+  "updated": "2026-06-23 11:15 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -6812,11 +6812,11 @@
     },
     {
       "date": "2026-06-23",
-      "time": "11:00",
-      "price": 40.97,
-      "score": 60,
+      "time": "11:15",
+      "price": 41.02,
+      "score": 67,
       "zone": "amber",
-      "quant_sum": 32,
+      "quant_sum": 40,
       "ai_sum": 27,
       "ai_ok": true,
       "factors": {
@@ -6833,17 +6833,17 @@
         "entry": {
           "pts": 15,
           "max": 15,
-          "note": "現價近今日低點(區間23%) → 接近支撐"
+          "note": "現價近今日低點(區間27%) → 接近支撐"
         },
         "volume": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "推估量約均量1.5倍 → 偏離"
+          "note": "推估量約均量1.4倍 → 正常"
         },
         "vwap": {
           "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之下(-0.63%) → 弱勢"
+          "note": "現價在VWAP之下(-0.48%) → 弱勢"
         },
         "macro": {
           "pts": 6,
