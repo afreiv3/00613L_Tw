@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23 10:00 (Taipei)",
+  "updated": "2026-06-23 10:15 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -6812,11 +6812,11 @@
     },
     {
       "date": "2026-06-23",
-      "time": "10:00",
-      "price": 41.17,
-      "score": 52,
+      "time": "10:15",
+      "price": 41.1,
+      "score": 44,
       "zone": "amber",
-      "quant_sum": 25,
+      "quant_sum": 18,
       "ai_sum": 27,
       "ai_ok": true,
       "factors": {
@@ -6831,9 +6831,9 @@
           "note": "隔夜那斯達克因Google(-5%)、Amazon(-4.8%)、Meta(-2.3%)、微軟(-3%)等非半導體科技巨頭股權增資疑慮重挫，指數收跌1.32%；惟台積電ADR逆勢創高(約467-476美元)，半導體與大盤科技呈現分歧但相對抗跌，故以分歧偏正向評分"
         },
         "entry": {
-          "pts": 15,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價近今日低點(區間18%) → 接近支撐"
+          "note": "現價在區間中段(35%)"
         },
         "volume": {
           "pts": 0,
@@ -6843,7 +6843,7 @@
         "vwap": {
           "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之下(-0.50%) → 弱勢"
+          "note": "現價在VWAP之下(-0.42%) → 弱勢"
         },
         "macro": {
           "pts": 6,
@@ -6857,28 +6857,20 @@
         }
       },
       "paper": {
-        "cash": 697761,
-        "equity": 998220,
-        "market_value": 300459,
-        "return_pct": -0.18,
-        "holding": true,
-        "position": {
-          "shares": 7298,
-          "entry_price": 41.0,
-          "entry_date": "2026-06-22",
-          "entry_time": "11:15",
-          "cost": 299644.39,
-          "entry_score": 71,
-          "frac": 0.3
-        },
-        "shares": 7298,
-        "avg_cost": 41.0,
-        "unrealized": 814,
-        "unrealized_pct": 0.27,
-        "trades": 2,
+        "cash": 996982,
+        "equity": 996982,
+        "market_value": 0,
+        "return_pct": -0.3,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 3,
         "wins": 1,
-        "win_rate": 50.0,
-        "realized_pnl": -2594
+        "win_rate": 33.3,
+        "realized_pnl": -3018
       }
     }
   ]
