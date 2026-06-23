@@ -6813,18 +6813,18 @@
     },
     {
       "date": "2026-06-23",
-      "time": "09:30",
-      "price": 41.54,
-      "score": 60,
+      "time": "09:45",
+      "price": 41.12,
+      "score": 52,
       "zone": "amber",
-      "quant_sum": 32,
+      "quant_sum": 25,
       "ai_sum": 27,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 20,
+          "pts": 10.0,
           "max": 20,
-          "note": "現價守在開盤之上(開+0.4%) → 有利"
+          "note": "開+0.4%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 12,
@@ -6832,19 +6832,19 @@
           "note": "隔夜那斯達克因Google(-5%)、Amazon(-4.8%)、Meta(-2.3%)、微軟(-3%)等非半導體科技巨頭股權增資疑慮重挫，指數收跌1.32%；惟台積電ADR逆勢創高(約467-476美元)，半導體與大盤科技呈現分歧但相對抗跌，故以分歧偏正向評分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "現價在區間中段(49%)"
+          "note": "現價近今日低點(區間12%) → 接近支撐"
         },
         "volume": {
           "pts": 0,
           "max": 15,
-          "note": "推估量約均量1.9倍 → 爆量(疑換手/出貨)"
+          "note": "推估量約均量2.4倍 → 爆量(疑換手/出貨)"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 0,
           "max": 10,
-          "note": "現價貼近VWAP(-0.04%)"
+          "note": "現價在VWAP之下(-0.71%) → 弱勢"
         },
         "macro": {
           "pts": 6,
@@ -6859,9 +6859,9 @@
       },
       "paper": {
         "cash": 697761,
-        "equity": 1000920,
-        "market_value": 303159,
-        "return_pct": 0.09,
+        "equity": 997855,
+        "market_value": 300094,
+        "return_pct": -0.21,
         "holding": true,
         "position": {
           "shares": 7298,
@@ -6874,8 +6874,8 @@
         },
         "shares": 7298,
         "avg_cost": 41.0,
-        "unrealized": 3515,
-        "unrealized_pct": 1.17,
+        "unrealized": 449,
+        "unrealized_pct": 0.15,
         "trades": 2,
         "wins": 1,
         "win_rate": 50.0,
