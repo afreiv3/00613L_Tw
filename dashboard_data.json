@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23 16:39 (Taipei)",
+  "updated": "2026-06-24 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -6854,6 +6854,69 @@
           "pts": 8,
           "max": 10,
           "note": "加權指數連2日創歷史新高(6/22收47,713.28點+2.69%，6/23網路訊息顯示續強)，結構遠高於季線估算區間，多頭動能延續；惟Yahoo Finance API今日全面403 Forbidden，精確收盤與MA60數值無法逐筆驗證，且連續大漲後指數已處高檔，短線追高/獲利了結風險需留意"
+        }
+      },
+      "paper": {
+        "cash": 996982,
+        "equity": 996982,
+        "market_value": 0,
+        "return_pct": -0.3,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 3,
+        "wins": 1,
+        "win_rate": 33.3,
+        "realized_pnl": -3018
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "time": "09:00",
+      "price": null,
+      "score": 35,
+      "zone": "red",
+      "quant_sum": 30,
+      "ai_sum": 5,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 0,
+          "max": 20,
+          "note": "隔夜費半SOX暴跌7.9%（近3年最大單日跌幅）、TSM ADR跌6.7%至$436.39、MU跌11.4%、SMH跌6.5%，半導體板塊全面崩弱，南韓KOSPI晶片股亦跌近10%，00631L最相關板塊嚴重偏空"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 0,
+          "max": 10,
+          "note": "BofA+Deutsche Bank同步警告Fed 9月升息（市場機率68%，前週僅29%），10Y殖利率升至4.5%近兩週高點，利率預期大幅重新定價；油價雖因美伊談判下跌略緩通膨，但整體系統性風險顯著升溫"
+        },
+        "trend": {
+          "pts": 5,
+          "max": 10,
+          "note": "加權指數昨收約47,400-47,700歷史高位，台指期夜盤01:22顯示已下修至46,460；預估今日開盤恐進一步下探，接近季線估算區間（~44,000-45,500，Yahoo Finance 403無法精確確認），判定貼近季線，待開盤確認"
         }
       },
       "paper": {
