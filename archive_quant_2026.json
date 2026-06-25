@@ -6939,18 +6939,18 @@
     },
     {
       "date": "2026-06-25",
-      "time": "13:00",
-      "price": 38.1,
-      "score": 56,
+      "time": "13:12",
+      "price": 38.14,
+      "score": 48,
       "zone": "amber",
-      "quant_sum": 28,
+      "quant_sum": 20,
       "ai_sum": 28,
       "ai_ok": true,
       "factors": {
         "pattern": {
           "pts": 0,
           "max": 20,
-          "note": "開高(+2.2%)走低、吐回98%漲幅 → 不利"
+          "note": "開高(+2.2%)走低、吐回93%漲幅 → 不利"
         },
         "sector": {
           "pts": 15,
@@ -6960,17 +6960,17 @@
         "entry": {
           "pts": 7.5,
           "max": 15,
-          "note": "現價在區間中段(39%)"
+          "note": "現價在區間中段(42%)"
         },
         "volume": {
-          "pts": 15,
+          "pts": 7.5,
           "max": 15,
-          "note": "推估量約均量0.7倍 → 正常"
+          "note": "推估量約均量0.7倍 → 偏離"
         },
         "vwap": {
           "pts": 5.0,
           "max": 10,
-          "note": "現價貼近VWAP(-0.20%)"
+          "note": "現價貼近VWAP(-0.09%)"
         },
         "macro": {
           "pts": 6,
