@@ -1,33 +1,33 @@
 {
-  "date": "2026-06-24",
-  "generated_at": "2026-06-24 12:38",
+  "date": "2026-06-25",
+  "generated_at": "2026-06-25 12:35",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 2.0,
+    "sector": 18.0,
     "macro": 7.0,
-    "trend": 4.0
+    "trend": 8.0
   },
-  "ai_sentiment_index": 32.5,
-  "summary": "全球科技股遭遇拋售，半導體類股領跌，AI支出疑慮加劇，預計台灣股市將面臨下行壓力。",
+  "ai_sentiment_index": 82.5,
+  "summary": "全球半導體產業受AI需求激增而表現強勁，但地緣政治不確定性與中國金融監管收緊，為市場帶來潛在風險。",
   "news_zh": [
-    "科技股拋售拖累全球股市走低。",
-    "華爾街因半導體拋售而收低，對AI支出的擔憂加劇。",
-    "那斯達克指數下跌超過2%，全球科技股拋售加劇。",
-    "晶片股從歷史高點下跌，引領科技股崩盤。",
-    "市場因科技股引發的全球拋售而退縮。",
-    "AI是否為「一個大泡沫」？科技股拋售背後的原因。"
+    "SK海力士擬在美國上市，目標290億美元，受AI需求激增推動。",
+    "美光和高通表現緩解了AI相關的市場擔憂，推動道瓊、標普500和那斯達克期貨上漲。",
+    "歐洲股市因伊朗局勢不確定性而表現平淡。",
+    "中國券商限制境內資金的跨境互換交易。",
+    "美國聯準會表示大型銀行能安然度過假設的經濟衰退，部分銀行提高股息。",
+    "美國證券交易委員會正調查一種流行的私募股權基金，加強行業審查。"
   ],
   "news": [
-    "[Reuters] Tech selloff drags global stocks lower - Reuters - Tech selloff drags global stocks lower&nbsp;&nbsp;Reuters",
-    "[Reuters] Breakingviews - China’s frothy tech homecomings pose a dilemma - Reuters - Breakingviews - China’s frothy tech homecomings pose a dilemma&nbsp;&nbsp;Reuters",
-    "[Reuters] EXCLUSIVE: SPS Commerce explores sale amid activist pressure, sources say - Reuters - EXCLUSIVE: SPS Commerce explores sale amid activist pressure, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] SpaceX's wild ride is just getting started - Reuters - SpaceX's wild ride is just getting started&nbsp;&nbsp;Reuters",
-    "[Reuters] Markets hear Greenspan echo as Warsh Fed goes quiet - Reuters - Markets hear Greenspan echo as Warsh Fed goes quiet&nbsp;&nbsp;Reuters",
-    "[Reuters] Wall Street ends lower on semiconductor selloff as AI spending concerns mount - Reuters - Wall Street ends lower on semiconductor selloff as AI spending concerns mount&nbsp;&nbsp;Reuters",
-    "[Reuters] SpaceX launches $25 billion notes offering for debt repayment, AI expansion - Reuters - SpaceX launches $25 billion notes offering for debt repayment, AI expansion&nbsp;&nbsp;Reuters",
-    "[Reuters] Trading Day: Chip wreck - Reuters - Trading Day: Chip wreck&nbsp;&nbsp;Reuters",
-    "[Semis] Nasdaq closes down more than 2% as global tech sell-off deepens - The Washington Post - Nasdaq closes down more than 2% as global tech sell-off deepens&nbsp;&nbsp;The Washington Post",
-    "[Semis] Wall Street ends lower on semiconductor selloff as AI spending concerns mount - Reuters - Wall Street ends lower on semiconductor selloff as AI spending concerns mount&nbsp;&nbsp;Reuters"
+    "[Reuters] European shares tread water as Iran uncertainty weighs, Rheinmetall slumps - Reuters - European shares tread water as Iran uncertainty weighs, Rheinmetall slumps&nbsp;&nbsp;Reuters",
+    "[Reuters] Chinese brokerages curb cross-border swaps for domestic funds, sources say - Reuters - Chinese brokerages curb cross-border swaps for domestic funds, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] EXCLUSIVE: US SEC probes popular type of private equity fund as it steps up industry scrutiny, sources say - Reuters - EXCLUSIVE: US SEC probes popular type of private equity fund as it steps up industry scrutiny, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] Fed says large US banks well-positioned to weather hypothetical downturn, several raise dividends - Reuters - Fed says large US banks well-positioned to weather hypothetical downturn, several raise dividends&nbsp;&nbsp;Reuters",
+    "[Reuters] SK Hynix targets $29 billion US listing as AI demand surges - Reuters - SK Hynix targets $29 billion US listing as AI demand surges&nbsp;&nbsp;Reuters",
+    "[Reuters] Fewer young adults rely on family for financial help but many still live paycheck to paycheck - Reuters - Fewer young adults rely on family for financial help but many still live paycheck to paycheck&nbsp;&nbsp;Reuters",
+    "[Reuters] Most Gulf markets ease as caution lingers, rate concerns persist - Reuters - Most Gulf markets ease as caution lingers, rate concerns persist&nbsp;&nbsp;Reuters",
+    "[Reuters] Carbon markets have the potential. Governments must now provide the certainty - Reuters - Carbon markets have the potential. Governments must now provide the certainty&nbsp;&nbsp;Reuters",
+    "[Semis] Stock market today: Dow, S&P 500, Nasdaq futures rise as Micron, Qualcomm ease AI jitters - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq futures rise as Micron, Qualcomm ease AI jitters&nbsp;&nbsp;Yahoo Finance",
+    "[Semis] Chip Stocks To Watch And Semiconductor Industry News - Investor's Business Daily - Chip Stocks To Watch And Semiconductor Industry News&nbsp;&nbsp;Investor's Business Daily"
   ],
   "debug_error": ""
 }
