@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26 09:30 (Taipei)",
+  "updated": "2026-06-26 09:45 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -7001,18 +7001,18 @@
     },
     {
       "date": "2026-06-26",
-      "time": "09:30",
-      "price": 36.75,
-      "score": 60,
+      "time": "09:45",
+      "price": 37.06,
+      "score": 62,
       "zone": "amber",
-      "quant_sum": 28,
+      "quant_sum": 30,
       "ai_sum": 32,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 10.0,
+          "pts": 20,
           "max": 20,
-          "note": "開-3.2%、小幅回落，型態中性"
+          "note": "現價守在開盤之上(開-3.2%) → 有利"
         },
         "sector": {
           "pts": 17,
@@ -7020,19 +7020,19 @@
           "note": "TSM ADR確認收$440.83（+8.3%），SOXX ETF+4.1%，NVDA/AMD/INTC齊揚，Micron Q3史上最強財報確認AI HBM超級週期；Nasdaq-0.46%主因Apple/MSFT非晶片拖累，半導體板塊本身明確強勢，00631L受惠顯著；稍扣分因Nasdaq整體略負"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 0,
           "max": 15,
-          "note": "現價在區間中段(56%)"
+          "note": "現價在區間上緣(89%) → 屬追高"
         },
         "volume": {
           "pts": 0,
           "max": 15,
-          "note": "推估量約均量2.4倍 → 爆量(疑換手/出貨)"
+          "note": "推估量約均量2.3倍 → 爆量(疑換手/出貨)"
         },
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+0.24%) → 有利"
+          "note": "現價在VWAP之上(+0.73%) → 有利"
         },
         "macro": {
           "pts": 7,
