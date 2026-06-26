@@ -1,33 +1,32 @@
 {
-  "date": "2026-06-25",
-  "generated_at": "2026-06-25 12:35",
+  "date": "2026-06-26",
+  "generated_at": "2026-06-26 12:42",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 18.0,
-    "macro": 7.0,
-    "trend": 8.0
+    "sector": 14.0,
+    "macro": 6.0,
+    "trend": 7.0
   },
-  "ai_sentiment_index": 82.5,
-  "summary": "全球半導體產業受AI需求激增而表現強勁，但地緣政治不確定性與中國金融監管收緊，為市場帶來潛在風險。",
+  "ai_sentiment_index": 67.5,
+  "summary": "美國PCE通膨數據高於預期，引發聯準會升息擔憂，科技股承壓，但半導體產業併購活動仍顯示活力。",
   "news_zh": [
-    "SK海力士擬在美國上市，目標290億美元，受AI需求激增推動。",
-    "美光和高通表現緩解了AI相關的市場擔憂，推動道瓊、標普500和那斯達克期貨上漲。",
-    "歐洲股市因伊朗局勢不確定性而表現平淡。",
-    "中國券商限制境內資金的跨境互換交易。",
-    "美國聯準會表示大型銀行能安然度過假設的經濟衰退，部分銀行提高股息。",
-    "美國證券交易委員會正調查一種流行的私募股權基金，加強行業審查。"
+    "美國5月PCE通膨率突破4%，聯準會升息可能性仍在。",
+    "美國債市預期聯準會將升息，但可能不會實現。",
+    "Onsemi以70億美元全股票交易收購Synaptics。",
+    "那斯達克指數下跌，因PCE數據過熱且大型科技股表現不佳。",
+    "美光漲勢緩解AI擔憂，道瓊、標普500、那斯達克期貨上漲。"
   ],
   "news": [
-    "[Reuters] European shares tread water as Iran uncertainty weighs, Rheinmetall slumps - Reuters - European shares tread water as Iran uncertainty weighs, Rheinmetall slumps&nbsp;&nbsp;Reuters",
-    "[Reuters] Chinese brokerages curb cross-border swaps for domestic funds, sources say - Reuters - Chinese brokerages curb cross-border swaps for domestic funds, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] EXCLUSIVE: US SEC probes popular type of private equity fund as it steps up industry scrutiny, sources say - Reuters - EXCLUSIVE: US SEC probes popular type of private equity fund as it steps up industry scrutiny, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] Fed says large US banks well-positioned to weather hypothetical downturn, several raise dividends - Reuters - Fed says large US banks well-positioned to weather hypothetical downturn, several raise dividends&nbsp;&nbsp;Reuters",
-    "[Reuters] SK Hynix targets $29 billion US listing as AI demand surges - Reuters - SK Hynix targets $29 billion US listing as AI demand surges&nbsp;&nbsp;Reuters",
-    "[Reuters] Fewer young adults rely on family for financial help but many still live paycheck to paycheck - Reuters - Fewer young adults rely on family for financial help but many still live paycheck to paycheck&nbsp;&nbsp;Reuters",
-    "[Reuters] Most Gulf markets ease as caution lingers, rate concerns persist - Reuters - Most Gulf markets ease as caution lingers, rate concerns persist&nbsp;&nbsp;Reuters",
-    "[Reuters] Carbon markets have the potential. Governments must now provide the certainty - Reuters - Carbon markets have the potential. Governments must now provide the certainty&nbsp;&nbsp;Reuters",
-    "[Semis] Stock market today: Dow, S&P 500, Nasdaq futures rise as Micron, Qualcomm ease AI jitters - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq futures rise as Micron, Qualcomm ease AI jitters&nbsp;&nbsp;Yahoo Finance",
-    "[Semis] Chip Stocks To Watch And Semiconductor Industry News - Investor's Business Daily - Chip Stocks To Watch And Semiconductor Industry News&nbsp;&nbsp;Investor's Business Daily"
+    "[Reuters] Don't confuse turbulence with decline. This market has legs - Reuters - Don't confuse turbulence with decline. This market has legs&nbsp;&nbsp;Reuters",
+    "[Reuters] JPMorgan sets a new succession plan but Dimon plans to stay on - Reuters - JPMorgan sets a new succession plan but Dimon plans to stay on&nbsp;&nbsp;Reuters",
+    "[Reuters] Onsemi to buy Synaptics in $7 billion all-stock deal - Reuters - Onsemi to buy Synaptics in $7 billion all-stock deal&nbsp;&nbsp;Reuters",
+    "[Reuters] EXCLUSIVE: Bumble dating app explores sale, sources say - Reuters - EXCLUSIVE: Bumble dating app explores sale, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: Microneconomics - Reuters - Morning Bid: Microneconomics&nbsp;&nbsp;Reuters",
+    "[Reuters] London stocks climb on financials, retail boost - Reuters - London stocks climb on financials, retail boost&nbsp;&nbsp;Reuters",
+    "[Reuters] May US PCE inflation tops 4%, leaves Fed hike on the table - Reuters - May US PCE inflation tops 4%, leaves Fed hike on the table&nbsp;&nbsp;Reuters",
+    "[Reuters] US bond market expects rate hikes the Fed may never deliver - Reuters - US bond market expects rate hikes the Fed may never deliver&nbsp;&nbsp;Reuters",
+    "[Semis] Chip Stocks To Watch And Semiconductor Industry News - Investor's Business Daily - Chip Stocks To Watch And Semiconductor Industry News&nbsp;&nbsp;Investor's Business Daily",
+    "[Semis] Stock market today: Dow and S&P 500 rise, Nasdaq slips as PCE comes in hot, Big Tech falters - Yahoo Finance - Stock market today: Dow and S&P 500 rise, Nasdaq slips as PCE comes in hot, Big Tech falters&nbsp;&nbsp;Yahoo Finance"
   ],
   "debug_error": ""
 }
