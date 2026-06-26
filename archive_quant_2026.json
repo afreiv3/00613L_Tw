@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 111,
+  "count": 112,
   "history": [
     {
       "date": "2026-06-05",
@@ -6981,6 +6981,69 @@
           "pts": 7,
           "max": 10,
           "note": "TWII收46,381，三日回檔後止跌，季線（估43,500-44,500，Yahoo 403）支撐距離完好逾2,000點，中期多頭結構未破；距ATH 47,742仍差1,361點(-2.9%)，短線修復啟動但尚未突破前高，稍扣分"
+        }
+      },
+      "paper": {
+        "cash": 996982,
+        "equity": 996982,
+        "market_value": 0,
+        "return_pct": -0.3,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 3,
+        "wins": 1,
+        "win_rate": 33.3,
+        "realized_pnl": -3018
+      }
+    },
+    {
+      "date": "2026-06-26",
+      "time": "09:00",
+      "price": null,
+      "score": 62,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 32,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 17,
+          "max": 20,
+          "note": "TSM ADR確認收$440.83（+8.3%），SOXX ETF+4.1%，NVDA/AMD/INTC齊揚，Micron Q3史上最強財報確認AI HBM超級週期；Nasdaq-0.46%主因Apple/MSFT非晶片拖累，半導體板塊本身明確強勢，00631L受惠顯著；稍扣分因Nasdaq整體略負"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 7,
+          "max": 10,
+          "note": "核心PCE 5月3.4%（略高前值3.3%）為小幅負面，Fed鷹派9月升息機率68%；惟10Y殖利率降至4.41%（六週低）、WTI跌至$69.13（三月低）、美伊和談進展，系統性風險整體降溫，S&P 500僅跌-0.01%顯示市場韌性佳"
+        },
+        "trend": {
+          "pts": 8,
+          "max": 10,
+          "note": "TWII收46,381在季線估算（43,500-44,500，Yahoo 403）上方逾2,000點，中期多頭結構完整；ATH 47,742僅差1,361點(-2.9%)，TSM ADR+8.3%今日有望帶動加權逼近前高，結構偏多；稍扣分因距ATH有差距"
         }
       },
       "paper": {
