@@ -26,6 +26,7 @@ import urllib.error
 
 import paper_trade
 import gemini_strategy
+import chatgpt_strategy
 import subscribers
 
 # ----------------------------- 設定 -----------------------------
@@ -393,7 +394,8 @@ def main():
 
     is_new_day = state.get("date") != today
     if is_new_day:
-        state = {"date": today, "full_sent": False, "alerted": False, "g_full_sent": False}
+        state = {"date": today, "full_sent": False, "alerted": False,
+                 "g_full_sent": False, "c_full_sent": False}
 
     # 開盤後第一次執行：推一份完整合併評分（不論分數）
     if not state.get("full_sent"):
@@ -426,9 +428,11 @@ def main():
     # ===== Gemini 雙層閘門策略（與 Claude 並行；共用上面的量化數據 qpts）=====
     twii_ma60, twii_close = ma("^TWII", 60)
     market_ok = (twii_close >= twii_ma60) if (twii_ma60 and twii_close) else None
-    # 00631L 自身 20MA 當趨勢依據（出場看趨勢用）
+    # 00631L 自身 20MA 當趨勢依據（出場看趨勢用）；10MA 給 ChatGPT 趨勢追蹤用
     self_ma20, _self_close = ma(SYMBOL, 20)
     asset_trend_ok = (price_now >= self_ma20) if (self_ma20 and price_now) else None
+    self_ma10, _ = ma(SYMBOL, 10)
+    ma10_ok = (price_now >= self_ma10) if (self_ma10 and price_now) else None
     g_ai, g_meta, g_ok = gemini_strategy.load_ai_factors(today)
     g_ev = gemini_strategy.evaluate(qpts, market_ok, g_ai, asset_trend_ok)
     g_events, g_paper = gemini_strategy.run(today, now_hm, g_ev, price_now)
@@ -467,6 +471,43 @@ def main():
     }
     write_dashboard(g_rec, path="dashboard_data_gemini.json")
     append_archive(g_rec, prefix="archive_gemini")
+
+    # ===== ChatGPT 策略（A/B：單向部位＋三段停利＋趨勢追蹤；共用上面的量化/AI 數據）=====
+    c_ai, c_meta, c_ok = chatgpt_strategy.load_ai_factors(today)
+    c_ev = chatgpt_strategy.evaluate(qpts, market_ok, c_ai, ma20_ok=asset_trend_ok, ma10_ok=ma10_ok)
+    c_events, c_paper = chatgpt_strategy.run(today, now_hm, c_ev, price_now)
+
+    if not state.get("c_full_sent"):
+        c_tgt = c_paper.get("target") or 0
+        c_brief = (f"🟧 <b>[ChatGPT策略] {today} {now_hm}</b>\n"
+                   f"量化主審 {c_paper['tier1']}/60｜AI情緒 {c_paper['ai_index']}/100｜"
+                   f"目標水位 {int(c_tgt*100)}%\n{c_paper.get('zone_label','')}")
+        if c_meta.get("summary"):
+            c_brief += f"\n🧠 {c_meta['summary']}"
+        c_brief += f"\n📊 詳情 → {PANEL_URL}"
+        send_telegram(c_brief)
+        state["c_full_sent"] = True
+        save_state(state)
+
+    for tr in c_events:
+        act = "🟢 買進" if tr["action"] == "BUY" else "🔴 賣出"
+        send_telegram(
+            f"{act} <b>[ChatGPT模擬] {today} {now_hm}</b>\n"
+            f"價 <b>{tr['price']}</b>｜{tr['reason']}\n"
+            f"目標水位 {tr['target_pct']}%｜總資產 {c_paper['equity']:,}"
+            f"（{c_paper['return_pct']:+.2f}%）\n📊 → {PANEL_URL}")
+
+    c_rec = {
+        "date": today, "time": now_hm, "price": price_now,
+        "tier1": c_paper["tier1"], "ai_index": c_paper["ai_index"], "target": c_paper.get("target"),
+        "zone": c_paper.get("zone"), "zone_label": c_paper.get("zone_label"),
+        "gate_open": c_paper.get("gate_open"), "market_ok": market_ok,
+        "asset_trend_ok": asset_trend_ok, "ma10_ok": ma10_ok,
+        "ai_ok": c_ok, "summary": c_meta.get("summary", ""), "news": c_meta.get("news", []),
+        "paper": c_paper,
+    }
+    write_dashboard(c_rec, path="dashboard_data_chatgpt.json")
+    append_archive(c_rec, prefix="archive_chatgpt")
 
     # 寫面板資料（滾動約1個月）＋ 永久年度存檔
     rec = {

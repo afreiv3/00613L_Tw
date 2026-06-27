@@ -22,7 +22,15 @@ def in_market_hours(now_hm):
 
 
 def can_trade(state, today, now_hm):
-    """波段規則：須在盤中，且今天尚未交易過。"""
+    """波段規則：須在盤中，且今天尚未交易過。（Claude／Gemini 用）"""
     if not in_market_hours(now_hm):
         return False
     return state.get("last_trade_date") != today
+
+
+def can_enter(state, today, now_hm):
+    """單向部位規則（ChatGPT 用）：須在盤中，且今天尚未『新進場』過。
+    只鎖新進場——停利、減碼、風控清倉不受此限（由策略自行於盤中執行）。"""
+    if not in_market_hours(now_hm):
+        return False
+    return state.get("last_entry_date") != today

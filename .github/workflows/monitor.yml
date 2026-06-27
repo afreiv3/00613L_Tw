@@ -40,9 +40,11 @@ jobs:
           git pull --rebase --autostash || true
           # 只加「存在的」資料檔（沒成交時 paper_trades*.json 可能尚未產生）
           for f in state.json dashboard_data.json dashboard_data_gemini.json \
+                   dashboard_data_chatgpt.json \
                    paper_state.json paper_trades.json \
                    paper_state_gemini.json paper_trades_gemini.json \
-                   archive_quant_*.json archive_gemini_*.json; do
+                   paper_state_chatgpt.json paper_trades_chatgpt.json \
+                   archive_quant_*.json archive_gemini_*.json archive_chatgpt_*.json; do
             [ -e "$f" ] && git add "$f" || true
           done
           if git diff --cached --quiet; then

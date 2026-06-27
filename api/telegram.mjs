@@ -42,7 +42,8 @@ const GREETING =
   "🌙 盤後 — 當日總結\n\n" +
   "你也可以隨時問我：\n" +
   "/C Claude 策略現況（總分70制）\n" +
-  "/G Gemini 策略現況（雙層閘門）\n" +
+  "/G Gemini 策略現況（雙層閘門·水位再平衡）\n" +
+  "/CG ChatGPT 策略現況（單向部位·三段停利）\n" +
   "/score 量化七項因子明細\n" +
   "/judge 最新 AI 判讀摘要\n" +
   "/refresh 立刻重算一次\n" +
@@ -77,6 +78,8 @@ export default async function handler(req, res) {
       await tg(chatId, await fmtClaude());
     } else if (cmd === "/g") {
       await tg(chatId, await fmtGemini());
+    } else if (cmd === "/cg") {
+      await tg(chatId, await fmtChatgpt());
     } else if (cmd === "/score" || cmd === "/s") {
       await tg(chatId, await fmtQuant());
     } else if (cmd === "/judge" || cmd === "/j") {
@@ -104,7 +107,7 @@ export default async function handler(req, res) {
         ? "🔕 已取消訂閱，不再收到自動推播。隨時可再 /start 開啟。"
         : "你目前沒有在訂閱名單中。");
     } else {
-      await tg(chatId, "不認得的指令。試 /start、/C、/G、/score、/judge。");
+      await tg(chatId, "不認得的指令。試 /start、/C、/G、/CG、/score、/judge。");
     }
   } catch (e) {
     await tg(chatId, "查詢失敗：" + (e.message || e));
@@ -167,6 +170,34 @@ async function fmtGemini() {
     s += `\n\n💰 動態模擬盤（虛擬100萬）\n` +
          `總資產 ${nf(p.equity)}｜報酬 ${p.return_pct >= 0 ? "+" : ""}${p.return_pct}%\n` +
          `目前水位 ${p.position_pct}%｜再平衡 ${p.trades} 次`;
+  }
+  return s + `\n📊 → ${PANEL_URL}\n⚠️ 非投資建議。`;
+}
+
+async function fmtChatgpt() {
+  let d;
+  try { d = await getJSON("dashboard_data_chatgpt.json"); }
+  catch { return "尚無 ChatGPT 策略資料（尚未產生）。"; }
+  const last = (d.history || []).slice(-1)[0];
+  if (!last) return "尚無 ChatGPT 策略資料。";
+  const p = last.paper || {};
+  const mk = last.market_ok === true ? "站季線✅" : (last.market_ok === false ? "破季線❌" : "—");
+  const a20 = last.asset_trend_ok === true ? "站20MA✅" : (last.asset_trend_ok === false ? "破20MA❌" : "—");
+  const a10 = last.ma10_ok === true ? "站10MA✅" : (last.ma10_ok === false ? "破10MA❌" : "—");
+  let s = `🟧 [ChatGPT 策略] ${last.date} ${last.time}\n` +
+          `現價 ${last.price ?? "—"}\n` +
+          `進場：量化 ${last.tier1 ?? "—"}/60（需≥35）＋趨勢\n` +
+          `趨勢：大盤${mk}｜00631L ${a20}/${a10}\n` +
+          `AI情緒 ${last.ai_index ?? "—"}/100 → 目標水位 ${last.target != null ? Math.round(last.target * 100) + "%" : "—"}\n` +
+          `${last.zone_label || ""}`;
+  if (last.summary) s += `\n🧠 ${last.summary}`;
+  if (p) {
+    const stage = `停利 ${p.profit_stage_1_done ? "①" : "—"}${p.profit_stage_2_done ? "②" : ""}` +
+                  `${p.trailing_mode ? "·趨勢追蹤" : (p.breakeven_mode ? "·保本" : "")}`;
+    s += `\n\n💰 單向部位模擬盤（虛擬100萬）\n` +
+         `總資產 ${nf(p.equity)}｜報酬 ${p.return_pct >= 0 ? "+" : ""}${p.return_pct}%\n` +
+         `水位 目標${p.target_exposure != null ? Math.round(p.target_exposure * 100) + "%" : "—"}／實際${p.position_pct ?? 0}%｜${stage}` +
+         (p.last_action_reason ? `\n最近：${p.last_action_reason}` : "");
   }
   return s + `\n📊 → ${PANEL_URL}\n⚠️ 非投資建議。`;
 }

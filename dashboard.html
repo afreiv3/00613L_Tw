@@ -117,6 +117,7 @@
   <div class="stratbar">
     <button class="stbtn active" id="tabClaude">🟦 Claude 策略</button>
     <button class="stbtn" id="tabGemini">🟩 Gemini 策略</button>
+    <button class="stbtn" id="tabChatgpt">🟧 ChatGPT 策略</button>
   </div>
 
   <div id="claudeView">
@@ -234,6 +235,54 @@
     </div>
   </div><!-- /geminiView -->
 
+  <div id="chatgptView" style="display:none">
+    <div class="grid2">
+      <div class="card">
+        <h3>單向部位狀態 <span class="src-tag">ChatGPT</span></h3>
+        <span class="zone" id="cgZone" style="margin-bottom:8px"><span class="dot"></span><span id="cgZoneLabel">—</span></span>
+        <div class="px">現價 <b id="cgPrice">—</b></div>
+        <div class="ts" id="cgTime">—</div>
+        <div class="judge-lines" id="cgTiers" style="margin-top:10px"></div>
+      </div>
+      <div class="card">
+        <h3>盤前新聞判讀 <span class="src-tag">RSS · 共用 Gemini</span></h3>
+        <div class="judge-sum" id="cgSummary">尚無判讀資料</div>
+        <div class="judge-lines" id="cgFactors"></div>
+        <div class="judge-lines" id="cgNews" style="margin-top:8px"></div>
+      </div>
+    </div>
+
+    <div class="card" id="cgPaperCard">
+      <h3>單向部位模擬盤 <span class="src-tag">虛擬 100 萬 · A/B</span></h3>
+      <div class="paper-stats">
+        <div class="pstat"><div class="pk">總資產</div><div class="pv" id="cgpEquity">—</div></div>
+        <div class="pstat"><div class="pk">總報酬</div><div class="pv" id="cgpReturn">—</div></div>
+        <div class="pstat"><div class="pk">現金</div><div class="pv" id="cgpCash">—</div></div>
+        <div class="pstat"><div class="pk">持有股數</div><div class="pv" id="cgpShares">—</div></div>
+        <div class="pstat"><div class="pk">預估收益</div><div class="pv" id="cgpUnreal">—</div></div>
+        <div class="pstat"><div class="pk">目標／實際水位</div><div class="pv" id="cgpPos">—</div></div>
+      </div>
+      <div class="judge-lines" id="cgStatus" style="margin-top:6px"></div>
+      <div id="cgPaperTradesWrap"></div>
+      <div class="meta" style="margin-top:8px">規則：<b>進場</b>＝量化≥35＋大盤站季線＋00631L站20MA（與 Gemini 同閘門），規模依 AI 情緒反向水位。<b>單向部位</b>：進場一次後只出不進——絕不逢低攤平、絕不把停利賣掉的買回。<b>三段停利</b>：浮盈+5%賣30%(轉保本)／+10%賣30%(轉趨勢追蹤)／剩餘部位站10MA續抱、跌破10MA減半、跌破20MA或大盤跌破季線全清、自最高價回落5%減半・8%全清。分數轉弱只降水位、不直接清倉。強制風控：總資產自高點回撤≥10%全清。<b>一天最多一次「新進場」，停利/減碼/風控賣出不受此限。</b>純模擬，非投資建議。</div>
+    </div>
+
+    <div class="card" id="cgArchiveCard">
+      <h3>ChatGPT 歷史紀錄（永久存檔）<span class="src-tag">archive</span></h3>
+      <div class="arch-ctl">
+        <select id="cgArchYear"></select>
+        <button class="refresh" id="cgLoadArch">載入整年</button>
+        <span class="arch-sep">— 或選日期區間 —</span>
+        <input type="date" id="cgArchStart">
+        <span style="color:var(--muted)">到</span>
+        <input type="date" id="cgArchEnd">
+        <button class="refresh" id="cgLoadRange">載入區間</button>
+        <span class="meta" id="cgArchMeta">點擊載入；平時不下載，保持頁面快速</span>
+      </div>
+      <div id="cgArchTableWrap"></div>
+    </div>
+  </div><!-- /chatgptView -->
+
   <div class="foot" id="foot"></div>
 </div>
 
@@ -251,6 +300,10 @@ const CONFIG = {
   geminiAiFile: "ai_factors_gemini.json",        // Gemini 盤前新聞判讀（08:30 產生）
   geminiTradesFile: "paper_trades_gemini.json",  // Gemini 動態模擬盤交易
   geminiArchivePrefix: "archive_gemini",         // Gemini 永久年度存檔前綴
+  chatgptFile: "dashboard_data_chatgpt.json",      // ChatGPT 策略面板資料
+  chatgptAiFile: "ai_factors_gemini.json",         // 盤前判讀（與 Gemini 共用，純策略 A/B）
+  chatgptTradesFile: "paper_trades_chatgpt.json",  // ChatGPT 模擬盤交易
+  chatgptArchivePrefix: "archive_chatgpt",         // ChatGPT 永久年度存檔前綴
   autoRefreshSec: 180                  // 每 3 分鐘自動更新；設 0 關閉
 };
 const rawURL = f => `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/${f}?t=${Date.now()}`;
@@ -485,14 +538,94 @@ function renderGeminiTrades(data){
   html+="</tbody></table></div>"; wrap.innerHTML=html;
 }
 
+function renderChatgpt(data, ai){
+  const h=(data?.history||[]); const last=h[h.length-1];
+  const summary = (ai && ai.summary) || (last && last.summary) || "尚無判讀資料";
+  const news = (ai && ((ai.news_zh && ai.news_zh.length) ? ai.news_zh : ai.news))
+               || (last && last.news) || [];
+  document.getElementById("cgSummary").textContent = summary;
+  const fac=document.getElementById("cgFactors"); fac.innerHTML="";
+  if(ai && ai.factors){
+    const f=ai.factors;
+    const hd=document.createElement("div");
+    hd.textContent=`AI 情緒指數 ${ai.ai_sentiment_index ?? "—"}/100`;
+    hd.style.color="var(--accent)"; hd.style.paddingLeft="0"; fac.appendChild(hd);
+    const addF=t=>{const d=document.createElement("div");d.textContent=t;fac.appendChild(d);};
+    addF(`板塊強弱（費半SOX／Nasdaq）：${f.sector}/20`);
+    addF(`系統風險（油價／殖利率／地緣／升息）：${f.macro}/10`);
+    addF(`大盤結構（加權 vs 季線）：${f.trend}/10`);
+  }
+  const newsEl=document.getElementById("cgNews"); newsEl.innerHTML="";
+  if(news.length){
+    const h=document.createElement("div"); h.textContent="📰 今日重點新聞";
+    h.style.color="var(--accent)"; h.style.paddingLeft="0"; newsEl.appendChild(h);
+    news.forEach(t=>{const d=document.createElement("div");d.textContent=t;newsEl.appendChild(d);});
+  }
+  if(!last) return;
+  document.getElementById("cgPrice").textContent = last.price!=null ? last.price : "—";
+  document.getElementById("cgTime").textContent = `${last.date} ${last.time}`;
+  const z=zoneInfo(last.zone);
+  const zt=document.getElementById("cgZone"); zt.style.color=z.color; zt.querySelector(".dot").style.background=z.color;
+  document.getElementById("cgZoneLabel").textContent = last.zone_label || z.label;
+  const tiers=document.getElementById("cgTiers"); tiers.innerHTML="";
+  const add=t=>{const d=document.createElement("div");d.textContent=t;tiers.appendChild(d);};
+  const mk = last.market_ok===true ? "站上季線 ✅" : (last.market_ok===false ? "跌破季線 ❌" : "資料不足");
+  const a20 = last.asset_trend_ok===true ? "站上20MA ✅" : (last.asset_trend_ok===false ? "跌破20MA ❌" : "資料不足");
+  const a10 = last.ma10_ok===true ? "站上10MA ✅" : (last.ma10_ok===false ? "跌破10MA ❌" : "資料不足");
+  add(`進場條件（空手時）：量化≥35 ＋ 趨勢完好`);
+  add(`• 盤中量化動能 ${last.tier1??"—"}/60（需 ≥35）`);
+  add(`出場：分段停利 → 降水位 → 趨勢破壞清倉 → 強制風控`);
+  add(`• 大盤季線(60MA)：${mk}`);
+  add(`• 00631L 20MA：${a20}　｜　10MA：${a10}`);
+  add(`AI 情緒指數 ${last.ai_index??"—"}/100（控水位，不直接清倉）`);
+  add(`→ 目標水位 ${last.target!=null? Math.round(last.target*100)+"%":"—"}`);
+  const p=last.paper;
+  if(p){
+    document.getElementById("cgpEquity").textContent = numfmt(p.equity);
+    const ret=document.getElementById("cgpReturn");
+    ret.textContent=(p.return_pct>=0?"+":"")+p.return_pct+"%";
+    ret.style.color=p.return_pct>0?"var(--green)":(p.return_pct<0?"var(--red)":"var(--muted)");
+    document.getElementById("cgpCash").textContent = numfmt(p.cash);
+    const holding = (p.shares||0) > 0;
+    document.getElementById("cgpShares").textContent = holding ? `${p.shares} 股 @ ${p.avg_cost??"—"}` : "空手";
+    setUnreal("cgpUnreal", {holding, unrealized:p.unrealized, unrealized_pct:p.unrealized_pct});
+    const tgt = p.target_exposure!=null? Math.round(p.target_exposure*100)+"%" : "—";
+    const act = (p.position_pct??0)+"%";
+    document.getElementById("cgpPos").textContent = `${tgt}／${act}`;
+    // 狀態列：停利階段 / 模式 / 最近動作
+    const st=document.getElementById("cgStatus"); st.innerHTML="";
+    const addS=t=>{const d=document.createElement("div");d.textContent=t;st.appendChild(d);};
+    const flag=(b)=> b?"✅":"—";
+    addS(`第一段停利 ${flag(p.profit_stage_1_done)}　第二段停利 ${flag(p.profit_stage_2_done)}　保本模式 ${flag(p.breakeven_mode)}　趨勢追蹤 ${flag(p.trailing_mode)}`);
+    if(holding){
+      addS(`持倉後最高價 ${p.highest_price_since_entry??"—"}　自高點回落 ${p.drawdown_from_position_high_pct??0}%`);
+    }
+    if(p.last_action_reason){ addS(`最近動作：${p.last_action||""}（${p.last_action_reason}）`); }
+  }
+}
+
+function renderChatgptTrades(data){
+  const wrap=document.getElementById("cgPaperTradesWrap");
+  const rows=(data?.history||[]).slice();
+  if(!rows.length){ wrap.innerHTML='<div class="f-note">尚無模擬交易紀錄</div>'; return; }
+  rows.sort((a,b)=> (b.date+(b.time||"")).localeCompare(a.date+(a.time||"")));
+  let html='<div class="arch-table"><table><thead><tr><th>日期</th><th>時間</th><th>動作</th><th>價</th><th>股數</th><th>水位</th><th>理由碼</th><th>說明</th></tr></thead><tbody>';
+  for(const x of rows){
+    const isBuy=x.action==="BUY";
+    const col=isBuy?"var(--accent)":"var(--amber)";
+    html+=`<tr><td>${x.date}</td><td>${x.time||""}</td><td style="color:${col}">${isBuy?"買進":"賣出"}</td><td>${x.price}</td><td>${x.shares}</td><td>${x.target_pct}%</td><td>${x.reason_code||""}</td><td>${x.reason||""}</td></tr>`;
+  }
+  html+="</tbody></table></div>"; wrap.innerHTML=html;
+}
+
 function switchView(which){
-  const c=document.getElementById("claudeView"), g=document.getElementById("geminiView");
-  const tc=document.getElementById("tabClaude"), tg=document.getElementById("tabGemini");
-  const gemini = which==="gemini";
-  c.style.display = gemini?"none":"block";
-  g.style.display = gemini?"block":"none";
-  tc.classList.toggle("active",!gemini);
-  tg.classList.toggle("active",gemini);
+  const views={claude:"claudeView", gemini:"geminiView", chatgpt:"chatgptView"};
+  const tabs={claude:"tabClaude", gemini:"tabGemini", chatgpt:"tabChatgpt"};
+  if(!views[which]) which="claude";
+  for(const k in views){
+    document.getElementById(views[k]).style.display = (k===which)?"block":"none";
+    document.getElementById(tabs[k]).classList.toggle("active", k===which);
+  }
   try{ localStorage.setItem("strat", which); }catch(e){}
 }
 
@@ -542,6 +675,13 @@ async function load(){
   renderGemini(gem, gemAi);
   const gemTrades = (configured && !isDemo) ? await tryFetch(CONFIG.geminiTradesFile) : null;
   renderGeminiTrades(gemTrades);
+
+  // ChatGPT 策略視圖
+  const cg = (configured && !isDemo) ? await tryFetch(CONFIG.chatgptFile) : null;
+  const cgAi = (configured && !isDemo) ? await tryFetch(CONFIG.chatgptAiFile) : null;
+  renderChatgpt(cg, cgAi);
+  const cgTrades = (configured && !isDemo) ? await tryFetch(CONFIG.chatgptTradesFile) : null;
+  renderChatgptTrades(cgTrades);
 
   foot.innerHTML = configured
     ? (isDemo ? `<span class="err">⚠ 讀不到 <code>${CONFIG.quantFile}</code>（repo 可能尚未產生資料、或非 public）。目前顯示示範資料。</span>`
@@ -673,6 +813,59 @@ async function gLoadRange(){
   renderGemRows(rows, `${s} ~ ${e}，共 ${rows.length} 筆${miss}`);
 }
 
+// ====== ChatGPT 歷史紀錄（archive_chatgpt，日期區間查詢）======
+function cgArchURL(year){ return `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/${CONFIG.chatgptArchivePrefix}_${year}.json?t=${Date.now()}`; }
+
+function initCgArchive(){
+  const sel=document.getElementById("cgArchYear"); if(!sel) return;
+  const ty=new Date().getFullYear(); sel.innerHTML="";
+  for(let y=ty;y>=ty-3;y--){ const o=document.createElement("option"); o.value=y; o.textContent=y; sel.appendChild(o); }
+  document.getElementById("cgLoadArch").addEventListener("click", cgLoadArchive);
+  document.getElementById("cgLoadRange").addEventListener("click", cgLoadRange);
+}
+
+function renderCgRows(rows, metaText){
+  const meta=document.getElementById("cgArchMeta"), wrap=document.getElementById("cgArchTableWrap");
+  meta.textContent=metaText;
+  if(!rows.length){ wrap.innerHTML='<div class="f-note">此範圍尚無資料</div>'; return; }
+  rows.sort((a,b)=> (b.date+(b.time||"")).localeCompare(a.date+(a.time||"")));
+  let html='<div class="arch-table"><table><thead><tr><th>日期</th><th>時間</th><th>現價</th><th>量化</th><th>AI指數</th><th>水位</th><th>總資產</th><th>報酬</th><th>最近動作</th></tr></thead><tbody>';
+  for(const x of rows){
+    const p=x.paper||{};
+    const tgt=x.target!=null? Math.round(x.target*100)+"%":"—";
+    const ret=p.return_pct!=null? (p.return_pct>=0?"+":"")+p.return_pct+"%":"—";
+    const rc=p.return_pct>0?"var(--green)":(p.return_pct<0?"var(--red)":"var(--muted)");
+    html+=`<tr><td>${x.date}</td><td>${x.time||""}</td><td>${x.price??"—"}</td><td>${x.tier1??"—"}/60</td><td>${x.ai_index??"—"}</td><td>${tgt}</td><td>${numfmt(p.equity)}</td><td style="color:${rc}">${ret}</td><td>${p.last_action_reason||""}</td></tr>`;
+  }
+  html+="</tbody></table></div>"; wrap.innerHTML=html;
+}
+
+async function fetchCgYear(year){
+  try{ const r=await fetch(cgArchURL(year),{cache:"no-store"}); if(!r.ok) return null; return (await r.json()).history||[]; }
+  catch(e){ return null; }
+}
+
+async function cgLoadArchive(){
+  const year=document.getElementById("cgArchYear").value, meta=document.getElementById("cgArchMeta");
+  meta.textContent="載入中…"; document.getElementById("cgArchTableWrap").innerHTML="";
+  const h=await fetchCgYear(year);
+  if(h===null){ meta.innerHTML=`<span class="err">讀不到 ${CONFIG.chatgptArchivePrefix}_${year}.json（可能尚未產生）</span>`; return; }
+  renderCgRows(h.slice(), `${year} 年，共 ${h.length} 筆`);
+}
+
+async function cgLoadRange(){
+  const meta=document.getElementById("cgArchMeta");
+  let s=document.getElementById("cgArchStart").value, e=document.getElementById("cgArchEnd").value;
+  if(!s||!e){ meta.innerHTML='<span class="err">請選起訖日期</span>'; return; }
+  if(s>e){ const t=s; s=e; e=t; }
+  meta.textContent="載入中…"; document.getElementById("cgArchTableWrap").innerHTML="";
+  const y1=+s.slice(0,4), y2=+e.slice(0,4); let all=[], missing=[];
+  for(let y=y1;y<=y2;y++){ const h=await fetchCgYear(y); if(h===null) missing.push(y); else all=all.concat(h); }
+  const rows=all.filter(x=> x.date>=s && x.date<=e);
+  const miss=missing.length?`（${missing.join("、")} 年無存檔）`:"";
+  renderCgRows(rows, `${s} ~ ${e}，共 ${rows.length} 筆${miss}`);
+}
+
 const _rb = document.getElementById("refreshBtn");
 _rb.addEventListener("click", async ()=>{
   _rb.disabled = true; _rb.textContent = "↻ 更新中…";
@@ -681,9 +874,11 @@ _rb.addEventListener("click", async ()=>{
 });
 document.getElementById("tabClaude").addEventListener("click", ()=>switchView("claude"));
 document.getElementById("tabGemini").addEventListener("click", ()=>switchView("gemini"));
+document.getElementById("tabChatgpt").addEventListener("click", ()=>switchView("chatgpt"));
 switchView(localStorage.getItem("strat") || "claude");
 initArchive();
 initGemArchive();
+initCgArchive();
 load();
 if(CONFIG.autoRefreshSec>0) setInterval(load, CONFIG.autoRefreshSec*1000);
 </script>
