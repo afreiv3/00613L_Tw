@@ -12,10 +12,10 @@
   進場規模＝AI 情緒反向水位（<30→80%／30–75→50%／>75→20%）。
 
 持倉時的判斷優先序（每個 tick 最多執行一個動作）：
-  1. 強制風控：00631L 跌破 20MA／^TWII 跌破 60MA／總資產自高點回撤≥10%／保本停損 → 全清。
-  2. 第一段停利：浮盈 ≥ +5% 且未做過 → 賣 30%，進入保本模式。
+  1. 強制風控：00631L 跌破 20MA／^TWII 跌破 60MA／總資產自高點回撤≥10% → 全清。
+  2. 第一段停利：浮盈 ≥ +5% 且未做過 → 賣 30%；剩餘部位改由移動停利＋10MA 保護。
   3. 第二段停利：浮盈 ≥ +10% 且未做過 → 賣 30%，進入趨勢追蹤模式。
-  4. 移動停利（趨勢追蹤模式）：自持倉後最高價回落 ≥8% 全清；≥5% 減半（每日一次）。
+  4. 移動停利（已收第一段停利後即生效）：自持倉後最高價回落 ≥8% 全清；≥5% 減半（每日一次）。
   5. 趨勢追蹤 10MA：跌破 10MA（但仍在 20MA 上）→ 減半剩餘部位（每日一次）。
   6. 分數／情緒只降水位：實際曝險高於目標 > 5% 才減碼到目標；絕不加碼、絕不買回。
 
@@ -56,7 +56,6 @@ FRENZY_DAYS = 3               # 連續狂熱天數 → 目標水位壓回 20%
 REBAL_MIN = 0.05              # 曝險高於目標 > 5% 才減碼（避免高頻摩擦）
 FEE_RATE = 0.001425           # 手續費（單邊）
 TAX_RATE = 0.001             # 證交稅（賣出）
-ROUND_TRIP_COST = 2 * FEE_RATE + TAX_RATE  # 一買一賣的交易成本（保本停損用）
 
 
 def load_ai_factors(today):
@@ -321,12 +320,6 @@ def run(today, now_hm, ev, price):
         _record(s, events, today, now_hm, "SELL", sh, price, 0.0,
                 "FORCED_RISK_DRAWDOWN", f"強制風控：總資產自高點回撤≥{int(EQUITY_FORCED_DD*100)}% → 全清")
         return _finish("🔴 資產回撤風控 → 清倉", "red")
-    # 保本停損：已進保本模式且價格跌回成本價（含來回成本）→ 全清，保住第一段成果
-    if s.get("breakeven_mode") and price <= avg * (1 + ROUND_TRIP_COST):
-        sh = _sell(s, s["shares"], price); s["last_trade_date"] = today
-        _record(s, events, today, now_hm, "SELL", sh, price, 0.0,
-                "BREAKEVEN_STOP", "保本模式：價格跌回成本價 → 全清守住獲利")
-        return _finish("🟦 保本停損 → 清倉", "amber")
 
     # ---- 2. 第一段停利（+5%，賣 30%）----
     if not s.get("profit_stage_1_done") and unreal_pct >= STAGE1_PROFIT_TRIGGER:
@@ -335,8 +328,8 @@ def run(today, now_hm, ev, price):
         s["breakeven_mode"] = True
         s["last_trade_date"] = today
         _record(s, events, today, now_hm, "SELL", sh, price, target,
-                "STAGE_1_PROFIT_TAKE", f"第一段停利 +{unreal_pct*100:.1f}%：賣 {int(STAGE1_SELL_RATIO*100)}%，轉保本模式")
-        return _finish("🟢 第一段停利（保本模式）", "green")
+                "STAGE_1_PROFIT_TAKE", f"第一段停利 +{unreal_pct*100:.1f}%：賣 {int(STAGE1_SELL_RATIO*100)}%，剩餘轉移動停利＋10MA 保護")
+        return _finish("🟢 第一段停利（移動停利保護）", "green")
 
     # ---- 3. 第二段停利（+10%，賣 30%）----
     if s.get("profit_stage_1_done") and not s.get("profit_stage_2_done") \
@@ -349,8 +342,8 @@ def run(today, now_hm, ev, price):
                 "STAGE_2_PROFIT_TAKE", f"第二段停利 +{unreal_pct*100:.1f}%：賣 {int(STAGE2_SELL_RATIO*100)}%，轉趨勢追蹤")
         return _finish("🟢 第二段停利（趨勢追蹤）", "green")
 
-    # ---- 4. 移動停利（趨勢追蹤模式：以持倉後最高價為基準）----
-    if s.get("trailing_mode"):
+    # ---- 4. 移動停利（已收第一段停利後即生效；以持倉後最高價為基準）----
+    if s.get("trailing_mode") or s.get("profit_stage_1_done"):
         if dd_from_high >= TRAILING_EXIT_FROM_HIGH:
             sh = _sell(s, s["shares"], price); s["last_trade_date"] = today
             _record(s, events, today, now_hm, "SELL", sh, price, 0.0,

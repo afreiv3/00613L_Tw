@@ -1,0 +1,77 @@
+{
+  "updated": "2026-06-26 09:30",
+  "history": [
+    {
+      "date": "2026-06-09",
+      "time": "13:55",
+      "action": "BUY",
+      "price": 35.44,
+      "shares": 14088.3,
+      "target_pct": 50,
+      "reason": "再平衡至 50%（🟡 理性持倉（情緒健康））"
+    },
+    {
+      "date": "2026-06-10",
+      "time": "11:18",
+      "action": "SELL",
+      "price": 34.24,
+      "shares": 14088.3,
+      "target_pct": 0,
+      "reason": "再平衡至 0%（🔴 不進/清倉（量化主審未過））"
+    },
+    {
+      "date": "2026-06-10",
+      "time": "13:44",
+      "action": "BUY",
+      "price": 33.44,
+      "shares": 14650.4,
+      "target_pct": 50,
+      "reason": "再平衡至 50%（🟡 理性持倉（情緒健康））"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "14:02",
+      "action": "BUY",
+      "price": 33.23,
+      "shares": 8868.5,
+      "target_pct": 80,
+      "reason": "再平衡至 80%（🟢 逆向加碼（極度恐慌））"
+    },
+    {
+      "date": "2026-06-12",
+      "time": "09:52",
+      "action": "SELL",
+      "price": 34.78,
+      "shares": 23518.8,
+      "target_pct": 0,
+      "reason": "再平衡至 0%（🔴 不進/清倉（量化主審未過））"
+    },
+    {
+      "date": "2026-06-15",
+      "time": "10:30",
+      "action": "BUY",
+      "price": 36.87,
+      "shares": 13697.4,
+      "target_pct": 50,
+      "reason": "再平衡至 50%（🟡 理性持倉（情緒健康））"
+    },
+    {
+      "date": "2026-06-25",
+      "time": "12:45",
+      "action": "SELL",
+      "price": 38.07,
+      "shares": 8301.0,
+      "target_pct": 20,
+      "reason": "再平衡至 20%（🟠 輕倉防守（極度狂熱））"
+    },
+    {
+      "date": "2026-06-26",
+      "time": "09:30",
+      "action": "SELL",
+      "price": 36.75,
+      "shares": 5396.4,
+      "target_pct": 0,
+      "reason": "再平衡至 0%（🔴 趨勢轉弱→清倉（跌破均線/季線））"
+    }
+  ]
+}
