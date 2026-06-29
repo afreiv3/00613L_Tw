@@ -4,9 +4,9 @@
   "history": [
     {
       "date": "2026-06-29",
-      "time": "10:45",
-      "price": 36.24,
-      "tier1": 52,
+      "time": "11:00",
+      "price": 36.4,
+      "tier1": 45,
       "ai_index": 50.0,
       "target": 0.0,
       "zone": "red",
@@ -46,7 +46,7 @@
         "frenzy_days": 0,
         "last_action": "SELL",
         "last_action_reason": "DATA_INVALID_NO_TRADE",
-        "tier1": 52,
+        "tier1": 45,
         "ai_index": 50.0,
         "target": 0.0,
         "zone": "red",
