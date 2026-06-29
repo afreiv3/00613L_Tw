@@ -13,7 +13,7 @@
   "current_target_exposure": 0.0,
   "realized_pnl": 18835.4708119237,
   "frenzy_days": 0,
-  "last_date": "2026-06-26",
+  "last_date": "2026-06-29",
   "last_entry_date": "",
   "last_trade_date": "2026-06-26",
   "last_reduce_date": "",
@@ -21,5 +21,5 @@
   "last_action_reason": "DATA_INVALID_NO_TRADE",
   "trades": 8,
   "_seed_note": "起始狀態＋買賣紀錄完整承接 Gemini（paper_trades_gemini.json 8 筆、現金/已實現損益/交易次數/資產高點對齊）於 2026-06-28；此後一律以 ChatGPT 新策略運作",
-  "updated": "2026-06-29 09:15"
+  "updated": "2026-06-29 09:30"
 }
