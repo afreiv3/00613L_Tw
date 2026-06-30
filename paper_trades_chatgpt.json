@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26 09:30",
+  "updated": "2026-06-30 10:30",
   "history": [
     {
       "date": "2026-06-09",
@@ -72,6 +72,16 @@
       "shares": 5396.4,
       "target_pct": 0,
       "reason": "再平衡至 0%（🔴 趨勢轉弱→清倉（跌破均線/季線））"
+    },
+    {
+      "date": "2026-06-30",
+      "time": "10:30",
+      "action": "BUY",
+      "price": 38.12,
+      "shares": 13344.5,
+      "target_pct": 50,
+      "reason_code": "ENTRY_SIGNAL",
+      "reason": "進場建倉至 50%（🟡 標準持倉（情緒健康））"
     }
   ]
 }

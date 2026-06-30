@@ -1,10 +1,18 @@
 {
-  "cash": 996981.5667010001,
-  "position": null,
+  "cash": 697465.8441350001,
+  "position": {
+    "shares": 7846,
+    "entry_price": 38.12,
+    "entry_date": "2026-06-30",
+    "entry_time": "10:30",
+    "cost": 299515.72,
+    "entry_score": 71,
+    "frac": 0.3
+  },
   "start_capital": 1000000.0,
   "realized_pnl": -3018.434619000007,
   "trades": 3,
   "wins": 1,
-  "updated": "2026-06-30 10:15",
-  "last_trade_date": "2026-06-23"
+  "updated": "2026-06-30 10:30",
+  "last_trade_date": "2026-06-30"
 }

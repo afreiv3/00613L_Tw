@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30 10:15 (Taipei)",
+  "updated": "2026-06-30 10:30 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -7127,11 +7127,11 @@
     },
     {
       "date": "2026-06-30",
-      "time": "10:15",
-      "price": 38.24,
-      "score": 56,
-      "zone": "amber",
-      "quant_sum": 30,
+      "time": "10:30",
+      "price": 38.12,
+      "score": 71,
+      "zone": "green",
+      "quant_sum": 45,
       "ai_sum": 26,
       "ai_ok": true,
       "factors": {
@@ -7146,19 +7146,19 @@
           "note": "隔夜Nasdaq+2%科技領漲，SOX 6/29精確數字查不到（中性偏多計）；TSM ADR $432.35相對韌性，但NVDA $192.53（週跌8.6%）、AVGO $374.51（距高點跌24%）仍弱，板塊整體屬分歧偏多，非全面趨勢確認。"
         },
         "entry": {
-          "pts": 0,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價在區間上緣(75%) → 屬追高"
+          "note": "現價在區間中段(61%)"
         },
         "volume": {
-          "pts": 0,
+          "pts": 7.5,
           "max": 15,
-          "note": "推估量約均量1.8倍 → 爆量(疑換手/出貨)"
+          "note": "推估量約均量1.6倍 → 偏離"
         },
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+0.36%) → 有利"
+          "note": "現價在VWAP之上(+0.02%) → 有利"
         },
         "macro": {
           "pts": 7,
@@ -7172,16 +7172,24 @@
         }
       },
       "paper": {
-        "cash": 996982,
-        "equity": 996982,
-        "market_value": 0,
-        "return_pct": -0.3,
-        "holding": false,
-        "position": null,
-        "shares": 0,
-        "avg_cost": null,
-        "unrealized": 0,
-        "unrealized_pct": 0,
+        "cash": 697466,
+        "equity": 996555,
+        "market_value": 299090,
+        "return_pct": -0.34,
+        "holding": true,
+        "position": {
+          "shares": 7846,
+          "entry_price": 38.12,
+          "entry_date": "2026-06-30",
+          "entry_time": "10:30",
+          "cost": 299515.72,
+          "entry_score": 71,
+          "frac": 0.3
+        },
+        "shares": 7846,
+        "avg_cost": 38.12,
+        "unrealized": -426,
+        "unrealized_pct": -0.14,
         "trades": 3,
         "wins": 1,
         "win_rate": 33.3,
