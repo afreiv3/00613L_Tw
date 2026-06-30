@@ -1,33 +1,33 @@
 {
-  "date": "2026-06-29",
-  "generated_at": "2026-06-29 13:01",
+  "date": "2026-06-30",
+  "generated_at": "2026-06-30 12:36",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 16.0,
-    "macro": 7.0,
-    "trend": 8.0
+    "sector": 18.0,
+    "macro": 8.0,
+    "trend": 9.0
   },
-  "ai_sentiment_index": 77.5,
-  "summary": "在美伊衝突緩和的背景下，科技股和AI半導體前景樂觀，但市場仍關注升息預期和即將公布的就業數據。",
+  "ai_sentiment_index": 87.5,
+  "summary": "全球股市上漲，科技股表現強勁，地緣政治緊張局勢緩解，但美國借貸成本上升和中印市場的謹慎情緒值得關注。",
   "news_zh": [
-    "亞洲股市因中東局勢和升息預期而波動。",
-    "美國與伊朗談判緩和了衝突升級的擔憂，提振了股市。",
-    "中國首次推出的隔夜逆回購利率低於市場預期。",
-    "AI半導體股票預計將在2028年加入萬億美元市值俱樂部。",
-    "道瓊斯期貨因美伊消息而上漲，市場處於轉折點。",
-    "半導體板塊資金流向受就業數據和假期前期權影響。"
+    "美國與伊朗衝突趨緩，華爾街股市收高，科技相關股票大漲。",
+    "道瓊指數首次突破52,000點，標普500和那斯達克指數在科技股帶動下上漲。",
+    "亞洲股市本季有望創紀錄，美元走強壓低黃金和日圓。",
+    "全球金融公司轉向南韓，對中國和印度市場保持謹慎。",
+    "美國股市上漲的資金借貸成本越來越高。",
+    "大型科技股與半導體股之間日益擴大的差距，對整體市場發出警告。"
   ],
   "news": [
-    "[Reuters] Asia stocks adrift as Middle East worries meet rate-hike bets - Reuters - Asia stocks adrift as Middle East worries meet rate-hike bets&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: Markets swivel on tech, Mideast angst - Reuters - Morning Bid: Markets swivel on tech, Mideast angst&nbsp;&nbsp;Reuters",
-    "[Reuters] Indian shares steady as US-Iran talks temper escalation fears - Reuters - Indian shares steady as US-Iran talks temper escalation fears&nbsp;&nbsp;Reuters",
-    "[Reuters] China debuts overnight reverse repos at 1.25%, below market expectations, sources say - Reuters - China debuts overnight reverse repos at 1.25%, below market expectations, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] Rupee likely to shrug off US-Iran flare-up; limited impact on oil, Asia FX - Reuters - Rupee likely to shrug off US-Iran flare-up; limited impact on oil, Asia FX&nbsp;&nbsp;Reuters",
-    "[Reuters] Sovereign investors with $29 trillion pivot to energy assets, flag dollar fears - Reuters - Sovereign investors with $29 trillion pivot to energy assets, flag dollar fears&nbsp;&nbsp;Reuters",
-    "[Reuters] Dollar poised for best month in nearly a year; eyes on jobs data, Gulf tension - Reuters - Dollar poised for best month in nearly a year; eyes on jobs data, Gulf tension&nbsp;&nbsp;Reuters",
-    "[Reuters] China's Momenta kicks off Hong Kong IPO, targets up to $751 million - Reuters - China's Momenta kicks off Hong Kong IPO, targets up to $751 million&nbsp;&nbsp;Reuters",
-    "[Semis] Stock market today: S&P 500, Nasdaq, Dow futures climb as a halt to US-Iranian attacks is called - Yahoo Finance UK - Stock market today: S&P 500, Nasdaq, Dow futures climb as a halt to US-Iranian attacks is called&nbsp;&nbsp;Yahoo Finance UK",
-    "[Semis] Stock Market Outlook Hinges On AI Earnings And Fed Rate Risks - Forbes - Stock Market Outlook Hinges On AI Earnings And Fed Rate Risks&nbsp;&nbsp;Forbes"
+    "[Reuters] Stocks and oil prices rise with eyes on Iran; yen touches 40-year low vs dollar - Reuters - Stocks and oil prices rise with eyes on Iran; yen touches 40-year low vs dollar&nbsp;&nbsp;Reuters",
+    "[Reuters] Wall Street ends higher as US, Iran attacks ease; major tech-related shares jump - Reuters - Wall Street ends higher as US, Iran attacks ease; major tech-related shares jump&nbsp;&nbsp;Reuters",
+    "[Reuters] Borrowed money fueling US stock rally is getting more expensive - Reuters - Borrowed money fueling US stock rally is getting more expensive&nbsp;&nbsp;Reuters",
+    "[Reuters] China central bank conducts overnight reverse repos again, keeps rate at 1.25%, sources say - Reuters - China central bank conducts overnight reverse repos again, keeps rate at 1.25%, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] European banks urge regulators not to intervene in equity markets - Reuters - European banks urge regulators not to intervene in equity markets&nbsp;&nbsp;Reuters",
+    "[Reuters] Asian stocks set for record-breaking quarter; dollar sinks gold and yen - Reuters - Asian stocks set for record-breaking quarter; dollar sinks gold and yen&nbsp;&nbsp;Reuters",
+    "[Reuters] Global financial firms pivot to South Korea, cautious on China and India, survey shows - Reuters - Global financial firms pivot to South Korea, cautious on China and India, survey shows&nbsp;&nbsp;Reuters",
+    "[Reuters] What's good for the US economy now may not be good for stocks - Reuters - What's good for the US economy now may not be good for stocks&nbsp;&nbsp;Reuters",
+    "[Semis] Stock market today: Dow closes above 52,000 for first time, S&P 500 and Nasdaq rally as tech gains - Yahoo Finance - Stock market today: Dow closes above 52,000 for first time, S&P 500 and Nasdaq rally as tech gains&nbsp;&nbsp;Yahoo Finance",
+    "[Semis] SR Bancorp Rings the Nasdaq Stock Market Closing Bell - Nasdaq - SR Bancorp Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
   ],
   "debug_error": ""
 }
