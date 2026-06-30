@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30 11:15 (Taipei)",
+  "updated": "2026-06-30 11:30 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -7127,11 +7127,11 @@
     },
     {
       "date": "2026-06-30",
-      "time": "11:15",
-      "price": 38.39,
-      "score": 71,
+      "time": "11:30",
+      "price": 38.17,
+      "score": 74,
       "zone": "green",
-      "quant_sum": 45,
+      "quant_sum": 48,
       "ai_sum": 26,
       "ai_ok": true,
       "factors": {
@@ -7146,19 +7146,19 @@
           "note": "隔夜Nasdaq+2%科技領漲，SOX 6/29精確數字查不到（中性偏多計）；TSM ADR $432.35相對韌性，但NVDA $192.53（週跌8.6%）、AVGO $374.51（距高點跌24%）仍弱，板塊整體屬分歧偏多，非全面趨勢確認。"
         },
         "entry": {
-          "pts": 0,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價在區間上緣(84%) → 屬追高"
+          "note": "現價在區間中段(60%)"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量1.4倍 → 正常"
+          "note": "推估量約均量1.2倍 → 正常"
         },
         "vwap": {
-          "pts": 10,
+          "pts": 5.0,
           "max": 10,
-          "note": "現價在VWAP之上(+0.58%) → 有利"
+          "note": "現價貼近VWAP(-0.00%)"
         },
         "macro": {
           "pts": 7,
@@ -7173,9 +7173,9 @@
       },
       "paper": {
         "cash": 697466,
-        "equity": 998674,
-        "market_value": 301208,
-        "return_pct": -0.13,
+        "equity": 996948,
+        "market_value": 299482,
+        "return_pct": -0.31,
         "holding": true,
         "position": {
           "shares": 7846,
@@ -7188,8 +7188,8 @@
         },
         "shares": 7846,
         "avg_cost": 38.12,
-        "unrealized": 1692,
-        "unrealized_pct": 0.56,
+        "unrealized": -34,
+        "unrealized_pct": -0.01,
         "trades": 3,
         "wins": 1,
         "win_rate": 33.3,
