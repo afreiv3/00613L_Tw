@@ -1,33 +1,33 @@
 {
-  "date": "2026-06-30",
-  "generated_at": "2026-06-30 12:36",
+  "date": "2026-07-01",
+  "generated_at": "2026-07-01 12:55",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 18.0,
-    "macro": 8.0,
-    "trend": 9.0
+    "sector": 16.0,
+    "macro": 7.0,
+    "trend": 8.0
   },
-  "ai_sentiment_index": 87.5,
-  "summary": "全球股市上漲，科技股表現強勁，地緣政治緊張局勢緩解，但美國借貸成本上升和中印市場的謹慎情緒值得關注。",
+  "ai_sentiment_index": 77.5,
+  "summary": "儘管美國科技股出現拋售並引發泡沫擔憂，但美國股市仍錄得自2020年以來表現最佳的季度，主要受晶片股和人工智慧熱潮推動。",
   "news_zh": [
-    "美國與伊朗衝突趨緩，華爾街股市收高，科技相關股票大漲。",
-    "道瓊指數首次突破52,000點，標普500和那斯達克指數在科技股帶動下上漲。",
-    "亞洲股市本季有望創紀錄，美元走強壓低黃金和日圓。",
-    "全球金融公司轉向南韓，對中國和印度市場保持謹慎。",
-    "美國股市上漲的資金借貸成本越來越高。",
-    "大型科技股與半導體股之間日益擴大的差距，對整體市場發出警告。"
+    "美國科技股拋售引發市場對泡沫的擔憂。",
+    "標普500指數和那斯達克指數錄得自2020年以來表現最佳的季度。",
+    "伊朗戰爭和人工智慧熱潮推動全球市場劇烈波動。",
+    "道瓊指數創下新高，標普500指數上漲，晶片股大幅上漲。",
+    "分析顯示，公開交易的信貸基金無利可圖，發出警示信號。",
+    "歐洲央行考慮提高銀行的最低準備金以減少自身損失。"
   ],
   "news": [
-    "[Reuters] Stocks and oil prices rise with eyes on Iran; yen touches 40-year low vs dollar - Reuters - Stocks and oil prices rise with eyes on Iran; yen touches 40-year low vs dollar&nbsp;&nbsp;Reuters",
-    "[Reuters] Wall Street ends higher as US, Iran attacks ease; major tech-related shares jump - Reuters - Wall Street ends higher as US, Iran attacks ease; major tech-related shares jump&nbsp;&nbsp;Reuters",
-    "[Reuters] Borrowed money fueling US stock rally is getting more expensive - Reuters - Borrowed money fueling US stock rally is getting more expensive&nbsp;&nbsp;Reuters",
-    "[Reuters] China central bank conducts overnight reverse repos again, keeps rate at 1.25%, sources say - Reuters - China central bank conducts overnight reverse repos again, keeps rate at 1.25%, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] European banks urge regulators not to intervene in equity markets - Reuters - European banks urge regulators not to intervene in equity markets&nbsp;&nbsp;Reuters",
-    "[Reuters] Asian stocks set for record-breaking quarter; dollar sinks gold and yen - Reuters - Asian stocks set for record-breaking quarter; dollar sinks gold and yen&nbsp;&nbsp;Reuters",
-    "[Reuters] Global financial firms pivot to South Korea, cautious on China and India, survey shows - Reuters - Global financial firms pivot to South Korea, cautious on China and India, survey shows&nbsp;&nbsp;Reuters",
-    "[Reuters] What's good for the US economy now may not be good for stocks - Reuters - What's good for the US economy now may not be good for stocks&nbsp;&nbsp;Reuters",
-    "[Semis] Stock market today: Dow closes above 52,000 for first time, S&P 500 and Nasdaq rally as tech gains - Yahoo Finance - Stock market today: Dow closes above 52,000 for first time, S&P 500 and Nasdaq rally as tech gains&nbsp;&nbsp;Yahoo Finance",
-    "[Semis] SR Bancorp Rings the Nasdaq Stock Market Closing Bell - Nasdaq - SR Bancorp Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
+    "[Reuters] Tech selloff stirs bubble fears in US stock market - Reuters - Tech selloff stirs bubble fears in US stock market&nbsp;&nbsp;Reuters",
+    "[Reuters] In a warning sign, analysis shows publicly traded credit funds are unprofitable - Reuters - In a warning sign, analysis shows publicly traded credit funds are unprofitable&nbsp;&nbsp;Reuters",
+    "[Reuters] S&P 500, Nasdaq register best quarter since 2020 despite Iran war - Reuters - S&P 500, Nasdaq register best quarter since 2020 despite Iran war&nbsp;&nbsp;Reuters",
+    "[Reuters] EXCLUSIVE: Energy drink and supplements company Nutrabolt picks banks for US IPO, sources say - Reuters - EXCLUSIVE: Energy drink and supplements company Nutrabolt picks banks for US IPO, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: That's a lot of meat to digest - Reuters - Morning Bid: That's a lot of meat to digest&nbsp;&nbsp;Reuters",
+    "[Reuters] EXCLUSIVE: Kawasaki Heavy plans to raise $1.2 billion via new shares and convertible bonds, sources say - Reuters - EXCLUSIVE: Kawasaki Heavy plans to raise $1.2 billion via new shares and convertible bonds, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] Iran war and AI boom drive wild ride on global markets - Reuters - Iran war and AI boom drive wild ride on global markets&nbsp;&nbsp;Reuters",
+    "[Reuters] EXCLUSIVE: ECB considers lifting banks' minimum reserves to lessen own losses, sources say - Reuters - EXCLUSIVE: ECB considers lifting banks' minimum reserves to lessen own losses, sources say&nbsp;&nbsp;Reuters",
+    "[Semis] Stock market today: Dow hits record, S&P 500 jumps to cap best quarter since 2020 amid massive chip rally - Yahoo Finance - Stock market today: Dow hits record, S&P 500 jumps to cap best quarter since 2020 amid massive chip rally&nbsp;&nbsp;Yahoo Finance",
+    "[Semis] U.S. stocks just closed their best quarter in six years. Can America keep the boom going? - NBC News - U.S. stocks just closed their best quarter in six years. Can America keep the boom going?&nbsp;&nbsp;NBC News"
   ],
   "debug_error": ""
 }
