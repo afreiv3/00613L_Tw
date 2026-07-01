@@ -7199,11 +7199,11 @@
     },
     {
       "date": "2026-07-01",
-      "time": "11:00",
-      "price": 39.23,
-      "score": 71,
+      "time": "11:15",
+      "price": 39.41,
+      "score": 74,
       "zone": "green",
-      "quant_sum": 40,
+      "quant_sum": 42,
       "ai_sum": 31,
       "ai_ok": true,
       "factors": {
@@ -7218,19 +7218,19 @@
           "note": "隔夜SOX約14,132（接近52週高14,655），Nasdaq 6/30收盤+1.5%，TSM ADR大漲+3.16%至469.47美元，半導體板塊季末明顯偏強；NVDA約194.97仍距5月ATH 235.47跌約17%為板塊落後項，但整體強於分歧。"
         },
         "entry": {
-          "pts": 15,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價近今日低點(區間27%) → 接近支撐"
+          "note": "現價在區間中段(42%)"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量1.3倍 → 正常"
+          "note": "推估量約均量1.2倍 → 正常"
         },
         "vwap": {
-          "pts": 0,
+          "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之下(-0.36%) → 弱勢"
+          "note": "現價在VWAP之上(+0.10%) → 有利"
         },
         "macro": {
           "pts": 6,
@@ -7245,9 +7245,9 @@
       },
       "paper": {
         "cash": 697466,
-        "equity": 1005264,
-        "market_value": 307799,
-        "return_pct": 0.53,
+        "equity": 1006677,
+        "market_value": 309211,
+        "return_pct": 0.67,
         "holding": true,
         "position": {
           "shares": 7846,
@@ -7260,8 +7260,8 @@
         },
         "shares": 7846,
         "avg_cost": 38.12,
-        "unrealized": 8283,
-        "unrealized_pct": 2.77,
+        "unrealized": 9695,
+        "unrealized_pct": 3.24,
         "trades": 3,
         "wins": 1,
         "win_rate": 33.3,
