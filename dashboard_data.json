@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01 10:30 (Taipei)",
+  "updated": "2026-07-01 10:45 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -7198,18 +7198,18 @@
     },
     {
       "date": "2026-07-01",
-      "time": "10:30",
-      "price": 39.01,
-      "score": 54,
+      "time": "10:45",
+      "price": 39.3,
+      "score": 61,
       "zone": "amber",
-      "quant_sum": 22,
+      "quant_sum": 30,
       "ai_sum": 31,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 0,
+          "pts": 10.0,
           "max": 20,
-          "note": "開高(+4.0%)走低、吐回61%漲幅 → 不利"
+          "note": "開+4.0%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 16,
@@ -7217,19 +7217,19 @@
           "note": "隔夜SOX約14,132（接近52週高14,655），Nasdaq 6/30收盤+1.5%，TSM ADR大漲+3.16%至469.47美元，半導體板塊季末明顯偏強；NVDA約194.97仍距5月ATH 235.47跌約17%為板塊落後項，但整體強於分歧。"
         },
         "entry": {
-          "pts": 15,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價近今日低點(區間8%) → 接近支撐"
+          "note": "現價在區間中段(33%)"
         },
         "volume": {
           "pts": 7.5,
           "max": 15,
-          "note": "推估量約均量1.5倍 → 偏離"
+          "note": "推估量約均量1.4倍 → 偏離"
         },
         "vwap": {
-          "pts": 0,
+          "pts": 5.0,
           "max": 10,
-          "note": "現價在VWAP之下(-0.99%) → 弱勢"
+          "note": "現價貼近VWAP(-0.19%)"
         },
         "macro": {
           "pts": 6,
@@ -7244,9 +7244,9 @@
       },
       "paper": {
         "cash": 697466,
-        "equity": 1003538,
-        "market_value": 306072,
-        "return_pct": 0.35,
+        "equity": 1005814,
+        "market_value": 308348,
+        "return_pct": 0.58,
         "holding": true,
         "position": {
           "shares": 7846,
@@ -7259,8 +7259,8 @@
         },
         "shares": 7846,
         "avg_cost": 38.12,
-        "unrealized": 6557,
-        "unrealized_pct": 2.19,
+        "unrealized": 8832,
+        "unrealized_pct": 2.95,
         "trades": 3,
         "wins": 1,
         "win_rate": 33.3,
