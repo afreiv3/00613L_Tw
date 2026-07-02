@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 3,
+  "count": 4,
   "history": [
     {
       "date": "2026-06-29",
@@ -189,6 +189,58 @@
         "zone": "amber",
         "zone_label": "🟠 輕倉防守（極度狂熱）",
         "gate_open": true
+      }
+    },
+    {
+      "date": "2026-07-02",
+      "time": "09:00",
+      "price": null,
+      "tier1": 30,
+      "ai_index": 50.0,
+      "target": 0.5,
+      "zone": "red",
+      "zone_label": "⚪ 資料缺，不動作",
+      "gate_open": false,
+      "market_ok": true,
+      "asset_trend_ok": null,
+      "ma10_ok": null,
+      "ai_ok": false,
+      "summary": "（今日盤前判讀尚未產生，暫以中性計）",
+      "news": [],
+      "paper": {
+        "cash": 817796,
+        "shares": 5315.2,
+        "avg_cost": 38.17,
+        "avg_entry_price": 38.17,
+        "unrealized": -202905,
+        "unrealized_pct": -100.0,
+        "unrealized_return_pct": -100.0,
+        "realized_pnl": 20701,
+        "equity": 817796,
+        "total_equity": 817796,
+        "market_value": 0,
+        "position_pct": 0.0,
+        "actual_exposure": 0.0,
+        "target_exposure": 0.2,
+        "return_pct": -18.22,
+        "trades": 10,
+        "highest_equity": 1028225,
+        "highest_price_since_entry": 39.59,
+        "drawdown_from_position_high_pct": 0,
+        "position_status": "holding",
+        "profit_stage_1_done": false,
+        "profit_stage_2_done": false,
+        "breakeven_mode": false,
+        "trailing_mode": false,
+        "frenzy_days": 0,
+        "last_action": "SELL",
+        "last_action_reason": "DATA_INVALID_NO_TRADE",
+        "tier1": 30,
+        "ai_index": 50.0,
+        "target": 0.5,
+        "zone": "red",
+        "zone_label": "⚪ 資料缺，不動作",
+        "gate_open": false
       }
     }
   ]
