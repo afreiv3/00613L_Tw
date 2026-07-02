@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02 09:15 (Taipei)",
+  "updated": "2026-07-02 09:30 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -7269,8 +7269,8 @@
     },
     {
       "date": "2026-07-02",
-      "time": "09:15",
-      "price": null,
+      "time": "09:30",
+      "price": 38.23,
       "score": 43,
       "zone": "amber",
       "quant_sum": 30,
@@ -7278,9 +7278,9 @@
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 10.0,
+          "pts": 20,
           "max": 20,
-          "note": "盤中資料缺，型態以中性計"
+          "note": "現價守在開盤之上(開-4.2%) → 有利"
         },
         "sector": {
           "pts": 0,
@@ -7288,19 +7288,19 @@
           "note": "SOX隔夜重挫-5.39%（13,478），TSM ADR跌-3.51%至~452美元，NVDA跌-2.47%；美政府擬再擴大對中晶片出口管制為主因，半導體板塊明確轉弱，給0分。"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 0,
           "max": 15,
-          "note": "區間資料缺，以中性計"
+          "note": "現價在區間上緣(100%) → 屬追高"
         },
         "volume": {
-          "pts": 7.5,
+          "pts": 0,
           "max": 15,
-          "note": "量能資料缺，以中性計"
+          "note": "推估量約均量2.0倍 → 爆量(疑換手/出貨)"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 10,
           "max": 10,
-          "note": "VWAP 資料缺，以中性計"
+          "note": "現價在VWAP之上(+0.65%) → 有利"
         },
         "macro": {
           "pts": 5,
@@ -7314,28 +7314,20 @@
         }
       },
       "paper": {
-        "cash": 697466,
-        "equity": 697466,
+        "cash": 996691,
+        "equity": 996691,
         "market_value": 0,
-        "return_pct": -30.25,
-        "holding": true,
-        "position": {
-          "shares": 7846,
-          "entry_price": 38.12,
-          "entry_date": "2026-06-30",
-          "entry_time": "10:30",
-          "cost": 299515.72,
-          "entry_score": 71,
-          "frac": 0.3
-        },
-        "shares": 7846,
-        "avg_cost": 38.12,
-        "unrealized": -299516,
-        "unrealized_pct": -100.0,
-        "trades": 3,
+        "return_pct": -0.33,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 4,
         "wins": 1,
-        "win_rate": 33.3,
-        "realized_pnl": -3018
+        "win_rate": 25.0,
+        "realized_pnl": -3309
       }
     }
   ]
