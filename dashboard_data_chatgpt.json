@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02 13:00 (Taipei)",
+  "updated": "2026-07-02 13:06 (Taipei)",
   "history": [
     {
       "date": "2026-06-29",
@@ -192,13 +192,13 @@
     },
     {
       "date": "2026-07-02",
-      "time": "13:00",
-      "price": 38.32,
+      "time": "13:06",
+      "price": 38.3,
       "tier1": 48,
       "ai_index": 32.5,
       "target": 0.5,
       "zone": "amber",
-      "zone_label": "🟠 跌破10MA 降水位",
+      "zone_label": "🟡 標準持倉（情緒健康）",
       "gate_open": true,
       "market_ok": true,
       "asset_trend_ok": true,
@@ -222,13 +222,13 @@
         "shares": 2657.6,
         "avg_cost": 38.17,
         "avg_entry_price": 38.17,
-        "unrealized": 387,
-        "unrealized_pct": 0.38,
-        "unrealized_return_pct": 0.38,
+        "unrealized": 334,
+        "unrealized_pct": 0.33,
+        "unrealized_return_pct": 0.33,
         "realized_pnl": 20841,
-        "equity": 1021228,
-        "total_equity": 1021228,
-        "market_value": 101840,
+        "equity": 1021175,
+        "total_equity": 1021175,
+        "market_value": 101787,
         "position_pct": 10.0,
         "actual_exposure": 0.1,
         "target_exposure": 0.5,
@@ -236,7 +236,7 @@
         "trades": 11,
         "highest_equity": 1028225,
         "highest_price_since_entry": 39.59,
-        "drawdown_from_position_high_pct": 3.21,
+        "drawdown_from_position_high_pct": 3.26,
         "position_status": "holding",
         "profit_stage_1_done": false,
         "profit_stage_2_done": false,
@@ -249,7 +249,7 @@
         "ai_index": 32.5,
         "target": 0.5,
         "zone": "amber",
-        "zone_label": "🟠 跌破10MA 降水位",
+        "zone_label": "🟡 標準持倉（情緒健康）",
         "gate_open": true
       }
     }
