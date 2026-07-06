@@ -1,31 +1,33 @@
 {
-  "date": "2026-07-03",
-  "generated_at": "2026-07-03 12:11",
+  "date": "2026-07-06",
+  "generated_at": "2026-07-06 12:41",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 3.0,
+    "sector": 14.0,
     "macro": 7.0,
-    "trend": 6.0
+    "trend": 7.0
   },
-  "ai_sentiment_index": 40.0,
-  "summary": "美國就業數據降溫，降低聯準會升息預期，但半導體類股下跌拖累那斯達克指數，使市場呈現漲跌互見。",
+  "ai_sentiment_index": 70.0,
+  "summary": "亞洲股市因財報季和油價下跌而承壓，但美國科技期貨上漲，為台灣市場帶來複雜的訊號。",
   "news_zh": [
-    "美國就業數據降溫，降低聯準會升息預期，為聯準會和股市爭取更多時間。",
-    "美國就業數據疲軟後，道瓊指數創下歷史新高，但那斯達克指數因晶片股下跌而收低。",
-    "半導體類股持續下跌，拖累那斯達克指數下跌207點。",
-    "市場開盤漲跌互見，半導體類股表現疲軟。"
+    "亞洲股市在財報季前夕下跌，油價受供應增加影響而走弱。",
+    "三星電子財報將為全球晶片產業表現提供初步線索。",
+    "美國標準普爾500指數、那斯達克指數和道瓊指數期貨在創紀錄的一周後攀升。",
+    "科技股領漲期貨，市場關注SanDisk、蘋果和SpaceX。",
+    "OPEC+同意提高原油產量目標，導致油價下跌。",
+    "外資持續拋售KOSPI，可能加劇市場擔憂。"
   ],
   "news": [
-    "[Reuters] Asian markets choppy as US jobs data douse Fed rate hike bets - Reuters - Asian markets choppy as US jobs data douse Fed rate hike bets&nbsp;&nbsp;Reuters",
-    "[Reuters] Cooling US jobs data buys the Fed and stock market more time - Reuters - Cooling US jobs data buys the Fed and stock market more time&nbsp;&nbsp;Reuters",
-    "[Reuters] Indian shares to open higher on easing Fed rate-hike bets - Reuters - Indian shares to open higher on easing Fed rate-hike bets&nbsp;&nbsp;Reuters",
-    "[Reuters] Dow jumps to record closing high after soft US jobs data, Nasdaq down with chip shares - Reuters - Dow jumps to record closing high after soft US jobs data, Nasdaq down with chip shares&nbsp;&nbsp;Reuters",
-    "[Reuters] Hedge funds reap June gains by piling into short bets but lose on oil, sources say - Reuters - Hedge funds reap June gains by piling into short bets but lose on oil, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] Japan finance minister says ready to respond on yen, in contact with US authorities - Reuters - Japan finance minister says ready to respond on yen, in contact with US authorities&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: Churning chips - Reuters - Morning Bid: Churning chips&nbsp;&nbsp;Reuters",
-    "[Reuters] Trading Day: Chips are down, and so are payrolls - Reuters - Trading Day: Chips are down, and so are payrolls&nbsp;&nbsp;Reuters",
-    "[Semis] Stock market today: Dow notches fresh record, S&P 500, Nasdaq fall as Tesla sinks, semiconductors extend decline - Yahoo Finance - Stock market today: Dow notches fresh record, S&P 500, Nasdaq fall as Tesla sinks, semiconductors extend decline&nbsp;&nbsp;Yahoo Finance",
-    "[Semis] Cooling US jobs data buys the Fed and stock market more time - Reuters - Cooling US jobs data buys the Fed and stock market more time&nbsp;&nbsp;Reuters"
+    "[Reuters] Asian shares slip as earnings loom, oil weighed by supply - Reuters - Asian shares slip as earnings loom, oil weighed by supply&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: Samsung to serve chip taster for earnings feast - Reuters - Morning Bid: Samsung to serve chip taster for earnings feast&nbsp;&nbsp;Reuters",
+    "[Reuters] Indian shares open higher, led by HDFC Bank, Axis Bank - Reuters - Indian shares open higher, led by HDFC Bank, Axis Bank&nbsp;&nbsp;Reuters",
+    "[Reuters] ECB's T2 payment system back up after brief incident impacting payments - Reuters - ECB's T2 payment system back up after brief incident impacting payments&nbsp;&nbsp;Reuters",
+    "[Reuters] Standard Chartered, BlackRock launch Asia Pacific-focused multi-asset fund - Reuters - Standard Chartered, BlackRock launch Asia Pacific-focused multi-asset fund&nbsp;&nbsp;Reuters",
+    "[Reuters] The Week in Breakingviews: Cleaving the colossus - Reuters - The Week in Breakingviews: Cleaving the colossus&nbsp;&nbsp;Reuters",
+    "[Reuters] OPEC+ to boost crude output, but can it deliver and who will buy? - Reuters - OPEC+ to boost crude output, but can it deliver and who will buy?&nbsp;&nbsp;Reuters",
+    "[Reuters] Oil slips after OPEC+ agrees to raise output targets - Reuters - Oil slips after OPEC+ agrees to raise output targets&nbsp;&nbsp;Reuters",
+    "[Semis] Stock market today: S&P 500, Nasdaq, Dow futures climb after record-setting week - Yahoo Finance - Stock market today: S&P 500, Nasdaq, Dow futures climb after record-setting week&nbsp;&nbsp;Yahoo Finance",
+    "[Semis] Techs Lead Futures Higher; Watch Sandisk, Apple, SpaceX - Investor's Business Daily - Techs Lead Futures Higher; Watch Sandisk, Apple, SpaceX&nbsp;&nbsp;Investor's Business Daily"
   ],
   "debug_error": ""
 }
