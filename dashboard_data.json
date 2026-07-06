@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06 09:45 (Taipei)",
+  "updated": "2026-07-06 10:00 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -7395,18 +7395,18 @@
     },
     {
       "date": "2026-07-06",
-      "time": "09:45",
-      "price": 39.31,
-      "score": 70,
+      "time": "10:00",
+      "price": 39.51,
+      "score": 72,
       "zone": "green",
-      "quant_sum": 42,
+      "quant_sum": 45,
       "ai_sum": 27,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 10.0,
+          "pts": 20,
           "max": 20,
-          "note": "開+1.5%、小幅回落，型態中性"
+          "note": "現價守在開盤之上(開+1.5%) → 有利"
         },
         "sector": {
           "pts": 10,
@@ -7414,19 +7414,19 @@
           "note": "SOX 7/1-7/2兩日累計跌逾10%（AVGO AI指引缺口為核心觸媒），短線明顯偏弱；惟NDX期貨周日+1.3%、AVGO負面消息已知，短線恐慌部分消化，板塊方向分歧，中性給10分。"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 0,
           "max": 15,
-          "note": "現價在區間中段(54%)"
+          "note": "現價在區間上緣(91%) → 屬追高"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量1.1倍 → 正常"
+          "note": "推估量約均量1.2倍 → 正常"
         },
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+0.05%) → 有利"
+          "note": "現價在VWAP之上(+0.47%) → 有利"
         },
         "macro": {
           "pts": 7,
@@ -7441,9 +7441,9 @@
       },
       "paper": {
         "cash": 697266,
-        "equity": 996493,
-        "market_value": 299228,
-        "return_pct": -0.35,
+        "equity": 998016,
+        "market_value": 300750,
+        "return_pct": -0.2,
         "holding": true,
         "position": {
           "shares": 7612,
@@ -7456,8 +7456,8 @@
         },
         "shares": 7612,
         "avg_cost": 39.28,
-        "unrealized": -198,
-        "unrealized_pct": -0.07,
+        "unrealized": 1325,
+        "unrealized_pct": 0.44,
         "trades": 4,
         "wins": 1,
         "win_rate": 25.0,
