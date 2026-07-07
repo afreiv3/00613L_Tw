@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 118,
+  "count": 119,
   "history": [
     {
       "date": "2026-06-05",
@@ -7459,6 +7459,77 @@
         "avg_cost": 39.28,
         "unrealized": -4460,
         "unrealized_pct": -1.49,
+        "trades": 4,
+        "wins": 1,
+        "win_rate": 25.0,
+        "realized_pnl": -3309
+      }
+    },
+    {
+      "date": "2026-07-07",
+      "time": "09:00",
+      "price": null,
+      "score": 64,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 34,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 18,
+          "max": 20,
+          "note": "SOX+3.79%至13,104.26（7/6美盤），大幅收復7/1-7/2跌幅，TSM ADR+1.22%至$467.74，Nasdaq+1.12%，半導體板塊全面確認反彈；AVGO Q3指引$160億(+200%YoY)正面解讀，給18分（距前高SOX 13,600+尚有空間稍扣分）。"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 7,
+          "max": 10,
+          "note": "WTI $68.48低位(-0.31%)、10Y殖利率4.48%略穩、Fed按兵不動無系統性風險；惟Fed上調2026通膨預測至3.6%且9委員偏鷹有輕微升息預期壓力，給7分。"
+        },
+        "trend": {
+          "pts": 9,
+          "max": 10,
+          "note": "TAIEX昨收47,395遠高於季線估算約44,000（+7.7%），H1+60%多頭結構完好，自6/22歷史高區整理後重返上攻，結構極強；尚未突破歷史收盤高47,741稍扣1分，給9分。"
+        }
+      },
+      "paper": {
+        "cash": 697266,
+        "equity": 697266,
+        "market_value": 0,
+        "return_pct": -30.27,
+        "holding": true,
+        "position": {
+          "shares": 7612,
+          "entry_price": 39.28,
+          "entry_date": "2026-07-06",
+          "entry_time": "09:30",
+          "cost": 299425.43,
+          "entry_score": 70,
+          "frac": 0.3
+        },
+        "shares": 7612,
+        "avg_cost": 39.28,
+        "unrealized": -299425,
+        "unrealized_pct": -100.0,
         "trades": 4,
         "wins": 1,
         "win_rate": 25.0,
