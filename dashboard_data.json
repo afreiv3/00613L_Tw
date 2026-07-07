@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07 10:15 (Taipei)",
+  "updated": "2026-07-07 10:30 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -7466,11 +7466,11 @@
     },
     {
       "date": "2026-07-07",
-      "time": "10:15",
-      "price": 39.28,
-      "score": 79,
+      "time": "10:30",
+      "price": 39.02,
+      "score": 82,
       "zone": "green",
-      "quant_sum": 45,
+      "quant_sum": 48,
       "ai_sum": 34,
       "ai_ok": true,
       "factors": {
@@ -7485,19 +7485,19 @@
           "note": "SOX+3.79%至13,104.26（7/6美盤），大幅收復7/1-7/2跌幅，TSM ADR+1.22%至$467.74，Nasdaq+1.12%，半導體板塊全面確認反彈；AVGO Q3指引$160億(+200%YoY)正面解讀，給18分（距前高SOX 13,600+尚有空間稍扣分）。"
         },
         "entry": {
-          "pts": 0,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價在區間上緣(90%) → 屬追高"
+          "note": "現價在區間中段(55%)"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量1.2倍 → 正常"
+          "note": "推估量約均量1.1倍 → 正常"
         },
         "vwap": {
-          "pts": 10,
+          "pts": 5.0,
           "max": 10,
-          "note": "現價在VWAP之上(+0.59%) → 有利"
+          "note": "現價貼近VWAP(-0.09%)"
         },
         "macro": {
           "pts": 7,
@@ -7512,9 +7512,9 @@
       },
       "paper": {
         "cash": 697266,
-        "equity": 996265,
-        "market_value": 298999,
-        "return_pct": -0.37,
+        "equity": 994286,
+        "market_value": 297020,
+        "return_pct": -0.57,
         "holding": true,
         "position": {
           "shares": 7612,
@@ -7527,8 +7527,8 @@
         },
         "shares": 7612,
         "avg_cost": 39.28,
-        "unrealized": -426,
-        "unrealized_pct": -0.14,
+        "unrealized": -2405,
+        "unrealized_pct": -0.8,
         "trades": 4,
         "wins": 1,
         "win_rate": 25.0,
