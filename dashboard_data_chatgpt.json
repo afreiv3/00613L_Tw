@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07 13:30 (Taipei)",
+  "updated": "2026-07-07 16:33 (Taipei)",
   "history": [
     {
       "date": "2026-06-29",
@@ -381,13 +381,13 @@
     },
     {
       "date": "2026-07-07",
-      "time": "13:30",
-      "price": 37.23,
+      "time": "16:33",
+      "price": 37.19,
       "tier1": 40,
       "ai_index": 77.5,
       "target": 0.0,
       "zone": "red",
-      "zone_label": "⚪ 今日已進場過",
+      "zone_label": "⚪ 觀望（非盤中）",
       "gate_open": false,
       "market_ok": true,
       "asset_trend_ok": false,
@@ -438,7 +438,7 @@
         "ai_index": 77.5,
         "target": 0.0,
         "zone": "red",
-        "zone_label": "⚪ 今日已進場過",
+        "zone_label": "⚪ 觀望（非盤中）",
         "gate_open": false
       }
     }
