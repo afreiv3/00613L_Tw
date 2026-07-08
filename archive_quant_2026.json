@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 119,
+  "count": 120,
   "history": [
     {
       "date": "2026-06-05",
@@ -7530,6 +7530,77 @@
         "avg_cost": 39.28,
         "unrealized": -16335,
         "unrealized_pct": -5.46,
+        "trades": 4,
+        "wins": 1,
+        "win_rate": 25.0,
+        "realized_pnl": -3309
+      }
+    },
+    {
+      "date": "2026-07-08",
+      "time": "09:00",
+      "price": null,
+      "score": 43,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 13,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 0,
+          "max": 20,
+          "note": "美股7/7 Nasdaq−1.16%、SMH跌逾3%，AVGO AI指引拖累連二日走弱，MU−4.7%、整體半導體族群明顯轉弱，給0分。"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 5,
+          "max": 10,
+          "note": "10Y殖利率4.469−4.50%平穩，Fed 7/28−29預期按兵不動，但Strait of Hormuz油價地緣風險升溫、升降息路徑仍存不確定性，略波動給5分。"
+        },
+        "trend": {
+          "pts": 8,
+          "max": 10,
+          "note": "TAIEX昨收46,728（fetch_quant數據缺失），依昨日ai_factors估算季線約44,000，TAIEX高出季線約6%，多頭結構完好，惟47,000整數壓力明確，給8分。"
+        }
+      },
+      "paper": {
+        "cash": 697266,
+        "equity": 697266,
+        "market_value": 0,
+        "return_pct": -30.27,
+        "holding": true,
+        "position": {
+          "shares": 7612,
+          "entry_price": 39.28,
+          "entry_date": "2026-07-06",
+          "entry_time": "09:30",
+          "cost": 299425.43,
+          "entry_score": 70,
+          "frac": 0.3
+        },
+        "shares": 7612,
+        "avg_cost": 39.28,
+        "unrealized": -299425,
+        "unrealized_pct": -100.0,
         "trades": 4,
         "wins": 1,
         "win_rate": 25.0,
