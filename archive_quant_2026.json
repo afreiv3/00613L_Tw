@@ -7538,18 +7538,18 @@
     },
     {
       "date": "2026-07-08",
-      "time": "09:15",
-      "price": null,
-      "score": 43,
+      "time": "09:30",
+      "price": 37.12,
+      "score": 58,
       "zone": "amber",
-      "quant_sum": 30,
+      "quant_sum": 45,
       "ai_sum": 13,
       "ai_ok": true,
       "factors": {
         "pattern": {
           "pts": 10.0,
           "max": 20,
-          "note": "盤中資料缺，型態以中性計"
+          "note": "開+0.8%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 0,
@@ -7557,19 +7557,19 @@
           "note": "美股7/7 Nasdaq−1.16%、SMH跌逾3%，AVGO AI指引拖累連二日走弱，MU−4.7%、整體半導體族群明顯轉弱，給0分。"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "區間資料缺，以中性計"
+          "note": "現價近今日低點(區間31%) → 接近支撐"
         },
         "volume": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "量能資料缺，以中性計"
+          "note": "推估量約均量1.1倍 → 正常"
         },
         "vwap": {
           "pts": 5.0,
           "max": 10,
-          "note": "VWAP 資料缺，以中性計"
+          "note": "現價貼近VWAP(-0.18%)"
         },
         "macro": {
           "pts": 5,
@@ -7584,9 +7584,9 @@
       },
       "paper": {
         "cash": 697266,
-        "equity": 697266,
-        "market_value": 0,
-        "return_pct": -30.27,
+        "equity": 979823,
+        "market_value": 282557,
+        "return_pct": -2.02,
         "holding": true,
         "position": {
           "shares": 7612,
@@ -7599,8 +7599,8 @@
         },
         "shares": 7612,
         "avg_cost": 39.28,
-        "unrealized": -299425,
-        "unrealized_pct": -100.0,
+        "unrealized": -16868,
+        "unrealized_pct": -5.63,
         "trades": 4,
         "wins": 1,
         "win_rate": 25.0,
