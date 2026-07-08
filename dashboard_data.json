@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08 12:00 (Taipei)",
+  "updated": "2026-07-08 12:15 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -7537,11 +7537,11 @@
     },
     {
       "date": "2026-07-08",
-      "time": "12:00",
-      "price": 37.19,
-      "score": 48,
+      "time": "12:15",
+      "price": 36.92,
+      "score": 50,
       "zone": "amber",
-      "quant_sum": 35,
+      "quant_sum": 38,
       "ai_sum": 13,
       "ai_ok": true,
       "factors": {
@@ -7556,19 +7556,19 @@
           "note": "美股7/7 Nasdaq−1.16%、SMH跌逾3%，AVGO AI指引拖累連二日走弱，MU−4.7%、整體半導體族群明顯轉弱，給0分。"
         },
         "entry": {
-          "pts": 0,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價在區間上緣(71%) → 屬追高"
+          "note": "現價在區間中段(44%)"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量0.8倍 → 正常"
+          "note": "推估量約均量0.7倍 → 正常"
         },
         "vwap": {
-          "pts": 10,
+          "pts": 5.0,
           "max": 10,
-          "note": "現價在VWAP之上(+0.61%) → 有利"
+          "note": "現價貼近VWAP(-0.14%)"
         },
         "macro": {
           "pts": 5,
