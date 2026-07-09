@@ -1,32 +1,32 @@
 {
-  "date": "2026-07-08",
-  "generated_at": "2026-07-08 11:47",
+  "date": "2026-07-09",
+  "generated_at": "2026-07-09 12:15",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 3.0,
-    "macro": 6.0,
-    "trend": 4.0
+    "sector": 10.0,
+    "macro": 3.0,
+    "trend": 5.0
   },
-  "ai_sentiment_index": 32.5,
-  "summary": "全球半導體產業因AI擔憂和地緣政治緊張而面臨壓力，導致那斯達克指數下跌，預計台灣市場將受負面影響。",
+  "ai_sentiment_index": 45.0,
+  "summary": "美國股市因伊朗緊張局勢和潛在升息而下跌，儘管半導體相關消息有好有壞，但整體宏觀風險升高。",
   "news_zh": [
-    "那斯達克指數因對AI晶片股的擔憂而下跌。",
-    "半導體股因三星和DeepSeek的影響而遭受拋售，美國股市走低。",
-    "美國與伊朗的緊張局勢推升油價，印度股市預計開盤走低。",
-    "英國央行認為AI對金融穩定構成日益增長的風險。",
-    "南韓將密切關注股市波動帶來的風險。"
+    "SK海力士美國上市超額認購七倍，顯示市場對半導體需求強勁。",
+    "川普稱伊朗協議「已結束」，導致標普500指數收跌，地緣政治風險升溫。",
+    "中國智譜AI在香港成功募資40億美元，顯示亞洲科技投資熱度。",
+    "油價因美伊緊張局勢攀升，引發通膨擔憂並可能導致更高的利率。",
+    "美國股市因伊朗襲擊和潛在升息而下跌，顯示市場避險情緒濃厚。"
   ],
   "news": [
-    "[Reuters] South Korea to closely watch risks around stock market volatility - Reuters - South Korea to closely watch risks around stock market volatility&nbsp;&nbsp;Reuters",
-    "[Reuters] Trading Day: A chip on our shoulder: Volatile semis drag U.S. stocks lower, crude jumps - Reuters - Trading Day: A chip on our shoulder: Volatile semis drag U.S. stocks lower, crude jumps&nbsp;&nbsp;Reuters",
-    "[Reuters] Nasdaq sinks as AI worries hit chipmakers - Reuters - Nasdaq sinks as AI worries hit chipmakers&nbsp;&nbsp;Reuters",
-    "[Reuters] Brokerages line up bullish calls as SpaceX enters Nasdaq-100 - Reuters - Brokerages line up bullish calls as SpaceX enters Nasdaq-100&nbsp;&nbsp;Reuters",
-    "[Reuters] Bank of England sees growing risks to financial stability from AI - Reuters - Bank of England sees growing risks to financial stability from AI&nbsp;&nbsp;Reuters",
-    "[Reuters] Indian shares set to open lower as US-Iran tensions lift oil prices - Reuters - Indian shares set to open lower as US-Iran tensions lift oil prices&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: Chip dip - Reuters - Morning Bid: Chip dip&nbsp;&nbsp;Reuters",
-    "[Reuters] Senegal seeks financial adviser to help manage debt, sources say - Reuters - Senegal seeks financial adviser to help manage debt, sources say&nbsp;&nbsp;Reuters",
-    "[Semis] Stock market today: Dow, S&P 500, Nasdaq fall as Samsung, DeepSeek spark chip sell-off and oil rises - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq fall as Samsung, DeepSeek spark chip sell-off and oil rises&nbsp;&nbsp;Yahoo Finance",
-    "[Semis] Nasdaq sinks as AI worries hit chipmakers - Reuters - Nasdaq sinks as AI worries hit chipmakers&nbsp;&nbsp;Reuters"
+    "[Reuters] SK Hynix US listing more than seven times oversubscribed, source says - Reuters - SK Hynix US listing more than seven times oversubscribed, source says&nbsp;&nbsp;Reuters",
+    "[Reuters] S&P 500 ends down after Trump says Iran deal is 'over' - Reuters - S&P 500 ends down after Trump says Iran deal is 'over'&nbsp;&nbsp;Reuters",
+    "[Reuters] SK Hynix US listing more than seven times oversubscribed, source says By Reuters - Investing.com - SK Hynix US listing more than seven times oversubscribed, source says By Reuters&nbsp;&nbsp;Investing.com",
+    "[Reuters] China's Zhipu AI raises $4 billion in Hong Kong share sale, source says - Reuters - China's Zhipu AI raises $4 billion in Hong Kong share sale, source says&nbsp;&nbsp;Reuters",
+    "[Reuters] UniCredit closes in on Commerzbank as battle enters endgame - Reuters - UniCredit closes in on Commerzbank as battle enters endgame&nbsp;&nbsp;Reuters",
+    "[Reuters] Spanish markets hit by Trump's renewed trade threat - Reuters - Spanish markets hit by Trump's renewed trade threat&nbsp;&nbsp;Reuters",
+    "[Reuters] Investors get inflation 'wake-up call' as Trump fires up oil prices - Reuters - Investors get inflation 'wake-up call' as Trump fires up oil prices&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: Is it 'over'? - Reuters - Morning Bid: Is it 'over'?&nbsp;&nbsp;Reuters",
+    "[Semis] US stock markets fall amid Iran strikes and potential higher interest rates - The Guardian - US stock markets fall amid Iran strikes and potential higher interest rates&nbsp;&nbsp;The Guardian",
+    "[Semis] Stock market today: Nasdaq rises, Dow and S&P 500 retreat as oil prices climb on renewed US-Iran tensions - Yahoo! Finance Canada - Stock market today: Nasdaq rises, Dow and S&P 500 retreat as oil prices climb on renewed US-Iran tensions&nbsp;&nbsp;Yahoo! Finance Canada"
   ],
   "debug_error": ""
 }
