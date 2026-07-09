@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 120,
+  "count": 121,
   "history": [
     {
       "date": "2026-06-05",
@@ -7580,6 +7580,69 @@
           "pts": 6,
           "max": 10,
           "note": "TAIEX估收45,479，高於季線估算約44,000-44,500仍有約3%緩衝；47,000與46,000均已跌破，結構明確轉弱；7/16台積電法說為近期轉折觀察點，給6分。"
+        }
+      },
+      "paper": {
+        "cash": 979518,
+        "equity": 979518,
+        "market_value": 0,
+        "return_pct": -2.05,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 5,
+        "wins": 1,
+        "win_rate": 20.0,
+        "realized_pnl": -20482
+      }
+    },
+    {
+      "date": "2026-07-09",
+      "time": "09:00",
+      "price": null,
+      "score": 55,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 25,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 15,
+          "max": 20,
+          "note": "NVDA+3.6%/AVGO+4.8%/TSM ADR+0.93%，台股TSMC領軍+0.56%收紅，半導體板塊明確偏強，但整體處技術性反彈、非新高突破階段"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 3,
+          "max": 10,
+          "note": "WTI單日+4.37%（伊朗停火破局）+FOMC鷹派紀錄（9人點陣支持升息/PCE上修至3.6%）+10Y殖利率升至4.50%，宏觀風險明顯升溫"
+        },
+        "trend": {
+          "pts": 7,
+          "max": 10,
+          "note": "台股7/8收45,734高於季線估算44,000-44,500，技術性反彈確認結構仍完整，但46,000關鍵位已破，外資淨賣超持續（379億）"
         }
       },
       "paper": {
