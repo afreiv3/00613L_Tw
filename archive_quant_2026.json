@@ -7601,11 +7601,11 @@
     },
     {
       "date": "2026-07-09",
-      "time": "13:21",
-      "price": 37.15,
-      "score": 60,
+      "time": "13:30",
+      "price": 36.95,
+      "score": 58,
       "zone": "amber",
-      "quant_sum": 35,
+      "quant_sum": 32,
       "ai_sum": 25,
       "ai_ok": true,
       "factors": {
@@ -7620,9 +7620,9 @@
           "note": "NVDA+3.6%/AVGO+4.8%/TSM ADR+0.93%，台股TSMC領軍+0.56%收紅，半導體板塊明確偏強，但整體處技術性反彈、非新高突破階段"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "現價在區間中段(50%)"
+          "note": "現價近今日低點(區間32%) → 接近支撐"
         },
         "volume": {
           "pts": 7.5,
@@ -7630,9 +7630,9 @@
           "note": "推估量約均量0.6倍 → 偏離"
         },
         "vwap": {
-          "pts": 10,
+          "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之上(+0.05%) → 有利"
+          "note": "現價在VWAP之下(-0.48%) → 弱勢"
         },
         "macro": {
           "pts": 3,
@@ -7647,9 +7647,9 @@
       },
       "paper": {
         "cash": 685274,
-        "equity": 977682,
-        "market_value": 292408,
-        "return_pct": -2.23,
+        "equity": 976108,
+        "market_value": 290833,
+        "return_pct": -2.39,
         "holding": true,
         "position": {
           "shares": 7871,
@@ -7662,8 +7662,8 @@
         },
         "shares": 7871,
         "avg_cost": 37.33,
-        "unrealized": -1835,
-        "unrealized_pct": -0.62,
+        "unrealized": -3410,
+        "unrealized_pct": -1.16,
         "trades": 5,
         "wins": 1,
         "win_rate": 20.0,
