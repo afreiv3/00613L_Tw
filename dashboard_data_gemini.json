@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09 09:15 (Taipei)",
+  "updated": "2026-07-09 09:30 (Taipei)",
   "history": [
     {
       "date": "2026-06-08",
@@ -4418,16 +4418,16 @@
     },
     {
       "date": "2026-07-09",
-      "time": "09:15",
-      "price": null,
-      "tier1": 30,
+      "time": "09:30",
+      "price": 37.33,
+      "tier1": 45,
       "ai_index": 50.0,
-      "target": null,
-      "zone": null,
-      "zone_label": null,
-      "gate_open": null,
+      "target": 0.0,
+      "zone": "red",
+      "zone_label": "⚪ 觀望（等好買點＋趨勢）",
+      "gate_open": false,
       "market_ok": true,
-      "asset_trend_ok": null,
+      "asset_trend_ok": false,
       "ai_ok": false,
       "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
       "news": [],
@@ -4444,12 +4444,12 @@
         "trades": 13,
         "max_asset": 1074736,
         "frenzy_days": 0,
-        "tier1": 30,
+        "tier1": 45,
         "ai_index": 50.0,
-        "target": null,
-        "zone": null,
-        "zone_label": null,
-        "gate_open": null
+        "target": 0.0,
+        "zone": "red",
+        "zone_label": "⚪ 觀望（等好買點＋趨勢）",
+        "gate_open": false
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09 09:15 (Taipei)",
+  "updated": "2026-07-09 09:30 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -7600,18 +7600,18 @@
     },
     {
       "date": "2026-07-09",
-      "time": "09:15",
-      "price": null,
-      "score": 55,
-      "zone": "amber",
-      "quant_sum": 30,
+      "time": "09:30",
+      "price": 37.33,
+      "score": 70,
+      "zone": "green",
+      "quant_sum": 45,
       "ai_sum": 25,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 10.0,
+          "pts": 20,
           "max": 20,
-          "note": "盤中資料缺，型態以中性計"
+          "note": "現價守在開盤之上(開+0.4%) → 有利"
         },
         "sector": {
           "pts": 15,
@@ -7619,19 +7619,19 @@
           "note": "NVDA+3.6%/AVGO+4.8%/TSM ADR+0.93%，台股TSMC領軍+0.56%收紅，半導體板塊明確偏強，但整體處技術性反彈、非新高突破階段"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 0,
           "max": 15,
-          "note": "區間資料缺，以中性計"
+          "note": "現價在區間上緣(100%) → 屬追高"
         },
         "volume": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "量能資料缺，以中性計"
+          "note": "推估量約均量0.7倍 → 正常"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 10,
           "max": 10,
-          "note": "VWAP 資料缺，以中性計"
+          "note": "現價在VWAP之上(+0.42%) → 有利"
         },
         "macro": {
           "pts": 3,
@@ -7645,16 +7645,24 @@
         }
       },
       "paper": {
-        "cash": 979518,
-        "equity": 979518,
-        "market_value": 0,
-        "return_pct": -2.05,
-        "holding": false,
-        "position": null,
-        "shares": 0,
-        "avg_cost": null,
-        "unrealized": 0,
-        "unrealized_pct": 0,
+        "cash": 685274,
+        "equity": 979099,
+        "market_value": 293824,
+        "return_pct": -2.09,
+        "holding": true,
+        "position": {
+          "shares": 7871,
+          "entry_price": 37.33,
+          "entry_date": "2026-07-09",
+          "entry_time": "09:30",
+          "cost": 294243.13,
+          "entry_score": 70,
+          "frac": 0.3
+        },
+        "shares": 7871,
+        "avg_cost": 37.33,
+        "unrealized": -419,
+        "unrealized_pct": -0.14,
         "trades": 5,
         "wins": 1,
         "win_rate": 20.0,
