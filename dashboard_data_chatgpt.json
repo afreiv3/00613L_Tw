@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09 12:30 (Taipei)",
+  "updated": "2026-07-09 12:50 (Taipei)",
   "history": [
     {
       "date": "2026-06-29",
@@ -507,9 +507,9 @@
     },
     {
       "date": "2026-07-09",
-      "time": "12:30",
-      "price": 37.29,
-      "tier1": 45,
+      "time": "12:50",
+      "price": 36.99,
+      "tier1": 25,
       "ai_index": 45.0,
       "target": 0.0,
       "zone": "red",
@@ -560,7 +560,7 @@
         "frenzy_days": 0,
         "last_action": "SELL",
         "last_action_reason": "EXIT_BELOW_20MA",
-        "tier1": 45,
+        "tier1": 25,
         "ai_index": 45.0,
         "target": 0.0,
         "zone": "red",
