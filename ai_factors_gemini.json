@@ -1,32 +1,33 @@
 {
-  "date": "2026-07-09",
-  "generated_at": "2026-07-09 12:15",
+  "date": "2026-07-10",
+  "generated_at": "2026-07-10 12:17",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 10.0,
-    "macro": 3.0,
-    "trend": 5.0
+    "sector": 18.0,
+    "macro": 8.0,
+    "trend": 9.0
   },
-  "ai_sentiment_index": 45.0,
-  "summary": "美國股市因伊朗緊張局勢和潛在升息而下跌，儘管半導體相關消息有好有壞，但整體宏觀風險升高。",
+  "ai_sentiment_index": 87.5,
+  "summary": "在AI樂觀情緒和半導體股強勁表現的推動下，全球市場無視地緣政治緊張，預計台灣股市將迎來積極開盤。",
   "news_zh": [
-    "SK海力士美國上市超額認購七倍，顯示市場對半導體需求強勁。",
-    "川普稱伊朗協議「已結束」，導致標普500指數收跌，地緣政治風險升溫。",
-    "中國智譜AI在香港成功募資40億美元，顯示亞洲科技投資熱度。",
-    "油價因美伊緊張局勢攀升，引發通膨擔憂並可能導致更高的利率。",
-    "美國股市因伊朗襲擊和潛在升息而下跌，顯示市場避險情緒濃厚。"
+    "華爾街銀行針對員工參與預測市場下達禁令。",
+    "半導體股領漲，市場忽略美伊緊張局勢。",
+    "SK海力士在美國上市超額認購七倍，顯示市場對半導體需求強勁。",
+    "半導體和AI相關股票推動美股上漲，抵銷戰爭擔憂。",
+    "歐洲金融穩定監管機構正在審查私人信貸風險。",
+    "聯準會官員表示，公開市場操作將受益於自願性中央清算。"
   ],
   "news": [
-    "[Reuters] SK Hynix US listing more than seven times oversubscribed, source says - Reuters - SK Hynix US listing more than seven times oversubscribed, source says&nbsp;&nbsp;Reuters",
-    "[Reuters] S&P 500 ends down after Trump says Iran deal is 'over' - Reuters - S&P 500 ends down after Trump says Iran deal is 'over'&nbsp;&nbsp;Reuters",
-    "[Reuters] SK Hynix US listing more than seven times oversubscribed, source says By Reuters - Investing.com - SK Hynix US listing more than seven times oversubscribed, source says By Reuters&nbsp;&nbsp;Investing.com",
-    "[Reuters] China's Zhipu AI raises $4 billion in Hong Kong share sale, source says - Reuters - China's Zhipu AI raises $4 billion in Hong Kong share sale, source says&nbsp;&nbsp;Reuters",
-    "[Reuters] UniCredit closes in on Commerzbank as battle enters endgame - Reuters - UniCredit closes in on Commerzbank as battle enters endgame&nbsp;&nbsp;Reuters",
-    "[Reuters] Spanish markets hit by Trump's renewed trade threat - Reuters - Spanish markets hit by Trump's renewed trade threat&nbsp;&nbsp;Reuters",
-    "[Reuters] Investors get inflation 'wake-up call' as Trump fires up oil prices - Reuters - Investors get inflation 'wake-up call' as Trump fires up oil prices&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: Is it 'over'? - Reuters - Morning Bid: Is it 'over'?&nbsp;&nbsp;Reuters",
-    "[Semis] US stock markets fall amid Iran strikes and potential higher interest rates - The Guardian - US stock markets fall amid Iran strikes and potential higher interest rates&nbsp;&nbsp;The Guardian",
-    "[Semis] Stock market today: Nasdaq rises, Dow and S&P 500 retreat as oil prices climb on renewed US-Iran tensions - Yahoo! Finance Canada - Stock market today: Nasdaq rises, Dow and S&P 500 retreat as oil prices climb on renewed US-Iran tensions&nbsp;&nbsp;Yahoo! Finance Canada"
+    "[Reuters] Wall Street banks rule on staff betting on prediction markets, sources say - Reuters - Wall Street banks rule on staff betting on prediction markets, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] Trading Day: What war? Chip-led rally helps markets ignore on-again, off-again US-Iran truce - Reuters - Trading Day: What war? Chip-led rally helps markets ignore on-again, off-again US-Iran truce&nbsp;&nbsp;Reuters",
+    "[Reuters] Fed's Logan says Fed open market operations would benefit from voluntary central clearing - Reuters - Fed's Logan says Fed open market operations would benefit from voluntary central clearing&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: Markets remain long TACO - Reuters - Morning Bid: Markets remain long TACO&nbsp;&nbsp;Reuters",
+    "[Reuters] EXCLUSIVE: Kalshi in talks with regulators to expand never-expiring derivatives to new areas - Reuters - EXCLUSIVE: Kalshi in talks with regulators to expand never-expiring derivatives to new areas&nbsp;&nbsp;Reuters",
+    "[Reuters] EXCLUSIVE: Software firm CCC exploring sale, sources say - Reuters - EXCLUSIVE: Software firm CCC exploring sale, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] SK Hynix's US listing more than seven times oversubscribed, source says - Reuters - SK Hynix's US listing more than seven times oversubscribed, source says&nbsp;&nbsp;Reuters",
+    "[Reuters] Europe's financial stability watchdog examining private credit risks, adviser says - Reuters - Europe's financial stability watchdog examining private credit risks, adviser says&nbsp;&nbsp;Reuters",
+    "[Semis] Stock market today: Dow, S&P 500, Nasdaq gain as AI optimism offsets war jitters - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq gain as AI optimism offsets war jitters&nbsp;&nbsp;Yahoo Finance",
+    "[Semis] LifeMD Rings the Nasdaq Stock Market Closing Bell - Nasdaq - LifeMD Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
   ],
   "debug_error": ""
 }
