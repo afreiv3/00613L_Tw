@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10 12:15 (Taipei)",
+  "updated": "2026-07-10 12:30 (Taipei)",
   "history": [
     {
       "date": "2026-06-29",
@@ -570,10 +570,10 @@
     },
     {
       "date": "2026-07-10",
-      "time": "12:15",
+      "time": "12:30",
       "price": null,
       "tier1": 30,
-      "ai_index": 50.0,
+      "ai_index": 87.5,
       "target": 0.0,
       "zone": "red",
       "zone_label": "⚪ 資料缺，不動作",
@@ -581,9 +581,20 @@
       "market_ok": true,
       "asset_trend_ok": null,
       "ma10_ok": null,
-      "ai_ok": false,
-      "summary": "（今日盤前判讀尚未產生，暫以中性計）",
-      "news": [],
+      "ai_ok": true,
+      "summary": "在AI樂觀情緒和半導體股強勁表現的推動下，全球市場無視地緣政治緊張，預計台灣股市將迎來積極開盤。",
+      "news": [
+        "[Reuters] Wall Street banks rule on staff betting on prediction markets, sources say - Reuters - Wall Street banks rule on staff betting on prediction markets, sources say&nbsp;&nbsp;Reuters",
+        "[Reuters] Trading Day: What war? Chip-led rally helps markets ignore on-again, off-again US-Iran truce - Reuters - Trading Day: What war? Chip-led rally helps markets ignore on-again, off-again US-Iran truce&nbsp;&nbsp;Reuters",
+        "[Reuters] Fed's Logan says Fed open market operations would benefit from voluntary central clearing - Reuters - Fed's Logan says Fed open market operations would benefit from voluntary central clearing&nbsp;&nbsp;Reuters",
+        "[Reuters] Morning Bid: Markets remain long TACO - Reuters - Morning Bid: Markets remain long TACO&nbsp;&nbsp;Reuters",
+        "[Reuters] EXCLUSIVE: Kalshi in talks with regulators to expand never-expiring derivatives to new areas - Reuters - EXCLUSIVE: Kalshi in talks with regulators to expand never-expiring derivatives to new areas&nbsp;&nbsp;Reuters",
+        "[Reuters] EXCLUSIVE: Software firm CCC exploring sale, sources say - Reuters - EXCLUSIVE: Software firm CCC exploring sale, sources say&nbsp;&nbsp;Reuters",
+        "[Reuters] SK Hynix's US listing more than seven times oversubscribed, source says - Reuters - SK Hynix's US listing more than seven times oversubscribed, source says&nbsp;&nbsp;Reuters",
+        "[Reuters] Europe's financial stability watchdog examining private credit risks, adviser says - Reuters - Europe's financial stability watchdog examining private credit risks, adviser says&nbsp;&nbsp;Reuters",
+        "[Semis] Stock market today: Dow, S&P 500, Nasdaq gain as AI optimism offsets war jitters - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq gain as AI optimism offsets war jitters&nbsp;&nbsp;Yahoo Finance",
+        "[Semis] LifeMD Rings the Nasdaq Stock Market Closing Bell - Nasdaq - LifeMD Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
+      ],
       "paper": {
         "cash": 1010405,
         "shares": 0.0,
@@ -613,7 +624,7 @@
         "last_action": "SELL",
         "last_action_reason": "DATA_INVALID_NO_TRADE",
         "tier1": 30,
-        "ai_index": 50.0,
+        "ai_index": 87.5,
         "target": 0.0,
         "zone": "red",
         "zone_label": "⚪ 資料缺，不動作",
