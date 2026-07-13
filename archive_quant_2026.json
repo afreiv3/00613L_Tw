@@ -7743,18 +7743,18 @@
     },
     {
       "date": "2026-07-13",
-      "time": "09:45",
-      "price": 37.46,
-      "score": 64,
-      "zone": "amber",
-      "quant_sum": 40,
+      "time": "10:00",
+      "price": 37.7,
+      "score": 76,
+      "zone": "green",
+      "quant_sum": 52,
       "ai_sum": 24,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 10.0,
+          "pts": 20,
           "max": 20,
-          "note": "開+2.1%、小幅回落，型態中性"
+          "note": "現價守在開盤之上(開+2.1%) → 有利"
         },
         "sector": {
           "pts": 13,
@@ -7762,19 +7762,19 @@
           "note": "NVDA 7/10漲3-4%、美股7/9 SOXX大漲5%，兩連日半導體偏強，但TSM ADR小跌0.65%、SOX距6月高點仍-11%，板塊分歧中偏正面，給13分"
         },
         "entry": {
-          "pts": 15,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價近今日低點(區間10%) → 接近支撐"
+          "note": "現價在區間中段(51%)"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量1.3倍 → 正常"
+          "note": "推估量約均量1.2倍 → 正常"
         },
         "vwap": {
-          "pts": 0,
+          "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之下(-0.69%) → 弱勢"
+          "note": "現價在VWAP之上(+0.07%) → 有利"
         },
         "macro": {
           "pts": 5,
@@ -7789,9 +7789,9 @@
       },
       "paper": {
         "cash": 685274,
-        "equity": 980122,
-        "market_value": 294848,
-        "return_pct": -1.99,
+        "equity": 982011,
+        "market_value": 296737,
+        "return_pct": -1.8,
         "holding": true,
         "position": {
           "shares": 7871,
@@ -7804,8 +7804,8 @@
         },
         "shares": 7871,
         "avg_cost": 37.33,
-        "unrealized": 605,
-        "unrealized_pct": 0.21,
+        "unrealized": 2494,
+        "unrealized_pct": 0.85,
         "trades": 5,
         "wins": 1,
         "win_rate": 20.0,
