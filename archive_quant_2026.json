@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 122,
+  "count": 123,
   "history": [
     {
       "date": "2026-06-05",
@@ -7714,6 +7714,77 @@
           "pts": 6,
           "max": 10,
           "note": "TAIEX 7/9收45,354.61，位於季線（估44,000-45,000）上緣，多頭結構中期尚完整；惟外資連6賣（累計逾2,200億）且7/7曾單日暴跌1,077點，結構修復尚未完成，7/13能否站穩季線並突破45,500為關鍵，給6分"
+        }
+      },
+      "paper": {
+        "cash": 685274,
+        "equity": 685274,
+        "market_value": 0,
+        "return_pct": -31.47,
+        "holding": true,
+        "position": {
+          "shares": 7871,
+          "entry_price": 37.33,
+          "entry_date": "2026-07-09",
+          "entry_time": "09:30",
+          "cost": 294243.13,
+          "entry_score": 70,
+          "frac": 0.3
+        },
+        "shares": 7871,
+        "avg_cost": 37.33,
+        "unrealized": -294243,
+        "unrealized_pct": -100.0,
+        "trades": 5,
+        "wins": 1,
+        "win_rate": 20.0,
+        "realized_pnl": -20482
+      }
+    },
+    {
+      "date": "2026-07-13",
+      "time": "09:00",
+      "price": null,
+      "score": 54,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 24,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 13,
+          "max": 20,
+          "note": "NVDA 7/10漲3-4%、美股7/9 SOXX大漲5%，兩連日半導體偏強，但TSM ADR小跌0.65%、SOX距6月高點仍-11%，板塊分歧中偏正面，給13分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 5,
+          "max": 10,
+          "note": "10Y殖利率4.56%偏高、WTI週漲5%至~$72（中東衝突）、9月升息機率64%（較6月85%略降但仍偏鷹），通膨+地緣風險略升溫，給5分"
+        },
+        "trend": {
+          "pts": 6,
+          "max": 10,
+          "note": "TAIEX 7/9收45,354.61，估位於季線（前次估~44,000-45,000）上緣，Yahoo fetch失敗季線無法確認；US週五收高+台積電強勁營收催化劑支撐，結構尚完整，給6分"
         }
       },
       "paper": {
