@@ -7744,7 +7744,11 @@
     {
       "date": "2026-07-13",
       "time": "12:02",
+<<<<<<< Updated upstream
       "price": 37.25,
+=======
+      "price": 37.26,
+>>>>>>> Stashed changes
       "score": 56,
       "zone": "amber",
       "quant_sum": 32,
@@ -7764,7 +7768,11 @@
         "entry": {
           "pts": 15,
           "max": 15,
+<<<<<<< Updated upstream
           "note": "現價近今日低點(區間21%) → 接近支撐"
+=======
+          "note": "現價近今日低點(區間22%) → 接近支撐"
+>>>>>>> Stashed changes
         },
         "volume": {
           "pts": 7.5,
@@ -7774,7 +7782,11 @@
         "vwap": {
           "pts": 0,
           "max": 10,
+<<<<<<< Updated upstream
           "note": "現價在VWAP之下(-0.73%) → 弱勢"
+=======
+          "note": "現價在VWAP之下(-0.71%) → 弱勢"
+>>>>>>> Stashed changes
         },
         "macro": {
           "pts": 5,
@@ -7789,8 +7801,13 @@
       },
       "paper": {
         "cash": 685274,
+<<<<<<< Updated upstream
         "equity": 978469,
         "market_value": 293195,
+=======
+        "equity": 978548,
+        "market_value": 293273,
+>>>>>>> Stashed changes
         "return_pct": -2.15,
         "holding": true,
         "position": {
@@ -7804,8 +7821,13 @@
         },
         "shares": 7871,
         "avg_cost": 37.33,
+<<<<<<< Updated upstream
         "unrealized": -1048,
         "unrealized_pct": -0.36,
+=======
+        "unrealized": -970,
+        "unrealized_pct": -0.33,
+>>>>>>> Stashed changes
         "trades": 5,
         "wins": 1,
         "win_rate": 20.0,
