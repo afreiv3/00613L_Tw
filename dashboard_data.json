@@ -1,20 +1,20 @@
 {
-  "updated": "2026-07-13 13:15 (Taipei)",
+  "updated": "2026-07-13 13:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-13",
-      "time": "13:15",
-      "price": 36.84,
-      "score": 46,
+      "time": "13:30",
+      "price": 37.2,
+      "score": 49,
       "zone": "amber",
-      "quant_sum": 22,
+      "quant_sum": 25,
       "ai_sum": 24,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 0,
+          "pts": 10.0,
           "max": 20,
-          "note": "開高(+2.1%)走低、吐回92%漲幅 → 不利"
+          "note": "開+2.1%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 13,
@@ -22,9 +22,9 @@
           "note": "NVDA 7/10漲3-4%、美股7/9 SOXX大漲5%，兩連日半導體偏強，但TSM ADR小跌0.65%、SOX距6月高點仍-11%，板塊分歧中偏正面，給13分"
         },
         "entry": {
-          "pts": 15,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價近今日低點(區間16%) → 接近支撐"
+          "note": "現價在區間中段(42%)"
         },
         "volume": {
           "pts": 7.5,
@@ -34,7 +34,7 @@
         "vwap": {
           "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之下(-1.43%) → 弱勢"
+          "note": "現價在VWAP之下(-0.42%) → 弱勢"
         },
         "macro": {
           "pts": 5,
