@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13 09:30 (Taipei)",
+  "updated": "2026-07-13 09:45 (Taipei)",
   "history": [
     {
       "date": "2026-06-05",
@@ -7742,18 +7742,18 @@
     },
     {
       "date": "2026-07-13",
-      "time": "09:30",
-      "price": 37.64,
-      "score": 74,
-      "zone": "green",
-      "quant_sum": 50,
+      "time": "09:45",
+      "price": 37.46,
+      "score": 64,
+      "zone": "amber",
+      "quant_sum": 40,
       "ai_sum": 24,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 20,
+          "pts": 10.0,
           "max": 20,
-          "note": "現價守在開盤之上(開+2.1%) → 有利"
+          "note": "開+2.1%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 13,
@@ -7763,17 +7763,17 @@
         "entry": {
           "pts": 15,
           "max": 15,
-          "note": "現價近今日低點(區間15%) → 接近支撐"
+          "note": "現價近今日低點(區間10%) → 接近支撐"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量1.2倍 → 正常"
+          "note": "推估量約均量1.3倍 → 正常"
         },
         "vwap": {
           "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之下(-0.40%) → 弱勢"
+          "note": "現價在VWAP之下(-0.69%) → 弱勢"
         },
         "macro": {
           "pts": 5,
@@ -7788,9 +7788,9 @@
       },
       "paper": {
         "cash": 685274,
-        "equity": 981539,
-        "market_value": 296264,
-        "return_pct": -1.85,
+        "equity": 980122,
+        "market_value": 294848,
+        "return_pct": -1.99,
         "holding": true,
         "position": {
           "shares": 7871,
@@ -7803,8 +7803,8 @@
         },
         "shares": 7871,
         "avg_cost": 37.33,
-        "unrealized": 2021,
-        "unrealized_pct": 0.69,
+        "unrealized": 605,
+        "unrealized_pct": 0.21,
         "trades": 5,
         "wins": 1,
         "win_rate": 20.0,
