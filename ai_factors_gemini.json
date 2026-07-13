@@ -1,33 +1,32 @@
 {
-  "date": "2026-07-10",
-  "generated_at": "2026-07-10 12:17",
+  "date": "2026-07-13",
+  "generated_at": "2026-07-13 12:02",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 18.0,
-    "macro": 8.0,
-    "trend": 9.0
+    "sector": 5.0,
+    "macro": 3.0,
+    "trend": 5.0
   },
-  "ai_sentiment_index": 87.5,
-  "summary": "在AI樂觀情緒和半導體股強勁表現的推動下，全球市場無視地緣政治緊張，預計台灣股市將迎來積極開盤。",
+  "ai_sentiment_index": 32.5,
+  "summary": "中東緊張局勢升級推升油價，導致亞洲股市下跌，半導體類股表現疲軟，SK海力士在納斯達克上市後股價下跌，整體市場面臨宏觀風險。",
   "news_zh": [
-    "華爾街銀行針對員工參與預測市場下達禁令。",
-    "半導體股領漲，市場忽略美伊緊張局勢。",
-    "SK海力士在美國上市超額認購七倍，顯示市場對半導體需求強勁。",
-    "半導體和AI相關股票推動美股上漲，抵銷戰爭擔憂。",
-    "歐洲金融穩定監管機構正在審查私人信貸風險。",
-    "聯準會官員表示，公開市場操作將受益於自願性中央清算。"
+    "中東衝突升級推升油價，印度股市開盤走低。",
+    "受海灣衝突油價上漲影響，亞洲股市普遍下跌。",
+    "期貨下跌，油價因伊朗襲擊而上漲；重要財報即將公布。",
+    "銀行股上漲，半導體股下跌引發板塊輪動。",
+    "SK海力士在首爾股市下跌10%，此前在納斯達克首次亮相表現強勁。"
   ],
   "news": [
-    "[Reuters] Wall Street banks rule on staff betting on prediction markets, sources say - Reuters - Wall Street banks rule on staff betting on prediction markets, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] Trading Day: What war? Chip-led rally helps markets ignore on-again, off-again US-Iran truce - Reuters - Trading Day: What war? Chip-led rally helps markets ignore on-again, off-again US-Iran truce&nbsp;&nbsp;Reuters",
-    "[Reuters] Fed's Logan says Fed open market operations would benefit from voluntary central clearing - Reuters - Fed's Logan says Fed open market operations would benefit from voluntary central clearing&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: Markets remain long TACO - Reuters - Morning Bid: Markets remain long TACO&nbsp;&nbsp;Reuters",
-    "[Reuters] EXCLUSIVE: Kalshi in talks with regulators to expand never-expiring derivatives to new areas - Reuters - EXCLUSIVE: Kalshi in talks with regulators to expand never-expiring derivatives to new areas&nbsp;&nbsp;Reuters",
-    "[Reuters] EXCLUSIVE: Software firm CCC exploring sale, sources say - Reuters - EXCLUSIVE: Software firm CCC exploring sale, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] SK Hynix's US listing more than seven times oversubscribed, source says - Reuters - SK Hynix's US listing more than seven times oversubscribed, source says&nbsp;&nbsp;Reuters",
-    "[Reuters] Europe's financial stability watchdog examining private credit risks, adviser says - Reuters - Europe's financial stability watchdog examining private credit risks, adviser says&nbsp;&nbsp;Reuters",
-    "[Semis] Stock market today: Dow, S&P 500, Nasdaq gain as AI optimism offsets war jitters - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq gain as AI optimism offsets war jitters&nbsp;&nbsp;Yahoo Finance",
-    "[Semis] LifeMD Rings the Nasdaq Stock Market Closing Bell - Nasdaq - LifeMD Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
+    "[Reuters] Breakingviews - Asset manager IPO rewards Amundi's early India bet - Reuters - Breakingviews - Asset manager IPO rewards Amundi's early India bet&nbsp;&nbsp;Reuters",
+    "[Reuters] Indian shares open lower as fresh Mideast tensions lift oil prices - Reuters - Indian shares open lower as fresh Mideast tensions lift oil prices&nbsp;&nbsp;Reuters",
+    "[Reuters] Shares skid in Asia as oil climbs on Gulf conflict - Reuters - Shares skid in Asia as oil climbs on Gulf conflict&nbsp;&nbsp;Reuters",
+    "[Reuters] Deutsche Bank pays $1.3 million penalty for Australian trade reporting failures - Reuters - Deutsche Bank pays $1.3 million penalty for Australian trade reporting failures&nbsp;&nbsp;Reuters",
+    "[Reuters] An emboldened India holds out for better terms in US trade talks - Reuters - An emboldened India holds out for better terms in US trade talks&nbsp;&nbsp;Reuters",
+    "[Reuters] The Week in Breakingviews: Causes of correlation - Breakingviews - The Week in Breakingviews: Causes of correlation&nbsp;&nbsp;Breakingviews",
+    "[Reuters] Bangkok pub fire kills 27 people and 22 critically injured, officials say - Reuters - Bangkok pub fire kills 27 people and 22 critically injured, officials say&nbsp;&nbsp;Reuters",
+    "[Reuters] Gulf bourses subdued as US and Iran exchange strikes - Reuters - Gulf bourses subdued as US and Iran exchange strikes&nbsp;&nbsp;Reuters",
+    "[Semis] Futures Fall, Oil Rises Amid Iran Attacks; Big Earnings Ahead - Investor's Business Daily - Futures Fall, Oil Rises Amid Iran Attacks; Big Earnings Ahead&nbsp;&nbsp;Investor's Business Daily",
+    "[Semis] Bank Stocks Surge, Semiconductor Slump Spurs Rotation - 조선일보 - Bank Stocks Surge, Semiconductor Slump Spurs Rotation&nbsp;&nbsp;조선일보"
   ],
   "debug_error": ""
 }
