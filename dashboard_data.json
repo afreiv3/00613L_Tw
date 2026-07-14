@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14 09:15 (Taipei)",
+  "updated": "2026-07-14 09:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-13",
@@ -66,18 +66,18 @@
     },
     {
       "date": "2026-07-14",
-      "time": "09:15",
-      "price": null,
-      "score": 38,
-      "zone": "red",
-      "quant_sum": 30,
+      "time": "09:30",
+      "price": 36.36,
+      "score": 48,
+      "zone": "amber",
+      "quant_sum": 40,
       "ai_sum": 8,
       "ai_ok": true,
       "factors": {
         "pattern": {
           "pts": 10.0,
           "max": 20,
-          "note": "盤中資料缺，型態以中性計"
+          "note": "開-0.9%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 2,
@@ -85,19 +85,19 @@
           "note": "隔夜SOX連跌兩日，SK Hynix在首爾暴跌15.4%觸發KOSPI熔斷，AVGO軟AI指引發酵、記憶體股全面崩跌，Nasdaq100跌1.88%，半導體板塊嚴重偏弱，給2分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "區間資料缺，以中性計"
+          "note": "現價近今日低點(區間0%) → 接近支撐"
         },
         "volume": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "量能資料缺，以中性計"
+          "note": "推估量約均量0.9倍 → 正常"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 0,
           "max": 10,
-          "note": "VWAP 資料缺，以中性計"
+          "note": "現價在VWAP之下(-0.33%) → 弱勢"
         },
         "macro": {
           "pts": 1,
