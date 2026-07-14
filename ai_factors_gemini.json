@@ -1,32 +1,32 @@
 {
-  "date": "2026-07-13",
-  "generated_at": "2026-07-13 12:02",
+  "date": "2026-07-14",
+  "generated_at": "2026-07-14 11:38",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 5.0,
-    "macro": 3.0,
+    "sector": 3.0,
+    "macro": 4.0,
     "trend": 5.0
   },
-  "ai_sentiment_index": 32.5,
-  "summary": "中東緊張局勢升級推升油價，導致亞洲股市下跌，半導體類股表現疲軟，SK海力士在納斯達克上市後股價下跌，整體市場面臨宏觀風險。",
+  "ai_sentiment_index": 30.0,
+  "summary": "受伊朗地緣政治緊張與記憶體晶片股下跌影響，華爾街股市收低，全球半導體市場情緒降溫。",
   "news_zh": [
-    "中東衝突升級推升油價，印度股市開盤走低。",
-    "受海灣衝突油價上漲影響，亞洲股市普遍下跌。",
-    "期貨下跌，油價因伊朗襲擊而上漲；重要財報即將公布。",
-    "銀行股上漲，半導體股下跌引發板塊輪動。",
-    "SK海力士在首爾股市下跌10%，此前在納斯達克首次亮相表現強勁。"
+    "伊朗緊張局勢打壓風險偏好，華爾街股市收低，晶片股下跌。",
+    "SK海力士在納斯達克上市後大跌，記憶體晶片熱潮降溫。",
+    "油價上漲，晶片股下跌。",
+    "全球半導體股下滑，SK海力士創紀錄的拋售影響市場。",
+    "美股今日收低，油價飆升；記憶體ETF進入熊市。"
   ],
   "news": [
-    "[Reuters] Breakingviews - Asset manager IPO rewards Amundi's early India bet - Reuters - Breakingviews - Asset manager IPO rewards Amundi's early India bet&nbsp;&nbsp;Reuters",
-    "[Reuters] Indian shares open lower as fresh Mideast tensions lift oil prices - Reuters - Indian shares open lower as fresh Mideast tensions lift oil prices&nbsp;&nbsp;Reuters",
-    "[Reuters] Shares skid in Asia as oil climbs on Gulf conflict - Reuters - Shares skid in Asia as oil climbs on Gulf conflict&nbsp;&nbsp;Reuters",
-    "[Reuters] Deutsche Bank pays $1.3 million penalty for Australian trade reporting failures - Reuters - Deutsche Bank pays $1.3 million penalty for Australian trade reporting failures&nbsp;&nbsp;Reuters",
-    "[Reuters] An emboldened India holds out for better terms in US trade talks - Reuters - An emboldened India holds out for better terms in US trade talks&nbsp;&nbsp;Reuters",
-    "[Reuters] The Week in Breakingviews: Causes of correlation - Breakingviews - The Week in Breakingviews: Causes of correlation&nbsp;&nbsp;Breakingviews",
-    "[Reuters] Bangkok pub fire kills 27 people and 22 critically injured, officials say - Reuters - Bangkok pub fire kills 27 people and 22 critically injured, officials say&nbsp;&nbsp;Reuters",
-    "[Reuters] Gulf bourses subdued as US and Iran exchange strikes - Reuters - Gulf bourses subdued as US and Iran exchange strikes&nbsp;&nbsp;Reuters",
-    "[Semis] Futures Fall, Oil Rises Amid Iran Attacks; Big Earnings Ahead - Investor's Business Daily - Futures Fall, Oil Rises Amid Iran Attacks; Big Earnings Ahead&nbsp;&nbsp;Investor's Business Daily",
-    "[Semis] Bank Stocks Surge, Semiconductor Slump Spurs Rotation - 조선일보 - Bank Stocks Surge, Semiconductor Slump Spurs Rotation&nbsp;&nbsp;조선일보"
+    "[Reuters] Wall Street ends lower as Iran tensions dampen risk appetite; chipmakers drop - Reuters - Wall Street ends lower as Iran tensions dampen risk appetite; chipmakers drop&nbsp;&nbsp;Reuters",
+    "[Reuters] Why Thomson Reuters Stock Crushed it on Monday - Yahoo Finance - Why Thomson Reuters Stock Crushed it on Monday&nbsp;&nbsp;Yahoo Finance",
+    "[Reuters] SK Hynix plunges after Nasdaq debut as memory chip euphoria cools - Reuters - SK Hynix plunges after Nasdaq debut as memory chip euphoria cools&nbsp;&nbsp;Reuters",
+    "[Reuters] Oil traders call Trump's Hormuz bluff at their peril - Reuters - Oil traders call Trump's Hormuz bluff at their peril&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: Crude up, chips down - Reuters - Morning Bid: Crude up, chips down&nbsp;&nbsp;Reuters",
+    "[Reuters] EXCLUSIVE Watches of Switzerland held talks over potential takeover offers, sources say - Reuters - EXCLUSIVE Watches of Switzerland held talks over potential takeover offers, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] Bank of America hires nine senior investment bankers to target US middle market - Reuters - Bank of America hires nine senior investment bankers to target US middle market&nbsp;&nbsp;Reuters",
+    "[Reuters] Shein scheduled for Hong Kong IPO hearing on Thursday, sources say - Reuters - Shein scheduled for Hong Kong IPO hearing on Thursday, sources say&nbsp;&nbsp;Reuters",
+    "[Semis] Stock Market Today: Dow, Nasdaq Close Lower As Oil Prices Spike; This Memory ETF In Bear Market - Investor's Business Daily - Stock Market Today: Dow, Nasdaq Close Lower As Oil Prices Spike; This Memory ETF In Bear Market&nbsp;&nbsp;Investor's Business Daily",
+    "[Semis] Stock market today: S&P 500, Nasdaq, Dow futures slip as Iran tensions ratchet up, bank earnings and Fed report on deck - Yahoo Finance - Stock market today: S&P 500, Nasdaq, Dow futures slip as Iran tensions ratchet up, bank earnings and Fed report on deck&nbsp;&nbsp;Yahoo Finance"
   ],
   "debug_error": ""
 }
