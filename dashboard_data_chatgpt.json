@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15 11:30 (Taipei)",
+  "updated": "2026-07-15 11:45 (Taipei)",
   "history": [
     {
       "date": "2026-07-13",
@@ -129,10 +129,10 @@
     },
     {
       "date": "2026-07-15",
-      "time": "11:30",
-      "price": 36.84,
+      "time": "11:45",
+      "price": 36.91,
       "tier1": 38,
-      "ai_index": 50.0,
+      "ai_index": 87.5,
       "target": 0.0,
       "zone": "red",
       "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
@@ -140,9 +140,20 @@
       "market_ok": true,
       "asset_trend_ok": false,
       "ma10_ok": false,
-      "ai_ok": false,
-      "summary": "（今日盤前判讀尚未產生，暫以中性計）",
-      "news": [],
+      "ai_ok": true,
+      "summary": "在通膨趨緩、銀行財報亮眼以及半導體類股上漲的帶動下，全球股市呈現上揚，預示台灣市場開盤樂觀。",
+      "news": [
+        "[Reuters] Stocks gain on softer inflation, bank results while oil rises on US-Iran hostilities - Reuters - Stocks gain on softer inflation, bank results while oil rises on US-Iran hostilities&nbsp;&nbsp;Reuters",
+        "[Reuters] EXCLUSIVE: Stripe, Advent offer to buy PayPal for more than $53 billion, sources say - Reuters - EXCLUSIVE: Stripe, Advent offer to buy PayPal for more than $53 billion, sources say&nbsp;&nbsp;Reuters",
+        "[Reuters] AI cloud company CoreWeave explores Wall Street playbook to hedge memory-chip price risk - Reuters - AI cloud company CoreWeave explores Wall Street playbook to hedge memory-chip price risk&nbsp;&nbsp;Reuters",
+        "[Reuters] AI uncertainty is rising. So is investor conviction - Reuters - AI uncertainty is rising. So is investor conviction&nbsp;&nbsp;Reuters",
+        "[Reuters] EXCLUSIVE: Data center firm Switch taps banks for IPO that could value it up to $80 billion, sources say - Reuters - EXCLUSIVE: Data center firm Switch taps banks for IPO that could value it up to $80 billion, sources say&nbsp;&nbsp;Reuters",
+        "[Reuters] BofA rides market whiplash to trading records, deal activity shines - Reuters - BofA rides market whiplash to trading records, deal activity shines&nbsp;&nbsp;Reuters",
+        "[Reuters] JPMorgan posts highest quarterly profit ever by a U.S. bank as dealmaking, stock trading surge - Reuters - JPMorgan posts highest quarterly profit ever by a U.S. bank as dealmaking, stock trading surge&nbsp;&nbsp;Reuters",
+        "[Reuters] Wall Street banks see AI 'super cycle' set to boost deals, financing - Reuters - Wall Street banks see AI 'super cycle' set to boost deals, financing&nbsp;&nbsp;Reuters",
+        "[Semis] Stock market today: Dow, S&P 500, Nasdaq rise as Fed rate-hike bets ease, chip stocks rally - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq rise as Fed rate-hike bets ease, chip stocks rally&nbsp;&nbsp;Yahoo Finance",
+        "[Semis] SEI Rings the Nasdaq Stock Market Closing Bell - Nasdaq - SEI Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
+      ],
       "paper": {
         "cash": 1010405,
         "shares": 0.0,
@@ -172,7 +183,7 @@
         "last_action": "SELL",
         "last_action_reason": "DATA_INVALID_NO_TRADE",
         "tier1": 38,
-        "ai_index": 50.0,
+        "ai_index": 87.5,
         "target": 0.0,
         "zone": "red",
         "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
