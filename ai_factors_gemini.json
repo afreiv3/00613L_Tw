@@ -1,32 +1,33 @@
 {
-  "date": "2026-07-14",
-  "generated_at": "2026-07-14 11:38",
+  "date": "2026-07-15",
+  "generated_at": "2026-07-15 11:38",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 3.0,
-    "macro": 4.0,
-    "trend": 5.0
+    "sector": 18.0,
+    "macro": 8.0,
+    "trend": 9.0
   },
-  "ai_sentiment_index": 30.0,
-  "summary": "受伊朗地緣政治緊張與記憶體晶片股下跌影響，華爾街股市收低，全球半導體市場情緒降溫。",
+  "ai_sentiment_index": 87.5,
+  "summary": "在通膨趨緩、銀行財報亮眼以及半導體類股上漲的帶動下，全球股市呈現上揚，預示台灣市場開盤樂觀。",
   "news_zh": [
-    "伊朗緊張局勢打壓風險偏好，華爾街股市收低，晶片股下跌。",
-    "SK海力士在納斯達克上市後大跌，記憶體晶片熱潮降溫。",
-    "油價上漲，晶片股下跌。",
-    "全球半導體股下滑，SK海力士創紀錄的拋售影響市場。",
-    "美股今日收低，油價飆升；記憶體ETF進入熊市。"
+    "通膨數據走軟、銀行業績報喜，股市上漲，油價因美伊衝突而攀升。",
+    "半導體類股大漲，聯準會升息預期減弱，道瓊、標普500和那斯達克指數均上揚。",
+    "華爾街銀行預期AI「超級週期」將推動交易和融資活動。",
+    "摩根大通公布美國銀行業史上最高季度利潤，受惠於交易和股票交易激增。",
+    "AI雲端公司CoreWeave探索華爾街策略，以對沖記憶體晶片價格風險。",
+    "獨家：消息人士稱，Stripe和Advent出價逾530億美元收購PayPal。"
   ],
   "news": [
-    "[Reuters] Wall Street ends lower as Iran tensions dampen risk appetite; chipmakers drop - Reuters - Wall Street ends lower as Iran tensions dampen risk appetite; chipmakers drop&nbsp;&nbsp;Reuters",
-    "[Reuters] Why Thomson Reuters Stock Crushed it on Monday - Yahoo Finance - Why Thomson Reuters Stock Crushed it on Monday&nbsp;&nbsp;Yahoo Finance",
-    "[Reuters] SK Hynix plunges after Nasdaq debut as memory chip euphoria cools - Reuters - SK Hynix plunges after Nasdaq debut as memory chip euphoria cools&nbsp;&nbsp;Reuters",
-    "[Reuters] Oil traders call Trump's Hormuz bluff at their peril - Reuters - Oil traders call Trump's Hormuz bluff at their peril&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: Crude up, chips down - Reuters - Morning Bid: Crude up, chips down&nbsp;&nbsp;Reuters",
-    "[Reuters] EXCLUSIVE Watches of Switzerland held talks over potential takeover offers, sources say - Reuters - EXCLUSIVE Watches of Switzerland held talks over potential takeover offers, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] Bank of America hires nine senior investment bankers to target US middle market - Reuters - Bank of America hires nine senior investment bankers to target US middle market&nbsp;&nbsp;Reuters",
-    "[Reuters] Shein scheduled for Hong Kong IPO hearing on Thursday, sources say - Reuters - Shein scheduled for Hong Kong IPO hearing on Thursday, sources say&nbsp;&nbsp;Reuters",
-    "[Semis] Stock Market Today: Dow, Nasdaq Close Lower As Oil Prices Spike; This Memory ETF In Bear Market - Investor's Business Daily - Stock Market Today: Dow, Nasdaq Close Lower As Oil Prices Spike; This Memory ETF In Bear Market&nbsp;&nbsp;Investor's Business Daily",
-    "[Semis] Stock market today: S&P 500, Nasdaq, Dow futures slip as Iran tensions ratchet up, bank earnings and Fed report on deck - Yahoo Finance - Stock market today: S&P 500, Nasdaq, Dow futures slip as Iran tensions ratchet up, bank earnings and Fed report on deck&nbsp;&nbsp;Yahoo Finance"
+    "[Reuters] Stocks gain on softer inflation, bank results while oil rises on US-Iran hostilities - Reuters - Stocks gain on softer inflation, bank results while oil rises on US-Iran hostilities&nbsp;&nbsp;Reuters",
+    "[Reuters] EXCLUSIVE: Stripe, Advent offer to buy PayPal for more than $53 billion, sources say - Reuters - EXCLUSIVE: Stripe, Advent offer to buy PayPal for more than $53 billion, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] AI cloud company CoreWeave explores Wall Street playbook to hedge memory-chip price risk - Reuters - AI cloud company CoreWeave explores Wall Street playbook to hedge memory-chip price risk&nbsp;&nbsp;Reuters",
+    "[Reuters] AI uncertainty is rising. So is investor conviction - Reuters - AI uncertainty is rising. So is investor conviction&nbsp;&nbsp;Reuters",
+    "[Reuters] EXCLUSIVE: Data center firm Switch taps banks for IPO that could value it up to $80 billion, sources say - Reuters - EXCLUSIVE: Data center firm Switch taps banks for IPO that could value it up to $80 billion, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] BofA rides market whiplash to trading records, deal activity shines - Reuters - BofA rides market whiplash to trading records, deal activity shines&nbsp;&nbsp;Reuters",
+    "[Reuters] JPMorgan posts highest quarterly profit ever by a U.S. bank as dealmaking, stock trading surge - Reuters - JPMorgan posts highest quarterly profit ever by a U.S. bank as dealmaking, stock trading surge&nbsp;&nbsp;Reuters",
+    "[Reuters] Wall Street banks see AI 'super cycle' set to boost deals, financing - Reuters - Wall Street banks see AI 'super cycle' set to boost deals, financing&nbsp;&nbsp;Reuters",
+    "[Semis] Stock market today: Dow, S&P 500, Nasdaq rise as Fed rate-hike bets ease, chip stocks rally - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq rise as Fed rate-hike bets ease, chip stocks rally&nbsp;&nbsp;Yahoo Finance",
+    "[Semis] SEI Rings the Nasdaq Stock Market Closing Bell - Nasdaq - SEI Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
   ],
   "debug_error": ""
 }
