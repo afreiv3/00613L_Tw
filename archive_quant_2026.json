@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 2,
+  "count": 3,
   "history": [
     {
       "date": "2026-07-13",
@@ -109,6 +109,69 @@
           "pts": 4,
           "max": 10,
           "note": "TWII收44,561貼近季線估算下緣（~44,500，Yahoo 403資料不足以估算值），月線估算~45,000已跌破，外資持續賣超，結構明確轉弱，給4分"
+        }
+      },
+      "paper": {
+        "cash": 976188,
+        "equity": 976188,
+        "market_value": 0,
+        "return_pct": -2.38,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 6,
+        "wins": 1,
+        "win_rate": 16.7,
+        "realized_pnl": -23812
+      }
+    },
+    {
+      "date": "2026-07-15",
+      "time": "09:00",
+      "price": null,
+      "score": 58,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 28,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 17,
+          "max": 20,
+          "note": "SOX費半7/14收+2.54%（CPI beat帶動晶片股強力反彈），Nasdaq +0.9%，NVDA ~$207.57，TSM ADR ~$421；板塊整體隔夜明確偏強，給17分（IBM -25%顯示企業IT分化，稍扣分）"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 6,
+          "max": 10,
+          "note": "美6月CPI 3.5%大幅低於預期（3.8%），Fed 7月升息機率從42%驟降至17%，通膨降溫為重大正面轉折；但10Y殖利率~4.56-4.62%偏高、伊朗霍爾木茲WTI~$75地緣風險仍存，給6分"
+        },
+        "trend": {
+          "pts": 5,
+          "max": 10,
+          "note": "TWII昨收44,561仍貼近季線估算下緣（~44,500，Yahoo 403），月線估算~45,000已跌破，外資連續7日以上賣超，結構偏弱；今日受美股帶動預計開高，但季線能否有效站穩待確認，給5分"
         }
       },
       "paper": {
