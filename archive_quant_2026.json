@@ -130,11 +130,11 @@
     },
     {
       "date": "2026-07-15",
-      "time": "10:00",
-      "price": 36.75,
-      "score": 73,
+      "time": "10:15",
+      "price": 36.64,
+      "score": 80,
       "zone": "green",
-      "quant_sum": 45,
+      "quant_sum": 52,
       "ai_sum": 28,
       "ai_ok": true,
       "factors": {
@@ -149,19 +149,19 @@
           "note": "SOX費半7/14收+2.54%（CPI beat帶動晶片股強力反彈），Nasdaq +0.9%，NVDA ~$207.57，TSM ADR ~$421；板塊整體隔夜明確偏強，給17分（IBM -25%顯示企業IT分化，稍扣分）"
         },
         "entry": {
-          "pts": 0,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價在區間上緣(79%) → 屬追高"
+          "note": "現價在區間中段(64%)"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量1.2倍 → 正常"
+          "note": "推估量約均量1.0倍 → 正常"
         },
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+0.62%) → 有利"
+          "note": "現價在VWAP之上(+0.28%) → 有利"
         },
         "macro": {
           "pts": 6,
@@ -176,9 +176,9 @@
       },
       "paper": {
         "cash": 682918,
-        "equity": 979564,
-        "market_value": 296646,
-        "return_pct": -2.04,
+        "equity": 978676,
+        "market_value": 295758,
+        "return_pct": -2.13,
         "holding": true,
         "position": {
           "shares": 8072,
@@ -191,8 +191,8 @@
         },
         "shares": 8072,
         "avg_cost": 36.28,
-        "unrealized": 3377,
-        "unrealized_pct": 1.15,
+        "unrealized": 2489,
+        "unrealized_pct": 0.85,
         "trades": 6,
         "wins": 1,
         "win_rate": 16.7,
