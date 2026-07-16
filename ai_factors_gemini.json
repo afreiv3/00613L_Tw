@@ -1,33 +1,33 @@
 {
-  "date": "2026-07-15",
-  "generated_at": "2026-07-15 11:38",
+  "date": "2026-07-16",
+  "generated_at": "2026-07-16 11:40",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 18.0,
+    "sector": 12.0,
     "macro": 8.0,
-    "trend": 9.0
+    "trend": 7.0
   },
-  "ai_sentiment_index": 87.5,
-  "summary": "在通膨趨緩、銀行財報亮眼以及半導體類股上漲的帶動下，全球股市呈現上揚，預示台灣市場開盤樂觀。",
+  "ai_sentiment_index": 67.5,
+  "summary": "美國股市因通膨數據降溫和強勁財報而上漲，但半導體類股表現分歧，亞洲市場則出現部分晶片股拋售。",
   "news_zh": [
-    "通膨數據走軟、銀行業績報喜，股市上漲，油價因美伊衝突而攀升。",
-    "半導體類股大漲，聯準會升息預期減弱，道瓊、標普500和那斯達克指數均上揚。",
-    "華爾街銀行預期AI「超級週期」將推動交易和融資活動。",
-    "摩根大通公布美國銀行業史上最高季度利潤，受惠於交易和股票交易激增。",
-    "AI雲端公司CoreWeave探索華爾街策略，以對沖記憶體晶片價格風險。",
-    "獨家：消息人士稱，Stripe和Advent出價逾530億美元收購PayPal。"
+    "華爾街股市受惠於通膨數據降溫及企業財報亮眼而收高。",
+    "摩根士丹利受惠於交易和交易撮合業務強勁，並看好AI投資，業績超出預期。",
+    "南韓股市因半導體類股飆升而反彈。",
+    "亞洲股市下跌，韓國綜合指數受到晶片股拋售影響。",
+    "美國股市道瓊、標普500、那斯達克指數上漲，蘋果股價創歷史新高。",
+    "美國股市道瓊、標普500、那斯達克指數下跌，半導體類股暴跌。"
   ],
   "news": [
-    "[Reuters] Stocks gain on softer inflation, bank results while oil rises on US-Iran hostilities - Reuters - Stocks gain on softer inflation, bank results while oil rises on US-Iran hostilities&nbsp;&nbsp;Reuters",
-    "[Reuters] EXCLUSIVE: Stripe, Advent offer to buy PayPal for more than $53 billion, sources say - Reuters - EXCLUSIVE: Stripe, Advent offer to buy PayPal for more than $53 billion, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] AI cloud company CoreWeave explores Wall Street playbook to hedge memory-chip price risk - Reuters - AI cloud company CoreWeave explores Wall Street playbook to hedge memory-chip price risk&nbsp;&nbsp;Reuters",
-    "[Reuters] AI uncertainty is rising. So is investor conviction - Reuters - AI uncertainty is rising. So is investor conviction&nbsp;&nbsp;Reuters",
-    "[Reuters] EXCLUSIVE: Data center firm Switch taps banks for IPO that could value it up to $80 billion, sources say - Reuters - EXCLUSIVE: Data center firm Switch taps banks for IPO that could value it up to $80 billion, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] BofA rides market whiplash to trading records, deal activity shines - Reuters - BofA rides market whiplash to trading records, deal activity shines&nbsp;&nbsp;Reuters",
-    "[Reuters] JPMorgan posts highest quarterly profit ever by a U.S. bank as dealmaking, stock trading surge - Reuters - JPMorgan posts highest quarterly profit ever by a U.S. bank as dealmaking, stock trading surge&nbsp;&nbsp;Reuters",
-    "[Reuters] Wall Street banks see AI 'super cycle' set to boost deals, financing - Reuters - Wall Street banks see AI 'super cycle' set to boost deals, financing&nbsp;&nbsp;Reuters",
-    "[Semis] Stock market today: Dow, S&P 500, Nasdaq rise as Fed rate-hike bets ease, chip stocks rally - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq rise as Fed rate-hike bets ease, chip stocks rally&nbsp;&nbsp;Yahoo Finance",
-    "[Semis] SEI Rings the Nasdaq Stock Market Closing Bell - Nasdaq - SEI Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
+    "[Reuters] Wall St ends higher on cool inflation data, strong earnings - Reuters - Wall St ends higher on cool inflation data, strong earnings&nbsp;&nbsp;Reuters",
+    "[Reuters] Breakingviews - DeepSeek IPO lays bare China's shallow capital pool - Reuters - Breakingviews - DeepSeek IPO lays bare China's shallow capital pool&nbsp;&nbsp;Reuters",
+    "[Reuters] South Korea regulator to announce new measures on single-stock leveraged ETFs - Reuters - South Korea regulator to announce new measures on single-stock leveraged ETFs&nbsp;&nbsp;Reuters",
+    "[Reuters] SpaceX's slide below IPO price risks turning blockbuster IPO into confidence test - Reuters - SpaceX's slide below IPO price risks turning blockbuster IPO into confidence test&nbsp;&nbsp;Reuters",
+    "[Reuters] Morgan Stanley beats estimates on strong trading and dealmaking, bets on AI investment - Reuters - Morgan Stanley beats estimates on strong trading and dealmaking, bets on AI investment&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: Melting core - Reuters - Morning Bid: Melting core&nbsp;&nbsp;Reuters",
+    "[Reuters] BNY lifts 2026 revenue forecast above estimates after quarterly beat - Reuters - BNY lifts 2026 revenue forecast above estimates after quarterly beat&nbsp;&nbsp;Reuters",
+    "[Reuters] Wall Street's investment banking machine firing on all cylinders - Reuters - Wall Street's investment banking machine firing on all cylinders&nbsp;&nbsp;Reuters",
+    "[Semis] Stock market today: Dow, S&P 500, Nasdaq rise as Apple notches record high - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq rise as Apple notches record high&nbsp;&nbsp;Yahoo Finance",
+    "[Semis] Stock Market Today: Nasdaq Rises Despite Tumble Among Chip Leaders; Apple Paces Mag 7 Rally - Investor's Business Daily - Stock Market Today: Nasdaq Rises Despite Tumble Among Chip Leaders; Apple Paces Mag 7 Rally&nbsp;&nbsp;Investor's Business Daily"
   ],
   "debug_error": ""
 }
