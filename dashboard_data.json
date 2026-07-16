@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16 09:45 (Taipei)",
+  "updated": "2026-07-16 10:01 (Taipei)",
   "history": [
     {
       "date": "2026-07-13",
@@ -200,11 +200,11 @@
     },
     {
       "date": "2026-07-16",
-      "time": "09:45",
-      "price": 36.15,
-      "score": 68,
+      "time": "10:01",
+      "price": 36.18,
+      "score": 66,
       "zone": "amber",
-      "quant_sum": 40,
+      "quant_sum": 38,
       "ai_sum": 28,
       "ai_ok": true,
       "factors": {
@@ -219,19 +219,19 @@
           "note": "半導體板塊分歧：AI芯片NVDA+4.06%、AVGO+1.32%偏強，但記憶體MU重挫8%、AMD-3%、LRCX-3%嚴重拖累；TSM ADR小跌0.28%（法說前謹慎），SOX整體呈分歧走勢，給10分"
         },
         "entry": {
-          "pts": 15,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價近今日低點(區間0%) → 接近支撐"
+          "note": "現價在區間中段(37%)"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量0.9倍 → 正常"
+          "note": "推估量約均量1.1倍 → 正常"
         },
         "vwap": {
-          "pts": 0,
+          "pts": 5.0,
           "max": 10,
-          "note": "現價在VWAP之下(-0.63%) → 弱勢"
+          "note": "現價貼近VWAP(-0.20%)"
         },
         "macro": {
           "pts": 8,
@@ -246,9 +246,9 @@
       },
       "paper": {
         "cash": 682918,
-        "equity": 974721,
-        "market_value": 291803,
-        "return_pct": -2.53,
+        "equity": 974963,
+        "market_value": 292045,
+        "return_pct": -2.5,
         "holding": true,
         "position": {
           "shares": 8072,
@@ -261,8 +261,8 @@
         },
         "shares": 8072,
         "avg_cost": 36.28,
-        "unrealized": -1467,
-        "unrealized_pct": -0.5,
+        "unrealized": -1225,
+        "unrealized_pct": -0.42,
         "trades": 6,
         "wins": 1,
         "win_rate": 16.7,
