@@ -193,13 +193,13 @@
     },
     {
       "date": "2026-07-16",
-      "time": "13:30",
-      "price": 36.91,
+      "time": "14:35",
+      "price": 37.19,
       "tier1": 38,
       "ai_index": 67.5,
       "target": 0.0,
       "zone": "red",
-      "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
+      "zone_label": "⚪ 觀望（非盤中）",
       "gate_open": false,
       "market_ok": true,
       "asset_trend_ok": false,
@@ -250,7 +250,7 @@
         "ai_index": 67.5,
         "target": 0.0,
         "zone": "red",
-        "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
+        "zone_label": "⚪ 觀望（非盤中）",
         "gate_open": false
       }
     }
