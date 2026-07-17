@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17 11:30 (Taipei)",
+  "updated": "2026-07-17 11:45 (Taipei)",
   "history": [
     {
       "date": "2026-07-13",
@@ -191,19 +191,30 @@
     },
     {
       "date": "2026-07-17",
-      "time": "11:30",
-      "price": 33.96,
+      "time": "11:45",
+      "price": 34.08,
       "tier1": 25,
-      "ai_index": 50.0,
+      "ai_index": 35.0,
       "target": 0.0,
       "zone": "red",
       "zone_label": "⚪ 觀望（等好買點＋趨勢）",
       "gate_open": false,
       "market_ok": true,
       "asset_trend_ok": false,
-      "ai_ok": false,
-      "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
-      "news": [],
+      "ai_ok": true,
+      "summary": "全球晶片股普遍承壓，導致主要股指下跌，儘管台積電第二季財報表現良好，但市場對AI前景仍存擔憂。",
+      "news": [
+        "[Reuters] Chipmakers put pressure on equity indexes globally, oil dips - Reuters - Chipmakers put pressure on equity indexes globally, oil dips&nbsp;&nbsp;Reuters",
+        "[Reuters] Stocks stumble, oil set for weekly gain on renewed Gulf hostilities - Reuters - Stocks stumble, oil set for weekly gain on renewed Gulf hostilities&nbsp;&nbsp;Reuters",
+        "[Reuters] Wall Street ends lower as chip weakness offsets solid earnings, economic data - Reuters - Wall Street ends lower as chip weakness offsets solid earnings, economic data&nbsp;&nbsp;Reuters",
+        "[Reuters] EXCLUSIVE: PayPal board sees Stripe-Advent offer as inadequate, sources say - Reuters - EXCLUSIVE: PayPal board sees Stripe-Advent offer as inadequate, sources say&nbsp;&nbsp;Reuters",
+        "[Reuters] Trump's teleprompter operator under CFTC probe over potential insider trading - Reuters - Trump's teleprompter operator under CFTC probe over potential insider trading&nbsp;&nbsp;Reuters",
+        "[Reuters] Wall St banks' Q2 saw deal fees, trading windfall boost profit - Reuters - Wall St banks' Q2 saw deal fees, trading windfall boost profit&nbsp;&nbsp;Reuters",
+        "[Reuters] Truth Social to sell trading firms 'fastest' access to Trump's posts - Reuters - Truth Social to sell trading firms 'fastest' access to Trump's posts&nbsp;&nbsp;Reuters",
+        "[Reuters] Citadel Securities invests $400 million in Crypto.com at $20 billion valuation - Reuters - Citadel Securities invests $400 million in Crypto.com at $20 billion valuation&nbsp;&nbsp;Reuters",
+        "[Semis] Stock Market Today: Nasdaq Drops While TSMC Hits Sell Rule; Oil Shipper Steers Into Entry Point - Investor's Business Daily - Stock Market Today: Nasdaq Drops While TSMC Hits Sell Rule; Oil Shipper Steers Into Entry Point&nbsp;&nbsp;Investor's Business Daily",
+        "[Semis] Stock market today: Dow, S&P 500, Nasdaq drop as chip stocks tumble, Alphabet stock sinks - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq drop as chip stocks tumble, Alphabet stock sinks&nbsp;&nbsp;Yahoo Finance"
+      ],
       "paper": {
         "cash": 1016948,
         "shares": 0.0,
@@ -218,7 +229,7 @@
         "max_asset": 1074736,
         "frenzy_days": 0,
         "tier1": 25,
-        "ai_index": 50.0,
+        "ai_index": 35.0,
         "target": 0.0,
         "zone": "red",
         "zone_label": "⚪ 觀望（等好買點＋趨勢）",
