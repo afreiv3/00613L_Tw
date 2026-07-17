@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17 11:00 (Taipei)",
+  "updated": "2026-07-17 11:15 (Taipei)",
   "history": [
     {
       "date": "2026-07-13",
@@ -255,15 +255,15 @@
     },
     {
       "date": "2026-07-17",
-      "time": "11:00",
-      "price": 34.0,
+      "time": "11:15",
+      "price": 33.77,
       "tier1": 25,
       "ai_index": 50.0,
       "target": 0.0,
       "zone": "red",
       "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
       "gate_open": false,
-      "market_ok": true,
+      "market_ok": false,
       "asset_trend_ok": false,
       "ma10_ok": false,
       "ai_ok": false,
