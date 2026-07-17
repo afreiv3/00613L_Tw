@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17 11:15 (Taipei)",
+  "updated": "2026-07-17 11:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-13",
@@ -191,15 +191,15 @@
     },
     {
       "date": "2026-07-17",
-      "time": "11:15",
-      "price": 33.77,
+      "time": "11:30",
+      "price": 33.96,
       "tier1": 25,
       "ai_index": 50.0,
       "target": 0.0,
       "zone": "red",
       "zone_label": "⚪ 觀望（等好買點＋趨勢）",
       "gate_open": false,
-      "market_ok": false,
+      "market_ok": true,
       "asset_trend_ok": false,
       "ai_ok": false,
       "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
