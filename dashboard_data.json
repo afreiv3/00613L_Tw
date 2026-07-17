@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17 09:15 (Taipei)",
+  "updated": "2026-07-17 09:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-13",
@@ -271,18 +271,18 @@
     },
     {
       "date": "2026-07-17",
-      "time": "09:15",
-      "price": null,
-      "score": 43,
+      "time": "09:30",
+      "price": 34.69,
+      "score": 40,
       "zone": "amber",
-      "quant_sum": 30,
+      "quant_sum": 28,
       "ai_sum": 13,
       "ai_ok": true,
       "factors": {
         "pattern": {
           "pts": 10.0,
           "max": 20,
-          "note": "盤中資料缺，型態以中性計"
+          "note": "開-6.1%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 0,
@@ -292,17 +292,17 @@
         "entry": {
           "pts": 7.5,
           "max": 15,
-          "note": "區間資料缺，以中性計"
+          "note": "現價在區間中段(57%)"
         },
         "volume": {
-          "pts": 7.5,
+          "pts": 0,
           "max": 15,
-          "note": "量能資料缺，以中性計"
+          "note": "推估量約均量4.5倍 → 爆量(疑換手/出貨)"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 10,
           "max": 10,
-          "note": "VWAP 資料缺，以中性計"
+          "note": "現價在VWAP之上(+0.21%) → 有利"
         },
         "macro": {
           "pts": 5,
@@ -316,28 +316,20 @@
         }
       },
       "paper": {
-        "cash": 682918,
-        "equity": 682918,
+        "cash": 962257,
+        "equity": 962257,
         "market_value": 0,
-        "return_pct": -31.71,
-        "holding": true,
-        "position": {
-          "shares": 8072,
-          "entry_price": 36.28,
-          "entry_date": "2026-07-15",
-          "entry_time": "09:30",
-          "cost": 293269.47,
-          "entry_score": 73,
-          "frac": 0.3
-        },
-        "shares": 8072,
-        "avg_cost": 36.28,
-        "unrealized": -293269,
-        "unrealized_pct": -100.0,
-        "trades": 6,
+        "return_pct": -3.77,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 7,
         "wins": 1,
-        "win_rate": 16.7,
-        "realized_pnl": -23812
+        "win_rate": 14.3,
+        "realized_pnl": -37743
       }
     }
   ]
