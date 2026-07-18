@@ -97,10 +97,59 @@
   .pk{font-size:11px;color:var(--muted);font-family:"IBM Plex Mono",monospace;margin-bottom:3px}
   .pv{font-family:"IBM Plex Mono",monospace;font-size:18px;font-weight:600}
 
-  .stratbar{display:flex;gap:8px;margin-bottom:14px}
-  .stbtn{flex:1;border:1px solid var(--line);background:var(--panel-2);color:var(--muted);
+  .stratbar{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+  .stbtn{flex:1;min-width:150px;border:1px solid var(--line);background:var(--panel-2);color:var(--muted);
     font-family:"IBM Plex Mono",monospace;font-size:13px;padding:9px;border-radius:10px;cursor:pointer}
   .stbtn.active{border-color:var(--accent);color:var(--txt);background:var(--panel)}
+
+  /* ====== 配置計算機（核心＋衛星＋熊市斷路器）====== */
+  #calcView{--violet:#b195f5;--orange:#ff8c42;--orange-dim:#5a3416}
+  .cal-sub{font-size:12px;color:var(--muted);margin-bottom:12px}
+  .cal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px 14px}
+  .cal-field label{display:block;font-size:11px;color:var(--muted);font-family:"IBM Plex Mono",monospace;margin-bottom:4px}
+  .cal-field input[type=number]{width:100%;background:var(--panel-2);color:var(--txt);border:1px solid var(--line);
+    border-radius:8px;padding:7px 10px;font-family:"IBM Plex Mono",monospace;font-size:13px}
+  .cal-field input[type=number]:focus{outline:none;border-color:var(--accent)}
+  .cal-adv{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}
+  .cal-adv summary{cursor:pointer;color:var(--accent);font-size:12.5px;user-select:none}
+  .cal-adv .cal-grid{margin-top:12px}
+  .cal-check{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);margin-top:12px}
+  .cal-check input{width:15px;height:15px;accent-color:var(--accent)}
+  .cal-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:12px}
+  .cal-tile{background:var(--panel-2);border:1px solid var(--line);border-left:4px solid var(--line);border-radius:10px;padding:10px 12px}
+  .cal-tile.core{border-left-color:var(--accent)} .cal-tile.sat{border-left-color:var(--green)} .cal-tile.cash{border-left-color:var(--violet)}
+  .cal-tile .pk{margin-bottom:2px}
+  .cal-tile .note{font-size:11.5px;color:var(--muted);margin-top:2px}
+  .cal-bar{display:flex;gap:2px;height:26px;border-radius:6px;overflow:hidden;margin:6px 0 6px}
+  .cal-bar div{display:flex;align-items:center;justify-content:center;font-family:"IBM Plex Mono",monospace;
+    font-size:11px;color:#0a1320;white-space:nowrap;min-width:0}
+  .cal-bar .core{background:var(--accent)} .cal-bar .sat{background:var(--green)} .cal-bar .cash{background:var(--violet)}
+  .cal-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11.5px;color:var(--muted)}
+  .cal-legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px}
+  .cal-cumbar{display:inline-block;height:7px;border-radius:2px;background:var(--green);vertical-align:middle;margin-right:6px}
+  .cal-rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+  .cal-rule{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+  .cal-rule h4{font-size:13px;margin:0 0 6px}
+  .cal-rule i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px}
+  .cal-rule ul{margin:0;padding-left:16px;font-size:12px;color:var(--muted)}
+  .cal-rule li{margin:3px 0}
+  .cal-rule b{color:var(--txt)}
+  .cal-lights{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+  .cal-light{display:grid;grid-template-columns:auto 1fr;gap:10px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;opacity:.5}
+  .cal-light.active{opacity:1}
+  .cal-light .lamp{width:12px;height:12px;border-radius:50%;margin-top:5px}
+  .cal-light h4{font-size:13.5px;margin:0}
+  .cal-light p{font-size:11.5px;color:var(--muted);margin:2px 0 0}
+  .cal-light .act{font-size:12px;margin-top:2px}
+  .cal-light.g{border-color:var(--green-dim)} .cal-light.g .lamp{background:var(--green)} .cal-light.g.active{border-color:var(--green);background:rgba(47,212,122,.06)}
+  .cal-light.y{border-color:var(--amber-dim)} .cal-light.y .lamp{background:var(--amber)} .cal-light.y.active{border-color:var(--amber);background:rgba(255,184,77,.06)}
+  .cal-light.o{border-color:var(--orange-dim)} .cal-light.o .lamp{background:var(--orange)} .cal-light.o.active{border-color:var(--orange);background:rgba(255,140,66,.06)}
+  .cal-light.r{border-color:var(--red-dim)} .cal-light.r .lamp{background:var(--red)} .cal-light.r.active{border-color:var(--red);background:rgba(255,93,93,.07)}
+  .cal-banner{display:flex;gap:12px;align-items:flex-start}
+  .cal-banner .dot{width:13px;height:13px;border-radius:50%;flex:none;margin-top:5px}
+  .cal-banner b{font-size:15px}
+  .cal-banner p{font-size:12.5px;color:var(--muted);margin:3px 0 0}
+  .cal-banner .nums{font-family:"IBM Plex Mono",monospace;color:var(--txt)}
 </style>
 </head>
 <body>
@@ -118,6 +167,7 @@
     <button class="stbtn active" id="tabClaude">🟦 Claude 策略</button>
     <button class="stbtn" id="tabGemini">🟩 Gemini 策略</button>
     <button class="stbtn" id="tabChatgpt">🟧 ChatGPT 策略</button>
+    <button class="stbtn" id="tabCalc">🧮 配置計算機</button>
   </div>
 
   <div id="claudeView">
@@ -282,6 +332,114 @@
       <div id="cgArchTableWrap"></div>
     </div>
   </div><!-- /chatgptView -->
+
+  <div id="calcView" style="display:none">
+    <div class="card cal-banner" style="margin-bottom:14px">
+      <div class="dot" id="calBDot"></div>
+      <div><b id="calBTitle">—</b><p id="calBText">—</p></div>
+    </div>
+
+    <div class="card" style="margin-bottom:14px">
+      <h3>① 我的資金</h3>
+      <div class="cal-sub">現價自動帶入面板最新價（可手動修改）。策略：核心倉躺平吃趨勢、衛星網格吃震盪、預留現金保命。</div>
+      <div class="cal-grid">
+        <div class="cal-field"><label for="calCap">總資金 NT$</label><input id="calCap" type="number" value="1000000" min="10000" step="10000"></div>
+        <div class="cal-field"><label for="calPx">00631L 現價</label><input id="calPx" type="number" value="32.17" min="1" step="0.01"></div>
+      </div>
+      <details class="cal-adv">
+        <summary>進階參數（比例／網格間距／深度）</summary>
+        <div class="cal-grid">
+          <div class="cal-field"><label for="calCore">核心倉 %</label><input id="calCore" type="number" value="50" min="0" max="100" step="5"></div>
+          <div class="cal-field"><label for="calSat">衛星網格 %</label><input id="calSat" type="number" value="35" min="0" max="100" step="5"></div>
+          <div class="cal-field"><label for="calStep">跌幾 % 買一格</label><input id="calStep" type="number" value="4" min="1" max="15" step="0.5"></div>
+          <div class="cal-field"><label for="calTp">每格停利 %</label><input id="calTp" type="number" value="5" min="1" max="30" step="0.5"></div>
+          <div class="cal-field"><label for="calDepth">最深接到 −%</label><input id="calDepth" type="number" value="30" min="5" max="60" step="1"></div>
+        </div>
+      </details>
+    </div>
+
+    <div class="card" style="margin-bottom:14px">
+      <h3>② 分配結果</h3>
+      <div class="cal-sub" id="calAllocSub">—</div>
+      <div class="cal-tiles">
+        <div class="cal-tile core"><div class="pk">核心倉（只有紅燈才賣）</div><div class="pv" id="calCoreAmt">—</div><div class="note" id="calCoreNote">—</div></div>
+        <div class="cal-tile sat"><div class="pk">衛星網格（跌買漲賣）</div><div class="pv" id="calSatAmt">—</div><div class="note" id="calSatNote">—</div></div>
+        <div class="cal-tile cash"><div class="pk">預留現金（永不進場）</div><div class="pv" id="calCashAmt">—</div><div class="note">容錯墊：手續費、滑價、算錯行情的退路</div></div>
+      </div>
+      <div class="cal-bar" id="calBar" role="img" aria-label="資金分配比例圖"></div>
+      <div class="cal-legend">
+        <span><i style="background:var(--accent)"></i>核心倉</span>
+        <span><i style="background:var(--green)"></i>衛星網格</span>
+        <span><i style="background:var(--violet)"></i>預留現金</span>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:14px">
+      <h3>③ 衛星網格階梯表</h3>
+      <div class="cal-sub">從現價往下每跌一格買一份；每格買進後掛「買價＋停利%」獲利了結，先買的先賣。核心倉不參與。</div>
+      <div class="arch-table"><table>
+        <thead><tr><th>格</th><th>觸發價</th><th>距現價</th><th>投入</th><th>約可買</th><th>該格停利價</th><th>累積投入</th><th>衛星均價</th><th>彈藥</th></tr></thead>
+        <tbody id="calLadder"></tbody>
+      </table></div>
+      <div class="cal-sub" style="margin:10px 0 0" id="calLadderNote">—</div>
+    </div>
+
+    <div class="card" style="margin-bottom:14px">
+      <h3>④ 買賣機制（三個口袋、各自紀律）</h3>
+      <div class="cal-rules">
+        <div class="cal-rule"><h4><i style="background:var(--accent)"></i>核心倉</h4><ul>
+          <li>綠燈時一次建立（或分 3 天）</li>
+          <li>漲跌都<b>不動</b>——工作是吃趨勢與正2 複利加成</li>
+          <li>唯一賣出時機：<b>紅燈</b></li>
+        </ul></div>
+        <div class="cal-rule"><h4><i style="background:var(--green)"></i>衛星網格</h4><ul>
+          <li><b>買</b>：收盤比上次成交價低一格 → 買一份；<b>僅限綠燈</b></li>
+          <li><b>賣</b>：任一格達自己的停利價 → 賣該格；任何燈號可賣</li>
+          <li>一天最多一格、以<b>收盤價</b>執行，不搶盤中</li>
+          <li>彈藥用完就是用完，<b>不准臨時加大單</b></li>
+        </ul></div>
+        <div class="cal-rule"><h4><i style="background:var(--violet)"></i>預留現金</h4><ul>
+          <li>不屬於任何策略，<b>永不進場</b></li>
+          <li>意義：最壞情境仍有選擇權</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⑤ 熊市斷路器（燈號以「收盤價」判定）</h3>
+      <div class="cal-sub">現價自動更新；季線等均線數值請自行更新（預設 2026-07-17 收盤）。全部用收盤判定，盤中跌破不算，避免被洗。</div>
+      <div class="cal-grid">
+        <div class="cal-field"><label for="calClose">00631L 收盤</label><input id="calClose" type="number" value="32.17" step="0.01"></div>
+        <div class="cal-field"><label for="calMa60">00631L 季線(60MA)</label><input id="calMa60" type="number" value="34.72" step="0.01"></div>
+        <div class="cal-field"><label for="calMa60p">季線 10 日前數值</label><input id="calMa60p" type="number" value="32.82" step="0.01"></div>
+        <div class="cal-field"><label for="calHigh">近 60 日最高收盤</label><input id="calHigh" type="number" value="41.32" step="0.01"></div>
+        <div class="cal-field"><label for="calTwii">大盤 TWII 收盤</label><input id="calTwii" type="number" value="42671" step="1"></div>
+        <div class="cal-field"><label for="calTwiiMa">TWII 季線(60MA)</label><input id="calTwiiMa" type="number" value="43525" step="1"></div>
+      </div>
+      <label class="cal-check"><input type="checkbox" id="calConsec">00631L 已連續 ≥2 個交易日收盤低於季線</label>
+      <div class="paper-stats" style="margin:12px 0">
+        <div class="pstat"><div class="pk">距近期高點回撤</div><div class="pv" id="calDD">—</div></div>
+        <div class="pstat"><div class="pk">紅燈線：高點 −20%</div><div class="pv" id="calRedPx">—</div></div>
+        <div class="pstat"><div class="pk">TWII 距季線</div><div class="pv" id="calTwiiGap">—</div></div>
+        <div class="pstat"><div class="pk">TWII 紅燈線（季線−3%）</div><div class="pv" id="calTwiiRed">—</div></div>
+      </div>
+      <div class="cal-lights">
+        <div class="cal-light g" id="calLg"><div class="lamp"></div><div>
+          <h4>🟢 綠燈——正常運作</h4><p>00631L 收盤 ≥ 季線，且季線上彎（高於 10 日前）</p>
+          <div class="act">核心持有；衛星網格照表買賣</div></div></div>
+        <div class="cal-light y" id="calLy"><div class="lamp"></div><div>
+          <h4>🟡 黃燈——停止加碼</h4><p>收盤跌破季線（尚未連續 2 日），或季線走平／下彎</p>
+          <div class="act">衛星<b>只賣不買</b>；核心不動；不開新網格</div></div></div>
+        <div class="cal-light o" id="calLo"><div class="lamp"></div><div>
+          <h4>🟠 橘燈——結構破壞</h4><p>連續 ≥2 日收盤低於季線，<b>且</b>季線已下彎</p>
+          <div class="act">衛星庫存<b>全部出清（含虧損格）</b>；核心保留、進入觀察</div></div></div>
+        <div class="cal-light r" id="calLr"><div class="lamp"></div><div>
+          <h4>🔴 紅燈——熊市確認，全部出場</h4><p>任一成立：① TWII 收盤 &lt; 季線×0.97　② 00631L 收盤距近期高點 ≥ −20%</p>
+          <div class="act"><b>含核心倉全部清空</b>，回到 100% 現金；空手者不得進場</div></div></div>
+      </div>
+      <div class="cal-sub" style="margin:12px 0 0">回場條件：00631L <b>連續 3 日</b>收盤站回季線且季線重新上彎 → 先建核心倉一半，其餘照燈號逐步恢復。本工具為策略試算輔助，非投資建議；表內金額未含手續費 0.1425%／證交稅 0.1%。</div>
+    </div>
+  </div><!-- /calcView -->
 
   <div class="foot" id="foot"></div>
 </div>
@@ -619,8 +777,8 @@ function renderChatgptTrades(data){
 }
 
 function switchView(which){
-  const views={claude:"claudeView", gemini:"geminiView", chatgpt:"chatgptView"};
-  const tabs={claude:"tabClaude", gemini:"tabGemini", chatgpt:"tabChatgpt"};
+  const views={claude:"claudeView", gemini:"geminiView", chatgpt:"chatgptView", calc:"calcView"};
+  const tabs={claude:"tabClaude", gemini:"tabGemini", chatgpt:"tabChatgpt", calc:"tabCalc"};
   if(!views[which]) which="claude";
   for(const k in views){
     document.getElementById(views[k]).style.display = (k===which)?"block":"none";
@@ -666,6 +824,7 @@ async function load(){
   // 模擬盤：績效摘要藏在最新一筆 quant 紀錄的 paper 欄；交易明細讀 paper_trades.json
   const lastRec = (quant.history||[]).slice(-1)[0];
   renderPaper(lastRec && lastRec.paper);
+  if(!isDemo && lastRec && lastRec.price!=null) calSetLivePrice(lastRec.price);
   const paperTrades = (configured && !isDemo) ? await tryFetch(CONFIG.paperTradesFile) : null;
   renderPaperTrades(paperTrades);
 
@@ -866,6 +1025,105 @@ async function cgLoadRange(){
   renderCgRows(rows, `${s} ~ ${e}，共 ${rows.length} 筆${miss}`);
 }
 
+// ====== 配置計算機（核心＋衛星＋熊市斷路器）======
+const cal$ = id => document.getElementById(id);
+const calNT = n => 'NT$' + Math.round(n).toLocaleString('zh-TW');
+const calP2 = n => Number(n).toFixed(2);
+let calPriceDirty = false;   // 使用者手動改過價格後就不再自動覆蓋
+
+function calSetLivePrice(p){
+  if(calPriceDirty) return;
+  cal$('calPx').value = calP2(p);
+  cal$('calClose').value = calP2(p);
+  calRun();
+}
+
+function calRun(){
+  const cap=+cal$('calCap').value||0, px=+cal$('calPx').value||1;
+  let corePct=Math.max(0,+cal$('calCore').value||0), satPct=Math.max(0,+cal$('calSat').value||0);
+  if(corePct+satPct>100) satPct=100-corePct;
+  const cashPct=100-corePct-satPct;
+  const step=(+cal$('calStep').value||4)/100, tp=(+cal$('calTp').value||5)/100, depth=(+cal$('calDepth').value||30)/100;
+
+  const coreAmt=cap*corePct/100, satAmt=cap*satPct/100, cashAmt=cap*cashPct/100;
+  const coreSh=Math.floor(coreAmt/px);
+
+  // 網格層數：每格 = 上一格 ×(1-step)，鋪到累積跌幅超過 depth 為止
+  const levels=[];
+  for(let k=1;k<=40;k++){
+    const p=px*Math.pow(1-step,k);
+    if(1-p/px>depth+1e-9) break;
+    levels.push(p);
+  }
+  const L=levels.length, unit=L?satAmt/L:0;
+
+  cal$('calAllocSub').textContent=`總資金 ${calNT(cap)}｜核心 ${corePct}% ＋ 衛星 ${satPct}% ＋ 現金 ${cashPct}%`;
+  cal$('calCoreAmt').textContent=calNT(coreAmt);
+  cal$('calCoreNote').textContent=`以現價 ${calP2(px)} 約可買 ${coreSh.toLocaleString('zh-TW')} 股（${Math.floor(coreSh/1000)} 張 ${coreSh%1000} 股）`;
+  cal$('calSatAmt').textContent=calNT(satAmt);
+  cal$('calSatNote').textContent=`分 ${L} 格，每格 ${calNT(unit)}；跌 ${(step*100).toFixed(1)}% 買一格`;
+  cal$('calCashAmt').textContent=calNT(cashAmt);
+
+  const bar=cal$('calBar'); bar.innerHTML='';
+  [[corePct,'core','核心'],[satPct,'sat','衛星'],[cashPct,'cash','現金']].forEach(([p,c,n])=>{
+    if(p<=0)return;
+    const d=document.createElement('div'); d.className=c; d.style.flex=p;
+    d.textContent=p>=12?`${n} ${p}%`:''; d.title=`${n} ${p}%`; bar.appendChild(d);
+  });
+
+  const tb=cal$('calLadder'); tb.innerHTML='';
+  let cum=0,cumSh=0;
+  levels.forEach((p,i)=>{
+    const sh=Math.floor(unit/p); cum+=unit; cumSh+=sh;
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td>第${i+1}格</td><td>${calP2(p)}</td><td>−${((1-p/px)*100).toFixed(1)}%</td>
+      <td>${calNT(unit)}</td><td>${sh.toLocaleString('zh-TW')}股</td><td>${calP2(p*(1+tp))}</td>
+      <td>${calNT(cum)}</td><td>${calP2(cum/cumSh)}</td>
+      <td><span class="cal-cumbar" style="width:${Math.round(cum/satAmt*56)||0}px"></span>${Math.round(cum/satAmt*100)}%</td>`;
+    tb.appendChild(tr);
+  });
+  const deepest=levels[L-1]||px;
+  cal$('calLadderNote').textContent=`最深一格在 ${calP2(deepest)}（距現價 −${((1-deepest/px)*100).toFixed(1)}%）。彈藥只鋪到 −${(depth*100).toFixed(0)}%：更深代表結構可能已破壞，交給燈號處理，不是繼續加碼。`;
+
+  // 燈號判定
+  const c=+cal$('calClose').value, ma=+cal$('calMa60').value, maP=+cal$('calMa60p').value,
+        hi=+cal$('calHigh').value, tw=+cal$('calTwii').value, twMa=+cal$('calTwiiMa').value,
+        consec=cal$('calConsec').checked;
+  const dd=c/hi-1, twiiGap=tw/twMa-1;
+  const below=c<ma, slopeDown=ma<maP;
+  const red=(tw<twMa*0.97)||(dd<=-0.20);
+  const orange=!red&&below&&consec&&slopeDown;
+  const yellow=!red&&!orange&&(below||slopeDown);
+
+  cal$('calDD').textContent=`${(dd*100).toFixed(1)}%`;
+  cal$('calRedPx').textContent=`${calP2(hi*0.8)} ${c<hi*0.8?'已跌破':''}`;
+  cal$('calTwiiGap').textContent=`${(twiiGap*100).toFixed(1)}%`;
+  cal$('calTwiiRed').textContent=`${Math.round(twMa*0.97).toLocaleString('zh-TW')} ${tw<twMa*0.97?'已跌破':''}`;
+
+  ['calLg','calLy','calLo','calLr'].forEach(x=>cal$(x).classList.remove('active'));
+  let title,text,color;
+  if(red){cal$('calLr').classList.add('active');color='var(--red)';title='🔴 紅燈——熊市條件成立';
+    text=`距高點回撤 ${(dd*100).toFixed(1)}%${dd<=-0.2?'（已破 −20% 紅線）':''}${tw<twMa*0.97?'、大盤跌破季線逾 3%':''}。持有部位：全部出場（含核心）。空手：不得進場，等回場條件。`;}
+  else if(orange){cal$('calLo').classList.add('active');color='var(--orange)';title='🟠 橘燈——結構破壞';
+    text='衛星庫存全部出清（含虧損格），核心保留、密切觀察。';}
+  else if(yellow){cal$('calLy').classList.add('active');color='var(--amber)';title='🟡 黃燈——停止加碼';
+    text=below?'收盤已低於季線：衛星只賣不買，核心不動。':'季線動能轉弱：衛星只賣不買，核心不動。';}
+  else{cal$('calLg').classList.add('active');color='var(--green)';title='🟢 綠燈——正常運作';
+    text='結構完好：核心持有，衛星網格照表操作。';}
+  cal$('calBDot').style.background=color;
+  cal$('calBTitle').textContent=title;
+  cal$('calBText').innerHTML=`<span class="nums">00631L ${calP2(c)}｜季線 ${calP2(ma)}（${slopeDown?'下彎':'上彎'}）｜TWII ${Math.round(tw).toLocaleString('zh-TW')}</span>　${text}`;
+}
+
+function calInit(){
+  ['calCap','calPx','calCore','calSat','calStep','calTp','calDepth',
+   'calClose','calMa60','calMa60p','calHigh','calTwii','calTwiiMa'].forEach(id=>
+    cal$(id).addEventListener('input',calRun));
+  ['calPx','calClose'].forEach(id=>cal$(id).addEventListener('input',()=>{calPriceDirty=true;}));
+  cal$('calConsec').addEventListener('change',calRun);
+  calRun();
+}
+
 const _rb = document.getElementById("refreshBtn");
 _rb.addEventListener("click", async ()=>{
   _rb.disabled = true; _rb.textContent = "↻ 更新中…";
@@ -875,8 +1133,10 @@ _rb.addEventListener("click", async ()=>{
 document.getElementById("tabClaude").addEventListener("click", ()=>switchView("claude"));
 document.getElementById("tabGemini").addEventListener("click", ()=>switchView("gemini"));
 document.getElementById("tabChatgpt").addEventListener("click", ()=>switchView("chatgpt"));
+document.getElementById("tabCalc").addEventListener("click", ()=>switchView("calc"));
 switchView(localStorage.getItem("strat") || "claude");
 initArchive();
+calInit();
 initGemArchive();
 initCgArchive();
 load();
