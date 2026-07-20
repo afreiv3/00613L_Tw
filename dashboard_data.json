@@ -1,20 +1,20 @@
 {
-  "updated": "2026-07-20 12:15 (Taipei)",
+  "updated": "2026-07-20 12:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
-      "time": "12:15",
-      "price": 32.71,
-      "score": 45,
+      "time": "12:30",
+      "price": 32.55,
+      "score": 42,
       "zone": "amber",
-      "quant_sum": 45,
+      "quant_sum": 42,
       "ai_sum": 0,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 20,
+          "pts": 10.0,
           "max": 20,
-          "note": "現價守在開盤之上(開+1.6%) → 有利"
+          "note": "開+1.6%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 0,
@@ -22,19 +22,19 @@
           "note": "SOX費半本週重挫12.5%正式進入熊市（自6/22高點跌逾20%）；Kimi K3觸發DeepSeek 2.0效應，NVDA跌2.21%、TSM ADR週跌逾7%，板塊全面轉弱無偏強跡象，0分"
         },
         "entry": {
-          "pts": 0,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價在區間上緣(76%) → 屬追高"
+          "note": "現價在區間中段(64%)"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量1.1倍 → 正常"
+          "note": "推估量約均量1.0倍 → 正常"
         },
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+0.98%) → 有利"
+          "note": "現價在VWAP之上(+0.47%) → 有利"
         },
         "macro": {
           "pts": 0,
