@@ -4,9 +4,9 @@
   "history": [
     {
       "date": "2026-07-20",
-      "time": "13:00",
-      "price": 32.78,
-      "tier1": 45,
+      "time": "13:15",
+      "price": 32.65,
+      "tier1": 35,
       "ai_index": 62.5,
       "target": 0.0,
       "zone": "red",
@@ -41,7 +41,7 @@
         "trades": 0,
         "max_asset": 1000000,
         "frenzy_days": 0,
-        "tier1": 45,
+        "tier1": 35,
         "ai_index": 62.5,
         "target": 0.0,
         "zone": "red",
