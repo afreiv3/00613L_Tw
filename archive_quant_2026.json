@@ -1,350 +1,14 @@
 {
   "year": "2026",
-  "count": 6,
+  "count": 1,
   "history": [
     {
-      "date": "2026-07-13",
-      "time": "15:51",
-      "price": 36.86,
-      "score": 50,
-      "zone": "amber",
-      "quant_sum": 22,
-      "ai_sum": 28,
-      "ai_ok": true,
-      "factors": {
-        "pattern": {
-          "pts": 0,
-          "max": 20,
-          "note": "開高(+2.1%)走低、吐回90%漲幅 → 不利"
-        },
-        "sector": {
-          "pts": 15,
-          "max": 20,
-          "note": "今日台積電+45收2,460（+1.86%），台股颱風補漲半導體板塊全面偏強；SOX 7/10收12,967（NVDA+4%）方向正面，惟距6月高峰-11.5%仍屬修復格局，給15分"
-        },
-        "entry": {
-          "pts": 15,
-          "max": 15,
-          "note": "現價近今日低點(區間18%) → 接近支撐"
-        },
-        "volume": {
-          "pts": 7.5,
-          "max": 15,
-          "note": "推估量約均量0.6倍 → 偏離"
-        },
-        "vwap": {
-          "pts": 0,
-          "max": 10,
-          "note": "現價在VWAP之下(-1.30%) → 弱勢"
-        },
-        "macro": {
-          "pts": 5,
-          "max": 10,
-          "note": "WTI $72偏高（美伊衝突）、9月升息機率64%鷹派、10Y殖利率4.56%；川普7/10提和談油價略回落，整體宏觀壓力明確但未達系統性危機，給5分"
-        },
-        "trend": {
-          "pts": 8,
-          "max": 10,
-          "note": "TAIEX收約46,140站回46K、清楚位於季線（估44,000-45,000）之上，台積電強勁6月營收確認多頭基本面；外資連6賣後今日籌碼動向為後續關鍵，結構暫強，給8分"
-        }
-      },
-      "paper": {
-        "cash": 976188,
-        "equity": 976188,
-        "market_value": 0,
-        "return_pct": -2.38,
-        "holding": false,
-        "position": null,
-        "shares": 0,
-        "avg_cost": null,
-        "unrealized": 0,
-        "unrealized_pct": 0,
-        "trades": 6,
-        "wins": 1,
-        "win_rate": 16.7,
-        "realized_pnl": -23812
-      }
-    },
-    {
-      "date": "2026-07-14",
-      "time": "14:29",
-      "price": 35.88,
-      "score": 44,
-      "zone": "amber",
-      "quant_sum": 35,
-      "ai_sum": 9,
-      "ai_ok": true,
-      "factors": {
-        "pattern": {
-          "pts": 10.0,
-          "max": 20,
-          "note": "開-0.9%、小幅回落，型態中性"
-        },
-        "sector": {
-          "pts": 3,
-          "max": 20,
-          "note": "SOX費半7/13估跌逾3%（SK Hynix-15.4%崩跌引爆全球記憶體賣壓，AVGO軟指引持續），台積電今日-0.82%相對抗跌但板塊整體嚴重偏弱，給3分"
-        },
-        "entry": {
-          "pts": 7.5,
-          "max": 15,
-          "note": "現價在區間中段(65%)"
-        },
-        "volume": {
-          "pts": 7.5,
-          "max": 15,
-          "note": "推估量約均量1.6倍 → 偏離"
-        },
-        "vwap": {
-          "pts": 10,
-          "max": 10,
-          "note": "現價在VWAP之上(+1.56%) → 有利"
-        },
-        "macro": {
-          "pts": 2,
-          "max": 10,
-          "note": "Trump重啟伊朗霍爾木茲封鎖WTI+5.3%至$75.21，通脹重燃+10Y殖利率~4.54%高位，Fed年底升息機率升溫，系統性風險顯著升溫，給2分"
-        },
-        "trend": {
-          "pts": 4,
-          "max": 10,
-          "note": "TWII收44,561貼近季線估算下緣（~44,500，Yahoo 403資料不足以估算值），月線估算~45,000已跌破，外資持續賣超，結構明確轉弱，給4分"
-        }
-      },
-      "paper": {
-        "cash": 976188,
-        "equity": 976188,
-        "market_value": 0,
-        "return_pct": -2.38,
-        "holding": false,
-        "position": null,
-        "shares": 0,
-        "avg_cost": null,
-        "unrealized": 0,
-        "unrealized_pct": 0,
-        "trades": 6,
-        "wins": 1,
-        "win_rate": 16.7,
-        "realized_pnl": -23812
-      }
-    },
-    {
-      "date": "2026-07-15",
-      "time": "14:31",
-      "price": 37.04,
-      "score": 66,
-      "zone": "amber",
-      "quant_sum": 38,
-      "ai_sum": 29,
-      "ai_ok": true,
-      "factors": {
-        "pattern": {
-          "pts": 20,
-          "max": 20,
-          "note": "現價守在開盤之上(開+1.6%) → 有利"
-        },
-        "sector": {
-          "pts": 16,
-          "max": 20,
-          "note": "TSMC今日收2,440（+0.83%），記憶體族群全面漲停，ASML Q2財報大超並調升全年至€43-45B指引；半導體板塊今日偏強；外資持續淨賣（連八賣）稍扣分，給16分"
-        },
-        "entry": {
-          "pts": 0,
-          "max": 15,
-          "note": "現價在區間上緣(78%) → 屬追高"
-        },
-        "volume": {
-          "pts": 7.5,
-          "max": 15,
-          "note": "推估量約均量0.5倍 → 偏離"
-        },
-        "vwap": {
-          "pts": 10,
-          "max": 10,
-          "note": "現價在VWAP之上(+0.60%) → 有利"
-        },
-        "macro": {
-          "pts": 7,
-          "max": 10,
-          "note": "美6月CPI 3.5%大超（預期3.8%），Fed升息機率降至17%，Hormuz費用撤銷使WTI回落，ASML訂單確認AI需求不衰；10Y殖利率仍偏高（~4.5%），稍限評分，給7分"
-        },
-        "trend": {
-          "pts": 6,
-          "max": 10,
-          "note": "TAIEX估收45,380，有效守住季線（~44,500）支撐並顯著反彈，結算後期貨空單壓力部分消化；但外資連八賣結構性賣壓未解，仍存隱憂，給6分"
-        }
-      },
-      "paper": {
-        "cash": 682918,
-        "equity": 981905,
-        "market_value": 298987,
-        "return_pct": -1.81,
-        "holding": true,
-        "position": {
-          "shares": 8072,
-          "entry_price": 36.28,
-          "entry_date": "2026-07-15",
-          "entry_time": "09:30",
-          "cost": 293269.47,
-          "entry_score": 73,
-          "frac": 0.3
-        },
-        "shares": 8072,
-        "avg_cost": 36.28,
-        "unrealized": 5717,
-        "unrealized_pct": 1.95,
-        "trades": 6,
-        "wins": 1,
-        "win_rate": 16.7,
-        "realized_pnl": -23812
-      }
-    },
-    {
-      "date": "2026-07-16",
-      "time": "14:35",
-      "price": 37.19,
-      "score": 66,
-      "zone": "amber",
-      "quant_sum": 38,
-      "ai_sum": 28,
-      "ai_ok": true,
-      "factors": {
-        "pattern": {
-          "pts": 20,
-          "max": 20,
-          "note": "現價守在開盤之上(開-1.6%) → 有利"
-        },
-        "sector": {
-          "pts": 13,
-          "max": 20,
-          "note": "台積電今日收+1.23%至2,470，Q2法說淨利年增58.3%正向超預期，TSM ADR法說後夜盤+$4.00，預期明日強勢；但KOSPI-6%/Nikkei-2000+顯示全球晶片拋售壓力未消，記憶體族群（南亞科-4%+）持續承壓，板塊整體分歧偏強，給13分"
-        },
-        "entry": {
-          "pts": 0,
-          "max": 15,
-          "note": "現價在區間上緣(91%) → 屬追高"
-        },
-        "volume": {
-          "pts": 7.5,
-          "max": 15,
-          "note": "推估量約均量0.6倍 → 偏離"
-        },
-        "vwap": {
-          "pts": 10,
-          "max": 10,
-          "note": "現價在VWAP之上(+1.67%) → 有利"
-        },
-        "macro": {
-          "pts": 7,
-          "max": 10,
-          "note": "Fed褐皮書通膨趨緩（12地區價格漲幅全面持平/放緩），WTI$79-80穩定，10Y殖利率4.57%穩定；韓股熊市（-25%）帶來亞洲外溢風險，但台灣非記憶體主場且台積電基本面支撐，無系統性危機跡象，給7分"
-        },
-        "trend": {
-          "pts": 8,
-          "max": 10,
-          "note": "加權指數收45,489，高於季線估算（~44,500）約989點，站穩月線（~45,200估算），盤中-500點後強力回彈確認支撐有效；TSMC Q2法說正向為明日提供額外多頭動能，大盤結構健康，給8分"
-        }
-      },
-      "paper": {
-        "cash": 682918,
-        "equity": 983116,
-        "market_value": 300198,
-        "return_pct": -1.69,
-        "holding": true,
-        "position": {
-          "shares": 8072,
-          "entry_price": 36.28,
-          "entry_date": "2026-07-15",
-          "entry_time": "09:30",
-          "cost": 293269.47,
-          "entry_score": 73,
-          "frac": 0.3
-        },
-        "shares": 8072,
-        "avg_cost": 36.28,
-        "unrealized": 6928,
-        "unrealized_pct": 2.36,
-        "trades": 6,
-        "wins": 1,
-        "win_rate": 16.7,
-        "realized_pnl": -23812
-      }
-    },
-    {
-      "date": "2026-07-17",
-      "time": "14:30",
-      "price": 32.17,
-      "score": 29,
-      "zone": "red",
-      "quant_sum": 25,
-      "ai_sum": 4,
-      "ai_ok": true,
-      "factors": {
-        "pattern": {
-          "pts": 10.0,
-          "max": 20,
-          "note": "開-6.1%、小幅回落，型態中性"
-        },
-        "sector": {
-          "pts": 0,
-          "max": 20,
-          "note": "台積電Q3毛利率指引下調觸發「利多出盡」拋售，TSMC盤中跌逾5%、SOX前日-4.29%、聯發科/台達電各-8%，板塊全面重挫無偏強跡象，0分"
-        },
-        "entry": {
-          "pts": 15,
-          "max": 15,
-          "note": "現價近今日低點(區間0%) → 接近支撐"
-        },
-        "volume": {
-          "pts": 0,
-          "max": 15,
-          "note": "推估量約均量2.7倍 → 爆量(疑換手/出貨)"
-        },
-        "vwap": {
-          "pts": 0,
-          "max": 10,
-          "note": "現價在VWAP之下(-4.74%) → 弱勢"
-        },
-        "macro": {
-          "pts": 2,
-          "max": 10,
-          "note": "台積電資本支出激增600-640億美元引發毛利率下行擔憂，市場視為系統性壓力；10Y殖利率~4.60%（近高）、WTI~$78（中東地緣），整體風險環境偏緊，評2分"
-        },
-        "trend": {
-          "pts": 2,
-          "max": 10,
-          "note": "加權指數估收~43,000，跌破季線（~44,500）、月線（~45,200）、周線，外資連十賣累計逾4,534億元，00631L估跌逾11%，多方架構全面受損，評2分"
-        }
-      },
-      "paper": {
-        "cash": 962257,
-        "equity": 962257,
-        "market_value": 0,
-        "return_pct": -3.77,
-        "holding": false,
-        "position": null,
-        "shares": 0,
-        "avg_cost": null,
-        "unrealized": 0,
-        "unrealized_pct": 0,
-        "trades": 7,
-        "wins": 1,
-        "win_rate": 14.3,
-        "realized_pnl": -37743
-      }
-    },
-    {
       "date": "2026-07-20",
-<<<<<<< Updated upstream
-      "time": "11:01",
-      "price": 32.47,
-=======
-      "time": "11:02",
-      "price": 32.48,
->>>>>>> Stashed changes
-      "score": 35,
+      "time": "11:15",
+      "price": 32.65,
+      "score": 28,
       "zone": "red",
-      "quant_sum": 35,
+      "quant_sum": 28,
       "ai_sum": 0,
       "ai_ok": true,
       "factors": {
@@ -359,23 +23,19 @@
           "note": "SOX費半本週重挫12.5%正式進入熊市（自6/22高點跌逾20%）；Kimi K3觸發DeepSeek 2.0效應，NVDA跌2.21%、TSM ADR週跌逾7%，板塊全面轉弱無偏強跡象，0分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 0,
           "max": 15,
-          "note": "現價在區間中段(59%)"
+          "note": "現價在區間上緣(72%) → 屬追高"
         },
         "volume": {
           "pts": 7.5,
           "max": 15,
-          "note": "推估量約均量1.6倍 → 偏離"
+          "note": "推估量約均量1.5倍 → 偏離"
         },
         "vwap": {
           "pts": 10,
           "max": 10,
-<<<<<<< Updated upstream
-          "note": "現價在VWAP之上(+0.30%) → 有利"
-=======
-          "note": "現價在VWAP之上(+0.33%) → 有利"
->>>>>>> Stashed changes
+          "note": "現價在VWAP之上(+0.82%) → 有利"
         },
         "macro": {
           "pts": 0,
@@ -389,20 +49,20 @@
         }
       },
       "paper": {
-        "cash": 962257,
-        "equity": 962257,
+        "cash": 1000000,
+        "equity": 1000000,
         "market_value": 0,
-        "return_pct": -3.77,
+        "return_pct": 0.0,
         "holding": false,
         "position": null,
         "shares": 0,
         "avg_cost": null,
         "unrealized": 0,
         "unrealized_pct": 0,
-        "trades": 7,
-        "wins": 1,
-        "win_rate": 14.3,
-        "realized_pnl": -37743
+        "trades": 0,
+        "wins": 0,
+        "win_rate": 0,
+        "realized_pnl": 0
       }
     }
   ]
