@@ -4,18 +4,18 @@
   "history": [
     {
       "date": "2026-07-20",
-      "time": "12:30",
-      "price": 32.55,
-      "score": 42,
-      "zone": "amber",
-      "quant_sum": 42,
+      "time": "12:45",
+      "price": 32.4,
+      "score": 32,
+      "zone": "red",
+      "quant_sum": 32,
       "ai_sum": 0,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 10.0,
+          "pts": 0,
           "max": 20,
-          "note": "開+1.6%、小幅回落，型態中性"
+          "note": "開高(+1.6%)走低、吐回54%漲幅 → 不利"
         },
         "sector": {
           "pts": 0,
@@ -25,7 +25,7 @@
         "entry": {
           "pts": 7.5,
           "max": 15,
-          "note": "現價在區間中段(64%)"
+          "note": "現價在區間中段(53%)"
         },
         "volume": {
           "pts": 15,
@@ -35,7 +35,7 @@
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+0.47%) → 有利"
+          "note": "現價在VWAP之上(+0.01%) → 有利"
         },
         "macro": {
           "pts": 0,
