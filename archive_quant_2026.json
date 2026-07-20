@@ -335,8 +335,13 @@
     },
     {
       "date": "2026-07-20",
+<<<<<<< Updated upstream
       "time": "11:01",
       "price": 32.47,
+=======
+      "time": "11:02",
+      "price": 32.48,
+>>>>>>> Stashed changes
       "score": 35,
       "zone": "red",
       "quant_sum": 35,
@@ -366,7 +371,11 @@
         "vwap": {
           "pts": 10,
           "max": 10,
+<<<<<<< Updated upstream
           "note": "現價在VWAP之上(+0.30%) → 有利"
+=======
+          "note": "現價在VWAP之上(+0.33%) → 有利"
+>>>>>>> Stashed changes
         },
         "macro": {
           "pts": 0,

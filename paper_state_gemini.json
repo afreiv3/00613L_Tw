@@ -6,7 +6,11 @@
   "frenzy_days": 0,
   "last_date": "2026-07-20",
   "trades": 15,
+<<<<<<< Updated upstream
   "updated": "2026-07-20 11:01",
+=======
+  "updated": "2026-07-20 11:02",
+>>>>>>> Stashed changes
   "last_trade_date": "2026-07-13",
   "cost_basis": 0.0
 }
