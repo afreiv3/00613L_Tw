@@ -4,11 +4,11 @@
   "history": [
     {
       "date": "2026-07-20",
-      "time": "11:15",
-      "price": 32.65,
-      "score": 28,
-      "zone": "red",
-      "quant_sum": 28,
+      "time": "11:30",
+      "price": 32.48,
+      "score": 42,
+      "zone": "amber",
+      "quant_sum": 42,
       "ai_sum": 0,
       "ai_ok": true,
       "factors": {
@@ -23,19 +23,19 @@
           "note": "SOX費半本週重挫12.5%正式進入熊市（自6/22高點跌逾20%）；Kimi K3觸發DeepSeek 2.0效應，NVDA跌2.21%、TSM ADR週跌逾7%，板塊全面轉弱無偏強跡象，0分"
         },
         "entry": {
-          "pts": 0,
-          "max": 15,
-          "note": "現價在區間上緣(72%) → 屬追高"
-        },
-        "volume": {
           "pts": 7.5,
           "max": 15,
-          "note": "推估量約均量1.5倍 → 偏離"
+          "note": "現價在區間中段(59%)"
+        },
+        "volume": {
+          "pts": 15,
+          "max": 15,
+          "note": "推估量約均量1.4倍 → 正常"
         },
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+0.82%) → 有利"
+          "note": "現價在VWAP之上(+0.28%) → 有利"
         },
         "macro": {
           "pts": 0,
