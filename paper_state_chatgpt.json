@@ -18,7 +18,7 @@
   "last_trade_date": "",
   "last_reduce_date": "",
   "last_action": "",
-  "last_action_reason": "",
+  "last_action_reason": "DATA_INVALID_NO_TRADE",
   "trades": 0,
-  "updated": "2026-07-20 15:47"
+  "updated": "2026-07-21 09:00"
 }
