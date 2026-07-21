@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21 11:00 (Taipei)",
+  "updated": "2026-07-21 11:15 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -66,8 +66,8 @@
     },
     {
       "date": "2026-07-21",
-      "time": "11:00",
-      "price": 33.81,
+      "time": "11:15",
+      "price": 33.82,
       "score": 65,
       "zone": "amber",
       "quant_sum": 45,
@@ -97,7 +97,7 @@
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+0.73%) → 有利"
+          "note": "現價在VWAP之上(+0.69%) → 有利"
         },
         "macro": {
           "pts": 3,
