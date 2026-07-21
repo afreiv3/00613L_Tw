@@ -1,33 +1,32 @@
 {
-  "date": "2026-07-20",
-  "generated_at": "2026-07-20 12:07",
+  "date": "2026-07-21",
+  "generated_at": "2026-07-21 11:48",
   "model": "gemini-2.5-flash",
   "factors": {
     "sector": 12.0,
-    "macro": 6.0,
-    "trend": 7.0
+    "macro": 4.0,
+    "trend": 5.0
   },
-  "ai_sentiment_index": 62.5,
-  "summary": "全球股市因油價上漲和晶片股下跌而表現不穩，但台積電的強勁財報為半導體產業帶來一線希望。",
+  "ai_sentiment_index": 52.5,
+  "summary": "全球股市因中東地緣政治緊張和企業財報季影響而下跌，但半導體類股表現分歧，韓國股市半導體股則強勁上漲。",
   "news_zh": [
-    "亞洲股市因油價上漲和即將公布的財報而表現不穩。",
-    "中國證券監管機構將召開市場穩定會議。",
-    "晶片股下跌導致股市收低，標普500指數下跌1%。",
-    "台積電連續第五個季度實現創紀錄利潤，並計劃未來三年大幅增加資本支出，帶動香港晶片股上漲。",
-    "由於晶片股拋售，中芯國際86億美元的上海IPO機構需求受損。",
-    "Cathie Wood出售了1170萬美元的下跌中的半導體股票。"
+    "華爾街股市下跌，市場關注伊朗局勢與財報季。",
+    "歐洲股市因美伊緊張局勢而走低，科技股財報即將公布。",
+    "中國證券監管機構承諾在市場大跌後維持穩定。",
+    "半導體類股表現不一，部分上漲，但整體市場仍受地緣政治影響。",
+    "韓國KOSPI指數上漲3%，半導體類股飆升。"
   ],
   "news": [
-    "[Reuters] Asia shares shaky as oil climbs, earnings loom - Reuters - Asia shares shaky as oil climbs, earnings loom&nbsp;&nbsp;Reuters",
-    "[Reuters] China securities regulator to hold market stability meeting, state media reports - Reuters - China securities regulator to hold market stability meeting, state media reports&nbsp;&nbsp;Reuters",
-    "[Reuters] Can Robinhood Stock Surge Again in 2026? - TradingKey - Can Robinhood Stock Surge Again in 2026?&nbsp;&nbsp;TradingKey",
-    "[Reuters] PBOC is expected to set the USD/CNY reference rate at 6.7821 – Reuters estimate - investingLive - PBOC is expected to set the USD/CNY reference rate at 6.7821 – Reuters estimate&nbsp;&nbsp;investingLive",
+    "[Reuters] Wall Street indexes fall, with Iran and earnings season in focus - Reuters - Wall Street indexes fall, with Iran and earnings season in focus&nbsp;&nbsp;Reuters",
+    "[Reuters] How PayPal went from Wall Street favorite to unwilling merger target - Reuters - How PayPal went from Wall Street favorite to unwilling merger target&nbsp;&nbsp;Reuters",
+    "[Reuters] European shares tick lower as investors assess US-Iran jitters; tech earnings loom - Reuters - European shares tick lower as investors assess US-Iran jitters; tech earnings loom&nbsp;&nbsp;Reuters",
+    "[Reuters] China's securities regulator vows to maintain stability after market rout - Reuters - China's securities regulator vows to maintain stability after market rout&nbsp;&nbsp;Reuters",
+    "[Reuters] Stock market sentiment is becoming more bearish, says researcher - Reuters - Stock market sentiment is becoming more bearish, says researcher&nbsp;&nbsp;Reuters",
     "[Reuters] What is China's next surprise for oil markets? Lower imports, higher fuel exports? - Reuters - What is China's next surprise for oil markets? Lower imports, higher fuel exports?&nbsp;&nbsp;Reuters",
-    "[Reuters] Samsung reportedly cuts some U.S. jobs, offers relocations ahead of HQ move - CNBC - Samsung reportedly cuts some U.S. jobs, offers relocations ahead of HQ move&nbsp;&nbsp;CNBC",
-    "[Reuters] Institutional demand for CXMT’s $8.6 billion Shanghai IPO dented by chip stock selloff By Reuters - Investing.com - Institutional demand for CXMT’s $8.6 billion Shanghai IPO dented by chip stock selloff By Reuters&nbsp;&nbsp;Investing.com",
-    "[Reuters] Oil Volatility: Historic Rise Due to Global Tension - Inspenet - Oil Volatility: Historic Rise Due to Global Tension&nbsp;&nbsp;Inspenet",
-    "[Semis] Stock market closes lower as chip stocks slide; S&P 500 falls 1% - eciks.org - Stock market closes lower as chip stocks slide; S&P 500 falls 1%&nbsp;&nbsp;eciks.org",
-    "[Semis] Chinese AI Model Kimi K3 Jolts U.S. Semiconductor Stocks - 조선일보 - Chinese AI Model Kimi K3 Jolts U.S. Semiconductor Stocks&nbsp;&nbsp;조선일보"
+    "[Reuters] Korean stock volatility comes to America. Can Wall Street take the heat? - Reuters - Korean stock volatility comes to America. Can Wall Street take the heat?&nbsp;&nbsp;Reuters",
+    "[Reuters] Trading Day: War clouds darken - Reuters - Trading Day: War clouds darken&nbsp;&nbsp;Reuters",
+    "[Semis] Stock market today: Dow, S&P 500, Nasdaq mixed as chip stocks rise in wait for Big Tech earnings - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq mixed as chip stocks rise in wait for Big Tech earnings&nbsp;&nbsp;Yahoo Finance",
+    "[Semis] Tech stocks to buy after the big semiconductor pullback, according to UBS - CNBC - Tech stocks to buy after the big semiconductor pullback, according to UBS&nbsp;&nbsp;CNBC"
   ],
   "debug_error": ""
 }
