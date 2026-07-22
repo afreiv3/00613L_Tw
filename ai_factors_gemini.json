@@ -1,32 +1,32 @@
 {
-  "date": "2026-07-21",
-  "generated_at": "2026-07-21 11:48",
+  "date": "2026-07-22",
+  "generated_at": "2026-07-22 11:49",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 12.0,
-    "macro": 4.0,
-    "trend": 5.0
+    "sector": 18.0,
+    "macro": 7.0,
+    "trend": 8.0
   },
-  "ai_sentiment_index": 52.5,
-  "summary": "全球股市因中東地緣政治緊張和企業財報季影響而下跌，但半導體類股表現分歧，韓國股市半導體股則強勁上漲。",
+  "ai_sentiment_index": 82.5,
+  "summary": "美國股市因晶片股復甦而上漲，亞洲股市也隨之上揚，儘管日圓貶值引發干預警報，但整體市場情緒偏向樂觀。",
   "news_zh": [
-    "華爾街股市下跌，市場關注伊朗局勢與財報季。",
-    "歐洲股市因美伊緊張局勢而走低，科技股財報即將公布。",
-    "中國證券監管機構承諾在市場大跌後維持穩定。",
-    "半導體類股表現不一，部分上漲，但整體市場仍受地緣政治影響。",
-    "韓國KOSPI指數上漲3%，半導體類股飆升。"
+    "美國股市因晶片股復甦而收高，市場關注即將公布的財報。",
+    "亞洲股市延續漲勢，受美國市場反彈及晶片股領漲帶動。",
+    "日圓兌美元貶破163關卡，引發市場對日本當局可能干預匯市的警惕。",
+    "日本財務大臣表示，若有需要，日本已準備好對外匯市場採取果斷行動。",
+    "摩根大通等美國銀行將協助日本5500億美元的美國投資計畫融資。"
   ],
   "news": [
-    "[Reuters] Wall Street indexes fall, with Iran and earnings season in focus - Reuters - Wall Street indexes fall, with Iran and earnings season in focus&nbsp;&nbsp;Reuters",
-    "[Reuters] How PayPal went from Wall Street favorite to unwilling merger target - Reuters - How PayPal went from Wall Street favorite to unwilling merger target&nbsp;&nbsp;Reuters",
-    "[Reuters] European shares tick lower as investors assess US-Iran jitters; tech earnings loom - Reuters - European shares tick lower as investors assess US-Iran jitters; tech earnings loom&nbsp;&nbsp;Reuters",
-    "[Reuters] China's securities regulator vows to maintain stability after market rout - Reuters - China's securities regulator vows to maintain stability after market rout&nbsp;&nbsp;Reuters",
-    "[Reuters] Stock market sentiment is becoming more bearish, says researcher - Reuters - Stock market sentiment is becoming more bearish, says researcher&nbsp;&nbsp;Reuters",
-    "[Reuters] What is China's next surprise for oil markets? Lower imports, higher fuel exports? - Reuters - What is China's next surprise for oil markets? Lower imports, higher fuel exports?&nbsp;&nbsp;Reuters",
-    "[Reuters] Korean stock volatility comes to America. Can Wall Street take the heat? - Reuters - Korean stock volatility comes to America. Can Wall Street take the heat?&nbsp;&nbsp;Reuters",
-    "[Reuters] Trading Day: War clouds darken - Reuters - Trading Day: War clouds darken&nbsp;&nbsp;Reuters",
-    "[Semis] Stock market today: Dow, S&P 500, Nasdaq mixed as chip stocks rise in wait for Big Tech earnings - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq mixed as chip stocks rise in wait for Big Tech earnings&nbsp;&nbsp;Yahoo Finance",
-    "[Semis] Tech stocks to buy after the big semiconductor pullback, according to UBS - CNBC - Tech stocks to buy after the big semiconductor pullback, according to UBS&nbsp;&nbsp;CNBC"
+    "[Reuters] EXCLUSIVE: JPMorgan, other US banks set to help finance Japan's $550 billion US investment plan, sources say - Reuters - EXCLUSIVE: JPMorgan, other US banks set to help finance Japan's $550 billion US investment plan, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] Asian stocks extend gains as US rebounds, chipmakers lead - Reuters - Asian stocks extend gains as US rebounds, chipmakers lead&nbsp;&nbsp;Reuters",
+    "[Reuters] Breakingviews - All-day stock trading is risky inevitability - Reuters - Breakingviews - All-day stock trading is risky inevitability&nbsp;&nbsp;Reuters",
+    "[Reuters] US senator urges Wall Street to reject offer of paid early access to Trump posts - Reuters - US senator urges Wall Street to reject offer of paid early access to Trump posts&nbsp;&nbsp;Reuters",
+    "[Reuters] Wall St ends higher on chip stocks recovery; earnings in focus - Reuters - Wall St ends higher on chip stocks recovery; earnings in focus&nbsp;&nbsp;Reuters",
+    "[Reuters] Yen slides past 163, raising intervention alert - Reuters - Yen slides past 163, raising intervention alert&nbsp;&nbsp;Reuters",
+    "[Reuters] Goldman Sachs creates private markets platform for wealthy clients, memo shows - Reuters - Goldman Sachs creates private markets platform for wealthy clients, memo shows&nbsp;&nbsp;Reuters",
+    "[Reuters] Japan ready to take decisive action on forex if needed, finance minister says - Reuters - Japan ready to take decisive action on forex if needed, finance minister says&nbsp;&nbsp;Reuters",
+    "[Semis] Stock market today: Nasdaq leads Dow, S&P 500 higher as chip stocks revive - Yahoo Finance - Stock market today: Nasdaq leads Dow, S&P 500 higher as chip stocks revive&nbsp;&nbsp;Yahoo Finance",
+    "[Semis] Wall St ends higher on chip stocks recovery; earnings in focus - Reuters - Wall St ends higher on chip stocks recovery; earnings in focus&nbsp;&nbsp;Reuters"
   ],
   "debug_error": ""
 }
