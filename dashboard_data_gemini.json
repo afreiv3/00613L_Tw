@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22 11:45 (Taipei)",
+  "updated": "2026-07-22 12:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -97,19 +97,30 @@
     },
     {
       "date": "2026-07-22",
-      "time": "11:45",
-      "price": 35.17,
+      "time": "12:00",
+      "price": 35.12,
       "tier1": 40,
-      "ai_index": 50.0,
+      "ai_index": 82.5,
       "target": 0.0,
       "zone": "red",
       "zone_label": "⚪ 觀望（等好買點＋趨勢）",
       "gate_open": false,
       "market_ok": true,
       "asset_trend_ok": false,
-      "ai_ok": false,
-      "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
-      "news": [],
+      "ai_ok": true,
+      "summary": "美國股市因晶片股復甦而上漲，亞洲股市也隨之上揚，儘管日圓貶值引發干預警報，但整體市場情緒偏向樂觀。",
+      "news": [
+        "[Reuters] EXCLUSIVE: JPMorgan, other US banks set to help finance Japan's $550 billion US investment plan, sources say - Reuters - EXCLUSIVE: JPMorgan, other US banks set to help finance Japan's $550 billion US investment plan, sources say&nbsp;&nbsp;Reuters",
+        "[Reuters] Asian stocks extend gains as US rebounds, chipmakers lead - Reuters - Asian stocks extend gains as US rebounds, chipmakers lead&nbsp;&nbsp;Reuters",
+        "[Reuters] Breakingviews - All-day stock trading is risky inevitability - Reuters - Breakingviews - All-day stock trading is risky inevitability&nbsp;&nbsp;Reuters",
+        "[Reuters] US senator urges Wall Street to reject offer of paid early access to Trump posts - Reuters - US senator urges Wall Street to reject offer of paid early access to Trump posts&nbsp;&nbsp;Reuters",
+        "[Reuters] Wall St ends higher on chip stocks recovery; earnings in focus - Reuters - Wall St ends higher on chip stocks recovery; earnings in focus&nbsp;&nbsp;Reuters",
+        "[Reuters] Yen slides past 163, raising intervention alert - Reuters - Yen slides past 163, raising intervention alert&nbsp;&nbsp;Reuters",
+        "[Reuters] Goldman Sachs creates private markets platform for wealthy clients, memo shows - Reuters - Goldman Sachs creates private markets platform for wealthy clients, memo shows&nbsp;&nbsp;Reuters",
+        "[Reuters] Japan ready to take decisive action on forex if needed, finance minister says - Reuters - Japan ready to take decisive action on forex if needed, finance minister says&nbsp;&nbsp;Reuters",
+        "[Semis] Stock market today: Nasdaq leads Dow, S&P 500 higher as chip stocks revive - Yahoo Finance - Stock market today: Nasdaq leads Dow, S&P 500 higher as chip stocks revive&nbsp;&nbsp;Yahoo Finance",
+        "[Semis] Wall St ends higher on chip stocks recovery; earnings in focus - Reuters - Wall St ends higher on chip stocks recovery; earnings in focus&nbsp;&nbsp;Reuters"
+      ],
       "paper": {
         "cash": 1000000,
         "shares": 0.0,
@@ -124,7 +135,7 @@
         "max_asset": 1000000,
         "frenzy_days": 0,
         "tier1": 40,
-        "ai_index": 50.0,
+        "ai_index": 82.5,
         "target": 0.0,
         "zone": "red",
         "zone_label": "⚪ 觀望（等好買點＋趨勢）",
