@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21 15:14 (Taipei)",
+  "updated": "2026-07-22 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -108,6 +108,69 @@
           "pts": 3,
           "max": 10,
           "note": "TAIEX收約42,450，仍在季線估算(~44,500)下方約5%；7/16至7/21三日跌幅約-7%，月線再度受考驗；台積電逆強但整體結構修復未完成，給3分"
+        }
+      },
+      "paper": {
+        "cash": 1000000,
+        "equity": 1000000,
+        "market_value": 0,
+        "return_pct": 0.0,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 0,
+        "wins": 0,
+        "win_rate": 0,
+        "realized_pnl": 0
+      }
+    },
+    {
+      "date": "2026-07-22",
+      "time": "09:00",
+      "price": null,
+      "score": 58,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 28,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 17,
+          "max": 20,
+          "note": "SOX +5.21%至12,356，NVDA $207.29強勁、AVGO Q3 AI指引$16B（+200% YoY），AI板塊全面回升，半導體主軸清晰偏強；台積電ADR $398.37仍受7/16財報資本支出顧慮壓制，稍扣3分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 4,
+          "max": 10,
+          "note": "美伊衝突第10天、WTI ~$82高位，10Y殖利率4.53-4.63%偏高，Fed 9月升息預期68%—三重壓力並存；市場情緒尚未崩潰但通膨+地緣雙重風險升溫，給4分"
+        },
+        "trend": {
+          "pts": 7,
+          "max": 10,
+          "note": "TAIEX 7/21收44,232.87（+4.20%），自7/17大崩後強力反彈，向上逼近季線估算（~44,500）；外資期貨空單7.6萬口為潛在壓力，尚未正式站穩季線，給7分"
         }
       },
       "paper": {
