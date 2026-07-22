@@ -130,18 +130,18 @@
     },
     {
       "date": "2026-07-22",
-      "time": "09:30",
-      "price": 35.7,
-      "score": 73,
-      "zone": "green",
-      "quant_sum": 45,
+      "time": "09:45",
+      "price": 35.34,
+      "score": 60,
+      "zone": "amber",
+      "quant_sum": 32,
       "ai_sum": 28,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 20,
+          "pts": 10.0,
           "max": 20,
-          "note": "現價守在開盤之上(開+3.6%) → 有利"
+          "note": "開+3.6%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 17,
@@ -149,19 +149,19 @@
           "note": "SOX +5.21%至12,356，NVDA $207.29強勁、AVGO Q3 AI指引$16B（+200% YoY），AI板塊全面回升，半導體主軸清晰偏強；台積電ADR $398.37仍受7/16財報資本支出顧慮壓制，稍扣3分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "現價在區間中段(60%)"
+          "note": "現價近今日低點(區間0%) → 接近支撐"
         },
         "volume": {
           "pts": 7.5,
           "max": 15,
-          "note": "推估量約均量1.5倍 → 偏離"
+          "note": "推估量約均量1.7倍 → 偏離"
         },
         "vwap": {
-          "pts": 10,
+          "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之上(+0.02%) → 有利"
+          "note": "現價在VWAP之下(-0.84%) → 弱勢"
         },
         "macro": {
           "pts": 4,
@@ -176,9 +176,9 @@
       },
       "paper": {
         "cash": 699585,
-        "equity": 999573,
-        "market_value": 299987,
-        "return_pct": -0.04,
+        "equity": 996547,
+        "market_value": 296962,
+        "return_pct": -0.35,
         "holding": true,
         "position": {
           "shares": 8403,
@@ -191,8 +191,8 @@
         },
         "shares": 8403,
         "avg_cost": 35.7,
-        "unrealized": -427,
-        "unrealized_pct": -0.14,
+        "unrealized": -3453,
+        "unrealized_pct": -1.15,
         "trades": 0,
         "wins": 0,
         "win_rate": 0,
