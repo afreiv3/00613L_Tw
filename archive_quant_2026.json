@@ -201,11 +201,11 @@
     },
     {
       "date": "2026-07-23",
-      "time": "10:15",
-      "price": 35.07,
-      "score": 57,
+      "time": "10:30",
+      "price": 34.96,
+      "score": 60,
       "zone": "amber",
-      "quant_sum": 35,
+      "quant_sum": 38,
       "ai_sum": 22,
       "ai_ok": true,
       "factors": {
@@ -220,9 +220,9 @@
           "note": "NVDA隔夜+3.26%為半導體板塊局部正面支撐，費半SOX方向偏強；但Nasdaq整體-0.57%小跌、Alphabet/Tesla盤後財報雙雙走跌，科技板塊分歧，非全面強勢，給12分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "現價在區間中段(33%)"
+          "note": "現價近今日低點(區間18%) → 接近支撐"
         },
         "volume": {
           "pts": 7.5,
@@ -230,9 +230,9 @@
           "note": "推估量約均量0.6倍 → 偏離"
         },
         "vwap": {
-          "pts": 10,
+          "pts": 5.0,
           "max": 10,
-          "note": "現價在VWAP之上(+0.02%) → 有利"
+          "note": "現價貼近VWAP(-0.27%)"
         },
         "macro": {
           "pts": 3,
@@ -247,9 +247,9 @@
       },
       "paper": {
         "cash": 699585,
-        "equity": 994279,
-        "market_value": 294693,
-        "return_pct": -0.57,
+        "equity": 993354,
+        "market_value": 293769,
+        "return_pct": -0.66,
         "holding": true,
         "position": {
           "shares": 8403,
@@ -262,8 +262,8 @@
         },
         "shares": 8403,
         "avg_cost": 35.7,
-        "unrealized": -5721,
-        "unrealized_pct": -1.9,
+        "unrealized": -6646,
+        "unrealized_pct": -2.21,
         "trades": 0,
         "wins": 0,
         "win_rate": 0,
