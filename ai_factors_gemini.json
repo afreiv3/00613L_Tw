@@ -1,32 +1,33 @@
 {
-  "date": "2026-07-22",
-  "generated_at": "2026-07-22 11:49",
+  "date": "2026-07-23",
+  "generated_at": "2026-07-23 11:47",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 18.0,
-    "macro": 7.0,
-    "trend": 8.0
+    "sector": 14.0,
+    "macro": 6.0,
+    "trend": 7.0
   },
-  "ai_sentiment_index": 82.5,
-  "summary": "美國股市因晶片股復甦而上漲，亞洲股市也隨之上揚，儘管日圓貶值引發干預警報，但整體市場情緒偏向樂觀。",
+  "ai_sentiment_index": 67.5,
+  "summary": "美國科技股財報後亞洲股市上漲，但那斯達克指數因油價上漲和聯準會升息預期而下跌。",
   "news_zh": [
-    "美國股市因晶片股復甦而收高，市場關注即將公布的財報。",
-    "亞洲股市延續漲勢，受美國市場反彈及晶片股領漲帶動。",
-    "日圓兌美元貶破163關卡，引發市場對日本當局可能干預匯市的警惕。",
-    "日本財務大臣表示，若有需要，日本已準備好對外匯市場採取果斷行動。",
-    "摩根大通等美國銀行將協助日本5500億美元的美國投資計畫融資。"
+    "美國科技股財報公布後，亞洲股市普遍上漲，油價創下六週新高。",
+    "那斯達克指數下滑，主要受油價上漲以及Alphabet和特斯拉財報公布前的觀望情緒影響。",
+    "伊朗危機加劇，市場預期聯準會升息的可能性增高，對牛市構成壓力。",
+    "盤中那斯達克指數下跌，儘管輝達表現強勁，仍未能提振道瓊指數，而Super Micro表現亮眼。",
+    "美國財政部官員對巴基斯坦的改革表示歡迎，並支持其重返資本市場。",
+    "亞洲富豪將體育贊助轉為股權投資，相關交易量創下歷史新高。"
   ],
   "news": [
-    "[Reuters] EXCLUSIVE: JPMorgan, other US banks set to help finance Japan's $550 billion US investment plan, sources say - Reuters - EXCLUSIVE: JPMorgan, other US banks set to help finance Japan's $550 billion US investment plan, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] Asian stocks extend gains as US rebounds, chipmakers lead - Reuters - Asian stocks extend gains as US rebounds, chipmakers lead&nbsp;&nbsp;Reuters",
-    "[Reuters] Breakingviews - All-day stock trading is risky inevitability - Reuters - Breakingviews - All-day stock trading is risky inevitability&nbsp;&nbsp;Reuters",
-    "[Reuters] US senator urges Wall Street to reject offer of paid early access to Trump posts - Reuters - US senator urges Wall Street to reject offer of paid early access to Trump posts&nbsp;&nbsp;Reuters",
-    "[Reuters] Wall St ends higher on chip stocks recovery; earnings in focus - Reuters - Wall St ends higher on chip stocks recovery; earnings in focus&nbsp;&nbsp;Reuters",
-    "[Reuters] Yen slides past 163, raising intervention alert - Reuters - Yen slides past 163, raising intervention alert&nbsp;&nbsp;Reuters",
-    "[Reuters] Goldman Sachs creates private markets platform for wealthy clients, memo shows - Reuters - Goldman Sachs creates private markets platform for wealthy clients, memo shows&nbsp;&nbsp;Reuters",
-    "[Reuters] Japan ready to take decisive action on forex if needed, finance minister says - Reuters - Japan ready to take decisive action on forex if needed, finance minister says&nbsp;&nbsp;Reuters",
-    "[Semis] Stock market today: Nasdaq leads Dow, S&P 500 higher as chip stocks revive - Yahoo Finance - Stock market today: Nasdaq leads Dow, S&P 500 higher as chip stocks revive&nbsp;&nbsp;Yahoo Finance",
-    "[Semis] Wall St ends higher on chip stocks recovery; earnings in focus - Reuters - Wall St ends higher on chip stocks recovery; earnings in focus&nbsp;&nbsp;Reuters"
+    "[Reuters] Asian stocks rise after US tech earnings, oil at six-week highs - Reuters - Asian stocks rise after US tech earnings, oil at six-week highs&nbsp;&nbsp;Reuters",
+    "[Reuters] Treasury's Bessent welcomes Pakistan's reforms, push to return to capital markets - Reuters - Treasury's Bessent welcomes Pakistan's reforms, push to return to capital markets&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: Alphabetting - Reuters - Morning Bid: Alphabetting&nbsp;&nbsp;Reuters",
+    "[Reuters] Raymond James profit rises on capital markets strength - Reuters - Raymond James profit rises on capital markets strength&nbsp;&nbsp;Reuters",
+    "[Reuters] Revolut starts share sale at $115 billion valuation, source says - Reuters - Revolut starts share sale at $115 billion valuation, source says&nbsp;&nbsp;Reuters",
+    "[Reuters] Asia's rich swap sponsorships for stakes in sports as dealmaking hits record - Reuters - Asia's rich swap sponsorships for stakes in sports as dealmaking hits record&nbsp;&nbsp;Reuters",
+    "[Reuters] Trading Day: $100 oil looms - Reuters - Trading Day: $100 oil looms&nbsp;&nbsp;Reuters",
+    "[Reuters] US aims for interim trade deals with Canada, Mexico by year-end - Reuters - US aims for interim trade deals with Canada, Mexico by year-end&nbsp;&nbsp;Reuters",
+    "[Semis] Stock market today: Dow, S&P 500, Nasdaq slip as oil prices rise, Alphabet and Tesla earnings loom - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq slip as oil prices rise, Alphabet and Tesla earnings loom&nbsp;&nbsp;Yahoo Finance",
+    "[Semis] Stock Market Today: Nasdaq Slides, Nvidia Can't Lift The Dow; Super Micro Shines - Investor's Business Daily - Stock Market Today: Nasdaq Slides, Nvidia Can't Lift The Dow; Super Micro Shines&nbsp;&nbsp;Investor's Business Daily"
   ],
   "debug_error": ""
 }
