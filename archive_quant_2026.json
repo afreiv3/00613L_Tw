@@ -201,8 +201,8 @@
     },
     {
       "date": "2026-07-23",
-      "time": "11:30",
-      "price": 34.54,
+      "time": "11:45",
+      "price": 34.55,
       "score": 54,
       "zone": "amber",
       "quant_sum": 32,
@@ -222,7 +222,7 @@
         "entry": {
           "pts": 15,
           "max": 15,
-          "note": "現價近今日低點(區間16%) → 接近支撐"
+          "note": "現價近今日低點(區間17%) → 接近支撐"
         },
         "volume": {
           "pts": 7.5,
@@ -232,7 +232,7 @@
         "vwap": {
           "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之下(-0.99%) → 弱勢"
+          "note": "現價在VWAP之下(-0.91%) → 弱勢"
         },
         "macro": {
           "pts": 3,
@@ -247,9 +247,9 @@
       },
       "paper": {
         "cash": 699585,
-        "equity": 989825,
-        "market_value": 290240,
-        "return_pct": -1.02,
+        "equity": 989909,
+        "market_value": 290324,
+        "return_pct": -1.01,
         "holding": true,
         "position": {
           "shares": 8403,
@@ -262,8 +262,8 @@
         },
         "shares": 8403,
         "avg_cost": 35.7,
-        "unrealized": -10175,
-        "unrealized_pct": -3.39,
+        "unrealized": -10091,
+        "unrealized_pct": -3.36,
         "trades": 0,
         "wins": 0,
         "win_rate": 0,
