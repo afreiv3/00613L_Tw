@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23 09:15 (Taipei)",
+  "updated": "2026-07-23 09:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -200,18 +200,18 @@
     },
     {
       "date": "2026-07-23",
-      "time": "09:15",
-      "price": null,
-      "score": 52,
+      "time": "09:30",
+      "price": 35.04,
+      "score": 62,
       "zone": "amber",
-      "quant_sum": 30,
+      "quant_sum": 40,
       "ai_sum": 22,
       "ai_ok": true,
       "factors": {
         "pattern": {
           "pts": 10.0,
           "max": 20,
-          "note": "盤中資料缺，型態以中性計"
+          "note": "開+1.4%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 12,
@@ -219,19 +219,19 @@
           "note": "NVDA隔夜+3.26%為半導體板塊局部正面支撐，費半SOX方向偏強；但Nasdaq整體-0.57%小跌、Alphabet/Tesla盤後財報雙雙走跌，科技板塊分歧，非全面強勢，給12分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "區間資料缺，以中性計"
+          "note": "現價近今日低點(區間15%) → 接近支撐"
         },
         "volume": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "量能資料缺，以中性計"
+          "note": "推估量約均量0.8倍 → 正常"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 0,
           "max": 10,
-          "note": "VWAP 資料缺，以中性計"
+          "note": "現價在VWAP之下(-0.31%) → 弱勢"
         },
         "macro": {
           "pts": 3,
@@ -246,9 +246,9 @@
       },
       "paper": {
         "cash": 699585,
-        "equity": 699585,
-        "market_value": 0,
-        "return_pct": -30.04,
+        "equity": 994027,
+        "market_value": 294441,
+        "return_pct": -0.6,
         "holding": true,
         "position": {
           "shares": 8403,
@@ -261,8 +261,8 @@
         },
         "shares": 8403,
         "avg_cost": 35.7,
-        "unrealized": -300415,
-        "unrealized_pct": -100.0,
+        "unrealized": -5973,
+        "unrealized_pct": -1.99,
         "trades": 0,
         "wins": 0,
         "win_rate": 0,
