@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22 15:16 (Taipei)",
+  "updated": "2026-07-23 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -192,6 +192,77 @@
         "avg_cost": 35.7,
         "unrealized": -7990,
         "unrealized_pct": -2.66,
+        "trades": 0,
+        "wins": 0,
+        "win_rate": 0,
+        "realized_pnl": 0
+      }
+    },
+    {
+      "date": "2026-07-23",
+      "time": "09:00",
+      "price": null,
+      "score": 52,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 22,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 12,
+          "max": 20,
+          "note": "NVDA隔夜+3.26%為半導體板塊局部正面支撐，費半SOX方向偏強；但Nasdaq整體-0.57%小跌、Alphabet/Tesla盤後財報雙雙走跌，科技板塊分歧，非全面強勢，給12分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 3,
+          "max": 10,
+          "note": "WTI油價飆至$87（+4%，六週高），美伊衝突（霍爾木茲）持續升溫；10Y殖利率4.63%高位，Fed 9月升息機率約55%；三重宏觀壓力並存，屬略波動，給3分"
+        },
+        "trend": {
+          "pts": 7,
+          "max": 10,
+          "note": "TAIEX昨收44,826，在季線（~44,500）上方約326點，多頭結構尚完好；但外資期貨淨空單76,502口偏高、美股隔夜小跌且盤後大型科技利空，結構面臨輕微下行壓力，給7分"
+        }
+      },
+      "paper": {
+        "cash": 699585,
+        "equity": 699585,
+        "market_value": 0,
+        "return_pct": -30.04,
+        "holding": true,
+        "position": {
+          "shares": 8403,
+          "entry_price": 35.7,
+          "entry_date": "2026-07-22",
+          "entry_time": "09:30",
+          "cost": 300414.58,
+          "entry_score": 73,
+          "frac": 0.3
+        },
+        "shares": 8403,
+        "avg_cost": 35.7,
+        "unrealized": -300415,
+        "unrealized_pct": -100.0,
         "trades": 0,
         "wins": 0,
         "win_rate": 0,
