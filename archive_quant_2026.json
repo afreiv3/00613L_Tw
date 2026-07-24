@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 4,
+  "count": 5,
   "history": [
     {
       "date": "2026-07-20",
@@ -264,6 +264,77 @@
         "avg_cost": 35.7,
         "unrealized": -5721,
         "unrealized_pct": -1.9,
+        "trades": 0,
+        "wins": 0,
+        "win_rate": 0,
+        "realized_pnl": 0
+      }
+    },
+    {
+      "date": "2026-07-24",
+      "time": "09:00",
+      "price": null,
+      "score": 46,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 16,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 8,
+          "max": 20,
+          "note": "隔夜Nasdaq -2.15%，NVDA -1.05%、AMD -3.85%，半導體板塊整體偏弱；但Intel Q2財報EPS翻倍超預期+4%盤後，AI數據中心+59%，提供部分正面催化，板塊訊號分歧偏弱"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 2,
+          "max": 10,
+          "note": "WTI油價飆至$92.19（六週新高），10Y殖利率升至4.67%（2026年高），中東衝突持續，Fed 9月升息機率升至61%，系統性風險明顯升溫"
+        },
+        "trend": {
+          "pts": 6,
+          "max": 10,
+          "note": "TAIEX 7/23收44,850.81，仍在季線（估~44,500）上方約350點，結構尚完好；但美股隔夜跌1-2%，今日若跟跌將向下測試季線支撐，趨勢轉弱風險上升"
+        }
+      },
+      "paper": {
+        "cash": 699585,
+        "equity": 699585,
+        "market_value": 0,
+        "return_pct": -30.04,
+        "holding": true,
+        "position": {
+          "shares": 8403,
+          "entry_price": 35.7,
+          "entry_date": "2026-07-22",
+          "entry_time": "09:30",
+          "cost": 300414.58,
+          "entry_score": 73,
+          "frac": 0.3
+        },
+        "shares": 8403,
+        "avg_cost": 35.7,
+        "unrealized": -300415,
+        "unrealized_pct": -100.0,
         "trades": 0,
         "wins": 0,
         "win_rate": 0,
