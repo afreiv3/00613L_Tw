@@ -98,10 +98,13 @@ def evaluate(quant_pts, market_ok, ai_factors, ma20_ok=None, ma10_ok=None):
 
 
 def load_state():
+    """讀模擬盤狀態。檔案不存在（首次執行）才視為空、補全新預設值；
+    檔案存在但解析失敗（例如 git 衝突標記污染）視為嚴重錯誤、直接往上拋——
+    絕不能靜默當成『從沒交易過』並讓呼叫端 save_state() 覆蓋掉真實歷史。"""
     try:
         with open(STATE_FILE, "r", encoding="utf-8") as f:
             s = json.load(f)
-    except Exception:
+    except FileNotFoundError:
         s = {}
     # 預設值（向後相容：缺欄位就補）
     d = {

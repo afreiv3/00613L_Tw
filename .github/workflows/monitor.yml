@@ -37,7 +37,20 @@ jobs:
         run: |
           git config user.name "monitor-bot"
           git config user.email "monitor-bot@users.noreply.github.com"
-          git pull --rebase --autostash || true
+
+          # 重要：這裡絕對不能用 `|| true` 蓋過失敗。
+          # 2026-07-20 曾發生併發執行造成 rebase 衝突、留下未解決的 <<<<<<< 標記，
+          # 舊版用 `|| true` 吞掉失敗、照樣把壞掉的 JSON commit+push 上去；
+          # 下一輪 tick 讀檔解析失敗，三套模擬盤的 load_state() 又靜默回退成全新初始值，
+          # 導致 paper_state*.json 的歷史損益/交易次數被永久覆蓋成 100 萬本金、0 筆交易
+          # （已於 2026-07-24 修復並還原資料，見該次 commit）。
+          # 現在：失敗就整輪中止、不提交任何資料，寧可丟掉這一次 15 分鐘的 tick。
+          if ! git pull --rebase --autostash; then
+            echo "::error::git pull --rebase 失敗（可能有衝突）。中止本輪，不提交任何資料。"
+            git rebase --abort 2>/dev/null || true
+            exit 1
+          fi
+
           # 只加「存在的」資料檔（沒成交時 paper_trades*.json 可能尚未產生）
           for f in state.json dashboard_data.json dashboard_data_gemini.json \
                    dashboard_data_chatgpt.json \
@@ -47,9 +60,25 @@ jobs:
                    archive_quant_*.json archive_gemini_*.json archive_chatgpt_*.json; do
             [ -e "$f" ] && git add "$f" || true
           done
+
           if git diff --cached --quiet; then
             echo "無變更"
-          else
-            git commit -m "update data $(date -u +%FT%TZ) [skip ci]"
-            git push
+            exit 0
           fi
+
+          # 最後一道防線：commit 前掃描暫存區檔案，若混入未解決的 git 衝突標記
+          # （代表 rebase/autostash 過程仍有問題），寧可整輪失敗，也不能發布壞資料。
+          conflict_files=""
+          for f in $(git diff --cached --name-only); do
+            if [ -f "$f" ] && grep -lE '^(<{7}|={7}|>{7})( |$)' "$f" >/dev/null 2>&1; then
+              conflict_files="$conflict_files $f"
+            fi
+          done
+          if [ -n "$conflict_files" ]; then
+            echo "::error::偵測到未解決的 git 衝突標記，拒絕提交！可疑檔案：$conflict_files"
+            git reset
+            exit 1
+          fi
+
+          git commit -m "update data $(date -u +%FT%TZ) [skip ci]"
+          git push
