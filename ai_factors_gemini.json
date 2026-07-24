@@ -1,33 +1,15 @@
 {
-  "date": "2026-07-23",
-  "generated_at": "2026-07-23 11:47",
+  "date": "2026-07-24",
+  "generated_at": "2026-07-24 11:46",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 14.0,
-    "macro": 6.0,
-    "trend": 7.0
+    "sector": 10.0,
+    "macro": 5.0,
+    "trend": 5.0
   },
-  "ai_sentiment_index": 67.5,
-  "summary": "美國科技股財報後亞洲股市上漲，但那斯達克指數因油價上漲和聯準會升息預期而下跌。",
-  "news_zh": [
-    "美國科技股財報公布後，亞洲股市普遍上漲，油價創下六週新高。",
-    "那斯達克指數下滑，主要受油價上漲以及Alphabet和特斯拉財報公布前的觀望情緒影響。",
-    "伊朗危機加劇，市場預期聯準會升息的可能性增高，對牛市構成壓力。",
-    "盤中那斯達克指數下跌，儘管輝達表現強勁，仍未能提振道瓊指數，而Super Micro表現亮眼。",
-    "美國財政部官員對巴基斯坦的改革表示歡迎，並支持其重返資本市場。",
-    "亞洲富豪將體育贊助轉為股權投資，相關交易量創下歷史新高。"
-  ],
-  "news": [
-    "[Reuters] Asian stocks rise after US tech earnings, oil at six-week highs - Reuters - Asian stocks rise after US tech earnings, oil at six-week highs&nbsp;&nbsp;Reuters",
-    "[Reuters] Treasury's Bessent welcomes Pakistan's reforms, push to return to capital markets - Reuters - Treasury's Bessent welcomes Pakistan's reforms, push to return to capital markets&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: Alphabetting - Reuters - Morning Bid: Alphabetting&nbsp;&nbsp;Reuters",
-    "[Reuters] Raymond James profit rises on capital markets strength - Reuters - Raymond James profit rises on capital markets strength&nbsp;&nbsp;Reuters",
-    "[Reuters] Revolut starts share sale at $115 billion valuation, source says - Reuters - Revolut starts share sale at $115 billion valuation, source says&nbsp;&nbsp;Reuters",
-    "[Reuters] Asia's rich swap sponsorships for stakes in sports as dealmaking hits record - Reuters - Asia's rich swap sponsorships for stakes in sports as dealmaking hits record&nbsp;&nbsp;Reuters",
-    "[Reuters] Trading Day: $100 oil looms - Reuters - Trading Day: $100 oil looms&nbsp;&nbsp;Reuters",
-    "[Reuters] US aims for interim trade deals with Canada, Mexico by year-end - Reuters - US aims for interim trade deals with Canada, Mexico by year-end&nbsp;&nbsp;Reuters",
-    "[Semis] Stock market today: Dow, S&P 500, Nasdaq slip as oil prices rise, Alphabet and Tesla earnings loom - Yahoo Finance - Stock market today: Dow, S&P 500, Nasdaq slip as oil prices rise, Alphabet and Tesla earnings loom&nbsp;&nbsp;Yahoo Finance",
-    "[Semis] Stock Market Today: Nasdaq Slides, Nvidia Can't Lift The Dow; Super Micro Shines - Investor's Business Daily - Stock Market Today: Nasdaq Slides, Nvidia Can't Lift The Dow; Super Micro Shines&nbsp;&nbsp;Investor's Business Daily"
-  ],
-  "debug_error": ""
+  "ai_sentiment_index": 50.0,
+  "summary": "（無新聞或無金鑰，暫以中性計）",
+  "news_zh": [],
+  "news": [],
+  "debug_error": "未抓到新聞"
 }
