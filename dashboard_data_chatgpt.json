@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24 11:45 (Taipei)",
+  "updated": "2026-07-24 12:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -255,7 +255,7 @@
     },
     {
       "date": "2026-07-24",
-      "time": "11:45",
+      "time": "12:00",
       "price": 33.67,
       "tier1": 32,
       "ai_index": 50.0,
@@ -266,8 +266,8 @@
       "market_ok": false,
       "asset_trend_ok": false,
       "ma10_ok": false,
-      "ai_ok": false,
-      "summary": "（今日盤前判讀尚未產生，暫以中性計）",
+      "ai_ok": true,
+      "summary": "（無新聞或無金鑰，暫以中性計）",
       "news": [],
       "paper": {
         "cash": 1010405,
