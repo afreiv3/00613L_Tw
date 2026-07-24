@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24 11:30 (Taipei)",
+  "updated": "2026-07-24 11:45 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -271,11 +271,11 @@
     },
     {
       "date": "2026-07-24",
-      "time": "11:30",
-      "price": 33.33,
-      "score": 56,
+      "time": "11:45",
+      "price": 33.67,
+      "score": 48,
       "zone": "amber",
-      "quant_sum": 40,
+      "quant_sum": 32,
       "ai_sum": 16,
       "ai_ok": true,
       "factors": {
@@ -290,9 +290,9 @@
           "note": "隔夜Nasdaq -2.15%，NVDA -1.05%、AMD -3.85%，半導體板塊整體偏弱；但Intel Q2財報EPS翻倍超預期+4%盤後，AI數據中心+59%，提供部分正面催化，板塊訊號分歧偏弱"
         },
         "entry": {
-          "pts": 15,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價近今日低點(區間4%) → 接近支撐"
+          "note": "現價在區間中段(35%)"
         },
         "volume": {
           "pts": 15,
@@ -302,7 +302,7 @@
         "vwap": {
           "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之下(-1.54%) → 弱勢"
+          "note": "現價在VWAP之下(-0.48%) → 弱勢"
         },
         "macro": {
           "pts": 2,
