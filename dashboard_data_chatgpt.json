@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27 09:15 (Taipei)",
+  "updated": "2026-07-27 09:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -307,17 +307,17 @@
     },
     {
       "date": "2026-07-27",
-      "time": "09:15",
-      "price": null,
-      "tier1": 30,
+      "time": "09:30",
+      "price": 33.31,
+      "tier1": 45,
       "ai_index": 50.0,
       "target": 0.0,
       "zone": "red",
-      "zone_label": "⚪ 資料缺，不動作",
+      "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
       "gate_open": false,
-      "market_ok": true,
-      "asset_trend_ok": null,
-      "ma10_ok": null,
+      "market_ok": false,
+      "asset_trend_ok": false,
+      "ma10_ok": false,
       "ai_ok": false,
       "summary": "（今日盤前判讀尚未產生，暫以中性計）",
       "news": [],
@@ -349,11 +349,11 @@
         "frenzy_days": 0,
         "last_action": "SELL",
         "last_action_reason": "DATA_INVALID_NO_TRADE",
-        "tier1": 30,
+        "tier1": 45,
         "ai_index": 50.0,
         "target": 0.0,
         "zone": "red",
-        "zone_label": "⚪ 資料缺，不動作",
+        "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
         "gate_open": false
       }
     }
