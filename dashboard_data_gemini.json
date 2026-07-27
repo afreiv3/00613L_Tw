@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27 12:00 (Taipei)",
+  "updated": "2026-07-27 12:15 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -227,19 +227,30 @@
     },
     {
       "date": "2026-07-27",
-      "time": "12:00",
-      "price": 32.88,
+      "time": "12:15",
+      "price": 32.83,
       "tier1": 32,
-      "ai_index": 50.0,
+      "ai_index": 87.5,
       "target": 0.0,
       "zone": "red",
       "zone_label": "⚪ 觀望（等好買點＋趨勢）",
       "gate_open": false,
       "market_ok": false,
       "asset_trend_ok": false,
-      "ai_ok": false,
-      "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
-      "news": [],
+      "ai_ok": true,
+      "summary": "全球股市在油價下跌和科技股財報預期下普遍上漲，半導體產業表現強勁，地緣政治風險有所緩解。",
+      "news": [
+        "[Reuters] Shares, bonds make guarded gains as oil slips - Reuters - Shares, bonds make guarded gains as oil slips&nbsp;&nbsp;Reuters",
+        "[Reuters] Crude oil futures are pricing market adaptability, not hopeful Iran peace - Reuters - Crude oil futures are pricing market adaptability, not hopeful Iran peace&nbsp;&nbsp;Reuters",
+        "[Reuters] Indian shares set to open higher, breaking losing run, as oil slides - Reuters - Indian shares set to open higher, breaking losing run, as oil slides&nbsp;&nbsp;Reuters",
+        "[Reuters] Russia Cuts Oil Output in April, Sources Say - Energy News, Top Headlines, Commentaries, Features & Events - EnergyNow.com - Russia Cuts Oil Output in April, Sources Say - Energy News, Top Headlines, Commentaries, Features & Events&nbsp;&nbsp;EnergyNow.com",
+        "[Reuters] Nasdaq-Listed Vape Company iSpire Technology Restructures Leadership as Tuanfang Liu Becomes Sole CEO, BTIG Initiates Coverage on ODM Growth Opportunity - 2Firsts - Nasdaq-Listed Vape Company iSpire Technology Restructures Leadership as Tuanfang Liu Becomes Sole CEO, BTIG Initiates Coverage on ODM Growth Opportunity&nbsp;&n",
+        "[Reuters] Escalating Middle East war could slash global growth to 1.3% in 2026, World Bank chief economist says - AOL.com - Escalating Middle East war could slash global growth to 1.3% in 2026, World Bank chief economist says&nbsp;&nbsp;AOL.com",
+        "[Reuters] Chipmaker CXMT vaults to top of China's valuation with 470% Shanghai debut surge - Reuters - Chipmaker CXMT vaults to top of China's valuation with 470% Shanghai debut surge&nbsp;&nbsp;Reuters",
+        "[Reuters] Petrol, Diesel Prices On July 27: Check New Fuel Rates In Mumbai, Bengaluru, Chennai, Kolkata And More - NDTV Profit - Petrol, Diesel Prices On July 27: Check New Fuel Rates In Mumbai, Bengaluru, Chennai, Kolkata And More&nbsp;&nbsp;NDTV Profit",
+        "[Semis] Dow Jones Futures Rise, Oil Prices Dive On Iran Hopes; Apple Leads Earnings Wave, Fed Meeting Ahead - Investor's Business Daily - Dow Jones Futures Rise, Oil Prices Dive On Iran Hopes; Apple Leads Earnings Wave, Fed Meeting Ahead&nbsp;&nbsp;Investor's Business Daily",
+        "[Semis] 'The AI trade is still on': Wall Street sees Big Tech's spending as positive for semiconductor stocks - Yahoo Finance - 'The AI trade is still on': Wall Street sees Big Tech's spending as positive for semiconductor stocks&nbsp;&nbsp;Yahoo Finance"
+      ],
       "paper": {
         "cash": 1016948,
         "shares": 0.0,
@@ -254,7 +265,7 @@
         "max_asset": 1074736,
         "frenzy_days": 0,
         "tier1": 32,
-        "ai_index": 50.0,
+        "ai_index": 87.5,
         "target": 0.0,
         "zone": "red",
         "zone_label": "⚪ 觀望（等好買點＋趨勢）",
