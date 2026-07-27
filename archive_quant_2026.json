@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 5,
+  "count": 6,
   "history": [
     {
       "date": "2026-07-20",
@@ -314,6 +314,69 @@
           "pts": 2,
           "max": 10,
           "note": "TAIEX今日確認跌破季線（43,964），盤中最深43,641.98（-2.7%），結構由季線上方轉為跌破，連四日反彈宣告結束，趨勢轉弱，給2分"
+        }
+      },
+      "paper": {
+        "cash": 962257,
+        "equity": 962257,
+        "market_value": 0,
+        "return_pct": -3.77,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 7,
+        "wins": 1,
+        "win_rate": 14.3,
+        "realized_pnl": -37743
+      }
+    },
+    {
+      "date": "2026-07-27",
+      "time": "09:00",
+      "price": null,
+      "score": 47,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 17,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 12,
+          "max": 20,
+          "note": "週一停火希望帶動Nasdaq期貨領漲、半導體晶片期貨同步回彈，AVGO AI收入年增143%、TSMC確認AI需求不減，基本面強勁；但費半SOX上週仍在12,235附近受壓、連跌兩週，今日主要為停火驅動技術反彈，分歧偏好，給12分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 5,
+          "max": 10,
+          "note": "美伊連兩夜暫停空襲停火希望升溫，Brent原油急跌約5%（WTI由$92.19六週高點顯著回落），10Y殖利率由4.699%（2026年1月以來最高）轉趨緩降；惟霍姆茲局勢未完全解除，FOMC本週7/28-29決策仍為風險點，整體由偏空轉中性，給5分"
+        },
+        "trend": {
+          "pts": 0,
+          "max": 10,
+          "note": "TWII 7/24確認跌破季線（約43,964）收43,654，最新估值約42,671（Yahoo 403無法確認），已在季線下方逾千點，結構確定轉弱，給0分"
         }
       },
       "paper": {
