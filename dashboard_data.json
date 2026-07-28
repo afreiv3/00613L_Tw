@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28 13:15 (Taipei)",
+  "updated": "2026-07-28 13:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -397,11 +397,11 @@
     },
     {
       "date": "2026-07-28",
-      "time": "13:15",
-      "price": 30.99,
-      "score": 38,
-      "zone": "red",
-      "quant_sum": 30,
+      "time": "13:30",
+      "price": 30.82,
+      "score": 40,
+      "zone": "amber",
+      "quant_sum": 32,
       "ai_sum": 8,
       "ai_ok": true,
       "factors": {
@@ -416,19 +416,19 @@
           "note": "美股週一SMH半導體ETF跌逾2%、NVDA再跌5%，SOX7月累計跌18.2%；AI資本支出可持續性疑慮持續主導板塊情緒，半導體整體明確偏弱，給3分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "現價在區間中段(48%)"
+          "note": "現價近今日低點(區間31%) → 接近支撐"
         },
         "volume": {
           "pts": 7.5,
           "max": 15,
-          "note": "推估量約均量1.6倍 → 偏離"
+          "note": "推估量約均量1.4倍 → 偏離"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 0,
           "max": 10,
-          "note": "現價貼近VWAP(-0.25%)"
+          "note": "現價在VWAP之下(-0.77%) → 弱勢"
         },
         "macro": {
           "pts": 5,
