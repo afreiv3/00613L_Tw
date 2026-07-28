@@ -275,7 +275,7 @@
     },
     {
       "date": "2026-07-28",
-      "time": "09:00",
+      "time": "09:15",
       "price": null,
       "tier1": 30,
       "ai_index": 50.0,
@@ -283,7 +283,7 @@
       "zone": null,
       "zone_label": null,
       "gate_open": null,
-      "market_ok": true,
+      "market_ok": false,
       "asset_trend_ok": null,
       "ai_ok": false,
       "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
