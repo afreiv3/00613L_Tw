@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 6,
+  "count": 7,
   "history": [
     {
       "date": "2026-07-20",
@@ -377,6 +377,69 @@
           "pts": 0,
           "max": 10,
           "note": "TWII收約43,443點，低於季線（43,964）約521點，連兩日收黑；月線已失守，7月累計自46,125高峰跌約5.2%，結構確認偏空，無止跌訊號，給0分"
+        }
+      },
+      "paper": {
+        "cash": 962257,
+        "equity": 962257,
+        "market_value": 0,
+        "return_pct": -3.77,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 7,
+        "wins": 1,
+        "win_rate": 14.3,
+        "realized_pnl": -37743
+      }
+    },
+    {
+      "date": "2026-07-28",
+      "time": "09:00",
+      "price": null,
+      "score": 38,
+      "zone": "red",
+      "quant_sum": 30,
+      "ai_sum": 8,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 3,
+          "max": 20,
+          "note": "美股週一SMH半導體ETF跌逾2%、NVDA再跌5%，SOX7月累計跌18.2%；AI資本支出可持續性疑慮持續主導板塊情緒，半導體整體明確偏弱，給3分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 5,
+          "max": 10,
+          "note": "WTI油降至~$83（美伊停火）偏正；惟10Y殖利率4.67%（2026年最高），FOMC明日決策+9月升息機率61%，整體屬略波動偏緊，給5分"
+        },
+        "trend": {
+          "pts": 0,
+          "max": 10,
+          "note": "TWII週一收43,443，低於季線（約43,964）521點，連兩日收黑，月線已失守；外資上週大舉賣超1,654億元，結構明確偏空，給0分"
         }
       },
       "paper": {
