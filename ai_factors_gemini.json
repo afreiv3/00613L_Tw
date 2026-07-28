@@ -1,33 +1,33 @@
 {
-  "date": "2026-07-27",
-  "generated_at": "2026-07-27 12:04",
+  "date": "2026-07-28",
+  "generated_at": "2026-07-28 11:39",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 18.0,
-    "macro": 8.0,
-    "trend": 9.0
+    "sector": 3.0,
+    "macro": 6.0,
+    "trend": 4.0
   },
-  "ai_sentiment_index": 87.5,
-  "summary": "全球股市在油價下跌和科技股財報預期下普遍上漲，半導體產業表現強勁，地緣政治風險有所緩解。",
+  "ai_sentiment_index": 32.5,
+  "summary": "全球晶片股拋售潮加劇，華爾街股市漲跌互見，油價下跌，地緣政治緊張局勢有所緩解。",
   "news_zh": [
-    "華爾街股市上漲，半導體類股在科技巨頭財報前表現突出。",
-    "亞洲股市在聯準會會議前走高，中國晶片製造商CXMT首次上市股價飆升。",
-    "道瓊期貨上漲，油價因伊朗局勢緩解而下跌，市場關注蘋果等科技公司財報及聯準會會議。",
-    "華爾街認為AI交易持續，大型科技公司的支出對半導體股票是利好消息。",
-    "油價下跌，全球股市和債市呈現謹慎上漲。",
-    "世界銀行首席經濟學家警告，中東戰事升級可能導致2026年全球經濟成長率降至1.3%。"
+    "華爾街股市漲跌互見，投資者關注科技股財報。",
+    "油價大跌，股市和債市反應平淡。",
+    "南韓KOSPI指數下跌7%，全球晶片製造商拋售潮加劇。",
+    "半導體股圖表形成看跌形態，預示可能會有更多損失。",
+    "歐洲股市持穩，科技股疲軟抵消了美伊樂觀情緒。",
+    "美國股指期貨持穩，投資者等待聯準會決議和大型科技公司財報。"
   ],
   "news": [
-    "[Reuters] Shares, bonds make guarded gains as oil slips - Reuters - Shares, bonds make guarded gains as oil slips&nbsp;&nbsp;Reuters",
+    "[Reuters] Wall Street ends mixed as investors focus on tech earnings - Reuters - Wall Street ends mixed as investors focus on tech earnings&nbsp;&nbsp;Reuters",
+    "[Reuters] TRADING DAY Oil plunges, stocks 'n' bonds shrug - Reuters - TRADING DAY Oil plunges, stocks 'n' bonds shrug&nbsp;&nbsp;Reuters",
+    "[Reuters] Gulf stocks advance on Iran de-escalation hopes; Saudi ends flat after oil-site attacks - Reuters - Gulf stocks advance on Iran de-escalation hopes; Saudi ends flat after oil-site attacks&nbsp;&nbsp;Reuters",
     "[Reuters] Crude oil futures are pricing market adaptability, not hopeful Iran peace - Reuters - Crude oil futures are pricing market adaptability, not hopeful Iran peace&nbsp;&nbsp;Reuters",
-    "[Reuters] Indian shares set to open higher, breaking losing run, as oil slides - Reuters - Indian shares set to open higher, breaking losing run, as oil slides&nbsp;&nbsp;Reuters",
-    "[Reuters] Russia Cuts Oil Output in April, Sources Say - Energy News, Top Headlines, Commentaries, Features & Events - EnergyNow.com - Russia Cuts Oil Output in April, Sources Say - Energy News, Top Headlines, Commentaries, Features & Events&nbsp;&nbsp;EnergyNow.com",
-    "[Reuters] Nasdaq-Listed Vape Company iSpire Technology Restructures Leadership as Tuanfang Liu Becomes Sole CEO, BTIG Initiates Coverage on ODM Growth Opportunity - 2Firsts - Nasdaq-Listed Vape Company iSpire Technology Restructures Leadership as Tuanfang Liu Becomes Sole CEO, BTIG Initiates Coverage on ODM Growth Opportunity&nbsp;&n",
-    "[Reuters] Escalating Middle East war could slash global growth to 1.3% in 2026, World Bank chief economist says - AOL.com - Escalating Middle East war could slash global growth to 1.3% in 2026, World Bank chief economist says&nbsp;&nbsp;AOL.com",
-    "[Reuters] Chipmaker CXMT vaults to top of China's valuation with 470% Shanghai debut surge - Reuters - Chipmaker CXMT vaults to top of China's valuation with 470% Shanghai debut surge&nbsp;&nbsp;Reuters",
-    "[Reuters] Petrol, Diesel Prices On July 27: Check New Fuel Rates In Mumbai, Bengaluru, Chennai, Kolkata And More - NDTV Profit - Petrol, Diesel Prices On July 27: Check New Fuel Rates In Mumbai, Bengaluru, Chennai, Kolkata And More&nbsp;&nbsp;NDTV Profit",
-    "[Semis] Dow Jones Futures Rise, Oil Prices Dive On Iran Hopes; Apple Leads Earnings Wave, Fed Meeting Ahead - Investor's Business Daily - Dow Jones Futures Rise, Oil Prices Dive On Iran Hopes; Apple Leads Earnings Wave, Fed Meeting Ahead&nbsp;&nbsp;Investor's Business Daily",
-    "[Semis] 'The AI trade is still on': Wall Street sees Big Tech's spending as positive for semiconductor stocks - Yahoo Finance - 'The AI trade is still on': Wall Street sees Big Tech's spending as positive for semiconductor stocks&nbsp;&nbsp;Yahoo Finance"
+    "[Reuters] TDW.N - | Stock Price & Latest News - Reuters - TDW.N - | Stock Price & Latest News&nbsp;&nbsp;Reuters",
+    "[Reuters] European shares steady as tech weakness offsets US-Iran optimism - Reuters - European shares steady as tech weakness offsets US-Iran optimism&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: China chip champ - Reuters - Morning Bid: China chip champ&nbsp;&nbsp;Reuters",
+    "[Reuters] South Korea's KOSPI drops 7% as global chipmaker selloff deepens - Reuters - South Korea's KOSPI drops 7% as global chipmaker selloff deepens&nbsp;&nbsp;Reuters",
+    "[Semis] Semiconductor stock charts just formed this bearish shape that signals more potential losses - Yahoo Finance - Semiconductor stock charts just formed this bearish shape that signals more potential losses&nbsp;&nbsp;Yahoo Finance",
+    "[Semis] Wall Street ends mixed as investors focus on tech earnings - Reuters - Wall Street ends mixed as investors focus on tech earnings&nbsp;&nbsp;Reuters"
   ],
   "debug_error": ""
 }
