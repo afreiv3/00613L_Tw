@@ -434,13 +434,13 @@
     },
     {
       "date": "2026-07-29",
-      "time": "13:30",
-      "price": 28.4,
-      "tier1": 25,
+      "time": "15:09",
+      "price": 28.53,
+      "tier1": 18,
       "ai_index": 32.5,
       "target": 0.0,
       "zone": "red",
-      "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
+      "zone_label": "⚪ 觀望（非盤中）",
       "gate_open": false,
       "market_ok": false,
       "asset_trend_ok": false,
@@ -487,11 +487,11 @@
         "frenzy_days": 0,
         "last_action": "SELL",
         "last_action_reason": "DATA_INVALID_NO_TRADE",
-        "tier1": 25,
+        "tier1": 18,
         "ai_index": 32.5,
         "target": 0.0,
         "zone": "red",
-        "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
+        "zone_label": "⚪ 觀望（非盤中）",
         "gate_open": false
       }
     }
