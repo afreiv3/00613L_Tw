@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28 14:44 (Taipei)",
+  "updated": "2026-07-29 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -439,6 +439,69 @@
           "pts": 0,
           "max": 10,
           "note": "TWII收41,878遠低於季線估算（~43,500-44,000），今日為史上第8大單日跌幅，外資持續賣超，結構全面偏空，給0分"
+        }
+      },
+      "paper": {
+        "cash": 962257,
+        "equity": 962257,
+        "market_value": 0,
+        "return_pct": -3.77,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 7,
+        "wins": 1,
+        "win_rate": 14.3,
+        "realized_pnl": -37743
+      }
+    },
+    {
+      "date": "2026-07-29",
+      "time": "09:00",
+      "price": null,
+      "score": 32,
+      "zone": "red",
+      "quant_sum": 30,
+      "ai_sum": 2,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 0,
+          "max": 20,
+          "note": "隔夜美股半導體4連跌：SMH -3%+、TSM ADR -3.5%、ASML -5.2%、NVDA -1.1%；SMH頭肩頂形態成形，板塊明確轉弱，無支撐訊號，給0分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 2,
+          "max": 10,
+          "note": "FOMC今日決策預期按兵，但9月升息機率升至76%（鷹派升溫）、10Y殖利率4.64%仍在高位，油跌至$81略緩；整體風險升溫，給2分"
+        },
+        "trend": {
+          "pts": 0,
+          "max": 10,
+          "note": "TWII收41,878（7/28），依昨日估算遠低於季線~43,500，外資期貨淨空8萬口創近期高位，台指期盤前41,646略低於昨收，結構明確偏空，給0分"
         }
       },
       "paper": {
