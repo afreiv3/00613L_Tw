@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29 10:00 (Taipei)",
+  "updated": "2026-07-29 10:15 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -460,11 +460,11 @@
     },
     {
       "date": "2026-07-29",
-      "time": "10:00",
-      "price": 29.8,
-      "score": 20,
+      "time": "10:15",
+      "price": 29.36,
+      "score": 27,
       "zone": "red",
-      "quant_sum": 18,
+      "quant_sum": 25,
       "ai_sum": 2,
       "ai_ok": true,
       "factors": {
@@ -479,9 +479,9 @@
           "note": "隔夜美股半導體4連跌：SMH -3%+、TSM ADR -3.5%、ASML -5.2%、NVDA -1.1%；SMH頭肩頂形態成形，板塊明確轉弱，無支撐訊號，給0分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "現價在區間中段(35%)"
+          "note": "現價近今日低點(區間4%) → 接近支撐"
         },
         "volume": {
           "pts": 0,
@@ -491,7 +491,7 @@
         "vwap": {
           "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之下(-0.60%) → 弱勢"
+          "note": "現價在VWAP之下(-1.75%) → 弱勢"
         },
         "macro": {
           "pts": 2,
