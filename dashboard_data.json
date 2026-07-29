@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29 09:15 (Taipei)",
+  "updated": "2026-07-29 09:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -460,18 +460,18 @@
     },
     {
       "date": "2026-07-29",
-      "time": "09:15",
-      "price": null,
-      "score": 32,
+      "time": "09:30",
+      "price": 30.02,
+      "score": 34,
       "zone": "red",
-      "quant_sum": 30,
+      "quant_sum": 32,
       "ai_sum": 2,
       "ai_ok": true,
       "factors": {
         "pattern": {
           "pts": 10.0,
           "max": 20,
-          "note": "盤中資料缺，型態以中性計"
+          "note": "開+0.1%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 0,
@@ -479,19 +479,19 @@
           "note": "隔夜美股半導體4連跌：SMH -3%+、TSM ADR -3.5%、ASML -5.2%、NVDA -1.1%；SMH頭肩頂形態成形，板塊明確轉弱，無支撐訊號，給0分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "區間資料缺，以中性計"
+          "note": "現價近今日低點(區間0%) → 接近支撐"
         },
         "volume": {
           "pts": 7.5,
           "max": 15,
-          "note": "量能資料缺，以中性計"
+          "note": "推估量約均量1.7倍 → 偏離"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 0,
           "max": 10,
-          "note": "VWAP 資料缺，以中性計"
+          "note": "現價在VWAP之下(-0.91%) → 弱勢"
         },
         "macro": {
           "pts": 2,
