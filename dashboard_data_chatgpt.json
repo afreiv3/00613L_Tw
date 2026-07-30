@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30 11:30 (Taipei)",
+  "updated": "2026-07-30 11:45 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -496,10 +496,10 @@
     },
     {
       "date": "2026-07-30",
-      "time": "11:30",
-      "price": 29.01,
-      "tier1": 38,
-      "ai_index": 50.0,
+      "time": "11:45",
+      "price": 28.56,
+      "tier1": 28,
+      "ai_index": 25.0,
       "target": 0.0,
       "zone": "red",
       "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
@@ -507,9 +507,20 @@
       "market_ok": false,
       "asset_trend_ok": false,
       "ma10_ok": false,
-      "ai_ok": false,
-      "summary": "（今日盤前判讀尚未產生，暫以中性計）",
-      "news": [],
+      "ai_ok": true,
+      "summary": "聯準會維持利率不變，引發華爾街股市大幅下跌，半導體類股遭受重創，亞洲股市開盤震盪。",
+      "news": [
+        "[Reuters] Robinhood beats quarterly profit estimates as trading activity remains robust - Reuters - Robinhood beats quarterly profit estimates as trading activity remains robust&nbsp;&nbsp;Reuters",
+        "[Reuters] Wall Street closes down sharply after Fed holds rates unchanged - Reuters - Wall Street closes down sharply after Fed holds rates unchanged&nbsp;&nbsp;Reuters",
+        "[Reuters] Warsh-led Fed leaves rates on hold and a bond market scratching its head - Reuters - Warsh-led Fed leaves rates on hold and a bond market scratching its head&nbsp;&nbsp;Reuters",
+        "[Reuters] European shares fall as mixed luxury company earnings weigh - Reuters - European shares fall as mixed luxury company earnings weigh&nbsp;&nbsp;Reuters",
+        "[Reuters] Morning Bid: US profit growth mushrooms - Reuters - Morning Bid: US profit growth mushrooms&nbsp;&nbsp;Reuters",
+        "[Reuters] Magnificent 7 results set to test broadening US stock market - Reuters - Magnificent 7 results set to test broadening US stock market&nbsp;&nbsp;Reuters",
+        "[Reuters] EXCLUSIVE: Restaurant chain Jersey Mike's prices IPO at $23 per share - Reuters - EXCLUSIVE: Restaurant chain Jersey Mike's prices IPO at $23 per share&nbsp;&nbsp;Reuters",
+        "[Reuters] European bank rally rolls on as Deutsche Bank, UBS report profit jump - Reuters - European bank rally rolls on as Deutsche Bank, UBS report profit jump&nbsp;&nbsp;Reuters",
+        "[Semis] Wall Street closes down sharply after Fed holds rates unchanged - Reuters - Wall Street closes down sharply after Fed holds rates unchanged&nbsp;&nbsp;Reuters",
+        "[Semis] Stock Market Today: Dow Craters 1,110 Points As Bond Yields Jump On Fed Worries; Meta Extends Losses - Investor's Business Daily - Stock Market Today: Dow Craters 1,110 Points As Bond Yields Jump On Fed Worries; Meta Extends Losses&nbsp;&nbsp;Investor's Business Daily"
+      ],
       "paper": {
         "cash": 1010405,
         "shares": 0.0,
@@ -538,8 +549,8 @@
         "frenzy_days": 0,
         "last_action": "SELL",
         "last_action_reason": "DATA_INVALID_NO_TRADE",
-        "tier1": 38,
-        "ai_index": 50.0,
+        "tier1": 28,
+        "ai_index": 25.0,
         "target": 0.0,
         "zone": "red",
         "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
