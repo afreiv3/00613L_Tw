@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 8,
+  "count": 9,
   "history": [
     {
       "date": "2026-07-20",
@@ -503,6 +503,69 @@
           "pts": 1,
           "max": 10,
           "note": "TAIEX收40,025，遠低於季線估算（~43,000-44,000），兩日重挫逾3,600點，較7月初高點47,000已跌逾15%，外資淨空8萬口，結構全面偏空，給1分"
+        }
+      },
+      "paper": {
+        "cash": 962257,
+        "equity": 962257,
+        "market_value": 0,
+        "return_pct": -3.77,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 7,
+        "wins": 1,
+        "win_rate": 14.3,
+        "realized_pnl": -37743
+      }
+    },
+    {
+      "date": "2026-07-30",
+      "time": "09:00",
+      "price": null,
+      "score": 30,
+      "zone": "red",
+      "quant_sum": 30,
+      "ai_sum": 0,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 0,
+          "max": 20,
+          "note": "SOX 7/29再跌4.5%，NVDA -3.55%、AMD -5.51%、TSM ADR -3.5%、AVGO -1.7%，全球半導體單日市值蒸發逾1兆美元，韓國KOSPI熔斷，板塊全面空方主導，給0分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 0,
+          "max": 10,
+          "note": "Fed 9-3鷹派維持但3人傾向升息、10Y殖利率衝4.67%、WTI油暴漲+6.2%至$84（中東）、Fed通膨預測3.6%，多重系統風險同步升溫，給0分"
+        },
+        "trend": {
+          "pts": 0,
+          "max": 10,
+          "note": "TAIEX前收40,025，遠低於季線（約43,000-44,000），連跌多日累計跌幅逾15%，外資期貨淨空8萬口，大盤結構完全偏空，給0分"
         }
       },
       "paper": {
