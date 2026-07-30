@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30 13:00 (Taipei)",
+  "updated": "2026-07-30 13:15 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -523,11 +523,11 @@
     },
     {
       "date": "2026-07-30",
-      "time": "13:00",
-      "price": 28.7,
-      "score": 42,
+      "time": "13:15",
+      "price": 28.36,
+      "score": 50,
       "zone": "amber",
-      "quant_sum": 42,
+      "quant_sum": 50,
       "ai_sum": 0,
       "ai_ok": true,
       "factors": {
@@ -542,19 +542,19 @@
           "note": "SOX 7/29再跌4.5%，NVDA -3.55%、AMD -5.51%、TSM ADR -3.5%、AVGO -1.7%，全球半導體單日市值蒸發逾1兆美元，韓國KOSPI熔斷，板塊全面空方主導，給0分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "現價在區間中段(48%)"
+          "note": "現價近今日低點(區間32%) → 接近支撐"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量1.4倍 → 正常"
+          "note": "推估量約均量1.3倍 → 正常"
         },
         "vwap": {
           "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之下(-0.80%) → 弱勢"
+          "note": "現價在VWAP之下(-1.91%) → 弱勢"
         },
         "macro": {
           "pts": 0,
