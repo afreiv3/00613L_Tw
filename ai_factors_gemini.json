@@ -1,32 +1,33 @@
 {
-  "date": "2026-07-30",
-  "generated_at": "2026-07-30 11:32",
+  "date": "2026-07-31",
+  "generated_at": "2026-07-31 11:52",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 3.0,
-    "macro": 3.0,
-    "trend": 4.0
+    "sector": 18.0,
+    "macro": 7.0,
+    "trend": 8.0
   },
-  "ai_sentiment_index": 25.0,
-  "summary": "聯準會維持利率不變，引發華爾街股市大幅下跌，半導體類股遭受重創，亞洲股市開盤震盪。",
+  "ai_sentiment_index": 82.5,
+  "summary": "在微軟和晶片股帶動下，華爾街股市大幅收高，儘管日韓兩國皆干預匯市，但市場情緒仍偏樂觀。",
   "news_zh": [
-    "聯準會維持利率不變，華爾街股市應聲大跌。",
-    "半導體類股重挫，但標普500指數仍保持強勁。",
-    "亞洲股市在美國股市大跌後表現震盪，聯準會利率決議讓市場感到不確定。",
-    "道瓊指數重挫1,110點，因聯準會擔憂導致債券殖利率飆升；Meta跌勢擴大。",
-    "歐洲股市下跌，受奢侈品公司財報好壞參半影響。"
+    "微軟股價飆升，帶動華爾街股市大幅上漲。",
+    "半導體股票反彈，那斯達克指數上漲2.8%。",
+    "日本央行政策會議前，日本當局疑似干預匯市以支撐日圓。",
+    "韓國進行罕見的美元拋售干預。",
+    "Citadel在AI股票大跌後，大量買入Situational的股票。",
+    "儘管日本干預，日圓仍面臨新的壓力。"
   ],
   "news": [
-    "[Reuters] Robinhood beats quarterly profit estimates as trading activity remains robust - Reuters - Robinhood beats quarterly profit estimates as trading activity remains robust&nbsp;&nbsp;Reuters",
-    "[Reuters] Wall Street closes down sharply after Fed holds rates unchanged - Reuters - Wall Street closes down sharply after Fed holds rates unchanged&nbsp;&nbsp;Reuters",
-    "[Reuters] Warsh-led Fed leaves rates on hold and a bond market scratching its head - Reuters - Warsh-led Fed leaves rates on hold and a bond market scratching its head&nbsp;&nbsp;Reuters",
-    "[Reuters] European shares fall as mixed luxury company earnings weigh - Reuters - European shares fall as mixed luxury company earnings weigh&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: US profit growth mushrooms - Reuters - Morning Bid: US profit growth mushrooms&nbsp;&nbsp;Reuters",
-    "[Reuters] Magnificent 7 results set to test broadening US stock market - Reuters - Magnificent 7 results set to test broadening US stock market&nbsp;&nbsp;Reuters",
-    "[Reuters] EXCLUSIVE: Restaurant chain Jersey Mike's prices IPO at $23 per share - Reuters - EXCLUSIVE: Restaurant chain Jersey Mike's prices IPO at $23 per share&nbsp;&nbsp;Reuters",
-    "[Reuters] European bank rally rolls on as Deutsche Bank, UBS report profit jump - Reuters - European bank rally rolls on as Deutsche Bank, UBS report profit jump&nbsp;&nbsp;Reuters",
-    "[Semis] Wall Street closes down sharply after Fed holds rates unchanged - Reuters - Wall Street closes down sharply after Fed holds rates unchanged&nbsp;&nbsp;Reuters",
-    "[Semis] Stock Market Today: Dow Craters 1,110 Points As Bond Yields Jump On Fed Worries; Meta Extends Losses - Investor's Business Daily - Stock Market Today: Dow Craters 1,110 Points As Bond Yields Jump On Fed Worries; Meta Extends Losses&nbsp;&nbsp;Investor's Business Daily"
+    "[Reuters] Wall Street ends sharply higher, lifted by soaring Microsoft - Reuters - Wall Street ends sharply higher, lifted by soaring Microsoft&nbsp;&nbsp;Reuters",
+    "[Reuters] History of Japan's intervention in currency markets - Reuters - History of Japan's intervention in currency markets&nbsp;&nbsp;Reuters",
+    "[Reuters] Japan intervenes to prop up yen ahead of BOJ policy decision, source says By Reuters - Investing.com - Japan intervenes to prop up yen ahead of BOJ policy decision, source says By Reuters&nbsp;&nbsp;Investing.com",
+    "[Reuters] Citadel buys most of Situational's stock holdings after AI share rout, sources say - Reuters - Citadel buys most of Situational's stock holdings after AI share rout, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] Yen comes under renewed pressure after BOJ intervention - The Standard (HK) - Yen comes under renewed pressure after BOJ intervention&nbsp;&nbsp;The Standard (HK)",
+    "[Reuters] South Korea conducts rare dollar-selling intervention, source says - CNA - South Korea conducts rare dollar-selling intervention, source says&nbsp;&nbsp;CNA",
+    "[Reuters] South Korea conducts rare dollar-selling intervention, source says - KLSE Screener - South Korea conducts rare dollar-selling intervention, source says&nbsp;&nbsp;KLSE Screener",
+    "[Reuters] Yen surges, analysts suspect official Japanese intervention - Reuters - Yen surges, analysts suspect official Japanese intervention&nbsp;&nbsp;Reuters",
+    "[Semis] Wall Street ends sharply higher, lifted by soaring Microsoft - Reuters - Wall Street ends sharply higher, lifted by soaring Microsoft&nbsp;&nbsp;Reuters",
+    "[Semis] Long Island Alzheimer’s and Dementia Center Rings the Nasdaq Stock Market Closing Bell - Nasdaq - Long Island Alzheimer’s and Dementia Center Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
   ],
   "debug_error": ""
 }
