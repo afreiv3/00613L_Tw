@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 9,
+  "count": 10,
   "history": [
     {
       "date": "2026-07-20",
@@ -566,6 +566,69 @@
           "pts": 0,
           "max": 10,
           "note": "TAIEX收40,039遠低於季線估算（43,000-44,000），距季線約7-8%，7月自高位累跌逾15%，史上第七大單日跌點，外資期貨淨空8萬口，結構完全偏空，無底部確認訊號，給0分"
+        }
+      },
+      "paper": {
+        "cash": 962257,
+        "equity": 962257,
+        "market_value": 0,
+        "return_pct": -3.77,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 7,
+        "wins": 1,
+        "win_rate": 14.3,
+        "realized_pnl": -37743
+      }
+    },
+    {
+      "date": "2026-07-31",
+      "time": "09:00",
+      "price": null,
+      "score": 41,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 11,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 8,
+          "max": 20,
+          "note": "隔夜NVDA+2.53%、AVGO+3.98%因Nasdaq整體反彈小幅回升，但TSM ADR逆勢跌4.5%（AI資本支出疑慮+中國晶片設備威脅），費半SOX累跌逾20%仍處技術熊市；半導體板塊分歧偏弱，取中低位"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 3,
+          "max": 10,
+          "note": "Fed三委員傾升息（2016年來最大鷹派分歧）、10Y殖利率4.68%偏高、WTI$83.87（7/29曾急漲+6.2%）、Trump警告對伊朗軍事回應；多重系統性風險並存，風險明顯升溫，給低分"
+        },
+        "trend": {
+          "pts": 0,
+          "max": 10,
+          "note": "TWII收39,933跌破40,000整數關，距季線估算（43,000-44,000）達8%；120日均線（39,327）雖提供近期技術支撐，但整體結構偏空，無底部確認訊號，給0分"
         }
       },
       "paper": {
