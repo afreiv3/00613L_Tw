@@ -1,33 +1,15 @@
 {
-  "date": "2026-07-31",
-  "generated_at": "2026-07-31 11:52",
+  "date": "2026-08-03",
+  "generated_at": "2026-08-03 11:57",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 18.0,
-    "macro": 7.0,
-    "trend": 8.0
+    "sector": 10.0,
+    "macro": 5.0,
+    "trend": 5.0
   },
-  "ai_sentiment_index": 82.5,
-  "summary": "在微軟和晶片股帶動下，華爾街股市大幅收高，儘管日韓兩國皆干預匯市，但市場情緒仍偏樂觀。",
-  "news_zh": [
-    "微軟股價飆升，帶動華爾街股市大幅上漲。",
-    "半導體股票反彈，那斯達克指數上漲2.8%。",
-    "日本央行政策會議前，日本當局疑似干預匯市以支撐日圓。",
-    "韓國進行罕見的美元拋售干預。",
-    "Citadel在AI股票大跌後，大量買入Situational的股票。",
-    "儘管日本干預，日圓仍面臨新的壓力。"
-  ],
-  "news": [
-    "[Reuters] Wall Street ends sharply higher, lifted by soaring Microsoft - Reuters - Wall Street ends sharply higher, lifted by soaring Microsoft&nbsp;&nbsp;Reuters",
-    "[Reuters] History of Japan's intervention in currency markets - Reuters - History of Japan's intervention in currency markets&nbsp;&nbsp;Reuters",
-    "[Reuters] Japan intervenes to prop up yen ahead of BOJ policy decision, source says By Reuters - Investing.com - Japan intervenes to prop up yen ahead of BOJ policy decision, source says By Reuters&nbsp;&nbsp;Investing.com",
-    "[Reuters] Citadel buys most of Situational's stock holdings after AI share rout, sources say - Reuters - Citadel buys most of Situational's stock holdings after AI share rout, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] Yen comes under renewed pressure after BOJ intervention - The Standard (HK) - Yen comes under renewed pressure after BOJ intervention&nbsp;&nbsp;The Standard (HK)",
-    "[Reuters] South Korea conducts rare dollar-selling intervention, source says - CNA - South Korea conducts rare dollar-selling intervention, source says&nbsp;&nbsp;CNA",
-    "[Reuters] South Korea conducts rare dollar-selling intervention, source says - KLSE Screener - South Korea conducts rare dollar-selling intervention, source says&nbsp;&nbsp;KLSE Screener",
-    "[Reuters] Yen surges, analysts suspect official Japanese intervention - Reuters - Yen surges, analysts suspect official Japanese intervention&nbsp;&nbsp;Reuters",
-    "[Semis] Wall Street ends sharply higher, lifted by soaring Microsoft - Reuters - Wall Street ends sharply higher, lifted by soaring Microsoft&nbsp;&nbsp;Reuters",
-    "[Semis] Long Island Alzheimer’s and Dementia Center Rings the Nasdaq Stock Market Closing Bell - Nasdaq - Long Island Alzheimer’s and Dementia Center Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
-  ],
-  "debug_error": ""
+  "ai_sentiment_index": 50.0,
+  "summary": "（無新聞或無金鑰，暫以中性計）",
+  "news_zh": [],
+  "news": [],
+  "debug_error": "未抓到新聞"
 }
