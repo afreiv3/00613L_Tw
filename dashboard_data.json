@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03 13:15 (Taipei)",
+  "updated": "2026-08-03 13:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -649,11 +649,11 @@
     },
     {
       "date": "2026-08-03",
-      "time": "13:15",
-      "price": 32.77,
-      "score": 58,
+      "time": "13:30",
+      "price": 32.64,
+      "score": 60,
       "zone": "amber",
-      "quant_sum": 38,
+      "quant_sum": 40,
       "ai_sum": 20,
       "ai_ok": true,
       "factors": {
@@ -668,9 +668,9 @@
           "note": "SOX 7/31僅+0.07%收11,311，7/30大幅反彈後動能轉弱；7月整月記憶體指數跌近30%，月線結構仍偏弱；AI需求（NVDA、TSM ADR已上調FY26成長逾40%）長期仍在，但短期板塊偏分歧"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "現價在區間中段(40%)"
+          "note": "現價近今日低點(區間28%) → 接近支撐"
         },
         "volume": {
           "pts": 15,
@@ -678,9 +678,9 @@
           "note": "推估量約均量0.8倍 → 正常"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 0,
           "max": 10,
-          "note": "現價貼近VWAP(-0.11%)"
+          "note": "現價在VWAP之下(-0.48%) → 弱勢"
         },
         "macro": {
           "pts": 5,
@@ -695,9 +695,9 @@
       },
       "paper": {
         "cash": 673170,
-        "equity": 960530,
-        "market_value": 287360,
-        "return_pct": -3.95,
+        "equity": 959390,
+        "market_value": 286220,
+        "return_pct": -4.06,
         "holding": true,
         "position": {
           "shares": 8769,
@@ -710,8 +710,8 @@
         },
         "shares": 8769,
         "avg_cost": 32.92,
-        "unrealized": -1727,
-        "unrealized_pct": -0.6,
+        "unrealized": -2867,
+        "unrealized_pct": -0.99,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
