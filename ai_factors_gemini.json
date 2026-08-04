@@ -1,15 +1,33 @@
 {
-  "date": "2026-08-03",
-  "generated_at": "2026-08-03 11:57",
+  "date": "2026-08-04",
+  "generated_at": "2026-08-04 11:40",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 10.0,
-    "macro": 5.0,
-    "trend": 5.0
+    "sector": 5.0,
+    "macro": 8.0,
+    "trend": 7.0
   },
   "ai_sentiment_index": 50.0,
-  "summary": "（無新聞或無金鑰，暫以中性計）",
-  "news_zh": [],
-  "news": [],
-  "debug_error": "未抓到新聞"
+  "summary": "儘管亞洲股市受華爾街帶動上漲，但半導體產業出現熊市訊號，且那斯達克指數經歷修正，顯示科技股面臨壓力，而美國與日本聯手干預日圓則為市場帶來波動。",
+  "news_zh": [
+    "亞洲股市受華爾街漲勢帶動走高，油價持穩。",
+    "半導體股票下跌，出現熊市訊號。",
+    "那斯達克100指數在修正後，歷史走勢預示下一步動向。",
+    "美國與日本達成協議，聯手打擊日圓投機客。",
+    "美國透過拋售歐元買入日圓，對貨幣市場造成不尋常的影響。",
+    "道瓊指數創下新高，日圓波動劇烈。"
+  ],
+  "news": [
+    "[Reuters] Breakingviews - Efficient markets will sustain quarterly reporting - Reuters - Breakingviews - Efficient markets will sustain quarterly reporting&nbsp;&nbsp;Reuters",
+    "[Reuters] How a US-Japan pact to hit yen speculators came together - Reuters - How a US-Japan pact to hit yen speculators came together&nbsp;&nbsp;Reuters",
+    "[Reuters] US shakes up currency markets with unusual yen-buying via selling euros - Reuters - US shakes up currency markets with unusual yen-buying via selling euros&nbsp;&nbsp;Reuters",
+    "[Reuters] Most Gulf markets in black as Trump holds off Iran strike - Reuters - Most Gulf markets in black as Trump holds off Iran strike&nbsp;&nbsp;Reuters",
+    "[Reuters] Trading Day: Dow record, yen vibrations - Reuters - Trading Day: Dow record, yen vibrations&nbsp;&nbsp;Reuters",
+    "[Reuters] Asia stocks move higher on Wall Street lead, oil steady - Reuters - Asia stocks move higher on Wall Street lead, oil steady&nbsp;&nbsp;Reuters",
+    "[Reuters] Tesla's European registrations mixed in July despite broader EV momentum - Reuters - Tesla's European registrations mixed in July despite broader EV momentum&nbsp;&nbsp;Reuters",
+    "[Reuters] AstraZeneca investors balk at prospect of $400 billion Bristol Myers pharma deal - Reuters - AstraZeneca investors balk at prospect of $400 billion Bristol Myers pharma deal&nbsp;&nbsp;Reuters",
+    "[Semis] Bear Market Signals: Semiconductor Stocks Sink - Seeking Alpha - Bear Market Signals: Semiconductor Stocks Sink&nbsp;&nbsp;Seeking Alpha",
+    "[Semis] OnKure Therapeutics Rings the Nasdaq Stock Market Closing Bell - Nasdaq - OnKure Therapeutics Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
+  ],
+  "debug_error": ""
 }
