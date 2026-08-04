@@ -721,11 +721,11 @@
     },
     {
       "date": "2026-08-04",
-      "time": "10:15",
-      "price": 33.1,
-      "score": 74,
+      "time": "10:30",
+      "price": 32.53,
+      "score": 82,
       "zone": "green",
-      "quant_sum": 45,
+      "quant_sum": 52,
       "ai_sum": 29,
       "ai_ok": true,
       "factors": {
@@ -740,9 +740,9 @@
           "note": "Nasdaq +2.1%大漲，Big Tech全面走強；NVDA +0.76%、TSM ADR +0.46%半導體正向但略遜整體科技大盤；油價跌至$79對半導體製造成本長線有利；SOX具體數據未取得但綜合推估正向，板塊偏多但動能溫和分歧"
         },
         "entry": {
-          "pts": 0,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價在區間上緣(100%) → 屬追高"
+          "note": "現價在區間中段(64%)"
         },
         "volume": {
           "pts": 15,
@@ -752,7 +752,7 @@
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+3.27%) → 有利"
+          "note": "現價在VWAP之上(+0.97%) → 有利"
         },
         "macro": {
           "pts": 8,
@@ -767,9 +767,9 @@
       },
       "paper": {
         "cash": 673170,
-        "equity": 963424,
-        "market_value": 290254,
-        "return_pct": -3.66,
+        "equity": 958426,
+        "market_value": 285256,
+        "return_pct": -4.16,
         "holding": true,
         "position": {
           "shares": 8769,
@@ -782,8 +782,8 @@
         },
         "shares": 8769,
         "avg_cost": 32.92,
-        "unrealized": 1167,
-        "unrealized_pct": 0.4,
+        "unrealized": -3831,
+        "unrealized_pct": -1.33,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
