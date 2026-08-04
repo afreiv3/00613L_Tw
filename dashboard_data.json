@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04 09:15 (Taipei)",
+  "updated": "2026-08-04 09:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -720,18 +720,18 @@
     },
     {
       "date": "2026-08-04",
-      "time": "09:15",
-      "price": null,
-      "score": 59,
+      "time": "09:30",
+      "price": 31.85,
+      "score": 56,
       "zone": "amber",
-      "quant_sum": 30,
+      "quant_sum": 28,
       "ai_sum": 29,
       "ai_ok": true,
       "factors": {
         "pattern": {
           "pts": 10.0,
           "max": 20,
-          "note": "盤中資料缺，型態以中性計"
+          "note": "開-2.1%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 14,
@@ -739,19 +739,19 @@
           "note": "Nasdaq +2.1%大漲，Big Tech全面走強；NVDA +0.76%、TSM ADR +0.46%半導體正向但略遜整體科技大盤；油價跌至$79對半導體製造成本長線有利；SOX具體數據未取得但綜合推估正向，板塊偏多但動能溫和分歧"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 0,
           "max": 15,
-          "note": "區間資料缺，以中性計"
+          "note": "現價在區間上緣(74%) → 屬追高"
         },
         "volume": {
           "pts": 7.5,
           "max": 15,
-          "note": "量能資料缺，以中性計"
+          "note": "推估量約均量1.5倍 → 偏離"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 10,
           "max": 10,
-          "note": "VWAP 資料缺，以中性計"
+          "note": "現價在VWAP之上(+0.42%) → 有利"
         },
         "macro": {
           "pts": 8,
@@ -766,9 +766,9 @@
       },
       "paper": {
         "cash": 673170,
-        "equity": 673170,
-        "market_value": 0,
-        "return_pct": -32.68,
+        "equity": 952463,
+        "market_value": 279293,
+        "return_pct": -4.75,
         "holding": true,
         "position": {
           "shares": 8769,
@@ -781,8 +781,8 @@
         },
         "shares": 8769,
         "avg_cost": 32.92,
-        "unrealized": -289087,
-        "unrealized_pct": -100.0,
+        "unrealized": -9794,
+        "unrealized_pct": -3.39,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
