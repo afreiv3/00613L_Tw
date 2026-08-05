@@ -792,11 +792,11 @@
     },
     {
       "date": "2026-08-05",
-      "time": "09:45",
-      "price": 33.77,
-      "score": 56,
+      "time": "10:00",
+      "price": 34.24,
+      "score": 51,
       "zone": "amber",
-      "quant_sum": 25,
+      "quant_sum": 20,
       "ai_sum": 31,
       "ai_ok": true,
       "factors": {
@@ -811,19 +811,19 @@
           "note": "SOX費半5日盤中+3.5%至11,430，Nasdaq 4日+3.3%，TSM ADR+2.16%至$406.11，AMD資料中心+107% YoY確認AI需求；AMD盤後小跌為唯一瑕疵，整體半導體/科技板塊強勢"
         },
         "entry": {
-          "pts": 15,
+          "pts": 0,
           "max": 15,
-          "note": "現價近今日低點(區間15%) → 接近支撐"
+          "note": "現價在區間上緣(78%) → 屬追高"
         },
         "volume": {
           "pts": 0,
           "max": 15,
-          "note": "推估量約均量2.7倍 → 爆量(疑換手/出貨)"
+          "note": "推估量約均量2.5倍 → 爆量(疑換手/出貨)"
         },
         "vwap": {
-          "pts": 0,
+          "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之下(-0.80%) → 弱勢"
+          "note": "現價在VWAP之上(+0.53%) → 有利"
         },
         "macro": {
           "pts": 8,
@@ -838,9 +838,9 @@
       },
       "paper": {
         "cash": 673170,
-        "equity": 969299,
-        "market_value": 296129,
-        "return_pct": -3.07,
+        "equity": 973421,
+        "market_value": 300251,
+        "return_pct": -2.66,
         "holding": true,
         "position": {
           "shares": 8769,
@@ -853,8 +853,8 @@
         },
         "shares": 8769,
         "avg_cost": 32.92,
-        "unrealized": 7042,
-        "unrealized_pct": 2.44,
+        "unrealized": 11164,
+        "unrealized_pct": 3.86,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
