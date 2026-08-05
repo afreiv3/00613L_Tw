@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09 11:00",
+  "updated": "2026-08-05 11:15",
   "history": [
     {
       "date": "2026-06-09",
@@ -172,6 +172,16 @@
       "target_pct": 0,
       "reason_code": "EXIT_BELOW_20MA",
       "reason": "趨勢破壞：00631L 跌破 20MA → 全清"
+    },
+    {
+      "date": "2026-08-05",
+      "time": "11:15",
+      "action": "BUY",
+      "price": 34.66,
+      "shares": 14555.2,
+      "target_pct": 50,
+      "reason_code": "ENTRY_SIGNAL",
+      "reason": "進場建倉至 50%（🟡 標準持倉（情緒健康））"
     }
   ]
 }
