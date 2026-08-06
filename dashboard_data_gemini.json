@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06 12:30 (Taipei)",
+  "updated": "2026-08-06 12:45 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -592,16 +592,16 @@
     },
     {
       "date": "2026-08-06",
-      "time": "12:30",
-      "price": 33.82,
-      "tier1": 38,
+      "time": "12:45",
+      "price": 33.8,
+      "tier1": 45,
       "ai_index": 77.5,
-      "target": 0.2,
-      "zone": "amber",
-      "zone_label": "🟠 輕倉防守（極度狂熱）",
-      "gate_open": true,
+      "target": 0.0,
+      "zone": "red",
+      "zone_label": "⚪ 觀望（等好買點＋趨勢）",
+      "gate_open": false,
       "market_ok": true,
-      "asset_trend_ok": true,
+      "asset_trend_ok": false,
       "ai_ok": true,
       "summary": "美國股市在科技股財報樂觀情緒下表現強勁，那斯達克指數出現看漲訊號，但部分科技股早盤拉回，黃金價格飆升，整體市場對台灣科技股有利。",
       "news": [
@@ -629,12 +629,12 @@
         "trades": 17,
         "max_asset": 1074736,
         "frenzy_days": 0,
-        "tier1": 38,
+        "tier1": 45,
         "ai_index": 77.5,
-        "target": 0.2,
-        "zone": "amber",
-        "zone_label": "🟠 輕倉防守（極度狂熱）",
-        "gate_open": true
+        "target": 0.0,
+        "zone": "red",
+        "zone_label": "⚪ 觀望（等好買點＋趨勢）",
+        "gate_open": false
       }
     }
   ]
