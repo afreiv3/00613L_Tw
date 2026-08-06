@@ -593,16 +593,16 @@
     },
     {
       "date": "2026-08-06",
-      "time": "11:00",
-      "price": 33.8,
+      "time": "11:15",
+      "price": 33.98,
       "tier1": 45,
       "ai_index": 50.0,
-      "target": 0.0,
-      "zone": "red",
-      "zone_label": "⚪ 觀望（等好買點＋趨勢）",
-      "gate_open": false,
+      "target": 0.5,
+      "zone": "amber",
+      "zone_label": "🟡 理性持倉（情緒健康）",
+      "gate_open": true,
       "market_ok": true,
-      "asset_trend_ok": false,
+      "asset_trend_ok": true,
       "ai_ok": false,
       "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
       "news": [],
@@ -621,10 +621,10 @@
         "frenzy_days": 0,
         "tier1": 45,
         "ai_index": 50.0,
-        "target": 0.0,
-        "zone": "red",
-        "zone_label": "⚪ 觀望（等好買點＋趨勢）",
-        "gate_open": false
+        "target": 0.5,
+        "zone": "amber",
+        "zone_label": "🟡 理性持倉（情緒健康）",
+        "gate_open": true
       }
     }
   ]
