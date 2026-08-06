@@ -801,13 +801,13 @@
     },
     {
       "date": "2026-08-06",
-      "time": "12:15",
-      "price": 33.76,
+      "time": "12:22",
+      "price": 33.74,
       "tier1": 45,
       "ai_index": 77.5,
-      "target": 0.2,
+      "target": 0.0,
       "zone": "red",
-      "zone_label": "🔴 跌破 20MA → 清倉",
+      "zone_label": "⚪ 今日已進場過",
       "gate_open": false,
       "market_ok": true,
       "asset_trend_ok": false,
@@ -840,7 +840,7 @@
         "market_value": 0,
         "position_pct": 0.0,
         "actual_exposure": 0.0,
-        "target_exposure": 0.2,
+        "target_exposure": 0.0,
         "return_pct": -0.09,
         "trades": 24,
         "highest_equity": 1002891,
@@ -856,9 +856,9 @@
         "last_action_reason": "EXIT_BELOW_20MA",
         "tier1": 45,
         "ai_index": 77.5,
-        "target": 0.2,
+        "target": 0.0,
         "zone": "red",
-        "zone_label": "🔴 跌破 20MA → 清倉",
+        "zone_label": "⚪ 今日已進場過",
         "gate_open": false
       }
     }
