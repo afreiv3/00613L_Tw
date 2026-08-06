@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06 11:15",
+  "updated": "2026-08-06 11:45",
   "history": [
     {
       "date": "2026-06-09",
@@ -212,6 +212,16 @@
       "target_pct": 50,
       "reason_code": "ENTRY_SIGNAL",
       "reason": "進場建倉至 50%（🟡 標準持倉（情緒健康））"
+    },
+    {
+      "date": "2026-08-06",
+      "time": "11:45",
+      "action": "SELL",
+      "price": 33.83,
+      "shares": 8830.6,
+      "target_pct": 20,
+      "reason_code": "AI_RISK_REDUCE_ONLY",
+      "reason": "降水位至 20%（🟠 輕倉防守（極度狂熱）；不加碼/不買回）"
     }
   ]
 }
