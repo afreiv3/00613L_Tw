@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07 10:30 (Taipei)",
+  "updated": "2026-08-07 10:45 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -933,11 +933,11 @@
     },
     {
       "date": "2026-08-07",
-      "time": "10:30",
-      "price": 33.67,
-      "score": 56,
+      "time": "10:45",
+      "price": 33.92,
+      "score": 59,
       "zone": "amber",
-      "quant_sum": 32,
+      "quant_sum": 35,
       "ai_sum": 24,
       "ai_ok": true,
       "factors": {
@@ -952,19 +952,19 @@
           "note": "SMH半導體ETF+0.39%顯示板塊韌性，但DDOG-19%/APP-14%/SanDisk-9%等財報重挫拖累科技板塊；Nasdaq僅跌0.06%，整體偏中性分歧"
         },
         "entry": {
-          "pts": 15,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價近今日低點(區間15%) → 接近支撐"
+          "note": "現價在區間中段(45%)"
         },
         "volume": {
           "pts": 7.5,
           "max": 15,
-          "note": "推估量約均量0.7倍 → 偏離"
+          "note": "推估量約均量0.6倍 → 偏離"
         },
         "vwap": {
-          "pts": 0,
+          "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之下(-0.68%) → 弱勢"
+          "note": "現價在VWAP之上(+0.07%) → 有利"
         },
         "macro": {
           "pts": 7,
@@ -979,9 +979,9 @@
       },
       "paper": {
         "cash": 673170,
-        "equity": 968422,
-        "market_value": 295252,
-        "return_pct": -3.16,
+        "equity": 970615,
+        "market_value": 297444,
+        "return_pct": -2.94,
         "holding": true,
         "position": {
           "shares": 8769,
@@ -994,8 +994,8 @@
         },
         "shares": 8769,
         "avg_cost": 32.92,
-        "unrealized": 6165,
-        "unrealized_pct": 2.13,
+        "unrealized": 8358,
+        "unrealized_pct": 2.89,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
