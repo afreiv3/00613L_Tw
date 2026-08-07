@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07 13:00 (Taipei)",
+  "updated": "2026-08-07 13:15 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -863,8 +863,8 @@
     },
     {
       "date": "2026-08-07",
-      "time": "13:00",
-      "price": 33.51,
+      "time": "13:15",
+      "price": 33.4,
       "tier1": 32,
       "ai_index": 67.5,
       "target": 0.0,
@@ -872,7 +872,7 @@
       "zone_label": "⚪ 今日已進場過",
       "gate_open": false,
       "market_ok": false,
-      "asset_trend_ok": true,
+      "asset_trend_ok": false,
       "ma10_ok": true,
       "ai_ok": true,
       "summary": "那斯達克從早盤跌勢中反彈，但投資者仍關注中東局勢和企業財報，市場在就業報告前暫停。",
