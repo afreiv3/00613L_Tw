@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07 13:46 (Taipei)",
+  "updated": "2026-08-07 14:54 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -863,17 +863,17 @@
     },
     {
       "date": "2026-08-07",
-      "time": "13:46",
-      "price": 33.71,
+      "time": "14:54",
+      "price": null,
       "tier1": 30,
       "ai_index": 67.5,
       "target": 0.0,
       "zone": "red",
-      "zone_label": "⚪ 觀望（非盤中）",
+      "zone_label": "⚪ 資料缺，不動作",
       "gate_open": false,
-      "market_ok": false,
-      "asset_trend_ok": true,
-      "ma10_ok": true,
+      "market_ok": null,
+      "asset_trend_ok": null,
+      "ma10_ok": null,
       "ai_ok": true,
       "summary": "那斯達克從早盤跌勢中反彈，但投資者仍關注中東局勢和企業財報，市場在就業報告前暫停。",
       "news": [
@@ -915,12 +915,12 @@
         "trailing_mode": false,
         "frenzy_days": 0,
         "last_action": "SELL",
-        "last_action_reason": "EXIT_TWII_BELOW_60MA",
+        "last_action_reason": "DATA_INVALID_NO_TRADE",
         "tier1": 30,
         "ai_index": 67.5,
         "target": 0.0,
         "zone": "red",
-        "zone_label": "⚪ 觀望（非盤中）",
+        "zone_label": "⚪ 資料缺，不動作",
         "gate_open": false
       }
     }
