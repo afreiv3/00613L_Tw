@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07 09:15 (Taipei)",
+  "updated": "2026-08-07 09:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -933,18 +933,18 @@
     },
     {
       "date": "2026-08-07",
-      "time": "09:15",
-      "price": null,
-      "score": 54,
+      "time": "09:30",
+      "price": 34.17,
+      "score": 69,
       "zone": "amber",
-      "quant_sum": 30,
+      "quant_sum": 45,
       "ai_sum": 24,
       "ai_ok": true,
       "factors": {
         "pattern": {
           "pts": 10.0,
           "max": 20,
-          "note": "盤中資料缺，型態以中性計"
+          "note": "開+1.4%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 10,
@@ -952,19 +952,19 @@
           "note": "SMH半導體ETF+0.39%顯示板塊韌性，但DDOG-19%/APP-14%/SanDisk-9%等財報重挫拖累科技板塊；Nasdaq僅跌0.06%，整體偏中性分歧"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "區間資料缺，以中性計"
+          "note": "現價近今日低點(區間25%) → 接近支撐"
         },
         "volume": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "量能資料缺，以中性計"
+          "note": "推估量約均量0.7倍 → 正常"
         },
         "vwap": {
           "pts": 5.0,
           "max": 10,
-          "note": "VWAP 資料缺，以中性計"
+          "note": "現價貼近VWAP(-0.12%)"
         },
         "macro": {
           "pts": 7,
@@ -979,9 +979,9 @@
       },
       "paper": {
         "cash": 673170,
-        "equity": 673170,
-        "market_value": 0,
-        "return_pct": -32.68,
+        "equity": 972807,
+        "market_value": 299637,
+        "return_pct": -2.72,
         "holding": true,
         "position": {
           "shares": 8769,
@@ -994,8 +994,8 @@
         },
         "shares": 8769,
         "avg_cost": 32.92,
-        "unrealized": -289087,
-        "unrealized_pct": -100.0,
+        "unrealized": 10550,
+        "unrealized_pct": 3.65,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
