@@ -1,33 +1,33 @@
 {
-  "date": "2026-08-06",
-  "generated_at": "2026-08-06 11:41",
+  "date": "2026-08-07",
+  "generated_at": "2026-08-07 11:17",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 16.0,
-    "macro": 7.0,
-    "trend": 8.0
+    "sector": 14.0,
+    "macro": 6.0,
+    "trend": 7.0
   },
-  "ai_sentiment_index": 77.5,
-  "summary": "美國股市在科技股財報樂觀情緒下表現強勁，那斯達克指數出現看漲訊號，但部分科技股早盤拉回，黃金價格飆升，整體市場對台灣科技股有利。",
+  "ai_sentiment_index": 67.5,
+  "summary": "那斯達克從早盤跌勢中反彈，但投資者仍關注中東局勢和企業財報，市場在就業報告前暫停。",
   "news_zh": [
-    "華爾街股市表現強勁，S&P 500指數創下新高後，有望受財報支撐繼續上漲。",
-    "那斯達克指數出現罕見看漲訊號，預示新一輪漲勢可能即將展開。",
-    "道瓊、S&P 500和那斯達克期貨在科技股財報樂觀情緒下攀升。",
-    "ON Semiconductor公布優於預期的第二季財報後，股價上漲。",
-    "那斯達克指數在早盤上漲後回落，SpaceX因AI支出疑慮而下跌，黃金價格飆升。",
-    "兩家地區性聯準會銀行將啟動針對私人信貸市場的試點調查。"
+    "在就業報告公布前，市場呈現觀望態度。",
+    "那斯達克從早盤跌勢中反彈，油價維持在76美元。",
+    "投資者關注中東談判和企業財報，導致股市收低。",
+    "美國公債殖利率飆升，市場預期九月升息。",
+    "SpaceX股票上漲，因可交易股份增加一倍以上。",
+    "大多數海灣地區股市下跌，市場關注外交進展。"
   ],
   "news": [
-    "[Reuters] Wall Street’s performance isn’t so ‘exceptional’ on the global stage - Reuters - Wall Street’s performance isn’t so ‘exceptional’ on the global stage&nbsp;&nbsp;Reuters",
-    "[Reuters] Kenya's stock exchange plans East Africa's first AI-focused ETF - Reuters - Kenya's stock exchange plans East Africa's first AI-focused ETF&nbsp;&nbsp;Reuters",
-    "[Reuters] US stock market could ride earnings strength to more gains after S&P 500 hits record - Reuters - US stock market could ride earnings strength to more gains after S&P 500 hits record&nbsp;&nbsp;Reuters",
-    "[Reuters] Chime raises 2026 revenue forecast on robust demand, CFO to step down - Reuters - Chime raises 2026 revenue forecast on robust demand, CFO to step down&nbsp;&nbsp;Reuters",
-    "[Reuters] Gulf stock markets end higher as investors await signs of progress in US-Iran talks - Reuters - Gulf stock markets end higher as investors await signs of progress in US-Iran talks&nbsp;&nbsp;Reuters",
-    "[Reuters] Trading Day: Momentum fizzles, gold sizzles - Reuters - Trading Day: Momentum fizzles, gold sizzles&nbsp;&nbsp;Reuters",
-    "[Reuters] Two regional Fed banks to launch pilot survey of private credit market - Reuters - Two regional Fed banks to launch pilot survey of private credit market&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: Outer SpaceX - Reuters - Morning Bid: Outer SpaceX&nbsp;&nbsp;Reuters",
-    "[Semis] Attovia Therapeutics Rings the Nasdaq Stock Market Opening Bell - Nasdaq - Attovia Therapeutics Rings the Nasdaq Stock Market Opening Bell&nbsp;&nbsp;Nasdaq",
-    "[Semis] The Nasdaq has flashed a rare bullish signal that suggests a fresh rally is getting ready to kick off - Business Insider - The Nasdaq has flashed a rare bullish signal that suggests a fresh rally is getting ready to kick off&nbsp;&nbsp;Business Insider"
+    "[Reuters] Trading Day: Pause before jobs - reuters.com - Trading Day: Pause before jobs&nbsp;&nbsp;reuters.com",
+    "[Reuters] SpaceX lockup expiry to test retail’s iron stomach - reuters.com - SpaceX lockup expiry to test retail’s iron stomach&nbsp;&nbsp;reuters.com",
+    "[Reuters] Stocks close lower as investors eye Mideast talks, earnings - reuters.com - Stocks close lower as investors eye Mideast talks, earnings&nbsp;&nbsp;reuters.com",
+    "[Reuters] SpaceX stock climbs as shares available for trading more than double - reuters.com - SpaceX stock climbs as shares available for trading more than double&nbsp;&nbsp;reuters.com",
+    "[Reuters] Most Gulf bourses in red as markets eye diplomacy - reuters.com - Most Gulf bourses in red as markets eye diplomacy&nbsp;&nbsp;reuters.com",
+    "[Reuters] Morning Bid: Gold stirs - reuters.com - Morning Bid: Gold stirs&nbsp;&nbsp;reuters.com",
+    "[Reuters] US wellness shot brand Dose explores sale, sources say - reuters.com - US wellness shot brand Dose explores sale, sources say&nbsp;&nbsp;reuters.com",
+    "[Reuters] Protein coffee brand Javvy explores sale, sources say - reuters.com - Protein coffee brand Javvy explores sale, sources say&nbsp;&nbsp;reuters.com",
+    "[Semis] River City Bank's shares debut on Nasdaq as part of secondary offering - The Business Journals - River City Bank's shares debut on Nasdaq as part of secondary offering&nbsp;&nbsp;The Business Journals",
+    "[Semis] Braveheart Bio Rings the Nasdaq Stock Market Opening Bell - Nasdaq - Braveheart Bio Rings the Nasdaq Stock Market Opening Bell&nbsp;&nbsp;Nasdaq"
   ],
   "debug_error": ""
 }
