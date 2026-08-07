@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07 11:30 (Taipei)",
+  "updated": "2026-08-07 11:45 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -863,15 +863,15 @@
     },
     {
       "date": "2026-08-07",
-      "time": "11:30",
-      "price": 34.01,
-      "tier1": 35,
+      "time": "11:45",
+      "price": 33.68,
+      "tier1": 32,
       "ai_index": 67.5,
-      "target": 0.5,
+      "target": 0.0,
       "zone": "red",
       "zone_label": "⚪ 今日已進場過",
       "gate_open": false,
-      "market_ok": true,
+      "market_ok": false,
       "asset_trend_ok": true,
       "ma10_ok": true,
       "ai_ok": true,
@@ -902,7 +902,7 @@
         "market_value": 0,
         "position_pct": 0.0,
         "actual_exposure": 0.0,
-        "target_exposure": 0.5,
+        "target_exposure": 0.0,
         "return_pct": -1.1,
         "trades": 26,
         "highest_equity": 998345,
@@ -916,9 +916,9 @@
         "frenzy_days": 0,
         "last_action": "SELL",
         "last_action_reason": "EXIT_TWII_BELOW_60MA",
-        "tier1": 35,
+        "tier1": 32,
         "ai_index": 67.5,
-        "target": 0.5,
+        "target": 0.0,
         "zone": "red",
         "zone_label": "⚪ 今日已進場過",
         "gate_open": false
