@@ -864,7 +864,7 @@
     },
     {
       "date": "2026-08-07",
-      "time": "11:57",
+      "time": "12:00",
       "price": 33.76,
       "tier1": 32,
       "ai_index": 67.5,
@@ -872,7 +872,7 @@
       "zone": "red",
       "zone_label": "⚪ 今日已進場過",
       "gate_open": false,
-      "market_ok": true,
+      "market_ok": false,
       "asset_trend_ok": true,
       "ma10_ok": true,
       "ai_ok": true,
