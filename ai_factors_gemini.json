@@ -1,33 +1,33 @@
 {
-  "date": "2026-08-07",
-  "generated_at": "2026-08-07 11:17",
+  "date": "2026-08-10",
+  "generated_at": "2026-08-10 10:36",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 14.0,
+    "sector": 12.0,
     "macro": 6.0,
     "trend": 7.0
   },
-  "ai_sentiment_index": 67.5,
-  "summary": "那斯達克從早盤跌勢中反彈，但投資者仍關注中東局勢和企業財報，市場在就業報告前暫停。",
+  "ai_sentiment_index": 62.5,
+  "summary": "美國通膨數據公布前，美股期貨下跌，半導體產業雖有正面消息，但整體市場情緒偏謹慎。",
   "news_zh": [
-    "在就業報告公布前，市場呈現觀望態度。",
-    "那斯達克從早盤跌勢中反彈，油價維持在76美元。",
-    "投資者關注中東談判和企業財報，導致股市收低。",
-    "美國公債殖利率飆升，市場預期九月升息。",
-    "SpaceX股票上漲，因可交易股份增加一倍以上。",
-    "大多數海灣地區股市下跌，市場關注外交進展。"
+    "美國股市期貨下跌，投資者等待關鍵通膨數據。",
+    "半導體製造設備訂單上修，部分個股表現亮眼。",
+    "摩根士丹利認為記憶體股票修正結束，建議重新進場。",
+    "日本出現近一年半以來首次經常帳赤字。",
+    "中國因素正在重塑全球貿易的贏家與輸家。",
+    "日本企業高管呼籲匯率穩定，以緩解日圓疲軟帶來的進口成本壓力。"
   ],
   "news": [
-    "[Reuters] Trading Day: Pause before jobs - reuters.com - Trading Day: Pause before jobs&nbsp;&nbsp;reuters.com",
-    "[Reuters] SpaceX lockup expiry to test retail’s iron stomach - reuters.com - SpaceX lockup expiry to test retail’s iron stomach&nbsp;&nbsp;reuters.com",
-    "[Reuters] Stocks close lower as investors eye Mideast talks, earnings - reuters.com - Stocks close lower as investors eye Mideast talks, earnings&nbsp;&nbsp;reuters.com",
-    "[Reuters] SpaceX stock climbs as shares available for trading more than double - reuters.com - SpaceX stock climbs as shares available for trading more than double&nbsp;&nbsp;reuters.com",
-    "[Reuters] Most Gulf bourses in red as markets eye diplomacy - reuters.com - Most Gulf bourses in red as markets eye diplomacy&nbsp;&nbsp;reuters.com",
-    "[Reuters] Morning Bid: Gold stirs - reuters.com - Morning Bid: Gold stirs&nbsp;&nbsp;reuters.com",
-    "[Reuters] US wellness shot brand Dose explores sale, sources say - reuters.com - US wellness shot brand Dose explores sale, sources say&nbsp;&nbsp;reuters.com",
-    "[Reuters] Protein coffee brand Javvy explores sale, sources say - reuters.com - Protein coffee brand Javvy explores sale, sources say&nbsp;&nbsp;reuters.com",
-    "[Semis] River City Bank's shares debut on Nasdaq as part of secondary offering - The Business Journals - River City Bank's shares debut on Nasdaq as part of secondary offering&nbsp;&nbsp;The Business Journals",
-    "[Semis] Braveheart Bio Rings the Nasdaq Stock Market Opening Bell - Nasdaq - Braveheart Bio Rings the Nasdaq Stock Market Opening Bell&nbsp;&nbsp;Nasdaq"
+    "[Reuters] Australian shares dip as Westpac weighs on banks ahead of RBA decision - Reuters - Australian shares dip as Westpac weighs on banks ahead of RBA decision&nbsp;&nbsp;Reuters",
+    "[Reuters] Japan posts first current account deficit in nearly 1-1/2 years - Reuters - Japan posts first current account deficit in nearly 1-1/2 years&nbsp;&nbsp;Reuters",
+    "[Reuters] Dollar near two-month trough as US inflation data awaited - Reuters - Dollar near two-month trough as US inflation data awaited&nbsp;&nbsp;Reuters",
+    "[Reuters] China Shock 2.0 reshuffles winners and losers - Reuters - China Shock 2.0 reshuffles winners and losers&nbsp;&nbsp;Reuters",
+    "[Reuters] China is balancing Asia's crude oil demand by itself - Reuters - China is balancing Asia's crude oil demand by itself&nbsp;&nbsp;Reuters",
+    "[Reuters] Japan's executives call for FX stability as weak yen intensify import-cost pressure - Reuters - Japan's executives call for FX stability as weak yen intensify import-cost pressure&nbsp;&nbsp;Reuters",
+    "[Reuters] Indian rupee, bonds to track oil prices; local and US inflation data in focus - Reuters - Indian rupee, bonds to track oil prices; local and US inflation data in focus&nbsp;&nbsp;Reuters",
+    "[Reuters] Australia's Treasury Wine takes $394 million charge to revamp US business; shares climb - Reuters - Australia's Treasury Wine takes $394 million charge to revamp US business; shares climb&nbsp;&nbsp;Reuters",
+    "[Semis] Dow Futures Fall With Big Earnings Ahead; What To Do Now - Investor's Business Daily - Dow Futures Fall With Big Earnings Ahead; What To Do Now&nbsp;&nbsp;Investor's Business Daily",
+    "[Semis] U.S. stock futures dip as investors await inflation data, grapple with more Iran uncertainty - MarketWatch - U.S. stock futures dip as investors await inflation data, grapple with more Iran uncertainty&nbsp;&nbsp;MarketWatch"
   ],
   "debug_error": ""
 }
