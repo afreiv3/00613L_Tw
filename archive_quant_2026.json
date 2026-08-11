@@ -1076,18 +1076,18 @@
     },
     {
       "date": "2026-08-11",
-      "time": "10:45",
-      "price": 34.43,
-      "score": 58,
+      "time": "11:00",
+      "price": 34.6,
+      "score": 60,
       "zone": "amber",
-      "quant_sum": 35,
+      "quant_sum": 38,
       "ai_sum": 23,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 10.0,
+          "pts": 20,
           "max": 20,
-          "note": "開-0.5%、小幅回落，型態中性"
+          "note": "現價守在開盤之上(開-0.5%) → 有利"
         },
         "sector": {
           "pts": 10,
@@ -1095,9 +1095,9 @@
           "note": "美股8/10 SOXX ETF跌約1.3%（Intel領跌，Nasdaq-0.3%），AVGO Q3 AI指引$160億偏軟後半導體板塊呈分歧；前週Nasdaq+5%、SOX+2.56%仍具底色，但隔夜明確轉弱，計10分（分歧）"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 0,
           "max": 15,
-          "note": "現價在區間中段(50%)"
+          "note": "現價在區間上緣(84%) → 屬追高"
         },
         "volume": {
           "pts": 7.5,
@@ -1107,7 +1107,7 @@
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+0.00%) → 有利"
+          "note": "現價在VWAP之上(+0.46%) → 有利"
         },
         "macro": {
           "pts": 5,
@@ -1122,9 +1122,9 @@
       },
       "paper": {
         "cash": 673170,
-        "equity": 975087,
-        "market_value": 301917,
-        "return_pct": -2.49,
+        "equity": 976577,
+        "market_value": 303407,
+        "return_pct": -2.34,
         "holding": true,
         "position": {
           "shares": 8769,
@@ -1137,8 +1137,8 @@
         },
         "shares": 8769,
         "avg_cost": 32.92,
-        "unrealized": 12830,
-        "unrealized_pct": 4.44,
+        "unrealized": 14321,
+        "unrealized_pct": 4.95,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
