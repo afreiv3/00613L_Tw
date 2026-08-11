@@ -1,33 +1,33 @@
 {
-  "date": "2026-08-10",
-  "generated_at": "2026-08-10 10:36",
+  "date": "2026-08-11",
+  "generated_at": "2026-08-11 10:29",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 12.0,
-    "macro": 6.0,
-    "trend": 7.0
+    "sector": 7.0,
+    "macro": 5.0,
+    "trend": 6.0
   },
-  "ai_sentiment_index": 62.5,
-  "summary": "美國通膨數據公布前，美股期貨下跌，半導體產業雖有正面消息，但整體市場情緒偏謹慎。",
+  "ai_sentiment_index": 45.0,
+  "summary": "華爾街因荷姆茲協議預期消退而下跌，油價上漲，亞洲股市在美伊僵局中波動，半導體產業則面臨挑戰與機遇並存。",
   "news_zh": [
-    "美國股市期貨下跌，投資者等待關鍵通膨數據。",
-    "半導體製造設備訂單上修，部分個股表現亮眼。",
-    "摩根士丹利認為記憶體股票修正結束，建議重新進場。",
-    "日本出現近一年半以來首次經常帳赤字。",
-    "中國因素正在重塑全球貿易的贏家與輸家。",
-    "日本企業高管呼籲匯率穩定，以緩解日圓疲軟帶來的進口成本壓力。"
+    "華爾街因荷姆茲協議預期消退而收跌。",
+    "油價上漲，亞洲股市在美伊僵局中表現平淡。",
+    "英特爾計劃出售150億美元股票，因轉型反彈提振股價。",
+    "台積電與艾司摩爾：未來十年誰是更好的半導體設備股？",
+    "以色列散戶投資者正將迷因股換成人工智慧和半導體押注。",
+    "如果股市即將崩盤，歷史表明這樣做的投資者將獲得巨額利潤。"
   ],
   "news": [
-    "[Reuters] Australian shares dip as Westpac weighs on banks ahead of RBA decision - Reuters - Australian shares dip as Westpac weighs on banks ahead of RBA decision&nbsp;&nbsp;Reuters",
-    "[Reuters] Japan posts first current account deficit in nearly 1-1/2 years - Reuters - Japan posts first current account deficit in nearly 1-1/2 years&nbsp;&nbsp;Reuters",
-    "[Reuters] Dollar near two-month trough as US inflation data awaited - Reuters - Dollar near two-month trough as US inflation data awaited&nbsp;&nbsp;Reuters",
-    "[Reuters] China Shock 2.0 reshuffles winners and losers - Reuters - China Shock 2.0 reshuffles winners and losers&nbsp;&nbsp;Reuters",
-    "[Reuters] China is balancing Asia's crude oil demand by itself - Reuters - China is balancing Asia's crude oil demand by itself&nbsp;&nbsp;Reuters",
-    "[Reuters] Japan's executives call for FX stability as weak yen intensify import-cost pressure - Reuters - Japan's executives call for FX stability as weak yen intensify import-cost pressure&nbsp;&nbsp;Reuters",
-    "[Reuters] Indian rupee, bonds to track oil prices; local and US inflation data in focus - Reuters - Indian rupee, bonds to track oil prices; local and US inflation data in focus&nbsp;&nbsp;Reuters",
-    "[Reuters] Australia's Treasury Wine takes $394 million charge to revamp US business; shares climb - Reuters - Australia's Treasury Wine takes $394 million charge to revamp US business; shares climb&nbsp;&nbsp;Reuters",
-    "[Semis] Dow Futures Fall With Big Earnings Ahead; What To Do Now - Investor's Business Daily - Dow Futures Fall With Big Earnings Ahead; What To Do Now&nbsp;&nbsp;Investor's Business Daily",
-    "[Semis] U.S. stock futures dip as investors await inflation data, grapple with more Iran uncertainty - MarketWatch - U.S. stock futures dip as investors await inflation data, grapple with more Iran uncertainty&nbsp;&nbsp;MarketWatch"
+    "[Reuters] Wall Street ends down as expectations of Hormuz deal fade - Reuters - Wall Street ends down as expectations of Hormuz deal fade&nbsp;&nbsp;Reuters",
+    "[Reuters] Oil prices rise, Asia stocks drift amid US-Iran stalemate - Reuters - Oil prices rise, Asia stocks drift amid US-Iran stalemate&nbsp;&nbsp;Reuters",
+    "[Reuters] Trading Day: Strait talking - Reuters - Trading Day: Strait talking&nbsp;&nbsp;Reuters",
+    "[Reuters] Unemployment rate remains Fed's labor market lodestar - Reuters - Unemployment rate remains Fed's labor market lodestar&nbsp;&nbsp;Reuters",
+    "[Reuters] Intel plans $15 billion share sale as turnaround rally lifts stock - Reuters - Intel plans $15 billion share sale as turnaround rally lifts stock&nbsp;&nbsp;Reuters",
+    "[Reuters] Yen steadies as intervention boost fades; RBA in focus - Reuters - Yen steadies as intervention boost fades; RBA in focus&nbsp;&nbsp;Reuters",
+    "[Reuters] BOJ's rate-hike path runs into Takaichi's bond market problems - Reuters - BOJ's rate-hike path runs into Takaichi's bond market problems&nbsp;&nbsp;Reuters",
+    "[Reuters] Glencore's exposure to Radiant World more than $500 million, sources say - Reuters - Glencore's exposure to Radiant World more than $500 million, sources say&nbsp;&nbsp;Reuters",
+    "[Semis] Wall Street ends down as expectations of Hormuz deal fade - Reuters - Wall Street ends down as expectations of Hormuz deal fade&nbsp;&nbsp;Reuters",
+    "[Semis] Turn Therapeutics Rings the Nasdaq Stock Market Closing Bell - Nasdaq - Turn Therapeutics Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
   ],
   "debug_error": ""
 }
