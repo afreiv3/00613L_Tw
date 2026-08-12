@@ -1,33 +1,33 @@
 {
-  "date": "2026-08-11",
-  "generated_at": "2026-08-11 10:29",
+  "date": "2026-08-12",
+  "generated_at": "2026-08-12 10:46",
   "model": "gemini-2.5-flash",
   "factors": {
     "sector": 7.0,
-    "macro": 5.0,
-    "trend": 6.0
+    "macro": 3.0,
+    "trend": 5.0
   },
-  "ai_sentiment_index": 45.0,
-  "summary": "華爾街因荷姆茲協議預期消退而下跌，油價上漲，亞洲股市在美伊僵局中波動，半導體產業則面臨挑戰與機遇並存。",
+  "ai_sentiment_index": 37.5,
+  "summary": "美國與伊朗和平希望消退，地緣政治緊張升溫，油價和黃金上漲，華爾街收跌，半導體類股表現分歧。",
   "news_zh": [
-    "華爾街因荷姆茲協議預期消退而收跌。",
-    "油價上漲，亞洲股市在美伊僵局中表現平淡。",
-    "英特爾計劃出售150億美元股票，因轉型反彈提振股價。",
-    "台積電與艾司摩爾：未來十年誰是更好的半導體設備股？",
-    "以色列散戶投資者正將迷因股換成人工智慧和半導體押注。",
-    "如果股市即將崩盤，歷史表明這樣做的投資者將獲得巨額利潤。"
+    "美國與伊朗和平希望消退，華爾街股市收盤下跌。",
+    "地緣政治緊張局勢升溫，油價和黃金價格上漲。",
+    "川普在債券市場關鍵時刻重啟與聯準會的爭執。",
+    "美國公債殖利率預計走低，但策略師的信心動搖。",
+    "半導體公司在股東回報計畫上意見分歧。",
+    "市場仍在試圖釐清聯準會的下一步行動。"
   ],
   "news": [
-    "[Reuters] Wall Street ends down as expectations of Hormuz deal fade - Reuters - Wall Street ends down as expectations of Hormuz deal fade&nbsp;&nbsp;Reuters",
-    "[Reuters] Oil prices rise, Asia stocks drift amid US-Iran stalemate - Reuters - Oil prices rise, Asia stocks drift amid US-Iran stalemate&nbsp;&nbsp;Reuters",
-    "[Reuters] Trading Day: Strait talking - Reuters - Trading Day: Strait talking&nbsp;&nbsp;Reuters",
-    "[Reuters] Unemployment rate remains Fed's labor market lodestar - Reuters - Unemployment rate remains Fed's labor market lodestar&nbsp;&nbsp;Reuters",
-    "[Reuters] Intel plans $15 billion share sale as turnaround rally lifts stock - Reuters - Intel plans $15 billion share sale as turnaround rally lifts stock&nbsp;&nbsp;Reuters",
-    "[Reuters] Yen steadies as intervention boost fades; RBA in focus - Reuters - Yen steadies as intervention boost fades; RBA in focus&nbsp;&nbsp;Reuters",
-    "[Reuters] BOJ's rate-hike path runs into Takaichi's bond market problems - Reuters - BOJ's rate-hike path runs into Takaichi's bond market problems&nbsp;&nbsp;Reuters",
-    "[Reuters] Glencore's exposure to Radiant World more than $500 million, sources say - Reuters - Glencore's exposure to Radiant World more than $500 million, sources say&nbsp;&nbsp;Reuters",
-    "[Semis] Wall Street ends down as expectations of Hormuz deal fade - Reuters - Wall Street ends down as expectations of Hormuz deal fade&nbsp;&nbsp;Reuters",
-    "[Semis] Turn Therapeutics Rings the Nasdaq Stock Market Closing Bell - Nasdaq - Turn Therapeutics Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq"
+    "[Reuters] Wall Street ends down as US-Iran peace optimism fades - Reuters - Wall Street ends down as US-Iran peace optimism fades&nbsp;&nbsp;Reuters",
+    "[Reuters] Oil, gold prices rise as geopolitical tensions mount before CPI - Reuters - Oil, gold prices rise as geopolitical tensions mount before CPI&nbsp;&nbsp;Reuters",
+    "[Reuters] Trading Day: Peace fog - Reuters - Trading Day: Peace fog&nbsp;&nbsp;Reuters",
+    "[Reuters] Trump reopens Fed battle at critical time for bond markets - Reuters - Trump reopens Fed battle at critical time for bond markets&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: Long bond bother - Reuters - Morning Bid: Long bond bother&nbsp;&nbsp;Reuters",
+    "[Reuters] US Treasury yields seen heading lower but strategists' conviction wavering - Reuters - US Treasury yields seen heading lower but strategists' conviction wavering&nbsp;&nbsp;Reuters",
+    "[Reuters] Australia's CBA posts record cash earnings, but flags cooling mortgage demand - Reuters - Australia's CBA posts record cash earnings, but flags cooling mortgage demand&nbsp;&nbsp;Reuters",
+    "[Reuters] Shein plans to launch Hong Kong IPO as soon as August 19, sources say - Reuters - Shein plans to launch Hong Kong IPO as soon as August 19, sources say&nbsp;&nbsp;Reuters",
+    "[Semis] Semiconductor Stocks Split on Shareholder Return Plans - 조선일보 - Semiconductor Stocks Split on Shareholder Return Plans&nbsp;&nbsp;조선일보",
+    "[Semis] Inc. 5000 Rings the Nasdaq Stock Market Opening Bell - Nasdaq - Inc. 5000 Rings the Nasdaq Stock Market Opening Bell&nbsp;&nbsp;Nasdaq"
   ],
   "debug_error": ""
 }
