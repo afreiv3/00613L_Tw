@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12 12:15 (Taipei)",
+  "updated": "2026-08-12 12:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1146,11 +1146,11 @@
     },
     {
       "date": "2026-08-12",
-      "time": "12:15",
-      "price": 35.24,
-      "score": 59,
+      "time": "12:30",
+      "price": 35.32,
+      "score": 56,
       "zone": "amber",
-      "quant_sum": 40,
+      "quant_sum": 38,
       "ai_sum": 19,
       "ai_ok": true,
       "factors": {
@@ -1165,19 +1165,19 @@
           "note": "Intel領跌費半，那斯達克-0.60%，TSM ADR收$418.47（-0.37%）自高點翻黑；半導體板塊分歧偏弱，AI核心股相對有韌性但整體承壓，給8分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 0,
           "max": 15,
-          "note": "現價在區間中段(55%)"
+          "note": "現價在區間上緣(69%) → 屬追高"
         },
         "volume": {
           "pts": 7.5,
           "max": 15,
-          "note": "推估量約均量0.6倍 → 偏離"
+          "note": "推估量約均量1.4倍 → 偏離"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 10,
           "max": 10,
-          "note": "現價貼近VWAP(-0.07%)"
+          "note": "現價在VWAP之上(+0.14%) → 有利"
         },
         "macro": {
           "pts": 3,
@@ -1192,9 +1192,9 @@
       },
       "paper": {
         "cash": 673170,
-        "equity": 982190,
-        "market_value": 309020,
-        "return_pct": -1.78,
+        "equity": 982891,
+        "market_value": 309721,
+        "return_pct": -1.71,
         "holding": true,
         "position": {
           "shares": 8769,
@@ -1207,8 +1207,8 @@
         },
         "shares": 8769,
         "avg_cost": 32.92,
-        "unrealized": 19933,
-        "unrealized_pct": 6.9,
+        "unrealized": 20634,
+        "unrealized_pct": 7.14,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
