@@ -1,7 +1,7 @@
 {
   "date": "2026-08-12",
   "full_sent": true,
-  "alerted": false,
+  "alerted": true,
   "g_full_sent": true,
   "c_full_sent": true
 }
