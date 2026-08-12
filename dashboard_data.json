@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-11 14:39 (Taipei)",
+  "updated": "2026-08-12 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1138,6 +1138,77 @@
         "avg_cost": 32.92,
         "unrealized": 16688,
         "unrealized_pct": 5.77,
+        "trades": 7,
+        "wins": 1,
+        "win_rate": 14.3,
+        "realized_pnl": -37743
+      }
+    },
+    {
+      "date": "2026-08-12",
+      "time": "09:00",
+      "price": null,
+      "score": 49,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 19,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 8,
+          "max": 20,
+          "note": "Intel領跌費半，那斯達克-0.60%，TSM ADR收$418.47（-0.37%）自高點翻黑；半導體板塊分歧偏弱，AI核心股相對有韌性但整體承壓，給8分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 3,
+          "max": 10,
+          "note": "美伊戰爭膠著WTI $81.50高位、10Y殖利率4.66-4.70%偏高，Fed 9月升息機率升至47-51%（前44%），系統性風險升溫；今晚美CPI添加不確定性，給3分"
+        },
+        "trend": {
+          "pts": 8,
+          "max": 10,
+          "note": "台股加權44,741穩站季線（~44,278）上方463點，外資連續兩日買超逾924億，多頭回升結構持續完好，給8分"
+        }
+      },
+      "paper": {
+        "cash": 673170,
+        "equity": 673170,
+        "market_value": 0,
+        "return_pct": -32.68,
+        "holding": true,
+        "position": {
+          "shares": 8769,
+          "entry_price": 32.92,
+          "entry_date": "2026-08-03",
+          "entry_time": "11:00",
+          "cost": 289086.84,
+          "entry_score": 72,
+          "frac": 0.3
+        },
+        "shares": 8769,
+        "avg_cost": 32.92,
+        "unrealized": -289087,
+        "unrealized_pct": -100.0,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
