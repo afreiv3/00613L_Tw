@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10 09:30",
+  "updated": "2026-08-13 09:30",
   "history": [
     {
       "date": "2026-06-09",
@@ -262,6 +262,16 @@
       "target_pct": 50,
       "reason_code": "ENTRY_SIGNAL",
       "reason": "進場建倉至 50%（🟡 標準持倉（情緒健康））"
+    },
+    {
+      "date": "2026-08-13",
+      "time": "09:30",
+      "action": "SELL",
+      "price": 36.38,
+      "shares": 4297.5,
+      "target_pct": 50,
+      "reason_code": "STAGE_1_PROFIT_TAKE",
+      "reason": "第一段停利 +5.4%：賣 30%，剩餘轉移動停利＋10MA 保護"
     }
   ]
 }
