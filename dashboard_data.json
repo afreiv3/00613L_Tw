@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13 11:45 (Taipei)",
+  "updated": "2026-08-13 12:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1217,11 +1217,11 @@
     },
     {
       "date": "2026-08-13",
-      "time": "11:45",
-      "price": 36.19,
-      "score": 55,
+      "time": "12:00",
+      "price": 36.15,
+      "score": 62,
       "zone": "amber",
-      "quant_sum": 25,
+      "quant_sum": 32,
       "ai_sum": 30,
       "ai_ok": true,
       "factors": {
@@ -1236,19 +1236,19 @@
           "note": "NVDA+3.03%、SOX+0.66%、TSM ADR+0.86%，隔夜半導體板塊全面走強，AVGO亦維持正區間；整體偏強但SOX漲幅溫和非全面爆發，給17分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "現價在區間中段(39%)"
+          "note": "現價近今日低點(區間31%) → 接近支撐"
         },
         "volume": {
           "pts": 7.5,
           "max": 15,
-          "note": "推估量約均量0.7倍 → 偏離"
+          "note": "推估量約均量0.6倍 → 偏離"
         },
         "vwap": {
           "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之下(-0.33%) → 弱勢"
+          "note": "現價在VWAP之下(-0.44%) → 弱勢"
         },
         "macro": {
           "pts": 5,
@@ -1263,9 +1263,9 @@
       },
       "paper": {
         "cash": 673170,
-        "equity": 990520,
-        "market_value": 317350,
-        "return_pct": -0.95,
+        "equity": 990169,
+        "market_value": 316999,
+        "return_pct": -0.98,
         "holding": true,
         "position": {
           "shares": 8769,
@@ -1278,8 +1278,8 @@
         },
         "shares": 8769,
         "avg_cost": 32.92,
-        "unrealized": 28263,
-        "unrealized_pct": 9.78,
+        "unrealized": 27913,
+        "unrealized_pct": 9.66,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
