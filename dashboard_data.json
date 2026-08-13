@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13 10:00 (Taipei)",
+  "updated": "2026-08-13 10:15 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1217,8 +1217,8 @@
     },
     {
       "date": "2026-08-13",
-      "time": "10:00",
-      "price": 36.4,
+      "time": "10:15",
+      "price": 36.41,
       "score": 72,
       "zone": "green",
       "quant_sum": 42,
@@ -1238,17 +1238,17 @@
         "entry": {
           "pts": 7.5,
           "max": 15,
-          "note": "現價在區間中段(57%)"
+          "note": "現價在區間中段(61%)"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量1.1倍 → 正常"
+          "note": "推估量約均量1.0倍 → 正常"
         },
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+0.06%) → 有利"
+          "note": "現價在VWAP之上(+0.10%) → 有利"
         },
         "macro": {
           "pts": 5,
@@ -1263,8 +1263,8 @@
       },
       "paper": {
         "cash": 673170,
-        "equity": 992362,
-        "market_value": 319192,
+        "equity": 992449,
+        "market_value": 319279,
         "return_pct": -0.76,
         "holding": true,
         "position": {
@@ -1278,8 +1278,8 @@
         },
         "shares": 8769,
         "avg_cost": 32.92,
-        "unrealized": 30105,
-        "unrealized_pct": 10.41,
+        "unrealized": 30192,
+        "unrealized_pct": 10.44,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
