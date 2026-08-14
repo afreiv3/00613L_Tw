@@ -1289,11 +1289,11 @@
     },
     {
       "date": "2026-08-14",
-      "time": "10:00",
-      "price": 36.29,
-      "score": 75,
+      "time": "10:15",
+      "price": 36.33,
+      "score": 72,
       "zone": "green",
-      "quant_sum": 40,
+      "quant_sum": 38,
       "ai_sum": 35,
       "ai_ok": true,
       "factors": {
@@ -1308,19 +1308,19 @@
           "note": "費半SOX隔夜+2.07%，SanDisk+15%、Micron+5.6%等記憶體領漲，TSM ADR+1.03%至$433.50，半導體板塊全面強勢，給18分"
         },
         "entry": {
-          "pts": 15,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價近今日低點(區間28%) → 接近支撐"
+          "note": "現價在區間中段(37%)"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量0.9倍 → 正常"
+          "note": "推估量約均量0.8倍 → 正常"
         },
         "vwap": {
-          "pts": 0,
+          "pts": 5.0,
           "max": 10,
-          "note": "現價在VWAP之下(-0.31%) → 弱勢"
+          "note": "現價貼近VWAP(-0.16%)"
         },
         "macro": {
           "pts": 7,
@@ -1335,9 +1335,9 @@
       },
       "paper": {
         "cash": 673170,
-        "equity": 991397,
-        "market_value": 318227,
-        "return_pct": -0.86,
+        "equity": 991748,
+        "market_value": 318578,
+        "return_pct": -0.83,
         "holding": true,
         "position": {
           "shares": 8769,
@@ -1350,8 +1350,8 @@
         },
         "shares": 8769,
         "avg_cost": 32.92,
-        "unrealized": 29140,
-        "unrealized_pct": 10.08,
+        "unrealized": 29491,
+        "unrealized_pct": 10.2,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
