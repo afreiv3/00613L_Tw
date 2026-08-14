@@ -1,33 +1,30 @@
 {
-  "date": "2026-08-13",
-  "generated_at": "2026-08-13 11:00",
+  "date": "2026-08-14",
+  "generated_at": "2026-08-14 10:48",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 18.0,
-    "macro": 8.0,
-    "trend": 9.0
+    "sector": 15.0,
+    "macro": 7.0,
+    "trend": 6.0
   },
-  "ai_sentiment_index": 87.5,
-  "summary": "美國通膨數據符合預期，降低了升息壓力，加上AI樂觀情緒推動半導體股上漲，預計今日台灣市場表現強勁。",
+  "ai_sentiment_index": 70.0,
+  "summary": "美國股市期貨漲跌互見，儘管聯準會升息預期放緩，但市場對半導體類股仍有支撐，同時也出現歷史性預警訊號。",
   "news_zh": [
-    "美國消費者物價指數符合預期，美元走強，日圓走弱，降低聯準會升息預期。",
-    "S&P 500指數收高，CoreWeave業績提振AI樂觀情緒。",
-    "亞洲股市上漲，因美國通膨數據削弱了9月聯準會升息的押注。",
-    "美國半導體股反彈，AI需求擔憂緩解。",
-    "美國半導體股飆升，預計韓國股市將保持強勁。",
-    "那斯達克100指數上漲超過1%，半導體股再次走強。"
+    "美國股市期貨漲跌互見，聯準會升息預期有所緩解。",
+    "有分析師預測2027年將是股市表現最佳的年份之一，因SpaceX和聯準會風險消退。",
+    "股市出現歷史上僅出現五次的警告訊號，預示未來走勢不佳。",
+    "今日股市展望：油價下跌和半導體股上漲帶動持續漲勢。",
+    "追蹤標準普爾500指數、那斯達克指數、道瓊工業指數和SPDR ETF的最新股市數據。"
   ],
   "news": [
-    "[Reuters] S&P 500 ends higher as CoreWeave results fuel AI optimism - Reuters - S&P 500 ends higher as CoreWeave results fuel AI optimism&nbsp;&nbsp;Reuters",
-    "[Reuters] Soaring AI hyperscaler default hedges aren't what they seem - Reuters - Soaring AI hyperscaler default hedges aren't what they seem&nbsp;&nbsp;Reuters",
-    "[Reuters] Cerebras shares plummet 16% after results fail to impress investors - Reuters - Cerebras shares plummet 16% after results fail to impress investors&nbsp;&nbsp;Reuters",
-    "[Reuters] Australia's Origin Energy beats annual profit view, sees stronger energy markets earnings - Reuters - Australia's Origin Energy beats annual profit view, sees stronger energy markets earnings&nbsp;&nbsp;Reuters",
-    "[Reuters] Peltz-led group preparing bid to take Wendy's private, source says - Reuters - Peltz-led group preparing bid to take Wendy's private, source says&nbsp;&nbsp;Reuters",
-    "[Reuters] Dollar gains, yen slips as US CPI meets expectations - Reuters - Dollar gains, yen slips as US CPI meets expectations&nbsp;&nbsp;Reuters",
-    "[Reuters] European stocks ease from record highs as investors weigh earnings, Middle East risks - Reuters - European stocks ease from record highs as investors weigh earnings, Middle East risks&nbsp;&nbsp;Reuters",
-    "[Reuters] Trading Day: AI cheer, new highs near - Reuters - Trading Day: AI cheer, new highs near&nbsp;&nbsp;Reuters",
+    "[Semis] Target Hospitality Corp. Rings the Nasdaq Stock Market Closing Bell - Nasdaq - Target Hospitality Corp. Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq",
+    "[Semis] Tom Lee Predicts 2027 Will Be One Of Stock Market's ‘Best Years’ As SpaceX, Fed Risks Fade - Stocktwits - Tom Lee Predicts 2027 Will Be One Of Stock Market's ‘Best Years’ As SpaceX, Fed Risks Fade&nbsp;&nbsp;Stocktwits",
+    "[Semis] Stock Market Today : U.S. Stock Futures Mixed as Fed Rate-Hike Bets Ease - Eurasia Business News - Stock Market Today : U.S. Stock Futures Mixed as Fed Rate-Hike Bets Ease&nbsp;&nbsp;Eurasia Business News",
+    "[Semis] The Stock Market Just Flashed a Warning Seen Only 5 Times Before. History Is Crystal Clear About What Happens Next (Hint: It's Not Good). - The Motley Fool - The Stock Market Just Flashed a Warning Seen Only 5 Times Before. History Is Crystal Clear About What Happens Next (Hint: It's Not Good).&nbsp;&nbsp;The Motley ",
+    "[Semis] [Stock Market Outlook for Today] Continued gains driven by lower crude oil prices and higher semiconductor stocks (14th) - Moomoo - [Stock Market Outlook for Today] Continued gains driven by lower crude oil prices and higher semiconductor stocks (14th)&nbsp;&nbsp;Moomoo",
+    "[Semis] Quick ratio of Pelican Acquisition II Corporation – NASDAQ:PLCIR - TradingView - Quick ratio of Pelican Acquisition II Corporation – NASDAQ:PLCIR&nbsp;&nbsp;TradingView",
     "[Semis] Track Current Stock Market Data On The S&P 500, Nasdaq, Dow Jones And SPDR ETFs - Investor's Business Daily - Track Current Stock Market Data On The S&P 500, Nasdaq, Dow Jones And SPDR ETFs&nbsp;&nbsp;Investor's Business Daily",
-    "[Semis] Stock Market Today, Aug. 12: Stocks Edge Higher as Inflation Data Eases Fed Rate Pressure - The Motley Fool - Stock Market Today, Aug. 12: Stocks Edge Higher as Inflation Data Eases Fed Rate Pressure&nbsp;&nbsp;The Motley Fool"
+    "[Semis] Regeneron Pharmaceuticals, Inc. (REGN) Stock Price, News, Quote & History - Yahoo Finance - Regeneron Pharmaceuticals, Inc. (REGN) Stock Price, News, Quote & History&nbsp;&nbsp;Yahoo Finance"
   ],
   "debug_error": ""
 }
