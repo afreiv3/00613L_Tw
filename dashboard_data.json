@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17 10:30 (Taipei)",
+  "updated": "2026-08-17 10:45 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1359,18 +1359,18 @@
     },
     {
       "date": "2026-08-17",
-      "time": "10:30",
-      "price": 35.89,
-      "score": 64,
+      "time": "10:45",
+      "price": 36.01,
+      "score": 60,
       "zone": "amber",
-      "quant_sum": 42,
+      "quant_sum": 38,
       "ai_sum": 22,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 10.0,
+          "pts": 20,
           "max": 20,
-          "note": "開+0.7%、小幅回落，型態中性"
+          "note": "現價守在開盤之上(開+0.7%) → 有利"
         },
         "sector": {
           "pts": 8,
@@ -1378,19 +1378,19 @@
           "note": "AVGO週五因VMware安全漏洞重挫5.94%（$392.99），SOX週五具體點數查不到（以中性偏弱估算），TSM ADR -0.96%；NVDA $219穩健，但AVGO大跌拖累整體半導體板塊偏弱，給8分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 0,
           "max": 15,
-          "note": "現價在區間中段(53%)"
+          "note": "現價在區間上緣(75%) → 屬追高"
         },
         "volume": {
-          "pts": 15,
+          "pts": 7.5,
           "max": 15,
-          "note": "推估量約均量0.7倍 → 正常"
+          "note": "推估量約均量0.7倍 → 偏離"
         },
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+0.04%) → 有利"
+          "note": "現價在VWAP之上(+0.35%) → 有利"
         },
         "macro": {
           "pts": 6,
@@ -1405,9 +1405,9 @@
       },
       "paper": {
         "cash": 673170,
-        "equity": 987889,
-        "market_value": 314719,
-        "return_pct": -1.21,
+        "equity": 988942,
+        "market_value": 315772,
+        "return_pct": -1.11,
         "holding": true,
         "position": {
           "shares": 8769,
@@ -1420,8 +1420,8 @@
         },
         "shares": 8769,
         "avg_cost": 32.92,
-        "unrealized": 25633,
-        "unrealized_pct": 8.87,
+        "unrealized": 26685,
+        "unrealized_pct": 9.23,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
