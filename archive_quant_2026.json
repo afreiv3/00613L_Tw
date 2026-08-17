@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 20,
+  "count": 21,
   "history": [
     {
       "date": "2026-07-20",
@@ -1352,6 +1352,77 @@
         "avg_cost": 32.92,
         "unrealized": 23879,
         "unrealized_pct": 8.26,
+        "trades": 7,
+        "wins": 1,
+        "win_rate": 14.3,
+        "realized_pnl": -37743
+      }
+    },
+    {
+      "date": "2026-08-17",
+      "time": "09:00",
+      "price": null,
+      "score": 52,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 22,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 8,
+          "max": 20,
+          "note": "AVGO週五因VMware安全漏洞重挫5.94%（$392.99），SOX週五具體點數查不到（以中性偏弱估算），TSM ADR -0.96%；NVDA $219穩健，但AVGO大跌拖累整體半導體板塊偏弱，給8分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 6,
+          "max": 10,
+          "note": "PPI 7月持平＋10Y殖利率自4.75%降至4.65%（正面），Fed 9月升息機率降至35%；但零售銷售-0.6%、消費信心51.0走軟，美伊地緣25%關稅威脅持續，整體略波動給6分"
+        },
+        "trend": {
+          "pts": 8,
+          "max": 10,
+          "note": "台股週五收~45,811，估在季線(~44,500)上方約1,311點(+3.0%)；美股三連週漲勢架構完好，多頭結構維持；但週五小幅回落且AVGO拖累科技板塊，稍扣2分，給8分"
+        }
+      },
+      "paper": {
+        "cash": 673170,
+        "equity": 673170,
+        "market_value": 0,
+        "return_pct": -32.68,
+        "holding": true,
+        "position": {
+          "shares": 8769,
+          "entry_price": 32.92,
+          "entry_date": "2026-08-03",
+          "entry_time": "11:00",
+          "cost": 289086.84,
+          "entry_score": 72,
+          "frac": 0.3
+        },
+        "shares": 8769,
+        "avg_cost": 32.92,
+        "unrealized": -289087,
+        "unrealized_pct": -100.0,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
