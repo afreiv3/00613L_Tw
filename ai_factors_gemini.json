@@ -1,30 +1,33 @@
 {
-  "date": "2026-08-14",
-  "generated_at": "2026-08-14 10:48",
+  "date": "2026-08-17",
+  "generated_at": "2026-08-17 09:56",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 15.0,
+    "sector": 16.0,
     "macro": 7.0,
-    "trend": 6.0
+    "trend": 8.0
   },
-  "ai_sentiment_index": 70.0,
-  "summary": "美國股市期貨漲跌互見，儘管聯準會升息預期放緩，但市場對半導體類股仍有支撐，同時也出現歷史性預警訊號。",
+  "ai_sentiment_index": 77.5,
+  "summary": "亞洲股市因中東緊張局勢和油價上漲而持穩，但美國聯準會升息預期推遲以及半導體股反彈為市場帶來支撐。",
   "news_zh": [
-    "美國股市期貨漲跌互見，聯準會升息預期有所緩解。",
-    "有分析師預測2027年將是股市表現最佳的年份之一，因SpaceX和聯準會風險消退。",
-    "股市出現歷史上僅出現五次的警告訊號，預示未來走勢不佳。",
-    "今日股市展望：油價下跌和半導體股上漲帶動持續漲勢。",
-    "追蹤標準普爾500指數、那斯達克指數、道瓊工業指數和SPDR ETF的最新股市數據。"
+    "亞洲股市因中東戰事導致油價上漲而表現持平。",
+    "交易員推遲聯準會升息預期，日圓小幅走強。",
+    "美國股市期貨變動不大，投資者正觀望聯準會下一步動向。",
+    "在通膨數據降溫和強勁財報帶動下，標普500和那斯達克指數小幅上漲。",
+    "國內股市半導體類股反彈，吸引國內投資者關注。",
+    "特斯拉在中國的電動車銷量強勁，扭轉了第一季全球下滑的趨勢。"
   ],
   "news": [
-    "[Semis] Target Hospitality Corp. Rings the Nasdaq Stock Market Closing Bell - Nasdaq - Target Hospitality Corp. Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq",
-    "[Semis] Tom Lee Predicts 2027 Will Be One Of Stock Market's ‘Best Years’ As SpaceX, Fed Risks Fade - Stocktwits - Tom Lee Predicts 2027 Will Be One Of Stock Market's ‘Best Years’ As SpaceX, Fed Risks Fade&nbsp;&nbsp;Stocktwits",
-    "[Semis] Stock Market Today : U.S. Stock Futures Mixed as Fed Rate-Hike Bets Ease - Eurasia Business News - Stock Market Today : U.S. Stock Futures Mixed as Fed Rate-Hike Bets Ease&nbsp;&nbsp;Eurasia Business News",
-    "[Semis] The Stock Market Just Flashed a Warning Seen Only 5 Times Before. History Is Crystal Clear About What Happens Next (Hint: It's Not Good). - The Motley Fool - The Stock Market Just Flashed a Warning Seen Only 5 Times Before. History Is Crystal Clear About What Happens Next (Hint: It's Not Good).&nbsp;&nbsp;The Motley ",
-    "[Semis] [Stock Market Outlook for Today] Continued gains driven by lower crude oil prices and higher semiconductor stocks (14th) - Moomoo - [Stock Market Outlook for Today] Continued gains driven by lower crude oil prices and higher semiconductor stocks (14th)&nbsp;&nbsp;Moomoo",
-    "[Semis] Quick ratio of Pelican Acquisition II Corporation – NASDAQ:PLCIR - TradingView - Quick ratio of Pelican Acquisition II Corporation – NASDAQ:PLCIR&nbsp;&nbsp;TradingView",
-    "[Semis] Track Current Stock Market Data On The S&P 500, Nasdaq, Dow Jones And SPDR ETFs - Investor's Business Daily - Track Current Stock Market Data On The S&P 500, Nasdaq, Dow Jones And SPDR ETFs&nbsp;&nbsp;Investor's Business Daily",
-    "[Semis] Regeneron Pharmaceuticals, Inc. (REGN) Stock Price, News, Quote & History - Yahoo Finance - Regeneron Pharmaceuticals, Inc. (REGN) Stock Price, News, Quote & History&nbsp;&nbsp;Yahoo Finance"
+    "[Reuters] Asian shares mark time as Gulf war keeps oil prices up - Reuters - Asian shares mark time as Gulf war keeps oil prices up&nbsp;&nbsp;Reuters",
+    "[Reuters] Yen edges up as traders push back Fed rate hike bets - Reuters - Yen edges up as traders push back Fed rate hike bets&nbsp;&nbsp;Reuters",
+    "[Reuters] Financials Are Back in Focus - Beehiiv - Financials Are Back in Focus&nbsp;&nbsp;Beehiiv",
+    "[Reuters] VIX Drops to 14.56 as Surge in Tail Hedge Activity Counters Market Calm - TechStock² - VIX Drops to 14.56 as Surge in Tail Hedge Activity Counters Market Calm&nbsp;&nbsp;TechStock²",
+    "[Reuters] 'A new Plaza Accord?' Japan's battle against yen bears enters new phase - Nikkei Asia - 'A new Plaza Accord?' Japan's battle against yen bears enters new phase&nbsp;&nbsp;Nikkei Asia",
+    "[Reuters] PBOC is expected to set the USD/CNY reference rate at 6.7382 – Reuters estimate - investingLive - PBOC is expected to set the USD/CNY reference rate at 6.7382 – Reuters estimate&nbsp;&nbsp;investingLive",
+    "[Reuters] TSLA Stock Jumps After Strong China EV Sales In April Bucks Q1’s Global Downturn Trend - Stocktwits - TSLA Stock Jumps After Strong China EV Sales In April Bucks Q1’s Global Downturn Trend&nbsp;&nbsp;Stocktwits",
+    "[Reuters] Trump wants more economic pressure on Iran. What are his options? - Reuters - Trump wants more economic pressure on Iran. What are his options?&nbsp;&nbsp;Reuters",
+    "[Semis] U.S. stock futures little changed as investors ponder the Fed’s next move - MarketWatch - U.S. stock futures little changed as investors ponder the Fed’s next move&nbsp;&nbsp;MarketWatch",
+    "[Semis] Viking Therapeutics, Inc. (VKTX) Stock Price, News, Quote & History - Yahoo Finance - Viking Therapeutics, Inc. (VKTX) Stock Price, News, Quote & History&nbsp;&nbsp;Yahoo Finance"
   ],
   "debug_error": ""
 }
