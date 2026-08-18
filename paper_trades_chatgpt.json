@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13 11:15",
+  "updated": "2026-08-18 12:44",
   "history": [
     {
       "date": "2026-06-09",
@@ -282,6 +282,16 @@
       "target_pct": 20,
       "reason_code": "SCORE_WEAK_NO_ADD",
       "reason": "降水位至 20%（🟠 輕倉防守（極度狂熱）；不加碼/不買回）"
+    },
+    {
+      "date": "2026-08-18",
+      "time": "12:44",
+      "action": "SELL",
+      "price": 34.89,
+      "shares": 2801.1,
+      "target_pct": 50,
+      "reason_code": "REDUCE_BELOW_10MA",
+      "reason": "跌破 10MA（仍在 20MA 上）→ 減 50% 降水位"
     }
   ]
 }
