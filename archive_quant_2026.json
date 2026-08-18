@@ -1433,9 +1433,9 @@
       "date": "2026-08-18",
       "time": "13:15",
       "price": 35.0,
-      "score": 62,
+      "score": 69,
       "zone": "amber",
-      "quant_sum": 32,
+      "quant_sum": 40,
       "ai_sum": 29,
       "ai_ok": true,
       "factors": {
@@ -1455,14 +1455,14 @@
           "note": "現價近今日低點(區間13%) → 接近支撐"
         },
         "volume": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "推估量約均量0.5倍 → 偏離"
+          "note": "推估量約均量1.0倍 → 正常"
         },
         "vwap": {
           "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之下(-0.73%) → 弱勢"
+          "note": "現價在VWAP之下(-0.41%) → 弱勢"
         },
         "macro": {
           "pts": 6,
