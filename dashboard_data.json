@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17 14:22 (Taipei)",
+  "updated": "2026-08-18 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1422,6 +1422,77 @@
         "avg_cost": 32.92,
         "unrealized": 26159,
         "unrealized_pct": 9.05,
+        "trades": 7,
+        "wins": 1,
+        "win_rate": 14.3,
+        "realized_pnl": -37743
+      }
+    },
+    {
+      "date": "2026-08-18",
+      "time": "09:00",
+      "price": null,
+      "score": 59,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 29,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 15,
+          "max": 20,
+          "note": "AMD-OpenAI晶片協議＋記憶體股急漲，SOX週一回升至~12,537；NVDA微漲，AVGO週五重挫後待回穩；半導體板塊整體偏正向但仍在從熊市回升中，給15分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 6,
+          "max": 10,
+          "note": "10Y殖利率4.69%維持偏高（接近近期高點4.75%），Fed 9月不降息機率67%；WTI~$82.77偏高（美伊地緣持續），整體略波動，給6分"
+        },
+        "trend": {
+          "pts": 8,
+          "max": 10,
+          "note": "TWII昨收46,038在季線（估~44,500）上方約1,538點（+3.5%），連三週漲勢架構完整；NVDA 8/26財報前多頭格局維持，給8分"
+        }
+      },
+      "paper": {
+        "cash": 673170,
+        "equity": 673170,
+        "market_value": 0,
+        "return_pct": -32.68,
+        "holding": true,
+        "position": {
+          "shares": 8769,
+          "entry_price": 32.92,
+          "entry_date": "2026-08-03",
+          "entry_time": "11:00",
+          "cost": 289086.84,
+          "entry_score": 72,
+          "frac": 0.3
+        },
+        "shares": 8769,
+        "avg_cost": 32.92,
+        "unrealized": -289087,
+        "unrealized_pct": -100.0,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,

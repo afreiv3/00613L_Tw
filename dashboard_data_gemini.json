@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17 14:22 (Taipei)",
+  "updated": "2026-08-18 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -962,6 +962,42 @@
         "zone": "amber",
         "zone_label": "🟠 輕倉防守（極度狂熱）",
         "gate_open": true
+      }
+    },
+    {
+      "date": "2026-08-18",
+      "time": "09:00",
+      "price": null,
+      "tier1": 30,
+      "ai_index": 50.0,
+      "target": null,
+      "zone": null,
+      "zone_label": null,
+      "gate_open": null,
+      "market_ok": true,
+      "asset_trend_ok": null,
+      "ai_ok": false,
+      "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
+      "news": [],
+      "paper": {
+        "cash": 816113,
+        "shares": 5701.0,
+        "avg_cost": 35.64,
+        "unrealized": -203180,
+        "unrealized_pct": -100.0,
+        "equity": 816113,
+        "market_value": 0,
+        "position_pct": 0.0,
+        "return_pct": -18.39,
+        "trades": 21,
+        "max_asset": 1074736,
+        "frenzy_days": 0,
+        "tier1": 30,
+        "ai_index": 50.0,
+        "target": null,
+        "zone": null,
+        "zone_label": null,
+        "gate_open": null
       }
     }
   ]
