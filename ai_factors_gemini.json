@@ -1,33 +1,31 @@
 {
-  "date": "2026-08-17",
-  "generated_at": "2026-08-17 09:56",
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18 09:52",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 16.0,
-    "macro": 7.0,
-    "trend": 8.0
+    "sector": 5.0,
+    "macro": 4.0,
+    "trend": 6.0
   },
-  "ai_sentiment_index": 77.5,
-  "summary": "亞洲股市因中東緊張局勢和油價上漲而持穩，但美國聯準會升息預期推遲以及半導體股反彈為市場帶來支撐。",
+  "ai_sentiment_index": 37.5,
+  "summary": "全球股市下跌，油價上漲，半導體產業面臨壓力，地緣政治緊張局勢持續。",
   "news_zh": [
-    "亞洲股市因中東戰事導致油價上漲而表現持平。",
-    "交易員推遲聯準會升息預期，日圓小幅走強。",
-    "美國股市期貨變動不大，投資者正觀望聯準會下一步動向。",
-    "在通膨數據降溫和強勁財報帶動下，標普500和那斯達克指數小幅上漲。",
-    "國內股市半導體類股反彈，吸引國內投資者關注。",
-    "特斯拉在中國的電動車銷量強勁，扭轉了第一季全球下滑的趨勢。"
+    "華爾街股市下跌，油價上漲，零售業財報即將公布。",
+    "歐洲股市走低，奢侈品類股承壓，美伊緊張局勢揮之不去。",
+    "道瓊、標普500、那斯達克指數下跌，油價突破每桶88美元。",
+    "Acros建議將槓桿型ETF轉換至三星和半導體ETF。"
   ],
   "news": [
-    "[Reuters] Asian shares mark time as Gulf war keeps oil prices up - Reuters - Asian shares mark time as Gulf war keeps oil prices up&nbsp;&nbsp;Reuters",
-    "[Reuters] Yen edges up as traders push back Fed rate hike bets - Reuters - Yen edges up as traders push back Fed rate hike bets&nbsp;&nbsp;Reuters",
-    "[Reuters] Financials Are Back in Focus - Beehiiv - Financials Are Back in Focus&nbsp;&nbsp;Beehiiv",
-    "[Reuters] VIX Drops to 14.56 as Surge in Tail Hedge Activity Counters Market Calm - TechStock² - VIX Drops to 14.56 as Surge in Tail Hedge Activity Counters Market Calm&nbsp;&nbsp;TechStock²",
-    "[Reuters] 'A new Plaza Accord?' Japan's battle against yen bears enters new phase - Nikkei Asia - 'A new Plaza Accord?' Japan's battle against yen bears enters new phase&nbsp;&nbsp;Nikkei Asia",
-    "[Reuters] PBOC is expected to set the USD/CNY reference rate at 6.7382 – Reuters estimate - investingLive - PBOC is expected to set the USD/CNY reference rate at 6.7382 – Reuters estimate&nbsp;&nbsp;investingLive",
-    "[Reuters] TSLA Stock Jumps After Strong China EV Sales In April Bucks Q1’s Global Downturn Trend - Stocktwits - TSLA Stock Jumps After Strong China EV Sales In April Bucks Q1’s Global Downturn Trend&nbsp;&nbsp;Stocktwits",
-    "[Reuters] Trump wants more economic pressure on Iran. What are his options? - Reuters - Trump wants more economic pressure on Iran. What are his options?&nbsp;&nbsp;Reuters",
-    "[Semis] U.S. stock futures little changed as investors ponder the Fed’s next move - MarketWatch - U.S. stock futures little changed as investors ponder the Fed’s next move&nbsp;&nbsp;MarketWatch",
-    "[Semis] Viking Therapeutics, Inc. (VKTX) Stock Price, News, Quote & History - Yahoo Finance - Viking Therapeutics, Inc. (VKTX) Stock Price, News, Quote & History&nbsp;&nbsp;Yahoo Finance"
+    "[Reuters] Trading Day: Bonds play the blues - Reuters - Trading Day: Bonds play the blues&nbsp;&nbsp;Reuters",
+    "[Reuters] General Atlantic picks JPMorgan to lead revived IPO effort, source says - Reuters - General Atlantic picks JPMorgan to lead revived IPO effort, source says&nbsp;&nbsp;Reuters",
+    "[Reuters] Wall Street indexes slip as oil prices rise, retail results awaited - Reuters - Wall Street indexes slip as oil prices rise, retail results awaited&nbsp;&nbsp;Reuters",
+    "[Reuters] Breakingviews - Trumps laugh all the way to the bank charter - Reuters - Breakingviews - Trumps laugh all the way to the bank charter&nbsp;&nbsp;Reuters",
+    "[Reuters] Breakingviews - Operation 'Save the City' is only half complete - Reuters - Breakingviews - Operation 'Save the City' is only half complete&nbsp;&nbsp;Reuters",
+    "[Reuters] Trump crypto firm backs venture offering AI from restricted Chinese companies - Reuters - Trump crypto firm backs venture offering AI from restricted Chinese companies&nbsp;&nbsp;Reuters",
+    "[Reuters] European shares edge lower as luxury stocks weigh; US-Iran tensions linger - Reuters - European shares edge lower as luxury stocks weigh; US-Iran tensions linger&nbsp;&nbsp;Reuters",
+    "[Reuters] EXCLUSIVE: Shein cuts company valuation to around $25 billion in Hong Kong IPO, sources say - Reuters - EXCLUSIVE: Shein cuts company valuation to around $25 billion in Hong Kong IPO, sources say&nbsp;&nbsp;Reuters",
+    "[Semis] RTB Digital Rings the Nasdaq Stock Market Closing Bell - Nasdaq - RTB Digital Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq",
+    "[Semis] Stock market today: Dow, S&P 500, Nasdaq fall, Oil price above $88 - Eurasia Business News - Stock market today: Dow, S&P 500, Nasdaq fall, Oil price above $88&nbsp;&nbsp;Eurasia Business News"
   ],
   "debug_error": ""
 }
