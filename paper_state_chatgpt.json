@@ -18,8 +18,8 @@
   "last_trade_date": "2026-08-18",
   "last_reduce_date": "2026-08-18",
   "last_action": "SELL",
-  "last_action_reason": "SCORE_WEAK_NO_ADD",
+  "last_action_reason": "DATA_INVALID_NO_TRADE",
   "trades": 30,
   "_seed_note": "起始狀態＋買賣紀錄完整承接 Gemini（paper_trades_gemini.json 8 筆、現金/已實現損益/交易次數/資產高點對齊）於 2026-06-28；此後一律以 ChatGPT 新策略運作",
-  "updated": "2026-08-18 14:17"
+  "updated": "2026-08-19 09:00"
 }

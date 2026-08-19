@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18 14:17 (Taipei)",
+  "updated": "2026-08-19 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1493,6 +1493,77 @@
         "avg_cost": 32.92,
         "unrealized": 16162,
         "unrealized_pct": 5.59,
+        "trades": 7,
+        "wins": 1,
+        "win_rate": 14.3,
+        "realized_pnl": -37743
+      }
+    },
+    {
+      "date": "2026-08-19",
+      "time": "09:00",
+      "price": null,
+      "score": 35,
+      "zone": "red",
+      "quant_sum": 30,
+      "ai_sum": 5,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 0,
+          "max": 20,
+          "note": "隔夜Nasdaq -1.33%、AVGO -3.4%，晶片/科技股全面賣壓，費半板塊明顯轉弱，00631L（2x槓桿+四成台積電）面臨顯著下行風險"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 0,
+          "max": 10,
+          "note": "美10Y殖利率4.73%年高、30Y殖利率5.32%近20年高，WTI油價$84.9三連漲（伊朗緊張），系統性風險明顯升溫"
+        },
+        "trend": {
+          "pts": 5,
+          "max": 10,
+          "note": "台股加權指數45,308，失守46K、距季線估算44,800-45,000僅1-2%，今日台指期結算日（外資逾8.5萬口空單），結構偏弱、貼近季線"
+        }
+      },
+      "paper": {
+        "cash": 673170,
+        "equity": 673170,
+        "market_value": 0,
+        "return_pct": -32.68,
+        "holding": true,
+        "position": {
+          "shares": 8769,
+          "entry_price": 32.92,
+          "entry_date": "2026-08-03",
+          "entry_time": "11:00",
+          "cost": 289086.84,
+          "entry_score": 72,
+          "frac": 0.3
+        },
+        "shares": 8769,
+        "avg_cost": 32.92,
+        "unrealized": -289087,
+        "unrealized_pct": -100.0,
         "trades": 7,
         "wins": 1,
         "win_rate": 14.3,
