@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19 09:30",
+  "updated": "2026-08-19 09:45",
   "history": [
     {
       "date": "2026-06-09",
@@ -302,6 +302,16 @@
       "target_pct": 0,
       "reason_code": "EXIT_TWII_BELOW_60MA",
       "reason": "趨勢破壞：大盤 ^TWII 跌破 60MA → 全清"
+    },
+    {
+      "date": "2026-08-19",
+      "time": "09:45",
+      "action": "BUY",
+      "price": 34.0,
+      "shares": 14716.2,
+      "target_pct": 50,
+      "reason_code": "ENTRY_SIGNAL",
+      "reason": "進場建倉至 50%（🟡 標準持倉（情緒健康））"
     }
   ]
 }
