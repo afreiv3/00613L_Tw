@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-19 14:18 (Taipei)",
+  "updated": "2026-08-20 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1543,6 +1543,69 @@
           "pts": 4,
           "max": 10,
           "note": "TAIEX盤中最低44,308（失守45K及季線），收盤估約44,900（查不到確切數字），貼近季線（估44,800-45,000）；月線（估45,500-46,000）已失守；結算後外資空單釋放為正面籌碼轉機，季線受考驗中，給4分"
+        }
+      },
+      "paper": {
+        "cash": 969018,
+        "equity": 969018,
+        "market_value": 0,
+        "return_pct": -3.1,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 8,
+        "wins": 2,
+        "win_rate": 25.0,
+        "realized_pnl": -30982
+      }
+    },
+    {
+      "date": "2026-08-20",
+      "time": "09:00",
+      "price": null,
+      "score": 40,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 10,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 10,
+          "max": 20,
+          "note": "SOX 8/18大跌-4.98%至11,992，8/19 Nasdaq僅+0.16%小幅反彈，TSM ADR -0.27%（$412.27）接近平盤，半導體板塊短線分歧、回穩未確認，給10分（分歧）"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 0,
+          "max": 10,
+          "note": "美10Y殖利率4.75%年高、30Y 5.335%近20年高，WTI油價持續上漲（~$85+），Fed政策不確定，系統性風險明顯升溫，給0分（風險升溫）"
+        },
+        "trend": {
+          "pts": 0,
+          "max": 10,
+          "note": "TAIEX 8/19收盤44,719跌破季線（估~45,300），日K連二黑，結構已轉弱；月線（~45,500+）遠在上方，給0分（跌破季線/結構轉弱）"
         }
       },
       "paper": {
