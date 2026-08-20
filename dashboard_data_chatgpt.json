@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20 09:45 (Taipei)",
+  "updated": "2026-08-20 10:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1428,20 +1428,31 @@
     },
     {
       "date": "2026-08-20",
-      "time": "09:45",
-      "price": 34.08,
-      "tier1": 40,
-      "ai_index": 50.0,
-      "target": 0.5,
+      "time": "10:00",
+      "price": 34.11,
+      "tier1": 38,
+      "ai_index": 45.0,
+      "target": 0.0,
       "zone": "red",
-      "zone_label": "🔴 大盤跌破季線 → 清倉",
+      "zone_label": "⚪ 今日已進場過",
       "gate_open": false,
       "market_ok": false,
       "asset_trend_ok": true,
       "ma10_ok": false,
-      "ai_ok": false,
-      "summary": "（今日盤前判讀尚未產生，暫以中性計）",
-      "news": [],
+      "ai_ok": true,
+      "summary": "美國科技股下跌，特別是半導體類股，加上中東地緣政治緊張和歐洲通膨擔憂，預示台灣股市今日可能面臨壓力。",
+      "news": [
+        "[Reuters] Don't blame US bond market indigestion on AI debt binge: McGeever - Reuters - Don't blame US bond market indigestion on AI debt binge: McGeever&nbsp;&nbsp;Reuters",
+        "[Reuters] Morning Bid: Bonds out, robots in - Reuters - Morning Bid: Bonds out, robots in&nbsp;&nbsp;Reuters",
+        "[Reuters] Alphabet raises $3.9 billion in inaugural Australian dollar bond - Reuters - Alphabet raises $3.9 billion in inaugural Australian dollar bond&nbsp;&nbsp;Reuters",
+        "[Reuters] US stock futures steady after tech slump; investors focus on Middle East tensions - Reuters - US stock futures steady after tech slump; investors focus on Middle East tensions&nbsp;&nbsp;Reuters",
+        "[Reuters] Europe's STOXX 600 near three-week low as inflation worries weigh - Reuters - Europe's STOXX 600 near three-week low as inflation worries weigh&nbsp;&nbsp;Reuters",
+        "[Reuters] A$K Lauren: Why is it bad to invest in a single stock? - Reuters - A$K Lauren: Why is it bad to invest in a single stock?&nbsp;&nbsp;Reuters",
+        "[Reuters] Lyntris valued at $1.8 billion after shares fall in New York debut - Reuters - Lyntris valued at $1.8 billion after shares fall in New York debut&nbsp;&nbsp;Reuters",
+        "[Reuters] UAE stocks fall after missile scare; Qatar at over one-year low - Reuters - UAE stocks fall after missile scare; Qatar at over one-year low&nbsp;&nbsp;Reuters",
+        "[Semis] Tribeca Strategic Acquisition Corp. Rings the Nasdaq Stock Market Opening Bell - Nasdaq - Tribeca Strategic Acquisition Corp. Rings the Nasdaq Stock Market Opening Bell&nbsp;&nbsp;Nasdaq",
+        "[Semis] AMD and Intel Shares Plummet, What You Need To Know - StockStory - AMD and Intel Shares Plummet, What You Need To Know&nbsp;&nbsp;StockStory"
+      ],
       "paper": {
         "cash": 997266,
         "shares": 0.0,
@@ -1456,7 +1467,7 @@
         "market_value": 0,
         "position_pct": 0.0,
         "actual_exposure": 0.0,
-        "target_exposure": 0.5,
+        "target_exposure": 0.0,
         "return_pct": -0.27,
         "trades": 36,
         "highest_equity": 1000373,
@@ -1470,11 +1481,11 @@
         "frenzy_days": 0,
         "last_action": "SELL",
         "last_action_reason": "EXIT_TWII_BELOW_60MA",
-        "tier1": 40,
-        "ai_index": 50.0,
-        "target": 0.5,
+        "tier1": 38,
+        "ai_index": 45.0,
+        "target": 0.0,
         "zone": "red",
-        "zone_label": "🔴 大盤跌破季線 → 清倉",
+        "zone_label": "⚪ 今日已進場過",
         "gate_open": false
       }
     }
