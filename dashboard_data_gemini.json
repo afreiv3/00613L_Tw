@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21 09:45 (Taipei)",
+  "updated": "2026-08-21 10:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1107,19 +1107,30 @@
     },
     {
       "date": "2026-08-21",
-      "time": "09:45",
-      "price": 34.31,
+      "time": "10:00",
+      "price": 34.41,
       "tier1": 38,
-      "ai_index": 50.0,
-      "target": 0.5,
-      "zone": "amber",
-      "zone_label": "🟡 理性持倉（情緒健康）",
+      "ai_index": 17.5,
+      "target": 0.8,
+      "zone": "green",
+      "zone_label": "🟢 逆向加碼（極度恐慌）",
       "gate_open": true,
       "market_ok": true,
       "asset_trend_ok": true,
-      "ai_ok": false,
-      "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
-      "news": [],
+      "ai_ok": true,
+      "summary": "華爾街因債券殖利率上升和零售業績不佳而大跌，聯準會升息預期仍存，全球市場風險升高。",
+      "news": [
+        "[Reuters] Wall Street sinks as bond yields rise, Walmart results disappoint - Reuters - Wall Street sinks as bond yields rise, Walmart results disappoint&nbsp;&nbsp;Reuters",
+        "[Reuters] EXCLUSIVE: Fidelity International plans to pull out of wholly owned China fund unit, sources say - Reuters - EXCLUSIVE: Fidelity International plans to pull out of wholly owned China fund unit, sources say&nbsp;&nbsp;Reuters",
+        "[Reuters] Fed officials tread carefully after Treasury's bond market intervention - Reuters - Fed officials tread carefully after Treasury's bond market intervention&nbsp;&nbsp;Reuters",
+        "[Reuters] Trading Day: Can't get no relief - Reuters - Trading Day: Can't get no relief&nbsp;&nbsp;Reuters",
+        "[Reuters] Fed minutes show September rate hike still on the table - Reuters - Fed minutes show September rate hike still on the table&nbsp;&nbsp;Reuters",
+        "[Reuters] Explainer: Why India's market regulator barred a JPMorgan entity from the country's securities market - Reuters - Explainer: Why India's market regulator barred a JPMorgan entity from the country's securities market&nbsp;&nbsp;Reuters",
+        "[Reuters] Breakingviews - The US pioneers Operation Twist and Shout - Reuters - Breakingviews - The US pioneers Operation Twist and Shout&nbsp;&nbsp;Reuters",
+        "[Reuters] Monte dei Paschi OKs bids for BPM, Banca Generali to stave off Intesa takeover - Reuters - Monte dei Paschi OKs bids for BPM, Banca Generali to stave off Intesa takeover&nbsp;&nbsp;Reuters",
+        "[Semis] First Breach, Inc Rings the Nasdaq Stock Market Opening Bell - Nasdaq - First Breach, Inc Rings the Nasdaq Stock Market Opening Bell&nbsp;&nbsp;Nasdaq",
+        "[Semis] Stock Market Today: Dow Tumbles 700 Points But Miners Rise; Oil Stocks Catch Fire - Investor's Business Daily - Stock Market Today: Dow Tumbles 700 Points But Miners Rise; Oil Stocks Catch Fire&nbsp;&nbsp;Investor's Business Daily"
+      ],
       "paper": {
         "cash": 986771,
         "shares": 0.0,
@@ -1134,10 +1145,10 @@
         "max_asset": 1074736,
         "frenzy_days": 0,
         "tier1": 38,
-        "ai_index": 50.0,
-        "target": 0.5,
-        "zone": "amber",
-        "zone_label": "🟡 理性持倉（情緒健康）",
+        "ai_index": 17.5,
+        "target": 0.8,
+        "zone": "green",
+        "zone_label": "🟢 逆向加碼（極度恐慌）",
         "gate_open": true
       }
     }
