@@ -1108,15 +1108,15 @@
     },
     {
       "date": "2026-08-21",
-      "time": "09:30",
-      "price": 34.04,
-      "tier1": 30,
+      "time": "09:45",
+      "price": 34.31,
+      "tier1": 38,
       "ai_index": 50.0,
-      "target": 0.0,
-      "zone": "red",
-      "zone_label": "🔴 趨勢轉弱→清倉（跌破均線/季線）",
-      "gate_open": false,
-      "market_ok": false,
+      "target": 0.5,
+      "zone": "amber",
+      "zone_label": "🟡 理性持倉（情緒健康）",
+      "gate_open": true,
+      "market_ok": true,
       "asset_trend_ok": true,
       "ai_ok": false,
       "summary": "（今日 Gemini 盤前判讀尚未產生，暫以中性計）",
@@ -1134,12 +1134,12 @@
         "trades": 25,
         "max_asset": 1074736,
         "frenzy_days": 0,
-        "tier1": 30,
+        "tier1": 38,
         "ai_index": 50.0,
-        "target": 0.0,
-        "zone": "red",
-        "zone_label": "🔴 趨勢轉弱→清倉（跌破均線/季線）",
-        "gate_open": false
+        "target": 0.5,
+        "zone": "amber",
+        "zone_label": "🟡 理性持倉（情緒健康）",
+        "gate_open": true
       }
     }
   ]
