@@ -1,32 +1,33 @@
 {
-  "date": "2026-08-20",
-  "generated_at": "2026-08-20 09:53",
+  "date": "2026-08-21",
+  "generated_at": "2026-08-21 09:59",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 7.0,
-    "macro": 6.0,
-    "trend": 5.0
+    "sector": 2.0,
+    "macro": 3.0,
+    "trend": 2.0
   },
-  "ai_sentiment_index": 45.0,
-  "summary": "美國科技股下跌，特別是半導體類股，加上中東地緣政治緊張和歐洲通膨擔憂，預示台灣股市今日可能面臨壓力。",
+  "ai_sentiment_index": 17.5,
+  "summary": "華爾街因債券殖利率上升和零售業績不佳而大跌，聯準會升息預期仍存，全球市場風險升高。",
   "news_zh": [
-    "美國科技股下跌後，美股期貨持穩，投資者關注中東緊張局勢。",
-    "歐洲STOXX 600指數因通膨擔憂跌至近三週低點。",
-    "AMD和Intel股價暴跌。",
-    "Broadcom拖累那斯達克指數，而道瓊和標普500指數上漲。",
-    "SoundHound AI與台積電：哪支科技股在2026年更值得買入？"
+    "華爾街因債券殖利率上升和沃爾瑪業績令人失望而下跌。",
+    "聯準會會議紀錄顯示九月升息仍在考慮中。",
+    "道瓊指數重挫700點，那斯達克指數下跌264點。",
+    "費城半導體指數和那斯達克指數大幅下跌，科技股面臨賣壓。",
+    "聯準會官員在財政部債券市場干預後謹慎行事。",
+    "富達國際計劃退出其在中國的全資基金業務。"
   ],
   "news": [
-    "[Reuters] Don't blame US bond market indigestion on AI debt binge: McGeever - Reuters - Don't blame US bond market indigestion on AI debt binge: McGeever&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: Bonds out, robots in - Reuters - Morning Bid: Bonds out, robots in&nbsp;&nbsp;Reuters",
-    "[Reuters] Alphabet raises $3.9 billion in inaugural Australian dollar bond - Reuters - Alphabet raises $3.9 billion in inaugural Australian dollar bond&nbsp;&nbsp;Reuters",
-    "[Reuters] US stock futures steady after tech slump; investors focus on Middle East tensions - Reuters - US stock futures steady after tech slump; investors focus on Middle East tensions&nbsp;&nbsp;Reuters",
-    "[Reuters] Europe's STOXX 600 near three-week low as inflation worries weigh - Reuters - Europe's STOXX 600 near three-week low as inflation worries weigh&nbsp;&nbsp;Reuters",
-    "[Reuters] A$K Lauren: Why is it bad to invest in a single stock? - Reuters - A$K Lauren: Why is it bad to invest in a single stock?&nbsp;&nbsp;Reuters",
-    "[Reuters] Lyntris valued at $1.8 billion after shares fall in New York debut - Reuters - Lyntris valued at $1.8 billion after shares fall in New York debut&nbsp;&nbsp;Reuters",
-    "[Reuters] UAE stocks fall after missile scare; Qatar at over one-year low - Reuters - UAE stocks fall after missile scare; Qatar at over one-year low&nbsp;&nbsp;Reuters",
-    "[Semis] Tribeca Strategic Acquisition Corp. Rings the Nasdaq Stock Market Opening Bell - Nasdaq - Tribeca Strategic Acquisition Corp. Rings the Nasdaq Stock Market Opening Bell&nbsp;&nbsp;Nasdaq",
-    "[Semis] AMD and Intel Shares Plummet, What You Need To Know - StockStory - AMD and Intel Shares Plummet, What You Need To Know&nbsp;&nbsp;StockStory"
+    "[Reuters] Wall Street sinks as bond yields rise, Walmart results disappoint - Reuters - Wall Street sinks as bond yields rise, Walmart results disappoint&nbsp;&nbsp;Reuters",
+    "[Reuters] EXCLUSIVE: Fidelity International plans to pull out of wholly owned China fund unit, sources say - Reuters - EXCLUSIVE: Fidelity International plans to pull out of wholly owned China fund unit, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] Fed officials tread carefully after Treasury's bond market intervention - Reuters - Fed officials tread carefully after Treasury's bond market intervention&nbsp;&nbsp;Reuters",
+    "[Reuters] Trading Day: Can't get no relief - Reuters - Trading Day: Can't get no relief&nbsp;&nbsp;Reuters",
+    "[Reuters] Fed minutes show September rate hike still on the table - Reuters - Fed minutes show September rate hike still on the table&nbsp;&nbsp;Reuters",
+    "[Reuters] Explainer: Why India's market regulator barred a JPMorgan entity from the country's securities market - Reuters - Explainer: Why India's market regulator barred a JPMorgan entity from the country's securities market&nbsp;&nbsp;Reuters",
+    "[Reuters] Breakingviews - The US pioneers Operation Twist and Shout - Reuters - Breakingviews - The US pioneers Operation Twist and Shout&nbsp;&nbsp;Reuters",
+    "[Reuters] Monte dei Paschi OKs bids for BPM, Banca Generali to stave off Intesa takeover - Reuters - Monte dei Paschi OKs bids for BPM, Banca Generali to stave off Intesa takeover&nbsp;&nbsp;Reuters",
+    "[Semis] First Breach, Inc Rings the Nasdaq Stock Market Opening Bell - Nasdaq - First Breach, Inc Rings the Nasdaq Stock Market Opening Bell&nbsp;&nbsp;Nasdaq",
+    "[Semis] Stock Market Today: Dow Tumbles 700 Points But Miners Rise; Oil Stocks Catch Fire - Investor's Business Daily - Stock Market Today: Dow Tumbles 700 Points But Miners Rise; Oil Stocks Catch Fire&nbsp;&nbsp;Investor's Business Daily"
   ],
   "debug_error": ""
 }
