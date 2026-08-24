@@ -1691,11 +1691,11 @@
     },
     {
       "date": "2026-08-24",
-      "time": "11:33",
-      "price": 34.53,
-      "score": 62,
+      "time": "11:45",
+      "price": 34.48,
+      "score": 65,
       "zone": "amber",
-      "quant_sum": 38,
+      "quant_sum": 40,
       "ai_sum": 25,
       "ai_ok": true,
       "factors": {
@@ -1710,9 +1710,9 @@
           "note": "Nasdaq/S&P週五+0.43%微漲、AVGO $60-70B AI融資訊號強勁；NVDA-0.98%受財報前觀望壓抑，SOX數值查不到以中性計；台積電ADR穩在$413-414，整體半導體板塊分歧偏正向，給12分"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "現價在區間中段(37%)"
+          "note": "現價近今日低點(區間29%) → 接近支撐"
         },
         "volume": {
           "pts": 15,
@@ -1720,9 +1720,9 @@
           "note": "推估量約均量1.2倍 → 正常"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 0,
           "max": 10,
-          "note": "現價貼近VWAP(-0.24%)"
+          "note": "現價在VWAP之下(-0.38%) → 弱勢"
         },
         "macro": {
           "pts": 6,
@@ -1737,9 +1737,9 @@
       },
       "paper": {
         "cash": 677914,
-        "equity": 966930,
-        "market_value": 289016,
-        "return_pct": -3.31,
+        "equity": 966512,
+        "market_value": 288598,
+        "return_pct": -3.35,
         "holding": true,
         "position": {
           "shares": 8370,
@@ -1752,8 +1752,8 @@
         },
         "shares": 8370,
         "avg_cost": 34.73,
-        "unrealized": -2088,
-        "unrealized_pct": -0.72,
+        "unrealized": -2507,
+        "unrealized_pct": -0.86,
         "trades": 8,
         "wins": 2,
         "win_rate": 25.0,
