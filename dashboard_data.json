@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21 14:19 (Taipei)",
+  "updated": "2026-08-24 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1669,6 +1669,69 @@
           "pts": 7,
           "max": 10,
           "note": "TAIEX今日收復季線上方（估~45,100），創近六週高點、周線收正，短線結構改善，W型低點初步形成，給7分"
+        }
+      },
+      "paper": {
+        "cash": 969018,
+        "equity": 969018,
+        "market_value": 0,
+        "return_pct": -3.1,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 8,
+        "wins": 2,
+        "win_rate": 25.0,
+        "realized_pnl": -30982
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "time": "09:00",
+      "price": null,
+      "score": 55,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 25,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 12,
+          "max": 20,
+          "note": "Nasdaq/S&P週五+0.43%微漲、AVGO $60-70B AI融資訊號強勁；NVDA-0.98%受財報前觀望壓抑，SOX數值查不到以中性計；台積電ADR穩在$413-414，整體半導體板塊分歧偏正向，給12分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 6,
+          "max": 10,
+          "note": "VIX降至15.13(-5.5%)恐慌消退、WTI回落至$80(前週$84-86)正向；10Y殖利率4.74%仍偏高，美台關稅降至15%為利多；無新Fed鷹派訊號，整體宏觀壓力稍減，略波動，給6分"
+        },
+        "trend": {
+          "pts": 7,
+          "max": 10,
+          "note": "台股8/21收45,224點，站穩季線(~44,800-45,000)上方，連兩日反彈、創近六週高點，法人稱多頭結構完好；外資賣超但季線支撐確認，結構偏正，給7分"
         }
       },
       "paper": {
