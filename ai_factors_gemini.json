@@ -1,33 +1,32 @@
 {
-  "date": "2026-08-21",
-  "generated_at": "2026-08-21 09:59",
+  "date": "2026-08-24",
+  "generated_at": "2026-08-24 09:58",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 2.0,
-    "macro": 3.0,
-    "trend": 2.0
+    "sector": 14.0,
+    "macro": 7.0,
+    "trend": 8.0
   },
-  "ai_sentiment_index": 17.5,
-  "summary": "華爾街因債券殖利率上升和零售業績不佳而大跌，聯準會升息預期仍存，全球市場風險升高。",
+  "ai_sentiment_index": 72.5,
+  "summary": "亞洲市場在伊朗制裁消息和輝達財報前表現平淡，半導體產業面臨AI泡沫考驗，但油價上漲提振了部分市場情緒。",
   "news_zh": [
-    "華爾街因債券殖利率上升和沃爾瑪業績令人失望而下跌。",
-    "聯準會會議紀錄顯示九月升息仍在考慮中。",
-    "道瓊指數重挫700點，那斯達克指數下跌264點。",
-    "費城半導體指數和那斯達克指數大幅下跌，科技股面臨賣壓。",
-    "聯準會官員在財政部債券市場干預後謹慎行事。",
-    "富達國際計劃退出其在中國的全資基金業務。"
+    "亞洲股市在伊朗制裁消息和輝達財報公布前表現平穩。",
+    "輝達財報將考驗半導體類股的反彈潛力，市場關注其漲價15%的傳聞。",
+    "分析師質疑半導體類股是否為AI泡沫的真正考驗。",
+    "油價上漲提振了海灣市場情緒，但原油期貨在伊朗與美國談判結果公布前下跌。",
+    "中國人民銀行預計將美元兌人民幣中間價設定在6.7248。"
   ],
   "news": [
-    "[Reuters] Wall Street sinks as bond yields rise, Walmart results disappoint - Reuters - Wall Street sinks as bond yields rise, Walmart results disappoint&nbsp;&nbsp;Reuters",
-    "[Reuters] EXCLUSIVE: Fidelity International plans to pull out of wholly owned China fund unit, sources say - Reuters - EXCLUSIVE: Fidelity International plans to pull out of wholly owned China fund unit, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] Fed officials tread carefully after Treasury's bond market intervention - Reuters - Fed officials tread carefully after Treasury's bond market intervention&nbsp;&nbsp;Reuters",
-    "[Reuters] Trading Day: Can't get no relief - Reuters - Trading Day: Can't get no relief&nbsp;&nbsp;Reuters",
-    "[Reuters] Fed minutes show September rate hike still on the table - Reuters - Fed minutes show September rate hike still on the table&nbsp;&nbsp;Reuters",
-    "[Reuters] Explainer: Why India's market regulator barred a JPMorgan entity from the country's securities market - Reuters - Explainer: Why India's market regulator barred a JPMorgan entity from the country's securities market&nbsp;&nbsp;Reuters",
-    "[Reuters] Breakingviews - The US pioneers Operation Twist and Shout - Reuters - Breakingviews - The US pioneers Operation Twist and Shout&nbsp;&nbsp;Reuters",
-    "[Reuters] Monte dei Paschi OKs bids for BPM, Banca Generali to stave off Intesa takeover - Reuters - Monte dei Paschi OKs bids for BPM, Banca Generali to stave off Intesa takeover&nbsp;&nbsp;Reuters",
-    "[Semis] First Breach, Inc Rings the Nasdaq Stock Market Opening Bell - Nasdaq - First Breach, Inc Rings the Nasdaq Stock Market Opening Bell&nbsp;&nbsp;Nasdaq",
-    "[Semis] Stock Market Today: Dow Tumbles 700 Points But Miners Rise; Oil Stocks Catch Fire - Investor's Business Daily - Stock Market Today: Dow Tumbles 700 Points But Miners Rise; Oil Stocks Catch Fire&nbsp;&nbsp;Investor's Business Daily"
+    "[Reuters] Shares flat in Asia before Iran sanctions news, Nvidia results - Reuters - Shares flat in Asia before Iran sanctions news, Nvidia results&nbsp;&nbsp;Reuters",
+    "[Reuters] Shein’s pursuit of an IPO: From New York to London to Hong Kong By Reuters - Investing.com - Shein’s pursuit of an IPO: From New York to London to Hong Kong By Reuters&nbsp;&nbsp;Investing.com",
+    "[Reuters] Gulf markets rise as oil gains lift sentiment - Reuters - Gulf markets rise as oil gains lift sentiment&nbsp;&nbsp;Reuters",
+    "[Reuters] PBOC is expected to set the USD/CNY reference rate at 6.7248 – Reuters estimate - investingLive - PBOC is expected to set the USD/CNY reference rate at 6.7248 – Reuters estimate&nbsp;&nbsp;investingLive",
+    "[Reuters] Tether's $120 million Uruguay bitcoin mining project collapsed over a power contract dispute: Reuters - The Block - Tether's $120 million Uruguay bitcoin mining project collapsed over a power contract dispute: Reuters&nbsp;&nbsp;The Block",
+    "[Reuters] Fast fashion giant Shein valued at up to $27 billion in Hong Kong IPO - Reuters - Fast fashion giant Shein valued at up to $27 billion in Hong Kong IPO&nbsp;&nbsp;Reuters",
+    "[Reuters] Oil Falls Over 1% as Markets Await Outcome of Iran-US Talks, US Stocks Data - EnergyNow - Oil Falls Over 1% as Markets Await Outcome of Iran-US Talks, US Stocks Data&nbsp;&nbsp;EnergyNow",
+    "[Reuters] Frontline Approaches 14-Year Peak as Oil Climbs 6% on the Week - TechStock² - Frontline Approaches 14-Year Peak as Oil Climbs 6% on the Week&nbsp;&nbsp;TechStock²",
+    "[Semis] Futures Waver; Nvidia, Canada Tariffs In Focus - Investor's Business Daily - Futures Waver; Nvidia, Canada Tariffs In Focus&nbsp;&nbsp;Investor's Business Daily",
+    "[Semis] Why semiconductor stocks are becoming the real test of the AI bubble - equiti.com - Why semiconductor stocks are becoming the real test of the AI bubble&nbsp;&nbsp;equiti.com"
   ],
   "debug_error": ""
 }
