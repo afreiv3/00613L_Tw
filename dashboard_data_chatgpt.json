@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25 12:03 (Taipei)",
+  "updated": "2026-08-25 12:15 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1617,16 +1617,16 @@
     },
     {
       "date": "2026-08-25",
-      "time": "12:03",
-      "price": 33.84,
-      "tier1": 30,
+      "time": "12:15",
+      "price": 33.72,
+      "tier1": 38,
       "ai_index": 32.5,
       "target": 0.0,
       "zone": "red",
       "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
       "gate_open": false,
       "market_ok": false,
-      "asset_trend_ok": true,
+      "asset_trend_ok": false,
       "ma10_ok": false,
       "ai_ok": true,
       "summary": "美國科技股因伊朗局勢和半導體疲軟而下跌，全球市場情緒謹慎。",
@@ -1670,7 +1670,7 @@
         "frenzy_days": 0,
         "last_action": "SELL",
         "last_action_reason": "EXIT_BELOW_20MA",
-        "tier1": 30,
+        "tier1": 38,
         "ai_index": 32.5,
         "target": 0.0,
         "zone": "red",
