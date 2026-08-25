@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24 13:58 (Taipei)",
+  "updated": "2026-08-25 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1753,6 +1753,77 @@
         "avg_cost": 34.73,
         "unrealized": -5604,
         "unrealized_pct": -1.92,
+        "trades": 8,
+        "wins": 2,
+        "win_rate": 25.0,
+        "realized_pnl": -30982
+      }
+    },
+    {
+      "date": "2026-08-25",
+      "time": "09:00",
+      "price": null,
+      "score": 40,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 10,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 0,
+          "max": 20,
+          "note": "隔夜半導體全面轉弱：SOX -2.7%、TSM ADR -3%、Micron -5.8%、AMD -4%，板塊明顯偏空。"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 5,
+          "max": 10,
+          "note": "10Y殖利率4.71%小降但仍偏高，伊朗制裁令油價升至約80美元，系統性風險略升溫但非崩潰。"
+        },
+        "trend": {
+          "pts": 5,
+          "max": 10,
+          "note": "台股加權前日收44,990(+0.52%)，自8/17高點約46,000回落，季線位置待盤中確認，結構偏中性偏弱。"
+        }
+      },
+      "paper": {
+        "cash": 677914,
+        "equity": 677914,
+        "market_value": 0,
+        "return_pct": -32.21,
+        "holding": true,
+        "position": {
+          "shares": 8370,
+          "entry_price": 34.73,
+          "entry_date": "2026-08-24",
+          "entry_time": "10:15",
+          "cost": 291104.33,
+          "entry_score": 70,
+          "frac": 0.3
+        },
+        "shares": 8370,
+        "avg_cost": 34.73,
+        "unrealized": -291104,
+        "unrealized_pct": -100.0,
         "trades": 8,
         "wins": 2,
         "win_rate": 25.0,
