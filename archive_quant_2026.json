@@ -1762,11 +1762,11 @@
     },
     {
       "date": "2026-08-25",
-      "time": "09:30",
-      "price": 33.56,
-      "score": 45,
+      "time": "09:45",
+      "price": 33.37,
+      "score": 50,
       "zone": "amber",
-      "quant_sum": 35,
+      "quant_sum": 40,
       "ai_sum": 10,
       "ai_ok": true,
       "factors": {
@@ -1781,9 +1781,9 @@
           "note": "隔夜半導體全面轉弱：SOX -2.7%、TSM ADR -3%、Micron -5.8%、AMD -4%，板塊明顯偏空。"
         },
         "entry": {
-          "pts": 0,
+          "pts": 15,
           "max": 15,
-          "note": "現價在區間上緣(67%) → 屬追高"
+          "note": "現價近今日低點(區間3%) → 接近支撐"
         },
         "volume": {
           "pts": 15,
@@ -1791,9 +1791,9 @@
           "note": "推估量約均量1.2倍 → 正常"
         },
         "vwap": {
-          "pts": 10,
+          "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之上(+0.09%) → 有利"
+          "note": "現價在VWAP之下(-0.45%) → 弱勢"
         },
         "macro": {
           "pts": 5,
