@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24 09:30",
+  "updated": "2026-08-25 09:30",
   "history": [
     {
       "date": "2026-06-09",
@@ -382,6 +382,16 @@
       "target_pct": 50,
       "reason_code": "REDUCE_BELOW_10MA",
       "reason": "跌破 10MA（仍在 20MA 上）→ 減 50% 降水位"
+    },
+    {
+      "date": "2026-08-25",
+      "time": "09:30",
+      "action": "SELL",
+      "price": 33.56,
+      "shares": 3628.1,
+      "target_pct": 0,
+      "reason_code": "EXIT_BELOW_20MA",
+      "reason": "趨勢破壞：00631L 跌破 20MA → 全清"
     }
   ]
 }
