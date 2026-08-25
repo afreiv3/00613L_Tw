@@ -1,32 +1,33 @@
 {
-  "date": "2026-08-24",
-  "generated_at": "2026-08-24 09:58",
+  "date": "2026-08-25",
+  "generated_at": "2026-08-25 09:54",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 14.0,
-    "macro": 7.0,
-    "trend": 8.0
+    "sector": 3.0,
+    "macro": 6.0,
+    "trend": 4.0
   },
-  "ai_sentiment_index": 72.5,
-  "summary": "亞洲市場在伊朗制裁消息和輝達財報前表現平淡，半導體產業面臨AI泡沫考驗，但油價上漲提振了部分市場情緒。",
+  "ai_sentiment_index": 32.5,
+  "summary": "美國科技股因伊朗局勢和半導體疲軟而下跌，全球市場情緒謹慎。",
   "news_zh": [
-    "亞洲股市在伊朗制裁消息和輝達財報公布前表現平穩。",
-    "輝達財報將考驗半導體類股的反彈潛力，市場關注其漲價15%的傳聞。",
-    "分析師質疑半導體類股是否為AI泡沫的真正考驗。",
-    "油價上漲提振了海灣市場情緒，但原油期貨在伊朗與美國談判結果公布前下跌。",
-    "中國人民銀行預計將美元兌人民幣中間價設定在6.7248。"
+    "標普500和那斯達克指數因科技股下跌，投資者權衡伊朗局勢。",
+    "美國證券交易委員會就「情境感知」崩盤傳訊華爾街貸方。",
+    "半導體股票對標普500指數構成壓力。",
+    "輝達連續第七個交易日下跌，導致那斯達克指數走低。",
+    "歐洲股市持平，市場權衡伊朗緊張局勢並等待經濟數據。",
+    "美元走勢艱難，市場權衡伊朗制裁和美國國債回購。"
   ],
   "news": [
-    "[Reuters] Shares flat in Asia before Iran sanctions news, Nvidia results - Reuters - Shares flat in Asia before Iran sanctions news, Nvidia results&nbsp;&nbsp;Reuters",
-    "[Reuters] Shein’s pursuit of an IPO: From New York to London to Hong Kong By Reuters - Investing.com - Shein’s pursuit of an IPO: From New York to London to Hong Kong By Reuters&nbsp;&nbsp;Investing.com",
-    "[Reuters] Gulf markets rise as oil gains lift sentiment - Reuters - Gulf markets rise as oil gains lift sentiment&nbsp;&nbsp;Reuters",
-    "[Reuters] PBOC is expected to set the USD/CNY reference rate at 6.7248 – Reuters estimate - investingLive - PBOC is expected to set the USD/CNY reference rate at 6.7248 – Reuters estimate&nbsp;&nbsp;investingLive",
-    "[Reuters] Tether's $120 million Uruguay bitcoin mining project collapsed over a power contract dispute: Reuters - The Block - Tether's $120 million Uruguay bitcoin mining project collapsed over a power contract dispute: Reuters&nbsp;&nbsp;The Block",
-    "[Reuters] Fast fashion giant Shein valued at up to $27 billion in Hong Kong IPO - Reuters - Fast fashion giant Shein valued at up to $27 billion in Hong Kong IPO&nbsp;&nbsp;Reuters",
-    "[Reuters] Oil Falls Over 1% as Markets Await Outcome of Iran-US Talks, US Stocks Data - EnergyNow - Oil Falls Over 1% as Markets Await Outcome of Iran-US Talks, US Stocks Data&nbsp;&nbsp;EnergyNow",
-    "[Reuters] Frontline Approaches 14-Year Peak as Oil Climbs 6% on the Week - TechStock² - Frontline Approaches 14-Year Peak as Oil Climbs 6% on the Week&nbsp;&nbsp;TechStock²",
-    "[Semis] Futures Waver; Nvidia, Canada Tariffs In Focus - Investor's Business Daily - Futures Waver; Nvidia, Canada Tariffs In Focus&nbsp;&nbsp;Investor's Business Daily",
-    "[Semis] Why semiconductor stocks are becoming the real test of the AI bubble - equiti.com - Why semiconductor stocks are becoming the real test of the AI bubble&nbsp;&nbsp;equiti.com"
+    "[Reuters] S&P 500, Nasdaq end down on tech stocks, investors weigh Iran moves - Reuters - S&P 500, Nasdaq end down on tech stocks, investors weigh Iran moves&nbsp;&nbsp;Reuters",
+    "[Reuters] US SEC subpoenas Wall Street lenders over Situational Awareness meltdown, source says - Reuters - US SEC subpoenas Wall Street lenders over Situational Awareness meltdown, source says&nbsp;&nbsp;Reuters",
+    "[Reuters] US SEC subpoenas Wall Street lenders over Situational Awareness meltdown, source says By Reuters - Investing.com - US SEC subpoenas Wall Street lenders over Situational Awareness meltdown, source says By Reuters&nbsp;&nbsp;Investing.com",
+    "[Reuters] Shein's pursuit of an IPO: From New York to London to Hong Kong - Reuters - Shein's pursuit of an IPO: From New York to London to Hong Kong&nbsp;&nbsp;Reuters",
+    "[Reuters] Move over, Warsh. Treasury's Bessent also has a credibility problem - Reuters - Move over, Warsh. Treasury's Bessent also has a credibility problem&nbsp;&nbsp;Reuters",
+    "[Reuters] Dollar struggles for traction as markets weigh Iran sanctions, Treasury buybacks - Reuters - Dollar struggles for traction as markets weigh Iran sanctions, Treasury buybacks&nbsp;&nbsp;Reuters",
+    "[Reuters] Gulf bourses rise as Saudi index gains for fifth session - Reuters - Gulf bourses rise as Saudi index gains for fifth session&nbsp;&nbsp;Reuters",
+    "[Reuters] European stocks flat as markets weigh Iran tensions, await economic data - Reuters - European stocks flat as markets weigh Iran tensions, await economic data&nbsp;&nbsp;Reuters",
+    "[Semis] Safe Pro Group Inc. Rings the Nasdaq Stock Market Opening Bell - Nasdaq - Safe Pro Group Inc. Rings the Nasdaq Stock Market Opening Bell&nbsp;&nbsp;Nasdaq",
+    "[Semis] Stock Market Midday, Aug. 24: Dow Edges Higher as Chip Weakness Pressures Nasdaq - The Motley Fool - Stock Market Midday, Aug. 24: Dow Edges Higher as Chip Weakness Pressures Nasdaq&nbsp;&nbsp;The Motley Fool"
   ],
   "debug_error": ""
 }
