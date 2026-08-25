@@ -1202,8 +1202,8 @@
     },
     {
       "date": "2026-08-25",
-      "time": "11:45",
-      "price": 33.66,
+      "time": "12:00",
+      "price": 33.81,
       "tier1": 30,
       "ai_index": 32.5,
       "target": 0.0,
@@ -1211,7 +1211,7 @@
       "zone_label": "⚪ 觀望（等好買點＋趨勢）",
       "gate_open": false,
       "market_ok": false,
-      "asset_trend_ok": false,
+      "asset_trend_ok": true,
       "ai_ok": true,
       "summary": "美國科技股因伊朗局勢和半導體疲軟而下跌，全球市場情緒謹慎。",
       "news": [
