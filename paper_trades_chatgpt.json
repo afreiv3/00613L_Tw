@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26 09:30",
+  "updated": "2026-08-26 09:45",
   "history": [
     {
       "date": "2026-06-09",
@@ -402,6 +402,16 @@
       "target_pct": 50,
       "reason_code": "ENTRY_SIGNAL",
       "reason": "進場建倉至 50%（🟡 標準持倉（情緒健康））"
+    },
+    {
+      "date": "2026-08-26",
+      "time": "09:45",
+      "action": "SELL",
+      "price": 34.48,
+      "shares": 7177.2,
+      "target_pct": 50,
+      "reason_code": "REDUCE_BELOW_10MA",
+      "reason": "跌破 10MA（仍在 20MA 上）→ 減 50% 降水位"
     }
   ]
 }
