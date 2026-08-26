@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26 12:45 (Taipei)",
+  "updated": "2026-08-26 12:59 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1824,8 +1824,8 @@
     },
     {
       "date": "2026-08-26",
-      "time": "12:45",
-      "price": 35.78,
+      "time": "12:59",
+      "price": 35.77,
       "score": 66,
       "zone": "amber",
       "quant_sum": 38,
@@ -1855,7 +1855,7 @@
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+1.51%) → 有利"
+          "note": "現價在VWAP之上(+1.42%) → 有利"
         },
         "macro": {
           "pts": 7,
@@ -1870,8 +1870,8 @@
       },
       "paper": {
         "cash": 670285,
-        "equity": 967437,
-        "market_value": 297153,
+        "equity": 967354,
+        "market_value": 297070,
         "return_pct": -3.26,
         "holding": true,
         "position": {
@@ -1885,8 +1885,8 @@
         },
         "shares": 8305,
         "avg_cost": 34.61,
-        "unrealized": 9307,
-        "unrealized_pct": 3.23,
+        "unrealized": 9224,
+        "unrealized_pct": 3.2,
         "trades": 9,
         "wins": 2,
         "win_rate": 22.2,
