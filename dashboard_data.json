@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-27 12:00 (Taipei)",
+  "updated": "2026-08-27 12:15 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1895,11 +1895,11 @@
     },
     {
       "date": "2026-08-27",
-      "time": "12:00",
-      "price": 36.38,
-      "score": 78,
+      "time": "12:15",
+      "price": 36.29,
+      "score": 80,
       "zone": "green",
-      "quant_sum": 45,
+      "quant_sum": 48,
       "ai_sum": 33,
       "ai_ok": true,
       "factors": {
@@ -1914,19 +1914,19 @@
           "note": "NVDA盤後+5%財報炸裂(資料中心$890億YoY+117%)，Nasdaq+0.7%，SOX週漲+4.84%，TSM ADR $417.69微漲，半導體AI板塊氣氛全面偏多，給19分。"
         },
         "entry": {
-          "pts": 0,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價在區間上緣(68%) → 屬追高"
+          "note": "現價在區間中段(51%)"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量0.9倍 → 正常"
+          "note": "推估量約均量0.8倍 → 正常"
         },
         "vwap": {
-          "pts": 10,
+          "pts": 5.0,
           "max": 10,
-          "note": "現價在VWAP之上(+0.06%) → 有利"
+          "note": "現價貼近VWAP(-0.19%)"
         },
         "macro": {
           "pts": 6,
@@ -1941,9 +1941,9 @@
       },
       "paper": {
         "cash": 670285,
-        "equity": 972420,
-        "market_value": 302136,
-        "return_pct": -2.76,
+        "equity": 971673,
+        "market_value": 301388,
+        "return_pct": -2.83,
         "holding": true,
         "position": {
           "shares": 8305,
@@ -1956,8 +1956,8 @@
         },
         "shares": 8305,
         "avg_cost": 34.61,
-        "unrealized": 14290,
-        "unrealized_pct": 4.96,
+        "unrealized": 13543,
+        "unrealized_pct": 4.7,
         "trades": 9,
         "wins": 2,
         "win_rate": 22.2,
