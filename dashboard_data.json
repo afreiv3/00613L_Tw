@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26 14:20 (Taipei)",
+  "updated": "2026-08-27 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1887,6 +1887,77 @@
         "avg_cost": 34.61,
         "unrealized": 8726,
         "unrealized_pct": 3.03,
+        "trades": 9,
+        "wins": 2,
+        "win_rate": 22.2,
+        "realized_pnl": -41870
+      }
+    },
+    {
+      "date": "2026-08-27",
+      "time": "09:00",
+      "price": null,
+      "score": 63,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 33,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 19,
+          "max": 20,
+          "note": "NVDA盤後+5%財報炸裂(資料中心$890億YoY+117%)，Nasdaq+0.7%，SOX週漲+4.84%，TSM ADR $417.69微漲，半導體AI板塊氣氛全面偏多，給19分。"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 6,
+          "max": 10,
+          "note": "10Y殖利率回落至4.65%(本月高點4.75%)、WTI跌1.92%至$80.78，方向改善；但Jackson Hole今起登場、Warsh周五演說存在政策不確定性，降息時程延至2027年初，略偏中性，給6分。"
+        },
+        "trend": {
+          "pts": 8,
+          "max": 10,
+          "note": "TAIEX昨收45,833，季線估約44,000-44,500(Yahoo 403以估算)，在季線上方逾1,300點，多頭結構穩固；惟外資期貨偏空為短期壓力，給8分。"
+        }
+      },
+      "paper": {
+        "cash": 670285,
+        "equity": 670285,
+        "market_value": 0,
+        "return_pct": -32.97,
+        "holding": true,
+        "position": {
+          "shares": 8305,
+          "entry_price": 34.61,
+          "entry_date": "2026-08-26",
+          "entry_time": "09:30",
+          "cost": 287845.65,
+          "entry_score": 73,
+          "frac": 0.3
+        },
+        "shares": 8305,
+        "avg_cost": 34.61,
+        "unrealized": -287846,
+        "unrealized_pct": -100.0,
         "trades": 9,
         "wins": 2,
         "win_rate": 22.2,
