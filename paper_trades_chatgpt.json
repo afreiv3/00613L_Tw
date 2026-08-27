@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26 10:00",
+  "updated": "2026-08-27 10:15",
   "history": [
     {
       "date": "2026-06-09",
@@ -422,6 +422,16 @@
       "target_pct": 20,
       "reason_code": "AI_RISK_REDUCE_ONLY",
       "reason": "降水位至 20%（🟠 輕倉防守（極度狂熱）；不加碼/不買回）"
+    },
+    {
+      "date": "2026-08-27",
+      "time": "10:15",
+      "action": "SELL",
+      "price": 36.42,
+      "shares": 1714.8,
+      "target_pct": 50,
+      "reason_code": "STAGE_1_PROFIT_TAKE",
+      "reason": "第一段停利 +5.1%：賣 30%，剩餘轉移動停利＋10MA 保護"
     }
   ]
 }
