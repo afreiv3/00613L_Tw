@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28 12:15 (Taipei)",
+  "updated": "2026-08-28 12:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1966,11 +1966,11 @@
     },
     {
       "date": "2026-08-28",
-      "time": "12:15",
-      "price": 36.36,
-      "score": 62,
-      "zone": "amber",
-      "quant_sum": 30,
+      "time": "12:30",
+      "price": 36.34,
+      "score": 70,
+      "zone": "green",
+      "quant_sum": 38,
       "ai_sum": 32,
       "ai_ok": true,
       "factors": {
@@ -1985,9 +1985,9 @@
           "note": "NVDA Q2財報+9%催動SOX+1.6%、AVGO+4%、TSM ADR+2.6%，AI/半導體板塊整體強勢；AMD/ASML少數逆勢微跌，略扣2分，給18分。"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "現價在區間中段(36%)"
+          "note": "現價近今日低點(區間31%) → 接近支撐"
         },
         "volume": {
           "pts": 7.5,
@@ -1997,7 +1997,7 @@
         "vwap": {
           "pts": 5.0,
           "max": 10,
-          "note": "現價貼近VWAP(-0.23%)"
+          "note": "現價貼近VWAP(-0.28%)"
         },
         "macro": {
           "pts": 6,
@@ -2012,9 +2012,9 @@
       },
       "paper": {
         "cash": 670285,
-        "equity": 972254,
-        "market_value": 301970,
-        "return_pct": -2.77,
+        "equity": 972088,
+        "market_value": 301804,
+        "return_pct": -2.79,
         "holding": true,
         "position": {
           "shares": 8305,
@@ -2027,8 +2027,8 @@
         },
         "shares": 8305,
         "avg_cost": 34.61,
-        "unrealized": 14124,
-        "unrealized_pct": 4.91,
+        "unrealized": 13958,
+        "unrealized_pct": 4.85,
         "trades": 9,
         "wins": 2,
         "win_rate": 22.2,
