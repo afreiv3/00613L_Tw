@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-27",
-  "generated_at": "2026-08-27 17:54",
+  "date": "2026-08-28",
+  "generated_at": "2026-08-28 19:28",
   "model": "gemini-2.5-flash",
   "factors": {
     "sector": 18.0,
@@ -8,26 +8,25 @@
     "trend": 8.0
   },
   "ai_sentiment_index": 82.5,
-  "summary": "在Nvidia財測樂觀的帶動下，全球股市穩定，科技股上漲，但中東衝突和OPEC+影響力下降帶來不確定性。",
+  "summary": "在輝達財測利多和對聯準會主席華許演講的樂觀預期下，科技股表現強勁，但全球市場九月風險仍需關注。",
   "news_zh": [
-    "Nvidia樂觀的銷售成長預期推動那斯達克期貨上漲。",
-    "全球股市穩定，Nvidia前景提振科技股。",
-    "中東戰爭六個月：衝突如何影響金融市場。",
-    "OPEC+在中東衝突中失去石油市場影響力，中國影響力增加。",
-    "市場關注美國與伊朗外交重啟的希望，推動海灣地區股市上漲。",
-    "Shein在香港IPO定價，公司估值達265億美元。"
+    "輝達財測提振那斯達克和標普500指數，市場關注聯準會華許演講。",
+    "半導體ETF表現優於標普500和那斯達克100，顯示產業強勁。",
+    "上海計劃推出補貼以重振離岸債券市場。",
+    "九月全球市場風險因素正在快速累積。",
+    "中國騰訊發布新的開源AI模型，用於編碼和研究任務。"
   ],
   "news": [
-    "[Reuters] Six months of war: How the Middle East conflict has shaped financial markets - Reuters - Six months of war: How the Middle East conflict has shaped financial markets&nbsp;&nbsp;Reuters",
-    "[Reuters] Morning Bid: Jensen to market: We're so back - Reuters - Morning Bid: Jensen to market: We're so back&nbsp;&nbsp;Reuters",
-    "[Reuters] Gulf stocks rise on hopes for renewed US-Iran diplomacy - Reuters - Gulf stocks rise on hopes for renewed US-Iran diplomacy&nbsp;&nbsp;Reuters",
-    "[Reuters] Monetarist resurrection, or timely rethink of inflation targeting? - Reuters - Monetarist resurrection, or timely rethink of inflation targeting?&nbsp;&nbsp;Reuters",
-    "[Reuters] Shein's Hong Kong IPO pricing values company at $26.5 billion, sources say - Reuters - Shein's Hong Kong IPO pricing values company at $26.5 billion, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] Bessent, Warsh diverge on who should set the price of money - Reuters - Bessent, Warsh diverge on who should set the price of money&nbsp;&nbsp;Reuters",
-    "[Reuters] OPEC+ loses oil market sway in Iran war as China gains influence - Reuters - OPEC+ loses oil market sway in Iran war as China gains influence&nbsp;&nbsp;Reuters",
-    "[Reuters] World stocks steady as Nvidia outlook lifts tech shares - Reuters - World stocks steady as Nvidia outlook lifts tech shares&nbsp;&nbsp;Reuters",
-    "[Semis] Scholastic Rings the Nasdaq Stock Market Closing Bell - Nasdaq - Scholastic Rings the Nasdaq Stock Market Closing Bell&nbsp;&nbsp;Nasdaq",
-    "[Semis] Nasdaq sees growing potential in Việt Nam’s stock market - vietnamnews.vn - Nasdaq sees growing potential in Việt Nam’s stock market&nbsp;&nbsp;vietnamnews.vn"
+    "[Reuters] EXCLUSIVE: Shanghai plans subsidies to kick start dormant offshore debt market, sources say - Reuters - EXCLUSIVE: Shanghai plans subsidies to kick start dormant offshore debt market, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] September risks are stacking up hard and fast for world markets - Reuters - September risks are stacking up hard and fast for world markets&nbsp;&nbsp;Reuters",
+    "[Reuters] India plans bigger institutional role in public offers by small firms, sources say - Reuters - India plans bigger institutional role in public offers by small firms, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] Prediction markets take a swing at hedging for US small businesses - Reuters - Prediction markets take a swing at hedging for US small businesses&nbsp;&nbsp;Reuters",
+    "[Reuters] Summer's over, buckle up! - Reuters - Summer's over, buckle up!&nbsp;&nbsp;Reuters",
+    "[Reuters] How Shein had to make peace with China to finally go public​ - Reuters - How Shein had to make peace with China to finally go public​&nbsp;&nbsp;Reuters",
+    "[Reuters] Shares set for weekly gain, FX, bonds await Warsh's Jackson Hole debut - Reuters - Shares set for weekly gain, FX, bonds await Warsh's Jackson Hole debut&nbsp;&nbsp;Reuters",
+    "[Reuters] China's Tencent releases new open-source AI model for coding, research tasks - Reuters - China's Tencent releases new open-source AI model for coding, research tasks&nbsp;&nbsp;Reuters",
+    "[Semis] Jackson Hole History Shows Fed Chief Rarely Shocks Stock Market - Bloomberg.com - Jackson Hole History Shows Fed Chief Rarely Shocks Stock Market&nbsp;&nbsp;Bloomberg.com",
+    "[Semis] Dow Jones Futures Rise With Fed Chief Warsh Due; Nvidia, These 7 Stocks Are In Buy Zones - Investor's Business Daily - Dow Jones Futures Rise With Fed Chief Warsh Due; Nvidia, These 7 Stocks Are In Buy Zones&nbsp;&nbsp;Investor's Business Daily"
   ],
   "debug_error": ""
 }
