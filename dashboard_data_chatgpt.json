@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28 13:30 (Taipei)",
+  "updated": "2026-08-28 20:40 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1806,20 +1806,31 @@
     },
     {
       "date": "2026-08-28",
-      "time": "13:30",
+      "time": "20:40",
       "price": 36.3,
-      "tier1": 32,
-      "ai_index": 50.0,
-      "target": 0.5,
+      "tier1": 38,
+      "ai_index": 82.5,
+      "target": 0.2,
       "zone": "amber",
-      "zone_label": "🟡 標準持倉（情緒健康）",
+      "zone_label": "🟠 輕倉防守（極度狂熱）",
       "gate_open": true,
       "market_ok": true,
       "asset_trend_ok": true,
       "ma10_ok": true,
-      "ai_ok": false,
-      "summary": "（今日盤前判讀尚未產生，暫以中性計）",
-      "news": [],
+      "ai_ok": true,
+      "summary": "在輝達財測利多和對聯準會主席華許演講的樂觀預期下，科技股表現強勁，但全球市場九月風險仍需關注。",
+      "news": [
+        "[Reuters] EXCLUSIVE: Shanghai plans subsidies to kick start dormant offshore debt market, sources say - Reuters - EXCLUSIVE: Shanghai plans subsidies to kick start dormant offshore debt market, sources say&nbsp;&nbsp;Reuters",
+        "[Reuters] September risks are stacking up hard and fast for world markets - Reuters - September risks are stacking up hard and fast for world markets&nbsp;&nbsp;Reuters",
+        "[Reuters] India plans bigger institutional role in public offers by small firms, sources say - Reuters - India plans bigger institutional role in public offers by small firms, sources say&nbsp;&nbsp;Reuters",
+        "[Reuters] Prediction markets take a swing at hedging for US small businesses - Reuters - Prediction markets take a swing at hedging for US small businesses&nbsp;&nbsp;Reuters",
+        "[Reuters] Summer's over, buckle up! - Reuters - Summer's over, buckle up!&nbsp;&nbsp;Reuters",
+        "[Reuters] How Shein had to make peace with China to finally go public​ - Reuters - How Shein had to make peace with China to finally go public​&nbsp;&nbsp;Reuters",
+        "[Reuters] Shares set for weekly gain, FX, bonds await Warsh's Jackson Hole debut - Reuters - Shares set for weekly gain, FX, bonds await Warsh's Jackson Hole debut&nbsp;&nbsp;Reuters",
+        "[Reuters] China's Tencent releases new open-source AI model for coding, research tasks - Reuters - China's Tencent releases new open-source AI model for coding, research tasks&nbsp;&nbsp;Reuters",
+        "[Semis] Jackson Hole History Shows Fed Chief Rarely Shocks Stock Market - Bloomberg.com - Jackson Hole History Shows Fed Chief Rarely Shocks Stock Market&nbsp;&nbsp;Bloomberg.com",
+        "[Semis] Dow Jones Futures Rise With Fed Chief Warsh Due; Nvidia, These 7 Stocks Are In Buy Zones - Investor's Business Daily - Dow Jones Futures Rise With Fed Chief Warsh Due; Nvidia, These 7 Stocks Are In Buy Zones&nbsp;&nbsp;Investor's Business Daily"
+      ],
       "paper": {
         "cash": 857379,
         "shares": 4001.2,
@@ -1834,7 +1845,7 @@
         "market_value": 145242,
         "position_pct": 14.5,
         "actual_exposure": 0.145,
-        "target_exposure": 0.5,
+        "target_exposure": 0.2,
         "return_pct": 0.26,
         "trades": 44,
         "highest_equity": 1003782,
@@ -1848,11 +1859,11 @@
         "frenzy_days": 0,
         "last_action": "SELL",
         "last_action_reason": "SCORE_WEAK_NO_ADD",
-        "tier1": 32,
-        "ai_index": 50.0,
-        "target": 0.5,
+        "tier1": 38,
+        "ai_index": 82.5,
+        "target": 0.2,
         "zone": "amber",
-        "zone_label": "🟡 標準持倉（情緒健康）",
+        "zone_label": "🟠 輕倉防守（極度狂熱）",
         "gate_open": true
       }
     }
