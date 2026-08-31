@@ -2038,11 +2038,11 @@
     },
     {
       "date": "2026-08-31",
-      "time": "10:00",
-      "price": 35.33,
-      "score": 36,
-      "zone": "red",
-      "quant_sum": 20,
+      "time": "10:15",
+      "price": 35.32,
+      "score": 51,
+      "zone": "amber",
+      "quant_sum": 35,
       "ai_sum": 16,
       "ai_ok": true,
       "factors": {
@@ -2057,19 +2057,19 @@
           "note": "NVDA財報後sell-the-news（盤中高$229.26→收$217.86）、TSM ADR -2.29%收$417.52，半導體板塊明顯轉弱，給5分。"
         },
         "entry": {
-          "pts": 0,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價在區間上緣(67%) → 屬追高"
+          "note": "現價在區間中段(64%)"
         },
         "volume": {
-          "pts": 0,
+          "pts": 7.5,
           "max": 15,
-          "note": "推估量約均量2.9倍 → 爆量(疑換手/出貨)"
+          "note": "推估量約均量1.4倍 → 偏離"
         },
         "vwap": {
           "pts": 10,
           "max": 10,
-          "note": "現價在VWAP之上(+0.38%) → 有利"
+          "note": "現價在VWAP之上(+0.23%) → 有利"
         },
         "macro": {
           "pts": 3,
