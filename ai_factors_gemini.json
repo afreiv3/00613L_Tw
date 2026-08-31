@@ -1,32 +1,32 @@
 {
-  "date": "2026-08-28",
-  "generated_at": "2026-08-28 19:28",
+  "date": "2026-08-31",
+  "generated_at": "2026-08-31 13:41",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 18.0,
-    "macro": 7.0,
-    "trend": 8.0
+    "sector": 3.0,
+    "macro": 2.0,
+    "trend": 4.0
   },
-  "ai_sentiment_index": 82.5,
-  "summary": "在輝達財測利多和對聯準會主席華許演講的樂觀預期下，科技股表現強勁，但全球市場九月風險仍需關注。",
+  "ai_sentiment_index": 22.5,
+  "summary": "亞洲股市因油價上漲、地緣政治緊張及聯準會升息預期而下跌，半導體類股面臨壓力。",
   "news_zh": [
-    "輝達財測提振那斯達克和標普500指數，市場關注聯準會華許演講。",
-    "半導體ETF表現優於標普500和那斯達克100，顯示產業強勁。",
-    "上海計劃推出補貼以重振離岸債券市場。",
-    "九月全球市場風險因素正在快速累積。",
-    "中國騰訊發布新的開源AI模型，用於編碼和研究任務。"
+    "亞洲股市因油價上漲和殖利率維持高位而下跌。",
+    "油價因中東地緣政治緊張局勢升級而上漲，美國股指期貨下跌。",
+    "有跡象顯示資金可能從半導體和AI相關股票轉向軟體和金融股。",
+    "亞洲股市因聯準會升息預期增加及中東緊張局勢而下滑。",
+    "韓國KOSPI指數因聯準會官員的鷹派言論而下跌2.58%。"
   ],
   "news": [
-    "[Reuters] EXCLUSIVE: Shanghai plans subsidies to kick start dormant offshore debt market, sources say - Reuters - EXCLUSIVE: Shanghai plans subsidies to kick start dormant offshore debt market, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] September risks are stacking up hard and fast for world markets - Reuters - September risks are stacking up hard and fast for world markets&nbsp;&nbsp;Reuters",
-    "[Reuters] India plans bigger institutional role in public offers by small firms, sources say - Reuters - India plans bigger institutional role in public offers by small firms, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] Prediction markets take a swing at hedging for US small businesses - Reuters - Prediction markets take a swing at hedging for US small businesses&nbsp;&nbsp;Reuters",
-    "[Reuters] Summer's over, buckle up! - Reuters - Summer's over, buckle up!&nbsp;&nbsp;Reuters",
-    "[Reuters] How Shein had to make peace with China to finally go public​ - Reuters - How Shein had to make peace with China to finally go public​&nbsp;&nbsp;Reuters",
-    "[Reuters] Shares set for weekly gain, FX, bonds await Warsh's Jackson Hole debut - Reuters - Shares set for weekly gain, FX, bonds await Warsh's Jackson Hole debut&nbsp;&nbsp;Reuters",
-    "[Reuters] China's Tencent releases new open-source AI model for coding, research tasks - Reuters - China's Tencent releases new open-source AI model for coding, research tasks&nbsp;&nbsp;Reuters",
-    "[Semis] Jackson Hole History Shows Fed Chief Rarely Shocks Stock Market - Bloomberg.com - Jackson Hole History Shows Fed Chief Rarely Shocks Stock Market&nbsp;&nbsp;Bloomberg.com",
-    "[Semis] Dow Jones Futures Rise With Fed Chief Warsh Due; Nvidia, These 7 Stocks Are In Buy Zones - Investor's Business Daily - Dow Jones Futures Rise With Fed Chief Warsh Due; Nvidia, These 7 Stocks Are In Buy Zones&nbsp;&nbsp;Investor's Business Daily"
+    "[Reuters] Shares skid in Asia as oil climbs, yields stay high - Reuters - Shares skid in Asia as oil climbs, yields stay high&nbsp;&nbsp;Reuters",
+    "[Reuters] Bessent pushes back on fears over US debt market strains - Reuters - Bessent pushes back on fears over US debt market strains&nbsp;&nbsp;Reuters",
+    "[Reuters] Indian shares slip at open as higher oil prices weigh - Reuters - Indian shares slip at open as higher oil prices weigh&nbsp;&nbsp;Reuters",
+    "[Reuters] Soitec locks customers into multi-year deals as AI wafer demand surges - Reuters - Soitec locks customers into multi-year deals as AI wafer demand surges&nbsp;&nbsp;Reuters",
+    "[Reuters] Morning Bid: Oil climbs as missiles fly in the Gulf - Reuters - Morning Bid: Oil climbs as missiles fly in the Gulf&nbsp;&nbsp;Reuters",
+    "[Reuters] Bessent expects new US secondary sanctions weekly, aiming to increase pressure on Iran - Reuters - Bessent expects new US secondary sanctions weekly, aiming to increase pressure on Iran&nbsp;&nbsp;Reuters",
+    "[Reuters] Breakingviews - COMMENTARY: HDFC CEO departure opens door to needed overhaul - Reuters - Breakingviews - COMMENTARY: HDFC CEO departure opens door to needed overhaul&nbsp;&nbsp;Reuters",
+    "[Reuters] India's new stock closing auction faces first major test in MSCI rejig - Reuters - India's new stock closing auction faces first major test in MSCI rejig&nbsp;&nbsp;Reuters",
+    "[Semis] Oil Rises on Iran Tensions, US Stock Futures Dip: Markets Wrap - Bloomberg.com - Oil Rises on Iran Tensions, US Stock Futures Dip: Markets Wrap&nbsp;&nbsp;Bloomberg.com",
+    "[Semis] Dow Jones Futures Fall, Oil Prices Pop As U.S. Strikes Iran - Investor's Business Daily - Dow Jones Futures Fall, Oil Prices Pop As U.S. Strikes Iran&nbsp;&nbsp;Investor's Business Daily"
   ],
   "debug_error": ""
 }
