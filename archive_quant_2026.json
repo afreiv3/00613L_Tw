@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 30,
+  "count": 31,
   "history": [
     {
       "date": "2026-07-20",
@@ -2030,6 +2030,77 @@
         "avg_cost": 34.61,
         "unrealized": 13626,
         "unrealized_pct": 4.73,
+        "trades": 9,
+        "wins": 2,
+        "win_rate": 22.2,
+        "realized_pnl": -41870
+      }
+    },
+    {
+      "date": "2026-08-31",
+      "time": "09:00",
+      "price": null,
+      "score": 46,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 16,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 5,
+          "max": 20,
+          "note": "NVDA財報後sell-the-news（盤中高$229.26→收$217.86）、TSM ADR -2.29%收$417.52，半導體板塊明顯轉弱，給5分。"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 3,
+          "max": 10,
+          "note": "Warsh傑克遜霍爾演說鷹派，九月升息機率從35%升至60%，10Y殖利率跳至4.73%、30Y達5.22%，系統性風險升溫，給3分。"
+        },
+        "trend": {
+          "pts": 8,
+          "max": 10,
+          "note": "TAIEX收46,380高於季線~44,200約2,180點，多頭結構仍完好；惟今日受TSM ADR -2.29%拖累，開盤面臨下行壓力，稍扣分給8分。"
+        }
+      },
+      "paper": {
+        "cash": 670285,
+        "equity": 670285,
+        "market_value": 0,
+        "return_pct": -32.97,
+        "holding": true,
+        "position": {
+          "shares": 8305,
+          "entry_price": 34.61,
+          "entry_date": "2026-08-26",
+          "entry_time": "09:30",
+          "cost": 287845.65,
+          "entry_score": 73,
+          "frac": 0.3
+        },
+        "shares": 8305,
+        "avg_cost": 34.61,
+        "unrealized": -287846,
+        "unrealized_pct": -100.0,
         "trades": 9,
         "wins": 2,
         "win_rate": 22.2,
