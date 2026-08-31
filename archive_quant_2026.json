@@ -2038,18 +2038,18 @@
     },
     {
       "date": "2026-08-31",
-      "time": "09:15",
-      "price": null,
-      "score": 46,
+      "time": "09:30",
+      "price": 35.22,
+      "score": 41,
       "zone": "amber",
-      "quant_sum": 30,
+      "quant_sum": 25,
       "ai_sum": 16,
       "ai_ok": true,
       "factors": {
         "pattern": {
           "pts": 10.0,
           "max": 20,
-          "note": "盤中資料缺，型態以中性計"
+          "note": "開-2.5%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 5,
@@ -2057,19 +2057,19 @@
           "note": "NVDA財報後sell-the-news（盤中高$229.26→收$217.86）、TSM ADR -2.29%收$417.52，半導體板塊明顯轉弱，給5分。"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "區間資料缺，以中性計"
+          "note": "現價近今日低點(區間7%) → 接近支撐"
         },
         "volume": {
-          "pts": 7.5,
+          "pts": 0,
           "max": 15,
-          "note": "量能資料缺，以中性計"
+          "note": "推估量約均量1.9倍 → 爆量(疑換手/出貨)"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 0,
           "max": 10,
-          "note": "VWAP 資料缺，以中性計"
+          "note": "現價在VWAP之下(-0.30%) → 弱勢"
         },
         "macro": {
           "pts": 3,
@@ -2083,28 +2083,20 @@
         }
       },
       "paper": {
-        "cash": 670285,
-        "equity": 670285,
+        "cash": 962077,
+        "equity": 962077,
         "market_value": 0,
-        "return_pct": -32.97,
-        "holding": true,
-        "position": {
-          "shares": 8305,
-          "entry_price": 34.61,
-          "entry_date": "2026-08-26",
-          "entry_time": "09:30",
-          "cost": 287845.65,
-          "entry_score": 73,
-          "frac": 0.3
-        },
-        "shares": 8305,
-        "avg_cost": 34.61,
-        "unrealized": -287846,
-        "unrealized_pct": -100.0,
-        "trades": 9,
-        "wins": 2,
-        "win_rate": 22.2,
-        "realized_pnl": -41870
+        "return_pct": -3.79,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 10,
+        "wins": 3,
+        "win_rate": 30.0,
+        "realized_pnl": -37923
       }
     }
   ]
