@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31 14:56 (Taipei)",
+  "updated": "2026-09-01 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -2079,6 +2079,69 @@
           "pts": 6,
           "max": 10,
           "note": "TAIEX今收45,734，仍在季線（估~44,200）上方約1,534點（+3.5%），多頭中期結構尚未破壞；但月線（估~45,500-46,000）失守，今日低開留缺口，短線結構由強轉中性偏弱，給6分。"
+        }
+      },
+      "paper": {
+        "cash": 962077,
+        "equity": 962077,
+        "market_value": 0,
+        "return_pct": -3.79,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 10,
+        "wins": 3,
+        "win_rate": 30.0,
+        "realized_pnl": -37923
+      }
+    },
+    {
+      "date": "2026-09-01",
+      "time": "09:00",
+      "price": null,
+      "score": 47,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 17,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 8,
+          "max": 20,
+          "note": "Nasdaq -0.12%相對抗跌，但TSM ADR前收$417.52（自高點-2.29%）、費半SOX仍在ATH下22%+、AVGO曾給弱AI晶片展望；半導體板塊整體分歧偏弱，給8分。"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 2,
+          "max": 10,
+          "note": "Warsh鷹派確認9月升息機率達50%，10Y殖利率4.73%（近期高位），美伊衝突推布蘭特破$90；通膨＋地緣雙重系統性風險升溫明顯，給2分。"
+        },
+        "trend": {
+          "pts": 7,
+          "max": 10,
+          "note": "台股前收45,734，估季線~44,200，加權在季線上方約+3.5%，中期多頭結構未破；但短線8/31大跌1.29%，月線有失守壓力，給7分。"
         }
       },
       "paper": {
