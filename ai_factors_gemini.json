@@ -1,33 +1,33 @@
 {
-  "date": "2026-09-01",
-  "generated_at": "2026-09-01 13:15",
+  "date": "2026-09-02",
+  "generated_at": "2026-09-02 12:40",
   "model": "gemini-2.5-flash",
   "factors": {
     "sector": 3.0,
     "macro": 2.0,
-    "trend": 4.0
+    "trend": 3.0
   },
-  "ai_sentiment_index": 22.5,
-  "summary": "美國與伊朗衝突升級導致油價飆升，引發通膨擔憂並推升債券殖利率，科技股受壓，全球市場風險升高。",
+  "ai_sentiment_index": 20.0,
+  "summary": "全球債券市場拋售、油價因中東衝突上升以及半導體股下跌，預示台灣股市今日開盤將面臨壓力。",
   "news_zh": [
-    "美國與伊朗恢復軍事攻擊，油價飆升，殖利率上漲。",
-    "能源價格上漲加劇通膨擔憂，債券拋售加劇。",
-    "油價跳漲導致華爾街收低，但指數仍錄得月度漲幅。",
-    "日圓穩定對市場至關重要，日本與美國達成共識。",
-    "半導體股在KOSPI前十大權重中地位提升，造船業退出。",
-    "聯準會不確定性導致亞洲股市下跌，韓國出口與中國PMI受關注。"
+    "亞洲市場因美國與伊朗衝突升級導致油價及債券殖利率上漲而下跌。",
+    "半導體股票因全球債券拋售導致殖利率上升而下滑，英特爾、輝達和超微均下跌。",
+    "解釋：全球債券市場拋售背後的原因是什麼？",
+    "美國與伊朗僵局導致標普500、道瓊和那斯達克期貨持平，指數收低。",
+    "印度股市開盤走低，因伊朗衝突擴大推高油價。",
+    "恩特格里斯、企鵝解決方案、泰瑞達、應用材料和科磊公司股價下跌。"
   ],
   "news": [
-    "[Reuters] Yields rise, oil jumps; US and Iran resume military attacks - Reuters - Yields rise, oil jumps; US and Iran resume military attacks&nbsp;&nbsp;Reuters",
-    "[Reuters] Bond selloff deepens as rising energy prices stoke inflation fears - Reuters - Bond selloff deepens as rising energy prices stoke inflation fears&nbsp;&nbsp;Reuters",
-    "[Reuters] Wall Street closes lower as oil prices jump, indexes notch monthly gains - Reuters - Wall Street closes lower as oil prices jump, indexes notch monthly gains&nbsp;&nbsp;Reuters",
-    "[Reuters] Shein shares slide in Hong Kong debut on worries about trade and regulatory risks - Reuters - Shein shares slide in Hong Kong debut on worries about trade and regulatory risks&nbsp;&nbsp;Reuters",
-    "[Reuters] Breakingviews - COMMENTARY: The UK’s ‘moron premium’ predates the morons - Reuters - Breakingviews - COMMENTARY: The UK’s ‘moron premium’ predates the morons&nbsp;&nbsp;Reuters",
-    "[Reuters] Japan faces day of policy reckoning as Bessent calls time on big stimulus - Reuters - Japan faces day of policy reckoning as Bessent calls time on big stimulus&nbsp;&nbsp;Reuters",
-    "[Reuters] Japan, US agree orderly yen movement key for market stability, finance minister says - Reuters - Japan, US agree orderly yen movement key for market stability, finance minister says&nbsp;&nbsp;Reuters",
-    "[Reuters] At Jackson Hole, global central bankers glimpse dystopian AI future - Reuters - At Jackson Hole, global central bankers glimpse dystopian AI future&nbsp;&nbsp;Reuters",
-    "[Semis] Wall Street closes lower as oil prices jump, indexes notch monthly gains - Reuters - Wall Street closes lower as oil prices jump, indexes notch monthly gains&nbsp;&nbsp;Reuters",
-    "[Semis] Dow Jones Futures: Trump's Iran Warning Sparks Stock Market Losses; Elon Musk-Led SpaceX, Tesla Rally - Investor's Business Daily - Dow Jones Futures: Trump's Iran Warning Sparks Stock Market Losses; Elon Musk-Led SpaceX, Tesla Rally&nbsp;&nbsp;Investor's Business Daily"
+    "[Reuters] Indian shares open lower as widening Iran conflict sends oil higher - Reuters - Indian shares open lower as widening Iran conflict sends oil higher&nbsp;&nbsp;Reuters",
+    "[Reuters] Asian markets tumble as US-Iran fighting lifts oil and bond yields - Reuters - Asian markets tumble as US-Iran fighting lifts oil and bond yields&nbsp;&nbsp;Reuters",
+    "[Reuters] COMMENTARY: Warsh scored an easy win in Jackson Hole. The hard work starts now - Reuters - COMMENTARY: Warsh scored an easy win in Jackson Hole. The hard work starts now&nbsp;&nbsp;Reuters",
+    "[Reuters] Explainer: What's behind the selloff in world bond markets? - Reuters - Explainer: What's behind the selloff in world bond markets?&nbsp;&nbsp;Reuters",
+    "[Reuters] COMMENTARY: Efficiency or resilience? Democracies can only pick one: Joachim Klement - Reuters - COMMENTARY: Efficiency or resilience? Democracies can only pick one: Joachim Klement&nbsp;&nbsp;Reuters",
+    "[Reuters] South Korean finance minister nominee vows to advance AI projects - Reuters - South Korean finance minister nominee vows to advance AI projects&nbsp;&nbsp;Reuters",
+    "[Reuters] SoftBank-backed SB Energy files for US IPO as AI turbocharges infrastructure demand - Reuters - SoftBank-backed SB Energy files for US IPO as AI turbocharges infrastructure demand&nbsp;&nbsp;Reuters",
+    "[Reuters] COMMENTARY: Morning Bid: September storm - Reuters - COMMENTARY: Morning Bid: September storm&nbsp;&nbsp;Reuters",
+    "[Semis] B20 USA Leadership Rings the Nasdaq Stock Market Opening Bell - Nasdaq - B20 USA Leadership Rings the Nasdaq Stock Market Opening Bell&nbsp;&nbsp;Nasdaq",
+    "[Semis] Semiconductor Stocks Slide as Global Bond Selloff Lifts Yields: Intel Drops 3%, NVIDIA and AMD Slip - 24/7 Wall St. - Semiconductor Stocks Slide as Global Bond Selloff Lifts Yields: Intel Drops 3%, NVIDIA and AMD Slip&nbsp;&nbsp;24/7 Wall St."
   ],
   "debug_error": ""
 }
