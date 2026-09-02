@@ -1,6 +1,6 @@
 {
   "year": "2026",
-  "count": 32,
+  "count": 33,
   "history": [
     {
       "date": "2026-07-20",
@@ -2143,6 +2143,69 @@
           "pts": 8,
           "max": 10,
           "note": "TWII收47,019（+1.94%），重上47,000，季線~44,200上方+6.4%，月線大幅收復，三大法人大買529億籌碼轉正，短線多頭結構明確確立；仍需美股確認才可挑戰更高，給8分。"
+        }
+      },
+      "paper": {
+        "cash": 962077,
+        "equity": 962077,
+        "market_value": 0,
+        "return_pct": -3.79,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 10,
+        "wins": 3,
+        "win_rate": 30.0,
+        "realized_pnl": -37923
+      }
+    },
+    {
+      "date": "2026-09-02",
+      "time": "09:00",
+      "price": null,
+      "score": 47,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 17,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 8,
+          "max": 20,
+          "note": "隔夜那指-1.03%、SOX月迄今-1.72%，半導體整體承壓；AVGO今日財報待揭曉（預期強勁但不確定性高），NVDA無重大利多；板塊短線分歧偏弱，給8分。"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 2,
+          "max": 10,
+          "note": "美伊軍事衝突升溫（油輪遭擊）、WTI +5%至~$95、10Y殖利率4.79%新高、Fed升息68%預期，系統性風險明顯升溫，宏觀環境給2分。"
+        },
+        "trend": {
+          "pts": 7,
+          "max": 10,
+          "note": "加權昨收47,019，季線估~44,200，仍在季線上方約+6.4%，中期多頭結構完好；但隔夜美股-1%缺口壓力存在，短線貼近支撐待確認，給7分。"
         }
       },
       "paper": {
