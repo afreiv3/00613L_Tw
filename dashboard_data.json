@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02 17:58 (Taipei)",
+  "updated": "2026-09-03 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -2205,6 +2205,69 @@
           "pts": 7,
           "max": 10,
           "note": "前日TWII收47,019，季線~44,200，仍在季線上方+6.4%，中期多頭結構完好；今日具體收盤未知，結構是否維持待確認，保守維持7分"
+        }
+      },
+      "paper": {
+        "cash": 962077,
+        "equity": 962077,
+        "market_value": 0,
+        "return_pct": -3.79,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 10,
+        "wins": 3,
+        "win_rate": 30.0,
+        "realized_pnl": -37923
+      }
+    },
+    {
+      "date": "2026-09-03",
+      "time": "09:00",
+      "price": null,
+      "score": 47,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 17,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 8,
+          "max": 20,
+          "note": "Nasdaq +0.2%、S&P500 +0.5%但AVGO盤後-3.49%（Q4指引弱），TSM ADR -0.32%，SOX具體數值查無，半導體板塊隔夜明顯分歧，給8分（偏中性偏弱）"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 2,
+          "max": 10,
+          "note": "10Y殖利率4.79%創近三年高點、Fed 9月升息25bps已全額定價、美伊衝突推油至六週高位，系統性風險明確升溫，給2分"
+        },
+        "trend": {
+          "pts": 7,
+          "max": 10,
+          "note": "台股9/1收46,948，季線估~44,200，指數在季線上方約+6.2%，三大法人買超561億，中期多頭結構完好；9/2收盤因Yahoo 403查不到，保守給7分"
         }
       },
       "paper": {
