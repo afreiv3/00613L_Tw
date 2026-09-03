@@ -2227,18 +2227,18 @@
     },
     {
       "date": "2026-09-03",
-      "time": "09:15",
-      "price": null,
-      "score": 47,
+      "time": "09:30",
+      "price": 36.05,
+      "score": 62,
       "zone": "amber",
-      "quant_sum": 30,
+      "quant_sum": 45,
       "ai_sum": 17,
       "ai_ok": true,
       "factors": {
         "pattern": {
           "pts": 10.0,
           "max": 20,
-          "note": "盤中資料缺，型態以中性計"
+          "note": "開+0.6%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 8,
@@ -2246,19 +2246,19 @@
           "note": "Nasdaq +0.2%、S&P500 +0.5%但AVGO盤後-3.49%（Q4指引弱），TSM ADR -0.32%，SOX具體數值查無，半導體板塊隔夜明顯分歧，給8分（偏中性偏弱）"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "區間資料缺，以中性計"
+          "note": "現價近今日低點(區間0%) → 接近支撐"
         },
         "volume": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "量能資料缺，以中性計"
+          "note": "推估量約均量0.8倍 → 正常"
         },
         "vwap": {
           "pts": 5.0,
           "max": 10,
-          "note": "VWAP 資料缺，以中性計"
+          "note": "現價貼近VWAP(-0.20%)"
         },
         "macro": {
           "pts": 2,
