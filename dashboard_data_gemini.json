@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03 13:30 (Taipei)",
+  "updated": "2026-09-03 13:40 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -1530,8 +1530,8 @@
     },
     {
       "date": "2026-09-03",
-      "time": "13:30",
-      "price": 35.8,
+      "time": "13:40",
+      "price": 35.51,
       "tier1": 32,
       "ai_index": 77.5,
       "target": 0.2,
@@ -1558,12 +1558,12 @@
         "cash": 784616,
         "shares": 5438.5,
         "avg_cost": 35.59,
-        "unrealized": 1140,
-        "unrealized_pct": 0.59,
-        "equity": 979316,
-        "market_value": 194699,
-        "position_pct": 19.9,
-        "return_pct": -2.07,
+        "unrealized": -437,
+        "unrealized_pct": -0.23,
+        "equity": 977738,
+        "market_value": 193122,
+        "position_pct": 19.8,
+        "return_pct": -2.23,
         "trades": 31,
         "max_asset": 1074736,
         "frenzy_days": 0,
