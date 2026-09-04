@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03 18:07 (Taipei)",
+  "updated": "2026-09-04 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -2268,6 +2268,69 @@
           "pts": 7,
           "max": 10,
           "note": "TAIEX 46,187在季線估算(~44,200)上方約+4.5%，中期多頭結構仍完整；量縮平盤非恐慌賣壓，但自9/1高位46,948回落，近2日震盪動能轉弱"
+        }
+      },
+      "paper": {
+        "cash": 962077,
+        "equity": 962077,
+        "market_value": 0,
+        "return_pct": -3.79,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 10,
+        "wins": 3,
+        "win_rate": 30.0,
+        "realized_pnl": -37923
+      }
+    },
+    {
+      "date": "2026-09-04",
+      "time": "09:00",
+      "price": null,
+      "score": 47,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 17,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 10,
+          "max": 20,
+          "note": "Nasdaq +0.5%整體小漲，但SOX費半9/3見大陰線（AVGO指引偏弱+費半情緒壓抑），半導體板塊與大盤明顯分歧，NVDA強但AVGO拖累整體，判定為分歧→10分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 0,
+          "max": 10,
+          "note": "美伊軍事衝突（Hormuz封鎖風險）、WTI~$91高位（三日+9%）、10Y殖利率4.78%（近三年高）、Fed Warsh鷹派+9月升息全額定價，四重系統風險同時啟動→0分"
+        },
+        "trend": {
+          "pts": 7,
+          "max": 10,
+          "note": "TAIEX 46,187在季線估~44,200上方+4.5%，中期多頭結構完整；但量縮（4,852億）、自9/1高點46,948回落兩日，短線動能略減，結構完好但非強勢→7分"
         }
       },
       "paper": {
