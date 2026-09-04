@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04 11:45 (Taipei)",
+  "updated": "2026-09-04 12:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -2289,18 +2289,18 @@
     },
     {
       "date": "2026-09-04",
-      "time": "11:45",
-      "price": 36.02,
-      "score": 54,
+      "time": "12:00",
+      "price": 36.03,
+      "score": 47,
       "zone": "amber",
-      "quant_sum": 38,
+      "quant_sum": 30,
       "ai_sum": 17,
       "ai_ok": true,
       "factors": {
         "pattern": {
           "pts": 10.0,
           "max": 20,
-          "note": "開+2.9%、小幅回落，型態中性"
+          "note": "開+3.0%、小幅回落，型態中性"
         },
         "sector": {
           "pts": 10,
@@ -2308,9 +2308,9 @@
           "note": "Nasdaq +0.5%整體小漲，但SOX費半9/3見大陰線（AVGO指引偏弱+費半情緒壓抑），半導體板塊與大盤明顯分歧，NVDA強但AVGO拖累整體，判定為分歧→10分"
         },
         "entry": {
-          "pts": 15,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價近今日低點(區間33%) → 接近支撐"
+          "note": "現價在區間中段(34%)"
         },
         "volume": {
           "pts": 7.5,
@@ -2320,7 +2320,7 @@
         "vwap": {
           "pts": 5.0,
           "max": 10,
-          "note": "現價貼近VWAP(-0.12%)"
+          "note": "現價貼近VWAP(-0.09%)"
         },
         "macro": {
           "pts": 0,
