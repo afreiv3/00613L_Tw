@@ -1,33 +1,32 @@
 {
-  "date": "2026-09-03",
-  "generated_at": "2026-09-03 12:37",
+  "date": "2026-09-04",
+  "generated_at": "2026-09-04 12:38",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 16.0,
-    "macro": 7.0,
-    "trend": 8.0
+    "sector": 18.0,
+    "macro": 8.0,
+    "trend": 9.0
   },
-  "ai_sentiment_index": 77.5,
-  "summary": "美國股市上漲，尤其科技股表現強勁，但歐洲股市受債券殖利率和通膨擔憂影響，且有銀行預期聯準會將升息，為市場帶來複雜訊號。",
+  "ai_sentiment_index": 87.5,
+  "summary": "在聯準會官員放鬆升息擔憂後，華爾街股市大幅收高，科技股表現強勁。",
   "news_zh": [
-    "華爾街股市收高，部分股票重拾光彩。",
-    "美國股市上漲，公債殖利率回落，日圓兌美元跳升。",
-    "歐洲股市受債券殖利率上升和能源通膨擔憂打擊。",
-    "有頂級銀行預計聯準會將升息三次，影響股市。",
-    "輝達股價被認為市場低估，有上漲潛力。",
-    "那斯達克指數表現優於競爭對手，儘管當日有所損失。"
+    "聯準會沃勒的言論緩解了升息擔憂，華爾街股市大幅走高。",
+    "聯準會官員的評論抑制了升息預期，債券殖利率下降，股市上漲。",
+    "輝達斥資130億美元投資開源AI模型，與Hugging Face達成協議。",
+    "投資者在聯準會官員緩解升息擔憂後，對殖利率下降感到鼓舞。",
+    "中國AI公司月之暗面據悉已秘密申請香港IPO。"
   ],
   "news": [
-    "[Reuters] Wall St ends higher as stocks reclaim some shine - Reuters - Wall St ends higher as stocks reclaim some shine&nbsp;&nbsp;Reuters",
-    "[Reuters] Stocks climb and US yields ease; yen jumps against dollar - Reuters - Stocks climb and US yields ease; yen jumps against dollar&nbsp;&nbsp;Reuters",
-    "[Reuters] Shares, bonds rally as markets await signals for Fed rates - Reuters - Shares, bonds rally as markets await signals for Fed rates&nbsp;&nbsp;Reuters",
-    "[Reuters] UK regulator flags liquidity risks at property funds - Reuters - UK regulator flags liquidity risks at property funds&nbsp;&nbsp;Reuters",
-    "[Reuters] Prediction market Kalshi to file for US crude oil 'perps', source says - Reuters - Prediction market Kalshi to file for US crude oil 'perps', source says&nbsp;&nbsp;Reuters",
-    "[Reuters] European shares hit by rising bond yields, energy-driven inflation concerns - Reuters - European shares hit by rising bond yields, energy-driven inflation concerns&nbsp;&nbsp;Reuters",
-    "[Reuters] Bull or bear market? AI spurs rethink of traditional market measures - Reuters - Bull or bear market? AI spurs rethink of traditional market measures&nbsp;&nbsp;Reuters",
-    "[Reuters] Thoma Bravo explores $2 billion-plus sale of Foundation Software, sources say - Reuters - Thoma Bravo explores $2 billion-plus sale of Foundation Software, sources say&nbsp;&nbsp;Reuters",
-    "[Semis] Shares, bonds rally as markets await signals for Fed rates - Reuters - Shares, bonds rally as markets await signals for Fed rates&nbsp;&nbsp;Reuters",
-    "[Semis] Traders are piling into this international stock market that just pulled ahead of the Nasdaq - CNBC - Traders are piling into this international stock market that just pulled ahead of the Nasdaq&nbsp;&nbsp;CNBC"
+    "[Reuters] COMMENTARY: Hedge funds pose greater threat to US Treasuries than China ever did: McGeever - Reuters - COMMENTARY: Hedge funds pose greater threat to US Treasuries than China ever did: McGeever&nbsp;&nbsp;Reuters",
+    "[Reuters] Wall Street ends sharply higher as Waller remarks ease rate hike fears - Reuters - Wall Street ends sharply higher as Waller remarks ease rate hike fears&nbsp;&nbsp;Reuters",
+    "[Reuters] COMMENTARY: Trading Day: Waller cools Fed hike hoopla - Reuters - COMMENTARY: Trading Day: Waller cools Fed hike hoopla&nbsp;&nbsp;Reuters",
+    "[Reuters] COMMENTARY: Morning Bid: Labor days - Reuters - COMMENTARY: Morning Bid: Labor days&nbsp;&nbsp;Reuters",
+    "[Reuters] Chinese AI firm Moonshot files confidentially for Hong Kong IPO, sources say - Reuters - Chinese AI firm Moonshot files confidentially for Hong Kong IPO, sources say&nbsp;&nbsp;Reuters",
+    "[Reuters] PayPal cuts 220 India jobs as part of previously announced restructuring plan, source says - Reuters - PayPal cuts 220 India jobs as part of previously announced restructuring plan, source says&nbsp;&nbsp;Reuters",
+    "[Reuters] Nvidia bets $13 billion on open AI models with Hugging Face deal - Reuters - Nvidia bets $13 billion on open AI models with Hugging Face deal&nbsp;&nbsp;Reuters",
+    "[Reuters] India top court dismisses market regulator's plea against NSE, CNBC TV-18 reports - Reuters - India top court dismisses market regulator's plea against NSE, CNBC TV-18 reports&nbsp;&nbsp;Reuters",
+    "[Semis] Bond yields fall, stocks rally as Fed's Waller comments curb rate hike bets - Reuters - Bond yields fall, stocks rally as Fed's Waller comments curb rate hike bets&nbsp;&nbsp;Reuters",
+    "[Semis] Stock Market Today: Stocks Jump After Fed Official Says He Could Back Rate Hold, Oil price at $92 - Eurasia Business News - Stock Market Today: Stocks Jump After Fed Official Says He Could Back Rate Hold, Oil price at $92&nbsp;&nbsp;Eurasia Business News"
   ],
   "debug_error": ""
 }
