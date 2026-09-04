@@ -27,6 +27,7 @@ import urllib.error
 import paper_trade
 import gemini_strategy
 import chatgpt_strategy
+import claude_strategy
 import subscribers
 
 # ----------------------------- 設定 -----------------------------
@@ -395,7 +396,7 @@ def main():
     is_new_day = state.get("date") != today
     if is_new_day:
         state = {"date": today, "full_sent": False, "alerted": False,
-                 "g_full_sent": False, "c_full_sent": False}
+                 "g_full_sent": False, "c_full_sent": False, "cl_full_sent": False}
 
     # 開盤後第一次執行：推一份完整合併評分（不論分數）
     if not state.get("full_sent"):
@@ -528,6 +529,49 @@ def main():
         print(f"[WARN] chatgpt_strategy 本輪跳過（狀態讀取異常，避免覆蓋歷史）: {e}")
         send_telegram(f"⚠️ <b>[ChatGPT策略] 狀態檔案讀取異常，本輪跳過寫入</b>\n"
                        f"{type(e).__name__}: {e}\n請檢查 paper_state_chatgpt.json 是否損毀。")
+
+    # ===== Claude 升級版策略（風險調整後穩健成長：波段單向部位＋收盤確認出場＋
+    #        三段停利；共用上面的量化/AI 數據，與 Gemini/ChatGPT 並行對照）=====
+    try:
+        cl_ai, cl_meta, cl_ok = claude_strategy.load_ai_factors(today)
+        cl_ev = claude_strategy.evaluate(qpts, market_ok, cl_ai, ma20_ok=asset_trend_ok)
+        cl_events, cl_paper = claude_strategy.run(today, now_hm, cl_ev, price_now)
+
+        if not state.get("cl_full_sent"):
+            cl_tgt = cl_paper.get("target") or 0
+            cl_brief = (f"🟣 <b>[Claude升級版策略] {today} {now_hm}</b>\n"
+                        f"量化主審 {cl_paper['tier1']}/60｜AI情緒 {cl_paper['ai_index']}/100｜"
+                        f"目標水位 {int(cl_tgt*100)}%\n{cl_paper.get('zone_label','')}")
+            if cl_meta.get("summary"):
+                cl_brief += f"\n🧠 {cl_meta['summary']}"
+            cl_brief += f"\n📊 詳情 → {PANEL_URL}"
+            send_telegram(cl_brief)
+            state["cl_full_sent"] = True
+            save_state(state)
+
+        for tr in cl_events:
+            act = "🟢 買進" if tr["action"] == "BUY" else "🔴 賣出"
+            send_telegram(
+                f"{act} <b>[Claude升級版模擬] {today} {now_hm}</b>\n"
+                f"價 <b>{tr['price']}</b>｜{tr['reason']}\n"
+                f"目標水位 {tr['target_pct']}%｜總資產 {cl_paper['equity']:,}"
+                f"（{cl_paper['return_pct']:+.2f}%）\n📊 → {PANEL_URL}")
+
+        cl_rec = {
+            "date": today, "time": now_hm, "price": price_now,
+            "tier1": cl_paper["tier1"], "ai_index": cl_paper["ai_index"], "target": cl_paper.get("target"),
+            "zone": cl_paper.get("zone"), "zone_label": cl_paper.get("zone_label"),
+            "gate_open": cl_paper.get("gate_open"), "market_ok": market_ok,
+            "asset_trend_ok": asset_trend_ok,
+            "ai_ok": cl_ok, "summary": cl_meta.get("summary", ""), "news": cl_meta.get("news", []),
+            "paper": cl_paper,
+        }
+        write_dashboard(cl_rec, path="dashboard_data_claude.json")
+        append_archive(cl_rec, prefix="archive_claude")
+    except Exception as e:
+        print(f"[WARN] claude_strategy 本輪跳過（狀態讀取異常，避免覆蓋歷史）: {e}")
+        send_telegram(f"⚠️ <b>[Claude升級版策略] 狀態檔案讀取異常，本輪跳過寫入</b>\n"
+                       f"{type(e).__name__}: {e}\n請檢查 paper_state_claude.json 是否損毀。")
 
     # 寫面板資料（滾動約1個月）＋ 永久年度存檔
     rec = {
