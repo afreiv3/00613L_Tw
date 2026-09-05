@@ -164,9 +164,10 @@
   </header>
 
   <div class="stratbar">
-    <button class="stbtn active" id="tabClaude">🟦 Claude 策略</button>
+    <button class="stbtn active" id="tabClaude">🔵 量化策略</button>
     <button class="stbtn" id="tabGemini">🟩 Gemini 策略</button>
     <button class="stbtn" id="tabChatgpt">🟧 ChatGPT 策略</button>
+    <button class="stbtn" id="tabClaudeUp">🟣 Claude升級版</button>
     <button class="stbtn" id="tabCalc">🧮 配置計算機</button>
   </div>
 
@@ -333,6 +334,54 @@
     </div>
   </div><!-- /chatgptView -->
 
+  <div id="claudeUpView" style="display:none">
+    <div class="grid2">
+      <div class="card">
+        <h3>波段單向部位狀態 <span class="src-tag">Claude升級版</span></h3>
+        <span class="zone" id="clZone" style="margin-bottom:8px"><span class="dot"></span><span id="clZoneLabel">—</span></span>
+        <div class="px">現價 <b id="clPrice">—</b></div>
+        <div class="ts" id="clTime">—</div>
+        <div class="judge-lines" id="clTiers" style="margin-top:10px"></div>
+      </div>
+      <div class="card">
+        <h3>盤前新聞判讀 <span class="src-tag">RSS · 共用 Gemini</span></h3>
+        <div class="judge-sum" id="clSummary">尚無判讀資料</div>
+        <div class="judge-lines" id="clFactors"></div>
+        <div class="judge-lines" id="clNews" style="margin-top:8px"></div>
+      </div>
+    </div>
+
+    <div class="card" id="clPaperCard">
+      <h3>波段模擬盤 <span class="src-tag">虛擬 100 萬 · 風險調整後穩健成長</span></h3>
+      <div class="paper-stats">
+        <div class="pstat"><div class="pk">總資產</div><div class="pv" id="clpEquity">—</div></div>
+        <div class="pstat"><div class="pk">總報酬</div><div class="pv" id="clpReturn">—</div></div>
+        <div class="pstat"><div class="pk">現金</div><div class="pv" id="clpCash">—</div></div>
+        <div class="pstat"><div class="pk">持有股數</div><div class="pv" id="clpShares">—</div></div>
+        <div class="pstat"><div class="pk">預估收益</div><div class="pv" id="clpUnreal">—</div></div>
+        <div class="pstat"><div class="pk">目標水位</div><div class="pv" id="clpPos">—</div></div>
+      </div>
+      <div class="judge-lines" id="clStatus" style="margin-top:6px"></div>
+      <div id="clPaperTradesWrap"></div>
+      <div class="meta" style="margin-top:8px">規則：<b>進場</b>＝量化≥35＋大盤站季線＋00631L站20MA（與 Gemini／ChatGPT 同閘門），規模依 AI 情緒反向水位。<b>單向部位</b>：進場一次後只出不進。<b>三段停利</b>：浮盈+5%賣30%／+10%賣30%，剩餘部位移動停利（回落5%減半・8%全清）。<b>均線出場需連續2個交易日收盤確認才觸發</b>（過濾盤中雜訊，減少反覆進出）；<b>出場後冷卻2個交易日才能重新進場</b>。強制風控：總資產自高點回撤≥10%全清。<b>一天最多一個動作（進場/出場/停利/減碼都算），杜絕當日反覆進出。</b>純模擬，非投資建議。</div>
+    </div>
+
+    <div class="card" id="clArchiveCard">
+      <h3>Claude升級版歷史紀錄（永久存檔）<span class="src-tag">archive</span></h3>
+      <div class="arch-ctl">
+        <select id="clArchYear"></select>
+        <button class="refresh" id="clLoadArch">載入整年</button>
+        <span class="arch-sep">— 或選日期區間 —</span>
+        <input type="date" id="clArchStart">
+        <span style="color:var(--muted)">到</span>
+        <input type="date" id="clArchEnd">
+        <button class="refresh" id="clLoadRange">載入區間</button>
+        <span class="meta" id="clArchMeta">點擊載入；平時不下載，保持頁面快速</span>
+      </div>
+      <div id="clArchTableWrap"></div>
+    </div>
+  </div><!-- /claudeUpView -->
+
   <div id="calcView" style="display:none">
     <div class="card cal-banner" style="margin-bottom:14px">
       <div class="dot" id="calBDot"></div>
@@ -462,6 +511,10 @@ const CONFIG = {
   chatgptAiFile: "ai_factors_gemini.json",         // 盤前判讀（與 Gemini 共用，純策略 A/B）
   chatgptTradesFile: "paper_trades_chatgpt.json",  // ChatGPT 模擬盤交易
   chatgptArchivePrefix: "archive_chatgpt",         // ChatGPT 永久年度存檔前綴
+  claudeUpFile: "dashboard_data_claude.json",      // Claude升級版策略面板資料
+  claudeUpAiFile: "ai_factors_gemini.json",        // 盤前判讀（與 Gemini 共用）
+  claudeUpTradesFile: "paper_trades_claude.json",  // Claude升級版模擬盤交易
+  claudeUpArchivePrefix: "archive_claude",         // Claude升級版永久年度存檔前綴
   autoRefreshSec: 180                  // 每 3 分鐘自動更新；設 0 關閉
 };
 const rawURL = f => `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/${f}?t=${Date.now()}`;
@@ -776,9 +829,93 @@ function renderChatgptTrades(data){
   html+="</tbody></table></div>"; wrap.innerHTML=html;
 }
 
+function renderClaudeUp(data, ai){
+  const h=(data?.history||[]); const last=h[h.length-1];
+  const summary = (ai && ai.summary) || (last && last.summary) || "尚無判讀資料";
+  const news = (ai && ((ai.news_zh && ai.news_zh.length) ? ai.news_zh : ai.news))
+               || (last && last.news) || [];
+  document.getElementById("clSummary").textContent = summary;
+  const fac=document.getElementById("clFactors"); fac.innerHTML="";
+  if(ai && ai.factors){
+    const f=ai.factors;
+    const hd=document.createElement("div");
+    hd.textContent=`AI 情緒指數 ${ai.ai_sentiment_index ?? "—"}/100`;
+    hd.style.color="var(--accent)"; hd.style.paddingLeft="0"; fac.appendChild(hd);
+    const addF=t=>{const d=document.createElement("div");d.textContent=t;fac.appendChild(d);};
+    addF(`板塊強弱（費半SOX／Nasdaq）：${f.sector}/20`);
+    addF(`系統風險（油價／殖利率／地緣／升息）：${f.macro}/10`);
+    addF(`大盤結構（加權 vs 季線）：${f.trend}/10`);
+  }
+  const newsEl=document.getElementById("clNews"); newsEl.innerHTML="";
+  if(news.length){
+    const h=document.createElement("div"); h.textContent="📰 今日重點新聞";
+    h.style.color="var(--accent)"; h.style.paddingLeft="0"; newsEl.appendChild(h);
+    news.forEach(t=>{const d=document.createElement("div");d.textContent=t;newsEl.appendChild(d);});
+  }
+  if(!last) return;
+  document.getElementById("clPrice").textContent = last.price!=null ? last.price : "—";
+  document.getElementById("clTime").textContent = `${last.date} ${last.time}`;
+  const z=zoneInfo(last.zone);
+  const zt=document.getElementById("clZone"); zt.style.color=z.color; zt.querySelector(".dot").style.background=z.color;
+  document.getElementById("clZoneLabel").textContent = last.zone_label || z.label;
+  const tiers=document.getElementById("clTiers"); tiers.innerHTML="";
+  const add=t=>{const d=document.createElement("div");d.textContent=t;tiers.appendChild(d);};
+  const mk = last.market_ok===true ? "站上季線 ✅" : (last.market_ok===false ? "跌破季線 ❌" : "資料不足");
+  const a20 = last.asset_trend_ok===true ? "站上20MA ✅" : (last.asset_trend_ok===false ? "跌破20MA ❌" : "資料不足");
+  add(`進場條件（空手時）：量化≥35 ＋ 趨勢完好`);
+  add(`• 盤中量化動能 ${last.tier1??"—"}/60（需 ≥35）`);
+  add(`出場：連續2日收盤確認跌破均線 → 強制風控 → 三段停利`);
+  add(`• 大盤季線(60MA)：${mk}`);
+  add(`• 00631L 20MA：${a20}`);
+  add(`AI 情緒指數 ${last.ai_index??"—"}/100（控水位，不直接清倉）`);
+  add(`→ 目標水位 ${last.target!=null? Math.round(last.target*100)+"%":"—"}`);
+  const p=last.paper;
+  if(p){
+    document.getElementById("clpEquity").textContent = numfmt(p.equity);
+    const ret=document.getElementById("clpReturn");
+    ret.textContent=(p.return_pct>=0?"+":"")+p.return_pct+"%";
+    ret.style.color=p.return_pct>0?"var(--green)":(p.return_pct<0?"var(--red)":"var(--muted)");
+    document.getElementById("clpCash").textContent = numfmt(p.cash);
+    const holding = (p.shares||0) > 0;
+    document.getElementById("clpShares").textContent = holding ? `${p.shares} 股 @ ${p.avg_cost??"—"}` : "空手";
+    setUnreal("clpUnreal", {holding, unrealized:p.unrealized, unrealized_pct:p.unrealized_pct});
+    document.getElementById("clpPos").textContent = (p.target_exposure!=null? Math.round(p.target_exposure*100)+"%" : "—");
+    // 狀態列：停利階段 / 均線連續破位天數 / 出場冷卻 / 最近動作
+    const st=document.getElementById("clStatus"); st.innerHTML="";
+    const addS=t=>{const d=document.createElement("div");d.textContent=t;st.appendChild(d);};
+    const flag=(b)=> b?"✅":"—";
+    addS(`第一段停利 ${flag(p.profit_stage_1_done)}　第二段停利 ${flag(p.profit_stage_2_done)}　移動停利模式 ${flag(p.trailing_mode)}`);
+    if(holding){
+      addS(`持倉後最高價 ${p.highest_price_since_entry??"—"}　自高點回落 ${p.drawdown_from_position_high_pct??0}%`);
+    }
+    const b20=p.ma20_break_days||0, bmk=p.market_break_days||0;
+    if(b20>0 || bmk>0){
+      addS(`⚠️ 均線破位確認中：00631L跌破20MA第${b20}天、大盤跌破季線第${bmk}天（連續2天才會出場）`);
+    }
+    if((p.cooldown_remaining||0)>0){
+      addS(`⏳ 出場冷卻中：還剩 ${p.cooldown_remaining} 個交易日才能重新進場`);
+    }
+    if(p.last_action_reason){ addS(`最近動作：${p.last_action||""}（${p.last_action_reason}）`); }
+  }
+}
+
+function renderClaudeUpTrades(data){
+  const wrap=document.getElementById("clPaperTradesWrap");
+  const rows=(data?.history||[]).slice();
+  if(!rows.length){ wrap.innerHTML='<div class="f-note">尚無模擬交易紀錄</div>'; return; }
+  rows.sort((a,b)=> (b.date+(b.time||"")).localeCompare(a.date+(a.time||"")));
+  let html='<div class="arch-table"><table><thead><tr><th>日期</th><th>時間</th><th>動作</th><th>價</th><th>股數</th><th>水位</th><th>理由碼</th><th>說明</th></tr></thead><tbody>';
+  for(const x of rows){
+    const isBuy=x.action==="BUY";
+    const col=isBuy?"var(--accent)":"var(--amber)";
+    html+=`<tr><td>${x.date}</td><td>${x.time||""}</td><td style="color:${col}">${isBuy?"買進":"賣出"}</td><td>${x.price}</td><td>${x.shares}</td><td>${x.target_pct}%</td><td>${x.reason_code||""}</td><td>${x.reason||""}</td></tr>`;
+  }
+  html+="</tbody></table></div>"; wrap.innerHTML=html;
+}
+
 function switchView(which){
-  const views={claude:"claudeView", gemini:"geminiView", chatgpt:"chatgptView", calc:"calcView"};
-  const tabs={claude:"tabClaude", gemini:"tabGemini", chatgpt:"tabChatgpt", calc:"tabCalc"};
+  const views={claude:"claudeView", gemini:"geminiView", chatgpt:"chatgptView", claudeUp:"claudeUpView", calc:"calcView"};
+  const tabs={claude:"tabClaude", gemini:"tabGemini", chatgpt:"tabChatgpt", claudeUp:"tabClaudeUp", calc:"tabCalc"};
   if(!views[which]) which="claude";
   for(const k in views){
     document.getElementById(views[k]).style.display = (k===which)?"block":"none";
@@ -841,6 +978,13 @@ async function load(){
   renderChatgpt(cg, cgAi);
   const cgTrades = (configured && !isDemo) ? await tryFetch(CONFIG.chatgptTradesFile) : null;
   renderChatgptTrades(cgTrades);
+
+  // Claude升級版策略視圖
+  const cl = (configured && !isDemo) ? await tryFetch(CONFIG.claudeUpFile) : null;
+  const clAi = (configured && !isDemo) ? await tryFetch(CONFIG.claudeUpAiFile) : null;
+  renderClaudeUp(cl, clAi);
+  const clTrades = (configured && !isDemo) ? await tryFetch(CONFIG.claudeUpTradesFile) : null;
+  renderClaudeUpTrades(clTrades);
 
   foot.innerHTML = configured
     ? (isDemo ? `<span class="err">⚠ 讀不到 <code>${CONFIG.quantFile}</code>（repo 可能尚未產生資料、或非 public）。目前顯示示範資料。</span>`
@@ -1025,6 +1169,59 @@ async function cgLoadRange(){
   renderCgRows(rows, `${s} ~ ${e}，共 ${rows.length} 筆${miss}`);
 }
 
+// ====== Claude升級版歷史紀錄（archive_claude，日期區間查詢）======
+function clArchURL(year){ return `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/${CONFIG.claudeUpArchivePrefix}_${year}.json?t=${Date.now()}`; }
+
+function initClaudeUpArchive(){
+  const sel=document.getElementById("clArchYear"); if(!sel) return;
+  const ty=new Date().getFullYear(); sel.innerHTML="";
+  for(let y=ty;y>=ty-3;y--){ const o=document.createElement("option"); o.value=y; o.textContent=y; sel.appendChild(o); }
+  document.getElementById("clLoadArch").addEventListener("click", clLoadArchive);
+  document.getElementById("clLoadRange").addEventListener("click", clLoadRange);
+}
+
+function renderClRows(rows, metaText){
+  const meta=document.getElementById("clArchMeta"), wrap=document.getElementById("clArchTableWrap");
+  meta.textContent=metaText;
+  if(!rows.length){ wrap.innerHTML='<div class="f-note">此範圍尚無資料</div>'; return; }
+  rows.sort((a,b)=> (b.date+(b.time||"")).localeCompare(a.date+(a.time||"")));
+  let html='<div class="arch-table"><table><thead><tr><th>日期</th><th>時間</th><th>現價</th><th>量化</th><th>AI指數</th><th>水位</th><th>總資產</th><th>報酬</th><th>最近動作</th></tr></thead><tbody>';
+  for(const x of rows){
+    const p=x.paper||{};
+    const tgt=x.target!=null? Math.round(x.target*100)+"%":"—";
+    const ret=p.return_pct!=null? (p.return_pct>=0?"+":"")+p.return_pct+"%":"—";
+    const rc=p.return_pct>0?"var(--green)":(p.return_pct<0?"var(--red)":"var(--muted)");
+    html+=`<tr><td>${x.date}</td><td>${x.time||""}</td><td>${x.price??"—"}</td><td>${x.tier1??"—"}/60</td><td>${x.ai_index??"—"}</td><td>${tgt}</td><td>${numfmt(p.equity)}</td><td style="color:${rc}">${ret}</td><td>${p.last_action_reason||""}</td></tr>`;
+  }
+  html+="</tbody></table></div>"; wrap.innerHTML=html;
+}
+
+async function fetchClYear(year){
+  try{ const r=await fetch(clArchURL(year),{cache:"no-store"}); if(!r.ok) return null; return (await r.json()).history||[]; }
+  catch(e){ return null; }
+}
+
+async function clLoadArchive(){
+  const year=document.getElementById("clArchYear").value, meta=document.getElementById("clArchMeta");
+  meta.textContent="載入中…"; document.getElementById("clArchTableWrap").innerHTML="";
+  const h=await fetchClYear(year);
+  if(h===null){ meta.innerHTML=`<span class="err">讀不到 ${CONFIG.claudeUpArchivePrefix}_${year}.json（可能尚未產生）</span>`; return; }
+  renderClRows(h.slice(), `${year} 年，共 ${h.length} 筆`);
+}
+
+async function clLoadRange(){
+  const meta=document.getElementById("clArchMeta");
+  let s=document.getElementById("clArchStart").value, e=document.getElementById("clArchEnd").value;
+  if(!s||!e){ meta.innerHTML='<span class="err">請選起訖日期</span>'; return; }
+  if(s>e){ const t=s; s=e; e=t; }
+  meta.textContent="載入中…"; document.getElementById("clArchTableWrap").innerHTML="";
+  const y1=+s.slice(0,4), y2=+e.slice(0,4); let all=[], missing=[];
+  for(let y=y1;y<=y2;y++){ const h=await fetchClYear(y); if(h===null) missing.push(y); else all=all.concat(h); }
+  const rows=all.filter(x=> x.date>=s && x.date<=e);
+  const miss=missing.length?`（${missing.join("、")} 年無存檔）`:"";
+  renderClRows(rows, `${s} ~ ${e}，共 ${rows.length} 筆${miss}`);
+}
+
 // ====== 配置計算機（核心＋衛星＋熊市斷路器）======
 const cal$ = id => document.getElementById(id);
 const calNT = n => 'NT$' + Math.round(n).toLocaleString('zh-TW');
@@ -1133,12 +1330,14 @@ _rb.addEventListener("click", async ()=>{
 document.getElementById("tabClaude").addEventListener("click", ()=>switchView("claude"));
 document.getElementById("tabGemini").addEventListener("click", ()=>switchView("gemini"));
 document.getElementById("tabChatgpt").addEventListener("click", ()=>switchView("chatgpt"));
+document.getElementById("tabClaudeUp").addEventListener("click", ()=>switchView("claudeUp"));
 document.getElementById("tabCalc").addEventListener("click", ()=>switchView("calc"));
 switchView(localStorage.getItem("strat") || "claude");
 initArchive();
 calInit();
 initGemArchive();
 initCgArchive();
+initClaudeUpArchive();
 load();
 if(CONFIG.autoRefreshSec>0) setInterval(load, CONFIG.autoRefreshSec*1000);
 </script>

@@ -8,6 +8,10 @@
  *
  * 指令：
  *   /start 或 /help → 自我介紹＋指令說明
+ *   /C              → 量化策略現況（總分70制代理規則，讀 dashboard_data.json）
+ *   /G              → Gemini 策略現況（雙層閘門·水位再平衡）
+ *   /CG             → ChatGPT 策略現況（單向部位·三段停利）
+ *   /CL             → Claude升級版策略現況（波段單向部位·連續2日確認出場·三段停利）
  *   /score 或 /s    → 最新「量化代理分數」＋七因子（讀 dashboard_data.json）
  *   /judge 或 /j    → 最新「AI 判讀」摘要（讀 judgment_log.json，若有）
  *   /refresh 或 /r  → 觸發 GitHub Actions 重算一次（需 GH_PAT，走 repository_dispatch）
@@ -41,9 +45,10 @@ const GREETING =
   "📊 盤中 — 每 30 分量化評分，總分達 70 才主動通知買點\n" +
   "🌙 盤後 — 當日總結\n\n" +
   "你也可以隨時問我：\n" +
-  "/C Claude 策略現況（總分70制）\n" +
+  "/C 量化策略現況（總分70制代理規則）\n" +
   "/G Gemini 策略現況（雙層閘門·水位再平衡）\n" +
   "/CG ChatGPT 策略現況（單向部位·三段停利）\n" +
+  "/CL Claude升級版策略現況（波段·連續2日確認出場）\n" +
   "/score 量化七項因子明細\n" +
   "/judge 最新 AI 判讀摘要\n" +
   "/refresh 立刻重算一次\n" +
@@ -80,6 +85,8 @@ export default async function handler(req, res) {
       await tg(chatId, await fmtGemini());
     } else if (cmd === "/cg") {
       await tg(chatId, await fmtChatgpt());
+    } else if (cmd === "/cl") {
+      await tg(chatId, await fmtClaudeUp());
     } else if (cmd === "/score" || cmd === "/s") {
       await tg(chatId, await fmtQuant());
     } else if (cmd === "/judge" || cmd === "/j") {
@@ -107,7 +114,7 @@ export default async function handler(req, res) {
         ? "🔕 已取消訂閱，不再收到自動推播。隨時可再 /start 開啟。"
         : "你目前沒有在訂閱名單中。");
     } else {
-      await tg(chatId, "不認得的指令。試 /start、/C、/G、/CG、/score、/judge。");
+      await tg(chatId, "不認得的指令。試 /start、/C、/G、/CG、/CL、/score、/judge。");
     }
   } catch (e) {
     await tg(chatId, "查詢失敗：" + (e.message || e));
@@ -136,9 +143,9 @@ const nf = (n) => (n == null ? "—" : Number(n).toLocaleString());
 async function fmtClaude() {
   const d = await getJSON("dashboard_data.json");
   const last = (d.history || []).slice(-1)[0];
-  if (!last) return "尚無 Claude 策略資料。";
+  if (!last) return "尚無量化策略資料。";
   const p = last.paper;
-  let s = `🟦 [Claude 策略] ${last.date} ${last.time}\n` +
+  let s = `🔵 [量化策略] ${last.date} ${last.time}\n` +
           `現價 ${last.price ?? "—"}｜總分 ${last.score}/100｜${ZONE[last.zone] || ""}\n` +
           `（量化${last.quant_sum ?? "—"}＋AI${last.ai_sum ?? "—"}；門檻70 進場、停損8%/停利15%）`;
   if (p) {
@@ -198,6 +205,40 @@ async function fmtChatgpt() {
          `總資產 ${nf(p.equity)}｜報酬 ${p.return_pct >= 0 ? "+" : ""}${p.return_pct}%\n` +
          `水位 目標${p.target_exposure != null ? Math.round(p.target_exposure * 100) + "%" : "—"}／實際${p.position_pct ?? 0}%｜${stage}` +
          (p.last_action_reason ? `\n最近：${p.last_action_reason}` : "");
+  }
+  return s + `\n📊 → ${PANEL_URL}\n⚠️ 非投資建議。`;
+}
+
+async function fmtClaudeUp() {
+  let d;
+  try { d = await getJSON("dashboard_data_claude.json"); }
+  catch { return "尚無 Claude升級版策略資料（尚未產生）。"; }
+  const last = (d.history || []).slice(-1)[0];
+  if (!last) return "尚無 Claude升級版策略資料。";
+  const p = last.paper || {};
+  const mk = last.market_ok === true ? "站季線✅" : (last.market_ok === false ? "破季線❌" : "—");
+  const a20 = last.asset_trend_ok === true ? "站20MA✅" : (last.asset_trend_ok === false ? "破20MA❌" : "—");
+  let s = `🟣 [Claude升級版] ${last.date} ${last.time}\n` +
+          `現價 ${last.price ?? "—"}\n` +
+          `進場：量化 ${last.tier1 ?? "—"}/60（需≥35）＋趨勢\n` +
+          `趨勢：大盤${mk}｜00631L ${a20}\n` +
+          `AI情緒 ${last.ai_index ?? "—"}/100 → 目標水位 ${last.target != null ? Math.round(last.target * 100) + "%" : "—"}\n` +
+          `${last.zone_label || ""}`;
+  if (last.summary) s += `\n🧠 ${last.summary}`;
+  if (p) {
+    const stage = `停利 ${p.profit_stage_1_done ? "①" : "—"}${p.profit_stage_2_done ? "②" : ""}` +
+                  `${p.trailing_mode ? "·趨勢追蹤" : ""}`;
+    s += `\n\n💰 波段模擬盤（虛擬100萬）\n` +
+         `總資產 ${nf(p.equity)}｜報酬 ${p.return_pct >= 0 ? "+" : ""}${p.return_pct}%\n` +
+         `目標水位 ${p.target_exposure != null ? Math.round(p.target_exposure * 100) + "%" : "—"}｜${stage}`;
+    const b20 = p.ma20_break_days || 0, bmk = p.market_break_days || 0;
+    if (b20 > 0 || bmk > 0) {
+      s += `\n⚠️ 均線破位確認中：20MA第${b20}天／季線第${bmk}天（連續2天才出場）`;
+    }
+    if ((p.cooldown_remaining || 0) > 0) {
+      s += `\n⏳ 出場冷卻中，還剩 ${p.cooldown_remaining} 個交易日`;
+    }
+    if (p.last_action_reason) s += `\n最近：${p.last_action_reason}`;
   }
   return s + `\n📊 → ${PANEL_URL}\n⚠️ 非投資建議。`;
 }

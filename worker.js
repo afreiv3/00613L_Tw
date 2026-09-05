@@ -6,6 +6,7 @@
  * 指令：
  *   /score 或 /s   → 最新「量化代理分數」+ 七因子（讀 dashboard_data.json）
  *   /judge 或 /j   → 最新「LLM 判讀」摘要（讀 judgment_log.json，若有）
+ *   /claude 或 /c  → 最新「Claude升級版策略」現況（讀 dashboard_data_claude.json）
  *   /refresh 或 /r → 觸發 GitHub Actions 重算一次（需 GH_PAT，走 repository_dispatch）
  *   /help          → 說明
  *
@@ -48,13 +49,15 @@ export default {
         await tg(env, chatId, await fmtQuant(env));
       } else if (cmd === "/judge" || cmd === "/j") {
         await tg(env, chatId, await fmtJudge(env));
+      } else if (cmd === "/claude" || cmd === "/c") {
+        await tg(env, chatId, await fmtClaude(env));
       } else if (cmd === "/refresh" || cmd === "/r") {
         await tg(env, chatId, await triggerRefresh(env));
       } else if (cmd === "/start" || cmd === "/help") {
         await tg(env, chatId,
-          "00631L 查詢機器人\n/score 量化分數＋因子\n/judge LLM 判讀摘要\n/refresh 觸發重算\n\n⚠️ 代理規則訊號，非投資建議。");
+          "00631L 查詢機器人\n/score 量化分數＋因子\n/judge LLM 判讀摘要\n/claude Claude升級版策略現況\n/refresh 觸發重算\n\n⚠️ 代理規則訊號，非投資建議。");
       } else {
-        await tg(env, chatId, "不認得的指令。試 /score、/judge、/refresh。");
+        await tg(env, chatId, "不認得的指令。試 /score、/judge、/claude、/refresh。");
       }
     } catch (e) {
       await tg(env, chatId, "查詢失敗：" + (e.message || e));
@@ -99,6 +102,29 @@ async function fmtJudge(env) {
   if (!last) return "尚無 LLM 判讀資料。";
   const lines = (last.lines || []).map(t => "• " + t).join("\n");
   return `🧠 [判讀] ${last.date} ${last.time}\n${ZONE[last.zone] || ""}｜${last.score}/100\n\n${last.summary || ""}\n\n${lines}\n\n⚠️ 盤面分析非投資建議；不輸出勝率%。`;
+}
+
+async function fmtClaude(env) {
+  const d = await getJSON(env, "dashboard_data_claude.json");
+  const last = (d.history || []).slice(-1)[0];
+  if (!last) return "尚無 Claude升級版策略資料。";
+  const p = last.paper || {};
+  const holding = (p.shares || 0) > 0;
+  const lines = [];
+  lines.push(`量化主審 ${last.tier1 ?? "—"}/60｜AI情緒 ${last.ai_index ?? "—"}/100`);
+  lines.push(`目標水位 ${last.target != null ? Math.round(last.target * 100) + "%" : "—"}`);
+  lines.push(last.zone_label || "");
+  lines.push(`總資產 ${p.equity != null ? p.equity.toLocaleString() : "—"}（${p.return_pct != null ? (p.return_pct >= 0 ? "+" : "") + p.return_pct + "%" : "—"}）`);
+  lines.push(holding ? `持有 ${p.shares} 股 @ ${p.avg_cost ?? "—"}` : "目前空手");
+  const b20 = p.ma20_break_days || 0, bmk = p.market_break_days || 0;
+  if (b20 > 0 || bmk > 0) {
+    lines.push(`⚠️ 均線破位確認中：20MA第${b20}天／季線第${bmk}天（連續2天才出場）`);
+  }
+  if ((p.cooldown_remaining || 0) > 0) {
+    lines.push(`⏳ 出場冷卻中，還剩 ${p.cooldown_remaining} 個交易日`);
+  }
+  if (p.last_action_reason) lines.push(`最近動作：${p.last_action || ""}（${p.last_action_reason}）`);
+  return `🟣 [Claude升級版] ${last.date} ${last.time}\n現價 ${last.price ?? "—"}\n\n${lines.join("\n")}\n\n⚠️ 波段單向部位＋連續2日確認出場，純模擬，非投資建議。`;
 }
 
 async function triggerRefresh(env) {
