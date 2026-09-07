@@ -1,0 +1,15 @@
+{
+  "updated": "2026-09-07 11:30",
+  "history": [
+    {
+      "date": "2026-09-07",
+      "time": "11:30",
+      "action": "BUY",
+      "price": 37.73,
+      "shares": 13233.2,
+      "target_pct": 50,
+      "reason_code": "ENTRY_SIGNAL",
+      "reason": "波段進場至 50%（🟡 標準持倉（情緒健康））"
+    }
+  ]
+}
