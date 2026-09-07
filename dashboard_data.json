@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04 17:58 (Taipei)",
+  "updated": "2026-09-07 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -2331,6 +2331,69 @@
           "pts": 7,
           "max": 10,
           "note": "TAIEX收46,166在季線估算(~44,200)上方+4.4%，中期多頭結構完整；今日跳空低開45,991後反彈至46,603再收46,166，顯示46,000一帶支撐有效；自9/1高位46,948累計-1.65%，短線震盪整理中"
+        }
+      },
+      "paper": {
+        "cash": 962077,
+        "equity": 962077,
+        "market_value": 0,
+        "return_pct": -3.79,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 10,
+        "wins": 3,
+        "win_rate": 30.0,
+        "realized_pnl": -37923
+      }
+    },
+    {
+      "date": "2026-09-07",
+      "time": "09:00",
+      "price": null,
+      "score": 54,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 24,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 12,
+          "max": 20,
+          "note": "NVDA Hugging Face $130億收購案（9/4確認）為AI半導體板塊帶來正面情緒支撐，SOX初步穩定在11,735；但AVGO Q4指引偏弱壓力尚未完全消化，整體板塊多空分歧偏多，給12分"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 4,
+          "max": 10,
+          "note": "Fed Waller偏鴿使9月升息機率從63%降至~50%、10Y殖利率從4.81%回落至4.74-4.76%（改善），但WTI $91+美伊衝突再起+升息機率仍偏高，系統性風險略降未解，給4分"
+        },
+        "trend": {
+          "pts": 8,
+          "max": 10,
+          "note": "TAIEX 9/4收~46,166，遠在60日季線（~44,200）上方+4.4%，中期多頭結構完整；短線在46,000-46,200區有支撐，整體趨勢健康，給8分"
         }
       },
       "paper": {
