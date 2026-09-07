@@ -15,10 +15,10 @@
   "ma20_break_days": 0,
   "market_break_days": 0,
   "cooldown_remaining": 0,
-  "last_date": "",
+  "last_date": "2026-09-07",
   "last_trade_date": "",
   "last_action": "",
   "last_action_reason": "DATA_INVALID_NO_TRADE",
   "trades": 0,
-  "updated": "2026-09-07 09:15"
+  "updated": "2026-09-07 09:31"
 }

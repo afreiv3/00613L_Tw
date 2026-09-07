@@ -4,16 +4,16 @@
   "history": [
     {
       "date": "2026-09-07",
-      "time": "09:15",
-      "price": null,
+      "time": "09:31",
+      "price": 37.26,
       "tier1": 30,
       "ai_index": 50.0,
       "target": 0.0,
       "zone": "red",
-      "zone_label": "⚪ 資料缺，不動作",
+      "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
       "gate_open": false,
       "market_ok": true,
-      "asset_trend_ok": null,
+      "asset_trend_ok": true,
       "ai_ok": false,
       "summary": "（今日盤前判讀尚未產生，暫以中性計）",
       "news": [],
@@ -48,7 +48,7 @@
         "ai_index": 50.0,
         "target": 0.0,
         "zone": "red",
-        "zone_label": "⚪ 資料缺，不動作",
+        "zone_label": "⚪ 觀望（等量化≥35＋趨勢）",
         "gate_open": false
       }
     }
