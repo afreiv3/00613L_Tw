@@ -1,32 +1,33 @@
 {
-  "date": "2026-09-04",
-  "generated_at": "2026-09-04 12:38",
+  "date": "2026-09-07",
+  "generated_at": "2026-09-07 12:47",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 18.0,
-    "macro": 8.0,
-    "trend": 9.0
+    "sector": 15.0,
+    "macro": 6.0,
+    "trend": 7.0
   },
-  "ai_sentiment_index": 87.5,
-  "summary": "在聯準會官員放鬆升息擔憂後，華爾街股市大幅收高，科技股表現強勁。",
+  "ai_sentiment_index": 70.0,
+  "summary": "亞洲科技股上漲，但油價上漲和升息預期導致其他市場猶豫不決，半導體和AI相關股票成為市場焦點。",
   "news_zh": [
-    "聯準會沃勒的言論緩解了升息擔憂，華爾街股市大幅走高。",
-    "聯準會官員的評論抑制了升息預期，債券殖利率下降，股市上漲。",
-    "輝達斥資130億美元投資開源AI模型，與Hugging Face達成協議。",
-    "投資者在聯準會官員緩解升息擔憂後，對殖利率下降感到鼓舞。",
-    "中國AI公司月之暗面據悉已秘密申請香港IPO。"
+    "亞洲科技股上漲，但油價上漲導致其他市場表現猶豫。",
+    "歐洲央行可能再次升息，以確保通膨控制。",
+    "日本八月外匯存底因大規模干預而出現歷史最大跌幅。",
+    "半導體和AI相關股票成為市場發展的中心。",
+    "韓國KOSPI指數因三星和SK海力士受美國AI需求復甦而大漲。",
+    "有預測指出台積電市值將在2029年前突破3兆美元。"
   ],
   "news": [
-    "[Reuters] COMMENTARY: Hedge funds pose greater threat to US Treasuries than China ever did: McGeever - Reuters - COMMENTARY: Hedge funds pose greater threat to US Treasuries than China ever did: McGeever&nbsp;&nbsp;Reuters",
-    "[Reuters] Wall Street ends sharply higher as Waller remarks ease rate hike fears - Reuters - Wall Street ends sharply higher as Waller remarks ease rate hike fears&nbsp;&nbsp;Reuters",
-    "[Reuters] COMMENTARY: Trading Day: Waller cools Fed hike hoopla - Reuters - COMMENTARY: Trading Day: Waller cools Fed hike hoopla&nbsp;&nbsp;Reuters",
-    "[Reuters] COMMENTARY: Morning Bid: Labor days - Reuters - COMMENTARY: Morning Bid: Labor days&nbsp;&nbsp;Reuters",
-    "[Reuters] Chinese AI firm Moonshot files confidentially for Hong Kong IPO, sources say - Reuters - Chinese AI firm Moonshot files confidentially for Hong Kong IPO, sources say&nbsp;&nbsp;Reuters",
-    "[Reuters] PayPal cuts 220 India jobs as part of previously announced restructuring plan, source says - Reuters - PayPal cuts 220 India jobs as part of previously announced restructuring plan, source says&nbsp;&nbsp;Reuters",
-    "[Reuters] Nvidia bets $13 billion on open AI models with Hugging Face deal - Reuters - Nvidia bets $13 billion on open AI models with Hugging Face deal&nbsp;&nbsp;Reuters",
-    "[Reuters] India top court dismisses market regulator's plea against NSE, CNBC TV-18 reports - Reuters - India top court dismisses market regulator's plea against NSE, CNBC TV-18 reports&nbsp;&nbsp;Reuters",
-    "[Semis] Bond yields fall, stocks rally as Fed's Waller comments curb rate hike bets - Reuters - Bond yields fall, stocks rally as Fed's Waller comments curb rate hike bets&nbsp;&nbsp;Reuters",
-    "[Semis] Stock Market Today: Stocks Jump After Fed Official Says He Could Back Rate Hold, Oil price at $92 - Eurasia Business News - Stock Market Today: Stocks Jump After Fed Official Says He Could Back Rate Hold, Oil price at $92&nbsp;&nbsp;Eurasia Business News"
+    "[Reuters] Asia tech shares rally, others hesitant as oil rises - Reuters - Asia tech shares rally, others hesitant as oil rises&nbsp;&nbsp;Reuters",
+    "[Reuters] Another rate hike, just for insurance: Five questions for the ECB - Reuters - Another rate hike, just for insurance: Five questions for the ECB&nbsp;&nbsp;Reuters",
+    "[Reuters] Dollar gets little lift from boost in Fed hike expectations - Reuters - Dollar gets little lift from boost in Fed hike expectations&nbsp;&nbsp;Reuters",
+    "[Reuters] Japan's August foreign reserves post largest-ever drop after record intervention - Reuters - Japan's August foreign reserves post largest-ever drop after record intervention&nbsp;&nbsp;Reuters",
+    "[Reuters] India rupee, bonds to be driven by RBI intervention, liquidity action - Reuters - India rupee, bonds to be driven by RBI intervention, liquidity action&nbsp;&nbsp;Reuters",
+    "[Reuters] Gulf stocks end mixed as US-Iran tensions linger - Reuters - Gulf stocks end mixed as US-Iran tensions linger&nbsp;&nbsp;Reuters",
+    "[Reuters] UK finance minister Healey seeks growth through decentralising power - Reuters - UK finance minister Healey seeks growth through decentralising power&nbsp;&nbsp;Reuters",
+    "[Reuters] Takaichi's reflationist aide projects Bank of Japan rate hike in September - Reuters - Takaichi's reflationist aide projects Bank of Japan rate hike in September&nbsp;&nbsp;Reuters",
+    "[Semis] Is the stock market open on Labor Day? NYSE, Nasdaq hours today - cincinnati.com - Is the stock market open on Labor Day? NYSE, Nasdaq hours today&nbsp;&nbsp;cincinnati.com",
+    "[Semis] Stock Market Today: Nasdaq Ends Off Steeper Loss, Dow Rises After Downturn; Credo Technology Advances - Investor's Business Daily - Stock Market Today: Nasdaq Ends Off Steeper Loss, Dow Rises After Downturn; Credo Technology Advances&nbsp;&nbsp;Investor's Business Daily"
   ],
   "debug_error": ""
 }
