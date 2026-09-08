@@ -2416,11 +2416,11 @@
     },
     {
       "date": "2026-09-08",
-      "time": "12:00",
-      "price": 37.92,
-      "score": 60,
+      "time": "12:15",
+      "price": 37.66,
+      "score": 62,
       "zone": "amber",
-      "quant_sum": 38,
+      "quant_sum": 40,
       "ai_sum": 22,
       "ai_ok": true,
       "factors": {
@@ -2435,9 +2435,9 @@
           "note": "SOX ~11,735整理中，9/4美股科技微跌；NVDA $229/AVGO $357高位無新催化；TSM ADR查不到確認（以中性計）；板塊偏分歧，未見明顯強勢或弱勢"
         },
         "entry": {
-          "pts": 7.5,
+          "pts": 15,
           "max": 15,
-          "note": "現價在區間中段(43%)"
+          "note": "現價近今日低點(區間2%) → 接近支撐"
         },
         "volume": {
           "pts": 15,
@@ -2445,9 +2445,9 @@
           "note": "推估量約均量0.9倍 → 正常"
         },
         "vwap": {
-          "pts": 5.0,
+          "pts": 0,
           "max": 10,
-          "note": "現價貼近VWAP(-0.15%)"
+          "note": "現價在VWAP之下(-0.79%) → 弱勢"
         },
         "macro": {
           "pts": 3,
@@ -2462,9 +2462,9 @@
       },
       "paper": {
         "cash": 673056,
-        "equity": 961362,
-        "market_value": 288306,
-        "return_pct": -3.86,
+        "equity": 959385,
+        "market_value": 286329,
+        "return_pct": -4.06,
         "holding": true,
         "position": {
           "shares": 7603,
@@ -2477,8 +2477,8 @@
         },
         "shares": 7603,
         "avg_cost": 37.96,
-        "unrealized": -715,
-        "unrealized_pct": -0.25,
+        "unrealized": -2692,
+        "unrealized_pct": -0.93,
         "trades": 10,
         "wins": 3,
         "win_rate": 30.0,
