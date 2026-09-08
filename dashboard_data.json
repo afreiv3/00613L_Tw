@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07 13:58 (Taipei)",
+  "updated": "2026-09-08 09:00 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -2394,6 +2394,69 @@
           "pts": 9,
           "max": 10,
           "note": "TAIEX今日突破47,000整數關口，估收~47,250，在60日季線（估~44,800）上方約+5.5%，中期多頭結構強化；盤中高點47,572為近期新高，收盤略低於高點顯示尾盤稍有獲利了結，稍扣分，給9分"
+        }
+      },
+      "paper": {
+        "cash": 962077,
+        "equity": 962077,
+        "market_value": 0,
+        "return_pct": -3.79,
+        "holding": false,
+        "position": null,
+        "shares": 0,
+        "avg_cost": null,
+        "unrealized": 0,
+        "unrealized_pct": 0,
+        "trades": 10,
+        "wins": 3,
+        "win_rate": 30.0,
+        "realized_pnl": -37923
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "time": "09:00",
+      "price": null,
+      "score": 52,
+      "zone": "amber",
+      "quant_sum": 30,
+      "ai_sum": 22,
+      "ai_ok": true,
+      "factors": {
+        "pattern": {
+          "pts": 10.0,
+          "max": 20,
+          "note": "盤中資料缺，型態以中性計"
+        },
+        "sector": {
+          "pts": 10,
+          "max": 20,
+          "note": "SOX ~11,735整理中，9/4美股科技微跌；NVDA $229/AVGO $357高位無新催化；TSM ADR查不到確認（以中性計）；板塊偏分歧，未見明顯強勢或弱勢"
+        },
+        "entry": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "區間資料缺，以中性計"
+        },
+        "volume": {
+          "pts": 7.5,
+          "max": 15,
+          "note": "量能資料缺，以中性計"
+        },
+        "vwap": {
+          "pts": 5.0,
+          "max": 10,
+          "note": "VWAP 資料缺，以中性計"
+        },
+        "macro": {
+          "pts": 3,
+          "max": 10,
+          "note": "美伊衝突+WTI $92.64高位+10Y殖利率4.79%+Fed升息50%預期，多重系統性壓力並存，今日確定性最低，風險明顯升溫"
+        },
+        "trend": {
+          "pts": 9,
+          "max": 10,
+          "note": "台股加權9/7突破47,000（估收47,250），穩在季線（~44,800）上方超2,000點，中期多頭結構強；今日需守穩47,000，稍扣分"
         }
       },
       "paper": {

@@ -18,7 +18,7 @@
   "last_date": "2026-09-07",
   "last_trade_date": "2026-09-07",
   "last_action": "BUY",
-  "last_action_reason": "ENTRY_SIGNAL",
+  "last_action_reason": "DATA_INVALID_NO_TRADE",
   "trades": 1,
-  "updated": "2026-09-07 13:58"
+  "updated": "2026-09-08 09:00"
 }
