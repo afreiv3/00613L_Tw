@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08 11:30 (Taipei)",
+  "updated": "2026-09-08 11:45 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -2415,18 +2415,18 @@
     },
     {
       "date": "2026-09-08",
-      "time": "11:30",
-      "price": 37.9,
-      "score": 60,
-      "zone": "amber",
-      "quant_sum": 38,
+      "time": "11:45",
+      "price": 37.96,
+      "score": 70,
+      "zone": "green",
+      "quant_sum": 48,
       "ai_sum": 22,
       "ai_ok": true,
       "factors": {
         "pattern": {
-          "pts": 10.0,
+          "pts": 20,
           "max": 20,
-          "note": "開+0.2%、小幅回落，型態中性"
+          "note": "現價守在開盤之上(開+0.2%) → 有利"
         },
         "sector": {
           "pts": 10,
@@ -2436,17 +2436,17 @@
         "entry": {
           "pts": 7.5,
           "max": 15,
-          "note": "現價在區間中段(40%)"
+          "note": "現價在區間中段(49%)"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量1.1倍 → 正常"
+          "note": "推估量約均量1.0倍 → 正常"
         },
         "vwap": {
           "pts": 5.0,
           "max": 10,
-          "note": "現價貼近VWAP(-0.20%)"
+          "note": "現價貼近VWAP(-0.04%)"
         },
         "macro": {
           "pts": 3,
@@ -2460,16 +2460,24 @@
         }
       },
       "paper": {
-        "cash": 962077,
-        "equity": 962077,
-        "market_value": 0,
-        "return_pct": -3.79,
-        "holding": false,
-        "position": null,
-        "shares": 0,
-        "avg_cost": null,
-        "unrealized": 0,
-        "unrealized_pct": 0,
+        "cash": 673056,
+        "equity": 961666,
+        "market_value": 288610,
+        "return_pct": -3.83,
+        "holding": true,
+        "position": {
+          "shares": 7603,
+          "entry_price": 37.96,
+          "entry_date": "2026-09-08",
+          "entry_time": "11:45",
+          "cost": 289021.15,
+          "entry_score": 70,
+          "frac": 0.3
+        },
+        "shares": 7603,
+        "avg_cost": 37.96,
+        "unrealized": -411,
+        "unrealized_pct": -0.14,
         "trades": 10,
         "wins": 3,
         "win_rate": 30.0,
