@@ -1,33 +1,33 @@
 {
-  "date": "2026-09-08",
-  "generated_at": "2026-09-08 12:43",
+  "date": "2026-09-09",
+  "generated_at": "2026-09-09 12:47",
   "model": "gemini-2.5-flash",
   "factors": {
-    "sector": 12.0,
+    "sector": 5.0,
     "macro": 3.0,
-    "trend": 6.0
+    "trend": 4.0
   },
-  "ai_sentiment_index": 52.5,
-  "summary": "全球股市因中東地緣政治緊張、油價上漲及升息預期而波動，但半導體產業表現相對強勁，預計台灣市場將面臨挑戰。",
+  "ai_sentiment_index": 30.0,
+  "summary": "美國股市因AI擔憂和油價上漲而下跌，聯準會升息預期增強，全球風險情緒升高。",
   "news_zh": [
-    "中東緊張局勢升級推升油價，印度股市開盤走低。",
-    "亞洲股市因日圓飆升及伊朗警告報復而波動。",
-    "亞洲可能醞釀下一波由槓桿驅動的市場崩盤。",
-    "道瓊期貨下跌，但蘋果等科技股上漲，通膨數據即將公布。",
-    "分析師警告晶片股投資者，圖表顯示可能進一步走弱。",
-    "韓國綜合股價指數因半導體產業強勁而突破7,000點。"
+    "標普500指數因AI擔憂拖累軟體股而下跌。",
+    "美國公債市場持續受到關注，殖利率逼近5%。",
+    "OpenAI推出AI晶片設計服務，宣稱具成本優勢。",
+    "美國股指期貨走勢平淡，油價逼近100美元，聯準會升息預期上升。",
+    "道瓊期貨下跌，油價上漲，蘋果、通膨和聯準會升息前景受關注。",
+    "聯準會前主席表示，美國有望成為AI競賽的「大贏家」。"
   ],
   "news": [
-    "[Reuters] Indian shares open lower as oil climbs on rising Mideast risks - Reuters - Indian shares open lower as oil climbs on rising Mideast risks&nbsp;&nbsp;Reuters",
-    "[Reuters] COMMENTARY: Asia's next leverage-driven market crash could be brewing - Reuters - COMMENTARY: Asia's next leverage-driven market crash could be brewing&nbsp;&nbsp;Reuters",
-    "[Reuters] Japan, US remain aligned on FX policy to foster stable markets, Katayama says - Reuters - Japan, US remain aligned on FX policy to foster stable markets, Katayama says&nbsp;&nbsp;Reuters",
-    "[Reuters] London stocks end lower as rising oil, rate-hike bets weigh - Reuters - London stocks end lower as rising oil, rate-hike bets weigh&nbsp;&nbsp;Reuters",
-    "[Reuters] COMMENTARY: Southeast Asia emerges as a crucial driver of China's clean-tech exports - Reuters - COMMENTARY: Southeast Asia emerges as a crucial driver of China's clean-tech exports&nbsp;&nbsp;Reuters",
-    "[Reuters] Asia stocks waver as yen surges, Iran warns of retaliation - Reuters - Asia stocks waver as yen surges, Iran warns of retaliation&nbsp;&nbsp;Reuters",
-    "[Reuters] Gulf equities mixed amid US-Iran flare-ups - Reuters - Gulf equities mixed amid US-Iran flare-ups&nbsp;&nbsp;Reuters",
-    "[Reuters] EverBank to combine with WaFd in $3.9 billion reverse merger - Reuters - EverBank to combine with WaFd in $3.9 billion reverse merger&nbsp;&nbsp;Reuters",
-    "[Semis] Dow Futures Fall, Techs Rise With Apple, Inflation Ahead; Nvidia, Micron, Sandisk Flash Buy Signals - Investor's Business Daily - Dow Futures Fall, Techs Rise With Apple, Inflation Ahead; Nvidia, Micron, Sandisk Flash Buy Signals&nbsp;&nbsp;Investor's Business Daily",
-    "[Semis] Is the stock market open on Labor Day? - Yahoo Finance - Is the stock market open on Labor Day?&nbsp;&nbsp;Yahoo Finance"
+    "[Reuters] S&P 500 falls as AI worries hit software makers - Reuters - S&P 500 falls as AI worries hit software makers&nbsp;&nbsp;Reuters",
+    "[Reuters] COMMENTARY: Unloved, but unbroken — the US bond market is working as it should - Reuters - COMMENTARY: Unloved, but unbroken — the US bond market is working as it should&nbsp;&nbsp;Reuters",
+    "[Reuters] OpenAI offers AI for chip design, touts cost advantage over open-source, CFO says - Reuters - OpenAI offers AI for chip design, touts cost advantage over open-source, CFO says&nbsp;&nbsp;Reuters",
+    "[Reuters] Five spots to watch as the bond market creeps up on 5% - Reuters - Five spots to watch as the bond market creeps up on 5%&nbsp;&nbsp;Reuters",
+    "[Reuters] Breakingviews - COMMENTARY: Banking mega-merger is glum news for side hustles - Reuters - Breakingviews - COMMENTARY: Banking mega-merger is glum news for side hustles&nbsp;&nbsp;Reuters",
+    "[Reuters] Thailand to provide $1.5 billion for rooftop solar scheme starting mid-October, finance minister says - Reuters - Thailand to provide $1.5 billion for rooftop solar scheme starting mid-October, finance minister says&nbsp;&nbsp;Reuters",
+    "[Reuters] India's NSE likely to price IPO at 1,700-1,785 rupees per share, source says - Reuters - India's NSE likely to price IPO at 1,700-1,785 rupees per share, source says&nbsp;&nbsp;Reuters",
+    "[Reuters] London shares inch lower as oil rally fuels inflation concerns - Reuters - London shares inch lower as oil rally fuels inflation concerns&nbsp;&nbsp;Reuters",
+    "[Semis] Figure Technology Solutions Rings the Nasdaq Stock Market Opening Bell - Nasdaq - Figure Technology Solutions Rings the Nasdaq Stock Market Opening Bell&nbsp;&nbsp;Nasdaq",
+    "[Semis] U.S. stock futures muted as oil nears $100, Fed hike bets rise - Investing.com - U.S. stock futures muted as oil nears $100, Fed hike bets rise&nbsp;&nbsp;Investing.com"
   ],
   "debug_error": ""
 }
