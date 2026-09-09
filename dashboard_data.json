@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09 11:15 (Taipei)",
+  "updated": "2026-09-09 11:30 (Taipei)",
   "history": [
     {
       "date": "2026-07-20",
@@ -2486,11 +2486,11 @@
     },
     {
       "date": "2026-09-09",
-      "time": "11:15",
-      "price": 38.06,
-      "score": 66,
+      "time": "11:30",
+      "price": 37.9,
+      "score": 64,
       "zone": "amber",
-      "quant_sum": 45,
+      "quant_sum": 42,
       "ai_sum": 21,
       "ai_ok": true,
       "factors": {
@@ -2505,19 +2505,19 @@
           "note": "Nasdaq -0.32%相對抗跌（vs Dow -1.18%），NVDA $229.49/TSM ADR $428.91穩守，但SOX仍在ATH後回調結構中（高點跌~29%後回升），半導體板塊訊號分歧，未見明顯強勢或弱勢"
         },
         "entry": {
-          "pts": 0,
+          "pts": 7.5,
           "max": 15,
-          "note": "現價在區間上緣(73%) → 屬追高"
+          "note": "現價在區間中段(42%)"
         },
         "volume": {
           "pts": 15,
           "max": 15,
-          "note": "推估量約均量1.0倍 → 正常"
+          "note": "推估量約均量0.9倍 → 正常"
         },
         "vwap": {
-          "pts": 10,
+          "pts": 0,
           "max": 10,
-          "note": "現價在VWAP之上(+0.11%) → 有利"
+          "note": "現價在VWAP之下(-0.31%) → 弱勢"
         },
         "macro": {
           "pts": 3,
@@ -2532,9 +2532,9 @@
       },
       "paper": {
         "cash": 673056,
-        "equity": 962426,
-        "market_value": 289370,
-        "return_pct": -3.76,
+        "equity": 961210,
+        "market_value": 288154,
+        "return_pct": -3.88,
         "holding": true,
         "position": {
           "shares": 7603,
@@ -2547,8 +2547,8 @@
         },
         "shares": 7603,
         "avg_cost": 37.96,
-        "unrealized": 349,
-        "unrealized_pct": 0.12,
+        "unrealized": -867,
+        "unrealized_pct": -0.3,
         "trades": 10,
         "wins": 3,
         "win_rate": 30.0,
